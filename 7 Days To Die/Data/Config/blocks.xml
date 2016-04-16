@@ -4941,7 +4941,6 @@ kind of free
 <block id="631" name="secureDoorWooden">
 	<property name="Class" value="DoorSecure" />
 	<property name="Material" value="wood" />
-	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Texture" value="241" />
 	<property name="FuelValue" value="80" />
@@ -5035,7 +5034,6 @@ kind of free
 <block id="642" name="secureReinforcedDoorWooden">
 	<property name="Class" value="DoorSecure" />
 	<property name="Material" value="wood+wood" />
-	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Texture" value="241" />
 	<property name="Tag" value="Door" />
@@ -5066,7 +5064,6 @@ kind of free
 <block id="643" name="metalReinforcedDoorWooden">
 	<property name="Class" value="DoorSecure" />
 	<property name="Material" value="wood+metal" />
-	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Texture" value="352" />
 	<property name="Tag" value="Door" />
