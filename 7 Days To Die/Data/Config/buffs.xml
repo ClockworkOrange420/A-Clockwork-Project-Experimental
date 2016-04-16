@@ -451,44 +451,44 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 </buff>
 
 <buff id="cured2" stack="reset" duration="3000" actions="increment(@wellness, 0.035, 100, 0, 0)" />
-	
-<buff id="warmByFire" onexpired="warmByFire2" stack="discard" duration="10" name_key="warmByFire" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+
+<buff id="warmByFire" onexpired="warmByFire2" duration="0" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="30"/>
 </buff>
-<buff id="warmByFire2" onexpired="warmByFire3" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire2" onexpired="warmByFire3" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="35"/>
 </buff>
-<buff id="warmByFire3" onexpired="warmByFire4" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire3" onexpired="warmByFire4" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="40"/>
 </buff>
-<buff id="warmByFire4" onexpired="warmByFire5" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire4" onexpired="warmByFire5" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="45"/>
 </buff>
-<buff id="warmByFire5" onexpired="warmByFire6" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire5" onexpired="warmByFire6" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="50"/>
 </buff>
-<buff id="warmByFire6" onexpired="warmByFire7" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire6" onexpired="warmByFire7" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="55"/>
 </buff>
-<buff id="warmByFire7" onexpired="warmByFire8" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire7" onexpired="warmByFire8" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="60"/>
 </buff>
-<buff id="warmByFire8" onexpired="warmByFire9" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire8" onexpired="warmByFire9" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="65"/>
 </buff>
-<buff id="warmByFire9" onexpired="warmByFire10" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire9" onexpired="warmByFire10" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="70"/>
 </buff>
-<buff id="warmByFire10" onexpired="warmByFire11" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire10" onexpired="warmByFire11" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="75"/>
 </buff>
-<buff id="warmByFire11" onexpired="warmByFire12" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire11" onexpired="warmByFire12" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="80"/>
 </buff>
-<buff id="warmByFire12" onexpired="warmByFire13" stack="discard" duration="10" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire12" onexpired="warmByFire13" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="85"/>
 </buff>
-<buff id="warmByFire13" stack="discard" duration="0" name_key="warmByFire" debuffif="+heatSource less 1" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip" icon="ui_game_symbol_campfire" type="coretemp">
+<buff id="warmByFire13" stack="discard" duration="0" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="90"/>
 </buff>
 </buffs>
