@@ -236,7 +236,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-5" rate="60"/>
 </buff>			
 
-<buff id="foodPoisoning" duration="30" actions="increment(@wellness, -.5, 15, 0, 0)" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="foodPoisoning" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" causes="moldyBread,shamSandwich,rawMeat,rottingFlesh,egg">
+<buff id="foodPoisoning" duration="120" actions="increment(@wellness, -.5, 30, 0, 0)" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="foodPoisoning" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" causes="moldyBread,shamSandwich,rawMeat,rottingFlesh,egg">
 	<modify id="0" stat="stamina" amount="-10" rate="1"/>
 </buff>
 
