@@ -1483,6 +1483,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="1" />
 	<!--<property name="DegradationBreaksAfter" value="false" />-->
 	<property name="SoundJammed" value="Weapons/weapon_jam" />
+	<property name="SoundDestroy" value="metaldestroy1" />
 	<property name="Weight" value="80" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
