@@ -356,6 +356,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.01" />
 		<property name="DamageBonus.stone" value="0.01" />
 		<property name="DamageBonus.organic" value="0.01" />
+		<property name="ToolCategory.Crops" value="1.5" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -918,6 +919,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Stamina_usage" value="3" />
 		<property name="DamageBonus.head" value="2" />
 		<property name="DamageBonus.organic" value="5" />
+		<property name="ToolCategory.Crops" value="1" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Eat" />
@@ -5206,6 +5208,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="Smell" value="largeSmell" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="DescriptionKey" value="charredVenisonDesc"/>
 </item>
 
 <item id="738" name="Grilled_Venison">
@@ -5225,6 +5228,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="Smell" value="mediumSmell" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="DescriptionKey" value="grilledVenisonDesc"/>
 </item>
 
 <item id="739" name="Boiled_Venison">
@@ -5244,6 +5248,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="Smell" value="smallSmell" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="DescriptionKey" value="boiledVenisonDesc"/>
 </item>
 
 <item id="740" name="meatStew">
@@ -7247,6 +7252,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons"/>
 		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+		<property name="DescriptionKey" value="stoneTippedSpearDesc"/>
     </item>
 	<item id="1501" name="ironTippedSpear">
         <property name="Meshfile" value="Items/Tools/shovel_ironPrefab" />
@@ -7284,6 +7290,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons"/>
 		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+		<property name="DescriptionKey" value="ironTippedSpearDesc"/>
     </item>
 	<item id="1502" name="steelTippedSpear">
         <property name="Meshfile" value="Items/Tools/shovel_steelPrefab" />
@@ -7321,6 +7328,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Group" value="Ammo/Weapons" />
 		<property name="ActionSkillGroup" value="Blade Weapons"/>
 		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+		<property name="DescriptionKey" value="steelTippedSpearDesc"/>
     </item>
 	<!-- crops -->
 	<item id="1503" name="Fertilizer">
@@ -7340,6 +7348,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Allowed_upgrade_items" value="Fertilizer"/>
         </property>
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="fertilizerDesc"/>
     </item>
 	<item id="1504" name="Tomato">
         <property name="Meshfile" value="Items/Food/vegetable_potatoPrefab" />
@@ -7358,6 +7367,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="tomatoDesc"/>
     </item>
     <item id="1505" name="Tomato_Seed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7370,6 +7380,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantTomatoSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="tomatoSeedDesc"/>
     </item>
 	<item id="1506" name="Chrysanthemum_Seed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7381,6 +7392,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantChrysanthemumSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="chrysanthemumSeedDesc"/>
     </item>
 	<item id="1507" name="Wheat_Seed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7392,6 +7404,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantWheatSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="wheatSeedDesc"/>
     </item>
 	<item id="1508" name="Wheat">
         <property name="Meshfile" value="Items/Crafting/plant_fibers" />
@@ -7399,6 +7412,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="HoldType" value="16" />
 		<property name="CraftingIngredientTime" value="5" />
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="wheatDesc"/>
     </item>
 	<item id="1509" name="mushroomSeed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7412,6 +7426,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantMushroomSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="mushroomSeedDesc"/>
     </item>
 	<item id="1510" name="mushroomGrilled">
         <property name="Meshfile" value="Items/Food/vegetable_potato_bakedPrefab" />
@@ -7432,6 +7447,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="mushroomGrilledDesc"/>
     </item>
 	<item id="1511" name="cornGrilled">
         <property name="Meshfile" value="Items/Food/corn_cooked" />
@@ -7453,6 +7469,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="cornGrilledDesc"/>
     </item>
 	<item id="1512" name="Yucca_Seed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7465,6 +7482,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantYuccaSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="yuccaSeedDesc"/>
     </item>
 	<item id="1513" name="Aloe_Seed">
         <property name="Meshfile" value="Items/Food/seed_blueberryPrefab" />
@@ -7477,6 +7495,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Blockname" value="plantAloeSprout" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="aloeSeedDesc"/>
     </item>
 	<item id="1514" name="omnigel">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7489,6 +7508,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CraftingIngredientTime" value="3" />
         <property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="omnigelDesc"/>
     </item>
 	<item id="1515" name="Unload">
 		<property name="CustomIcon" value="parts44Magnum_cylinder" />
@@ -7525,6 +7545,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Group" value="Food/Cooking" />
 		<property name="CraftingIngredientTime" value="30" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="yeastDesc"/>
     </item>
 	<item id="1518" name="Chicken_Feed">
         <property name="Meshfile" value="Items/Food/cornmealPrefab" />
@@ -7541,6 +7562,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/repair_block"/>
             <property name="Allowed_upgrade_items" value="Chicken_Feed"/>
         </property>
+		<property name="DescriptionKey" value="chickenFeedDesc"/>
     </item>
 	<item id="1519" name="Schematic_Page">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7552,6 +7574,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIcon" value="paper" />
 		<property name="CustomIconTint" value="66B2FF" />
         <property name="Group" value="Resources" />
+		<property name="DescriptionKey" value="schematicPageDesc"/>
     </item>
 	<item id="1520" name="Tomato_Soup">
         <property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
@@ -7573,6 +7596,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
         <property name="Group" value="Food/Cooking" />
+		<property name="DescriptionKey" value="tomatoSoupDesc"/>
     </item>
 	<item id="1521" name="Ink">
         <property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
@@ -7585,6 +7609,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIconTint" value="00082E" />
         <property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="inkDesc"/>
     </item>
 	<item id="1522" name="Geometry_Set">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7594,6 +7619,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Weight" value="5" />
         <property name="Stacknumber" value="1" />
         <property name="Group" value="Resources" />
+		<property name="DescriptionKey" value="geometrySetDesc"/>
     </item>
 	<item id="1523" name="Sewing_Machine">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7604,6 +7630,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="1" />
         <property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="sewingMachineDesc"/>
     </item>
 	<item id="1524" name="Chisel">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7613,6 +7640,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
+		<property name="DescriptionKey" value="chiselDesc"/>
     </item>
 	<item id="1525" name="Compost">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7630,6 +7658,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/repair_block"/>
             <property name="Allowed_upgrade_items" value="Compost"/>
         </property>
+		<property name="DescriptionKey" value="compostDesc"/>
     </item>
 	<item id="1526" name="Flour">
         <property name="Meshfile" value="Items/Food/cornmealPrefab" />
@@ -7638,6 +7667,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="250" />
         <property name="Group" value="Food/Cooking" />
 		<property name="CraftingIngredientTime" value="5" />
+		<property name="DescriptionKey" value="flourDesc"/>
     </item>
 	<item id="1527" name="Bread">
         <property name="Meshfile" value="Items/Food/cornbreadPrefab" />
@@ -7656,6 +7686,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.5" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="breadDesc"/>
         <property name="Group" value="Food/Cooking" />
     </item>
 	<item id="1528" name="Cordage">
@@ -7669,6 +7700,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="HoldType" value="16" />
         <property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="cordageDesc"/>
     </item>
 	<item id="1529" name="Mortar_and_Pestle">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7678,6 +7710,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Group" value="Resources" />
 		<property name="Stacknumber" value="1" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="mortarPestleDesc"/>
     </item>
 	<item id="1530" name="Molten_Iron">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7688,6 +7721,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="moltenIronDesc"/>
     </item>
 	<item id="1531" name="Blank_Mold">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -7698,6 +7732,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Gun Smithing"/>
+		<property name="DescriptionKey" value="blankMoldDesc"/>
     </item>
 	<item id="1532" name="Pipe_Mold">
         <property name="Extends" value="Blank_Mold" />
@@ -7827,6 +7862,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Buff" value="foodPoisoning" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="rawBearDesc"/>
         <property name="Smell" value="ExLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7849,6 +7885,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Buff" value="foodPoisoning" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="rawPorkDesc"/>
         <property name="Smell" value="ExLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7871,6 +7908,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Buff" value="foodPoisoning" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="rawRabbitDesc"/>
         <property name="Smell" value="ExLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7893,6 +7931,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Buff" value="foodPoisoning" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="rawChickenDesc"/>
         <property name="Smell" value="ExLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7912,6 +7951,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.36" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="grilledBearDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7931,6 +7971,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.24" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="grilledPorkDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7950,6 +7991,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.15" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="grilledRabbitDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7969,6 +8011,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.15" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="grilledChickenDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -7988,6 +8031,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.36" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="boiledBearDesc"/>
         <property name="Smell" value="smallSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8007,6 +8051,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.24" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="boiledPorkDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8026,6 +8071,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.15" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="boiledRabbitDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8045,6 +8091,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.15" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="boiledChickenDesc"/>
         <property name="Smell" value="mediumSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8064,6 +8111,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.12" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="charredBearDesc"/>
         <property name="Smell" value="largeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8083,6 +8131,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.08" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="charredPorkDesc"/>
         <property name="Smell" value="largeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8102,6 +8151,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.05" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="charredRabbitDesc"/>
         <property name="Smell" value="largeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8121,6 +8171,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.05" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="charredChickenDesc"/>
         <property name="Smell" value="largeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8141,17 +8192,21 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="1.25" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
+		<property name="DescriptionKey" value="bearStewDesc"/>
         <property name="Smell" value="exLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
 	<item id="1584" name="Creamed_Corn">
         <property name="Extends" value="Tomato_Soup" />
+		<property name="DescriptionKey" value="creamedCornDesc"/>
     </item>
 	<item id="1585" name="Chicken_Noodle_Soup">
         <property name="Extends" value="Tomato_Soup" />
+		<property name="DescriptionKey" value="chickenNoodleSoupDesc"/>
     </item>
 	<item id="1586" name="Mushroom_Soup">
 		<property name="Extends" value="Tomato_Soup" />
+		<property name="DescriptionKey" value="mushroomSoupDesc"/>
     </item>
 	<item id="1587" name="Venison_Stew">
         <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
@@ -8170,6 +8225,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="1" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
+		<property name="DescriptionKey" value="venisonStewDesc"/>
         <property name="Smell" value="exLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8190,6 +8246,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Sound_start" value="UseActions/player_eating" />
 			<property name="Create_item" value="emptyJar" />
         </property>
+		<property name="DescriptionKey" value="blueberryJamDesc"/>
         <property name="DropScale" value="4" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8210,6 +8267,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="0.3" />
             <property name="Sound_start" value="UseActions/player_eating" />
         </property>
+		<property name="DescriptionKey" value="cornBreadAndJamDesc"/>
         <property name="Group" value="Food/Cooking" />
     </item>
 	<item id="1590" name="Grass_Seed">
@@ -8223,6 +8281,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Delay" value="0.5" />
             <property name="Blockname" value="tallGrassDiagonalSprout" />
         </property>
+		<property name="DescriptionKey" value="grassSeedDesc"/>
         <property name="Group" value="Resources" />
     </item>
 	<item id="1591" name="Honey_Poultice">
@@ -8243,6 +8302,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Debuff" value="infection" />
 			<property name="Create_item" value="emptyJar" />
         </property>
+		<property name="DescriptionKey" value="honeyPoulticeDesc"/>
 		<property name="ActionSkillGroup" value="Medicine"/>
 		<property name="CraftingSkillGroup" value="Science"/>
 		<property name="Group" value="Medicine" />
@@ -8258,6 +8318,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="DescriptionKey" value="BarbedWireDesc"/>
     </item>
 	<item id="1593" name="MasterSkill">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -8353,6 +8414,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="1" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
+		<property name="DescriptionKey" value="chickenStewDesc"/>
         <property name="Smell" value="exLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8373,6 +8435,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_wellness" value="1" />
             <property name="Sound_start" value="UseActions/player_drinking" />
         </property>
+		<property name="DescriptionKey" value="rabbitStewDesc"/>
         <property name="Smell" value="exLargeSmell" />
         <property name="Group" value="Food/Cooking" />
     </item>
@@ -8401,13 +8464,15 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="DamageBonus.earth" value="0.01" />
 			<property name="DamageBonus.stone" value="0.01" />
 			<property name="DamageBonus.organic" value="0.01" />
+			<property name="ToolCategory.Crops" value="1.5" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="1,1" />
 			<property name="BlockDamage" value="1,1" />
 			<property name="DegradationMax" value="200,1000" />
-			<property name="DegradationRate" value="2,10" />
+			<property name="DegradationRate" value="2,2" />
 		</property>
+		<property name="DescriptionKey" value="ScytheDesc"/>
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Tool Smithing"/>
 	</item>
