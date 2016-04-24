@@ -15,7 +15,7 @@
     <!-- Biome spawning -->
 
 	<!-- JOEL: change "respawndelay" to world days, change "maxcount" to entities per area -->
-<!-- Diersville -->	
+<!-- Diersville -->
     <biome name="city">
         <spawn maxcount="5" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
