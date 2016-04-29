@@ -1636,6 +1636,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Catapult" />
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+		<property name="Hitmask_override" value="Arrow" />
 		<property name="Delay" value="1" />
 		<property name="Magazine_size" value="1" />
 		<property name="Magazine_items" value="arrow, ironArrow, steelArrow, flamingArrow, Unload" />
@@ -1679,6 +1680,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
  	<property name="SoundDestroy" value="wooddestroy1" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
+		<property name="Hitmask_override" value="Arrow" />
 		<property name="Delay" value="0.8" />
 		<property name="Magazine_size" value="1" />
 		<property name="Magazine_items" value="crossbowBolt, ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt, Unload" />
@@ -3953,7 +3955,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property class="UMA">
 		<property name="Mesh" value="clothes_denim_pants" />
-		<property name="Overlay0Tint" value="688DD7" />
+		<property name="Overlay0Tint" value="90,115,125" />
 		<property name="Overlay0" value="pants_01" />
 		<property name="Layer" value="0" />
 		<property name="UISlot" value="Pants" />
@@ -3981,7 +3983,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="CustomIcon" value="denimPants" />
 	<property name="CustomIconTint" value="100,0,0" />
 	<property class="UMA">
-		<property name="Overlay0Tint" value="100,0,0" />
+		<property name="Overlay0Tint" value="130,20,20" />
 	</property>
 </item>
 
@@ -7070,10 +7072,10 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 
 <item id="1435" name="casinoCoin">
 	<property name="Meshfile" value="Items/Misc/casino_coinPrefab" />
-	<property name="Material" value="metal" />
-	<property name="Weight" value="5" />
+	<property name="Material" value="brass" />
+	<property name="Weight" value="1" />
 	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="5000" /> <!-- STK resource -->
 </item>
 
 <item id="1439" name="glue">
