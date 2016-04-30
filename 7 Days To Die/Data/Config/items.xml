@@ -7344,6 +7344,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Meshfile" value="Items/Food/cornmealPrefab" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="250" />
+		<property name="Degradation" value="5000" param1="false" />
         <property name="Group" value="Resources" />
 		<property name="Material" value="organic" />
         <property name="Group" value="Resources" />
@@ -7560,6 +7561,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Meshfile" value="Items/Food/cornmealPrefab" />
         <property name="HoldType" value="21" />
         <property name="Stacknumber" value="250" />
+		<property name="Degradation" value="5000" param1="false" />
 		<property name="Material" value="organic" />
         <property name="Group" value="Resources" />
 		<property class="Action1">
@@ -7655,6 +7657,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="250" />
+		<property name="Degradation" value="5000" param1="false" />
         <property name="Group" value="Resources" />
 		<property name="Material" value="organic" />
         <property name="Group" value="Resources" />
@@ -7662,7 +7665,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <!-- AttackAction -->
             <property name="Class" value="Repair"/>
              <property name="Delay" value="0.4"/>
-            <property name="Repair_amount" value="100"/>
+            <property name="Repair_amount" value="0"/>
             <property name="Upgrade_hit_offset" value="0"/>
             <property name="Sound_start" value="UseActions/repair_block"/>
             <property name="Allowed_upgrade_items" value="Compost"/>
