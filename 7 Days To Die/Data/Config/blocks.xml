@@ -313,7 +313,7 @@ then add recipes for those white/red/green metals
 	<property name="UpgradeRated.ToBlock" value="air" />
 	<property name="UpgradeRated.Rate" value="15" />
 	<drop event="Harvest" name="rottingFlesh" count="1" prob=".4" />
-	<drop event="Harvest" name="rottingFlesh" count="2" prob=".4" />
+	<drop event="Harvest" name="rottingFlesh" count="2" prob=".4" tool_category="Butcher" />
 	<drop event="Destroy" name="femur" count="1,2" prob="1" />
 </block>
 
@@ -553,7 +553,7 @@ group desc for stuff like metal siding
 	<property name="Material" value="metal" /> <!-- 250 HP -->
 	<property name="Texture" value="429" />
     	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="forgedIron" value="2" /> </property>
+	<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
@@ -4053,7 +4053,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="282" />
 	<property name="Model" value="Commercial/store_shelving01" param1="main_mesh" />
-	<property class="RepairItems"> <property name="forgedIron" value="3" /> </property>
+	<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 	<drop event="Harvest" name="scrapIron" count="2" />
 	<drop event="Destroy" name="scrapIron" count="1,2" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -5582,7 +5582,7 @@ kind of free
 		<property name="UpgradeRated.ToBlock" value="gore" />
 		<property name="UpgradeRated.Rate" value="5" /> <!-- 15 is max for the Rate -->
 	<drop event="Harvest" name="rottingFlesh" count="1" prob=".4" />
-	<drop event="Harvest" name="rottingFlesh" count="2" prob=".4" />
+	<drop event="Harvest" name="rottingFlesh" count="2" prob=".4" tool_category="Butcher" />
 	<drop event="Destroy" name="femur" count="1,2" prob="1" />
 </block>
 
@@ -5600,7 +5600,7 @@ kind of free
 		<!-- <property name="UpgradeRated.BlockCombined" value="air" /> -->
 		<property name="UpgradeRated.ToBlock" value="air" />
 		<property name="UpgradeRated.Rate" value="8" /> <!-- 15 is max for the Rate -->
-	<drop event="Harvest" name="femur" count="1" prob=".4" />
+	<drop event="Harvest" name="femur" count="1" prob=".4" tool_category="Butcher" />
 	<drop event="Destroy" name="femur" count="1" prob="1" />
 </block>
 
@@ -9376,7 +9376,11 @@ kind of free
 	<property name="Texture" value="191,191,190,191,191,191" />
 	<property name="Place" value="TowardsPlacer90" />
 	<property name="LootList" value="52" />
-	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
+	<property class="RepairItems">
+		<property name="forgedIron" value="6" />
+		<property name="scrapCable" value="1" />
+		<property name="shortMetalPipe" value="2" />
+	</property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
@@ -11153,7 +11157,7 @@ kind of free
 	<property name="Model" value="LootContainers/dumpster" param1="main_mesh" />
 	<property name="MultiBlockDim" value="3,2,2" />
 	<property name="LootList" value="68" />
-	<property class="RepairItems"><property name="scrapIron" value="20" /></property>
+	<property class="RepairItems"><property name="scrapIron" value="40" /></property>
 	<drop event="Destroy" name="scrapIron" count="4" prob="1" />
 </block>
 
@@ -11459,7 +11463,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Industrial/fusebox" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property class="RepairItems"><property name="scrapIron" value="5" /></property>
 </block>
 
 <block id="1546" name="metalPipeStraight">
@@ -11467,7 +11470,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="pipe_straight" />
 	<property name="Texture" value="523" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 	<!-- Disabling for Chris because long custom shapes are out of spec.
 
@@ -11487,7 +11489,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="pipe_corner" />
 	<property name="Texture" value="520" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 
 <block id="1549" name="metalPipeJoint">
@@ -11495,7 +11496,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="pipe_joint" />
 	<property name="Texture" value="520" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 
 <block id="1550" name="metalPipeCap">
@@ -11503,7 +11503,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="pipe_cap" />
 	<property name="Texture" value="521" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 
 <block id="1551" name="industrialLight01">
@@ -11524,7 +11523,6 @@ kind of free
 	<property name="Mesh" value="cutout" />
 	<property name="Model" value="pipe_valve" />
 	<property name="Texture" value="524,521,521,521,521,521" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 
 <block id="1553" name="metalPipeFlange">
@@ -11532,7 +11530,6 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="pipe_flange" />
 	<property name="Texture" value="520" />
-	<property class="RepairItems"><property name="forgedIron" value="10" /></property>
 </block>
 
 <block id="1554" name="electricalBox01">
@@ -11541,7 +11538,6 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Industrial/electrical_box01" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property class="RepairItems"><property name="scrapIron" value="5" /></property>
 </block>
 
 <block id="1555" name="asphaltCracked">
