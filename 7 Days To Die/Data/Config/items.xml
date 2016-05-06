@@ -5698,7 +5698,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Armor_Smithing_Skill" />
-		<property name="ActionExp" value="50"/>
+		<property name="ActionExp" value="75"/>
 	</property>
 </item>
 
@@ -5713,7 +5713,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Leatherworking_Skill" />
-		<property name="ActionExp" value="50"/>
+		<property name="ActionExp" value="75"/>
 	</property>
 </item>
 
@@ -5728,7 +5728,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Tailoring_Skill" />
-		<property name="ActionExp" value="50"/>
+		<property name="ActionExp" value="75"/>
 	</property>
 </item>
 
@@ -5779,6 +5779,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Mining_Tools_Skill" />
+		<property name="ActionExp" value="175"/>
 	</property>
 </item>
 
