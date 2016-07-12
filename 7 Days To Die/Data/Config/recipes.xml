@@ -431,7 +431,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="corn" count="2"/>
     </recipe>
 	
-	<recipe name="Chicken_Feed" count="1" scrapable="False" >
+	<recipe name="Chicken_Feed" count="2" scrapable="False" >
         <ingredient name="cornSeed" count="1"/>
         <ingredient name="Wheat_Seed" count="1"/>
     </recipe>
