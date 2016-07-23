@@ -299,7 +299,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="90" />
 	<property name="Mass" type="int" value="15" />
 	<property name="explosionresistance" value=".25" />
-	<property name="MaxDamage" value="3000" />
+	<property name="MaxDamage" value="1750" />
 </material>
 
 <!-- has more explosion resistance -->
@@ -311,7 +311,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="110" />
 	<property name="Mass" type="int" value="15" />
 	<property name="explosionresistance" value=".5" />
-	<property name="MaxDamage" value="6000" />
+	<property name="MaxDamage" value="2000" />
 </material>
 
 <material id="Mbedrock">
@@ -341,7 +341,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="stone" />
 	<property name="stability_glue" value="65" />
 	<property name="Mass" type="int" value="13" />
-	<property name="MaxDamage" value="1200" />
+	<property name="MaxDamage" value="1250" />
 </material>
 
 <material id="Mmetal_weak">
@@ -386,7 +386,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="320" />
 	<property name="Mass" type="int" value="20" />
 	<property name="explosionresistance" value=".5" />
-	<property name="MaxDamage" value="1000" />
+	<property name="MaxDamage" value="2500" />
 </material>
 
 <material id="Mmetal_hard">
@@ -398,7 +398,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="320" />
 	<property name="Mass" type="int" value="20" />
 	<property name="explosionresistance" value=".5" />
-	<property name="MaxDamage" value="2500" />
+	<property name="MaxDamage" value="3500" />
 </material>
 
 <material id="Msteel">
@@ -409,8 +409,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="320" />
 	<property name="Mass" type="int" value="20" />
-	<property name="explosionresistance" value=".5" />
-	<property name="MaxDamage" value="8000" />
+	<property name="explosionresistance" value="1" />
+	<property name="MaxDamage" value="4000" />
 </material>
 
 <material id="sand">
@@ -512,10 +512,20 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="wood" />
 	<property name="stability_glue" value="24" />
 	<property name="Mass" type="int" value="4" />
-	<property name="MaxDamage" value="200" />
+	<property name="MaxDamage" value="750" />
 </material>
 
 <material id="wood_weak">
+	<property name="damage_category" value="wood" />
+	<property name="surface_category" value="wood" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="wood" />
+	<property name="stability_glue" value="24" />
+	<property name="Mass" type="int" value="4" />
+	<property name="MaxDamage" value="250" />
+</material>
+
+<material id="wood_spikes">
 	<property name="damage_category" value="wood" />
 	<property name="surface_category" value="wood" />
 	<property name="Hardness" type="float" value="1" />
@@ -542,7 +552,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="wood" />
 	<property name="stability_glue" value="36" />
 	<property name="Mass" type="int" value="6" />
-	<property name="MaxDamage" value="200" />
+	<property name="MaxDamage" value="1000" />
 </material>
 
 <material id="treeWoodSmall">
@@ -582,7 +592,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="36" />
 	<property name="Mass" type="int" value="6" />
-	<property name="MaxDamage" value="300" />
+	<property name="MaxDamage" value="1250" />
 </material>
 
 <material id="cloth">
@@ -743,7 +753,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="stone" />
 	<property name="stability_glue" value="72" />
 	<property name="Mass" type="int" value="12" />
-	<property name="MaxDamage" value="1500" />
+	<property name="MaxDamage" value="1250" />
 </material>
 
 <!-- Materials for blocks that are not supposed to stick to walls. -->

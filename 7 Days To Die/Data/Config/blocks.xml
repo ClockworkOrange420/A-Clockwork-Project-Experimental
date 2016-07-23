@@ -228,6 +228,7 @@ then add recipes for those white/red/green metals
 	<property class="RepairItems"> <property name="crushedSand" value="40" /> </property>
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="14" name="desertGround">
@@ -240,8 +241,7 @@ then add recipes for those white/red/green metals
 </block>
 
 <block id="15" name="asphalt">
-	<property name="Material" value="Mconcrete" />
-	<property name="MaxDamage" value="1500" />
+	<property name="Material" value="Mbrick" />
 	<property name="Shape" value="Terrain" />
 	<property name="Mesh" value="terrain" />
 	<property name="Texture" value="10" />
@@ -385,6 +385,7 @@ then add recipes for those white/red/green metals
 	<drop event="Fall" name="fertileDirt" count="1" prob="0.5" stick_chance=".2" />
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="CanMobsSpawnOn" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="25" name="forestGround">
@@ -533,6 +534,7 @@ group desc for stuff like metal siding
 	</property>
 	<drop event="Destroy" name="wood" count="1,3" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="124" name="cobblestoneMaster"> <!-- cobblestone change -->
@@ -550,6 +552,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="125" name="woodWeakNoUpgradeMaster">
@@ -580,7 +583,6 @@ group desc for stuff like metal siding
 	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<property name="Material" value="wood" />
-	<property name="MaxDamage" value="300" />
 	<property name="Texture" value="214" />
 	<property name="FuelValue" value="120" />
     	<property name="IsDeveloper" value="true" />
@@ -613,7 +615,7 @@ group desc for stuff like metal siding
 <block id="129" name="treeMasterGrowing">
 	<property name="Extends" value="treeMaster" />
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine8m" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
     	<property name="IsDeveloper" value="true" />
@@ -637,8 +639,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="cobblestones" value="6" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="adobeMaster" />
-		<property name="Item" value="clayLump" />
-		<property name="ItemCount" value="6" />
+		<property name="Item" value="rockSmall" />
+		<property name="ItemCount" value="20" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="rockSmall" count="8" />
@@ -662,7 +664,6 @@ group desc for stuff like metal siding
 
 <block id="133" name="steelMaster">
 	<property name="Material" value="Msteel" />
-	<property name="MaxDamage" value="10000" />
 	<property name="Texture" value="355,355,356,356,356,356" />
     	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="forgedSteel" value="10" /> </property>
@@ -677,8 +678,8 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="concreteMix" value="10" /> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="steelMaster" />
-		<property name="Item" value="forgedSteel" />
+		<property name="ToBlock" value="scrapIronMaster" />
+		<property name="Item" value="scrapIron" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
@@ -690,7 +691,6 @@ group desc for stuff like metal siding
 
 <block id="135" name="pouredConcreteMaster">
 	<property name="Material" value="Mconcrete" />
-	<property name="MaxDamage" value="1500" />
 <!--
 	<property name="Texture" value="176,176,186,186,186,186" />
 -->
@@ -727,7 +727,7 @@ group desc for stuff like metal siding
 	<property name="Material" value="Mbrick" /> <!-- 1000 -->
 	<property name="Texture" value="7,7,7,7,7,7" />
     	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="cobblestones" value="6" /> </property>
+	<property class="RepairItems"> <property name="cobblestones" value="10" /> </property>
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
@@ -750,14 +750,13 @@ group desc for stuff like metal siding
 	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="adobeGroupDesc"/>
 	<property name="Material" value="Mbrick" /> <!-- 1000 -->
-	<property name="MaxDamage" value="1000" />
 	<property name="Texture" value="171" />
     	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="crushedSand" value="7" /> <property name="clayLump" value="5" /> </property>
+	<property class="RepairItems"> <property name="cobblestones" value="10" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="concreteMaster" />
 		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="7" />
+		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="crushedSand" count="4" prob=".6" />
@@ -788,13 +787,13 @@ group desc for stuff like metal siding
 </block>
 
 <block id="141" name="rScrapIronMaster">
-	<property name="Material" value="Mmetal_medium" />
+	<property name="Material" value="Mmetal_hard" />
 	<property name="Texture" value="352" />
     	<property name="IsDeveloper" value="true" />
 	<property class="RepairItems"> <property name="scrapIron" value="8" /> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="pouredConcreteMaster" />
-		<property name="Item" value="concreteMix" />
+		<property name="ToBlock" value="steelMaster" />
+		<property name="Item" value="forgedSteel" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
@@ -904,9 +903,9 @@ group desc for stuff like metal siding
 	<property name="FuelValue" value="80" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="rWoodMetalMaster" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="4" />
+		<property name="ToBlock" value="cobblestoneMaster" />
+		<property name="Item" value="cobblestones" />
+		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="wood" count="3" />
@@ -983,7 +982,12 @@ group desc for stuff like metal siding
 <block id="153" name="rWoodWedge">
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalWedge" /> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="asphaltWedge" />
+		<property name="Item" value="cobblestones" />
+		<property name="ItemCount" value="6" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 	<property name="DowngradeBlock" value="woodWedge" />
 </block>
 
@@ -1011,20 +1015,19 @@ group desc for stuff like metal siding
 	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronWedge" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameWedge" />
 </block>
 
 <block id="158" name="rScrapIronWedge">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedge" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedge" /> </property>
 	<property name="DowngradeBlock" value="scrapIronWedge" />
 </block>
 
 <block id="159" name="rConcreteWedge">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged60Full" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedge" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedge" /> </property>
 	<property name="DowngradeBlock" value="concreteWedge" />
 </block>
 
@@ -1034,6 +1037,7 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="WedgedCorner" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteCNRRamp" />
+	<property name="DowngradeBlock" value="brickCNRRamp" />
 </block>
 
 <block id="161" name="pouredConcreteCNRFull">
@@ -1042,12 +1046,13 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteCNRFull" />
+	<property name="DowngradeBlock" value="brickCNRFull" />
 </block>
 
 <block id="162" name="rConcreteCNRRamp">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedCorner" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="corrugatedMetalCNRRamp" /> </property>
 	<property name="DowngradeBlock" value="concreteCNRRamp" />
 </block>
 
@@ -1055,7 +1060,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteWedge" />
+	<property name="DowngradeBlock" value="rScrapIronWedge" />
 </block>
 
 <block id="164" name="woodPlate">
@@ -1067,7 +1072,7 @@ group desc for stuff like metal siding
 <block id="165" name="rWoodPlate">
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPlate" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="brickPlate" /> </property>
 	<property name="DowngradeBlock" value="woodPlate" />
 </block>
 
@@ -1087,7 +1092,7 @@ group desc for stuff like metal siding
 <block id="168" name="rScrapIronPlate">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePlate" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPlate" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPlate" />
 	<property name="Group" value="Tools/Traps,Building" />
 </block>
@@ -1095,7 +1100,7 @@ group desc for stuff like metal siding
 <block id="169" name="rConcretePlate">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Plate" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPlate" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPlate" /> </property>
 	<property name="DowngradeBlock" value="concretePlate" />
 </block>
 
@@ -1103,7 +1108,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedCorner" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteCNRRamp" />
+	<property name="DowngradeBlock" value="RcorrugatedMetalCNRRamp" />
 </block>
 
 <block id="171" name="pouredConcreteEighth">
@@ -1125,7 +1130,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcretePlate" />
+	<property name="DowngradeBlock" value="rScrapIronPlate" />
 </block>
 
 <block id="174" name="woodSupport">
@@ -1144,11 +1149,10 @@ group desc for stuff like metal siding
 </block>
 
 <block id="176" name="rWoodMetalSupport">
-	<property name="Extends" value="rWoodMetalMaster" />
+	<property name="Extends" value="cobblestoneMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronSupport" /> </property>
-	<property name="DowngradeBlock" value="rWoodSupport" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteSupport" /> </property>
 </block>
 
 <block id="177" name="scrapIronSupport">
@@ -1162,7 +1166,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteSupport" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelSupport" /> </property>
 	<property name="DowngradeBlock" value="scrapIronSupport" />
 </block>
 
@@ -1170,7 +1174,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelSupport" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronSupport" /> </property>
 	<property name="DowngradeBlock" value="concreteSupport" />
 </block>
 
@@ -1187,12 +1191,13 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Half" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteHalf" />
+	<property name="DowngradeBlock" value="metalAsphaltHalf" />
 </block>
 
 <block id="182" name="rConcreteHalf">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Half" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelHalf" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronHalfBlock" /> </property>
 	<property name="DowngradeBlock" value="concreteHalf" />
 </block>
 
@@ -1200,14 +1205,14 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
-	<property name="DowngradeBlock" value="rConcreteSupport" />
+	<property name="DowngradeBlock" value="rScrapIronSupport" />
 </block>
 
 <block id="184" name="steelHalf">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteHalf" />
+	<property name="DowngradeBlock" value="rScrapIronHalfBlock" />
 </block>
 
 <block id="185" name="pouredConcretePole">
@@ -1216,6 +1221,7 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Pole" />
 	<property name="UpgradeRated.ToBlock" value="rConcretePole" />
+	<property name="DowngradeBlock" value="adobeWhitePole" />
 </block>
 
 <block id="186" name="pouredConcretePyramid">
@@ -1224,6 +1230,7 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Pyramid" />
 	<property name="UpgradeRated.ToBlock" value="rConcretePyramid" />
+	<property name="DowngradeBlock" value="adobeWhitePyramid" />
 </block>
 
 <block id="187" name="rConcretePyramid">
@@ -1237,7 +1244,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Pyramid" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcretePyramid" />
 </block>
 
 <block id="189" name="woodPillar100">
@@ -1258,7 +1264,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar100" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar100" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPillar100" />
 </block>
 
@@ -1294,7 +1300,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar100" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPillar100" /> </property>
 	<property name="DowngradeBlock" value="concretePillar100" />
 </block>
 
@@ -1302,7 +1308,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property name="DowngradeBlock" value="rConcretePillar100" />
+	<property name="DowngradeBlock" value="rScrapIronPillar100" />
 </block>
 
 <block id="197" name="steelQuarter">
@@ -1319,13 +1325,14 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteStairs25" />
+	<property name="DowngradeBlock" value="cobblestoneStairs25" />
 </block>
 
 <block id="199" name="rConcreteStairs25">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs25" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs25" /> </property>
 	<property name="DowngradeBlock" value="concreteStairs25" />
 </block>
 
@@ -1335,6 +1342,8 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteWedge" />
+	<property name="DowngradeBlock" value="asphaltWedge" />
+	
 </block>
 
 <block id="201" name="rebarFrameBlock">
@@ -1355,11 +1364,12 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Texture" value="176,176,186,186,186,186" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteBlock" />
+	<property name="DowngradeBlock" value="cobblestoneBlock" />
 </block>
 
 <block id="204" name="rConcreteBlock">
 	<property name="Extends" value="rConcreteMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronBlock" /> </property>
 	<property name="DowngradeBlock" value="concreteBlock" />
 </block>
 
@@ -1369,12 +1379,13 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteWedgeTip" />
+	<property name="DowngradeBlock" value="asphaltWedgeTip" />
 </block>
 
 <block id="206" name="rConcreteWedgeTip">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged60Tip" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedgeTip" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="greenMetalWedgeTip" /> </property>
 	<property name="DowngradeBlock" value="concreteWedgeTip" />
 </block>
 
@@ -1382,7 +1393,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteWedgeTip" />
+	<property name="DowngradeBlock" value="rGreenMetalWedgeTip" />
 </block>
 
 <block id="208" name="brickRamp">
@@ -1397,6 +1408,7 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="Plate" />
 	<property name="UpgradeRated.ToBlock" value="rConcretePlate" />
+	<property name="DowngradeBlock" value="brickPlate" />
 </block>
 
 <block id="210" name="brickBlock">
@@ -1407,6 +1419,7 @@ group desc for stuff like metal siding
 <block id="211" name="concreteBlock">
 	<property name="Extends" value="concreteMaster" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock" /> </property>
+	<property name="DowngradeBlock" value="cobblestoneBlock" />
 </block>
 
 <block id="212" name="scrapIronFrameBlock">
@@ -1433,7 +1446,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronCNRInside" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameCNRInside" />
 </block>
 
 <block id="216" name="solidScrapIronFrameCNRInside">
@@ -1445,7 +1457,7 @@ group desc for stuff like metal siding
 <block id="217" name="rScrapIronCNRInside">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRInside" /> </property>
 	<property name="DowngradeBlock" value="scrapIronCNRInside" />
 </block>
 
@@ -1459,7 +1471,6 @@ group desc for stuff like metal siding
 	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronCNRFull" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameCNRFull" />
 </block>
 
 <block id="220" name="woodBlock">
@@ -1487,7 +1498,7 @@ group desc for stuff like metal siding
 <block id="223" name="rWoodRamp">
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="Wedged" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneRamp" /> </property>
 	<property name="DowngradeBlock" value="woodRamp" />
 </block>
 
@@ -1522,7 +1533,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="44,379,379,379,379,379" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalCNRInside" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="brickCNRInside" /> </property>
 	<property name="DowngradeBlock" value="woodCNRInside" />
 </block>
 
@@ -1556,7 +1567,7 @@ group desc for stuff like metal siding
 <block id="233" name="rWoodCNRFull">
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalCNRFull" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="brickCNRFull" /> </property>
 	<property name="DowngradeBlock" value="woodCNRFull" />
 </block>
 
@@ -1576,7 +1587,7 @@ group desc for stuff like metal siding
 <block id="236" name="rScrapIronCNRFull">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRFull" /> </property>
 	<property name="DowngradeBlock" value="scrapIronCNRFull" />
 </block>
 
@@ -1604,7 +1615,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilledVerticalUV" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs25" /> </property>
 	<property name="DowngradeBlock" value="scrapIronStairs25" />
 </block>
 
@@ -1628,13 +1639,12 @@ group desc for stuff like metal siding
 	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="Wedged" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronRamp" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameRamp" />
 </block>
 
 <block id="243" name="rScrapIronRamp">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Wedged" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelRamp" /> </property>
 	<property name="DowngradeBlock" value="scrapIronRamp" />
 </block>
 
@@ -1653,6 +1663,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteSupport" />
+	<property name="DowngradeBlock" value="rWoodMetalSupport" />
 </block>
 
 <block id="246" name="concreteFormRamp">
@@ -1666,6 +1677,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Wedged" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteRamp" /> </property>
+	<property name="DowngradeBlock" value="cobblestoneRamp" />
 </block>
 
 <block id="248" name="pouredConcreteRamp">
@@ -1675,19 +1687,20 @@ group desc for stuff like metal siding
 	<property name="Shape" value="Wedged" />
 	<property name="Texture" value="176,176,186,186,186,186" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteRamp" />
+	<property name="DowngradeBlock" value="cobblestoneRamp" />
 </block>
 
 <block id="249" name="rConcreteRamp">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Wedged" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronRamp" /> </property>
 	<property name="DowngradeBlock" value="concreteRamp" />
 </block>
 
 <block id="250" name="rConcreteCNRFull">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRFull" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRFull" /> </property>
 	<property name="DowngradeBlock" value="concreteCNRFull" />
 </block>
 
@@ -1696,6 +1709,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteSupport" /> </property>
+	<property name="DowngradeBlock" value="rWoodMetalSupport" />
 </block>
 
 <block id="252" name="pouredConcretePillar100">
@@ -1705,6 +1719,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="UpgradeRated.ToBlock" value="rConcretePillar100" />
+	<property name="DowngradeBlock" value="adobeWhitePillar100" />
 </block>
 
 <block id="253" name="pouredConcreteCTRPlate">
@@ -1718,7 +1733,7 @@ group desc for stuff like metal siding
 <block id="254" name="rConcreteCNRInside">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRInside" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRInside" /> </property>
 	<property name="DowngradeBlock" value="concreteCNRInside" />
 </block>
 
@@ -1729,12 +1744,13 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="UpgradeRated.ToBlock" value="rConcretePillar50" />
+	<property name="DowngradeBlock" value="adobeWhitePillar50" />
 </block>
 
 <block id="256" name="steelCNRFull">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
-	<property name="DowngradeBlock" value="rConcreteCNRFull" />
+	<property name="DowngradeBlock" value="rScrapIronCNRFull" />
 </block>
 
 <block id="257" name="plantedBlueberry1">
@@ -1750,7 +1766,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedBlueberry2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -1771,8 +1787,9 @@ group desc for stuff like metal siding
 	<property name="Texture" value="295" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Harvest" name="blueberries" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="blueberries" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="blueberrySeed" count="1" prob="1" />
+	<drop event="Destroy" name="blueberrySeed" count="1" prob="0.25" />
 </block>
 
 <block id="259" name="plantedPotato1">
@@ -1791,7 +1808,7 @@ group desc for stuff like metal siding
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<drop event="Destroy" count="0" />
 	<property name="PlantGrowing.Next" value="plantedPotato2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -1817,7 +1834,7 @@ group desc for stuff like metal siding
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<drop event="Destroy" count="0" />
 	<property name="PlantGrowing.Next" value="plantedPotato3Harvest" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 </block>
@@ -1834,8 +1851,9 @@ group desc for stuff like metal siding
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
-	<drop event="Harvest" name="potato" count="2" tool_category="Crops" />
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="potato" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="potatoSeed" count="1" prob="1" />
+	<drop event="Destroy" name="potatoSeed" count="1" prob="0.25" />
 </block>
 
 <block id="262" name="plantedBlueberry2">
@@ -1850,7 +1868,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" count="0" />
 	<property name="PlantGrowing.Next" value="plantedBlueberry3Harvest" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 </block>
@@ -1905,13 +1923,14 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="largeStorageGroupDesc"/>
 	<property name="Class" value="SecureLoot" />
 	<property name="LootList" value="10" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="Texture" value="284" />
 	<property name="FuelValue" value="160" />
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
 	<property name="DowngradeBlock" value="cntStorageHealthInsecure" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="269" name="cntStorageHealthInsecure">
@@ -1919,10 +1938,11 @@ group desc for stuff like metal siding
 	<property name="CustomIcon" value="cntStorageHealth" />
 	<property name="Class" value="Loot" />
 	<property name="LootList" value="10" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="Texture" value="284" />
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="270" name="greenMetalRoofCNRInside">
@@ -1940,6 +1960,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRInside" /> </property>
+	<property name="DowngradeBlock" value="brickCNRInside" />
 </block>
 
 <block id="273" name="rWoodStairs25">
@@ -1948,7 +1969,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilledVerticalUV" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs25" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneStairs25" /> </property>
 	<property name="DowngradeBlock" value="woodStairs25" />
 </block>
 
@@ -1958,6 +1979,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="276,270,270,270,270,270" />
 	<property name="LootList" value="22" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="275" name="brickpaintedBlock">
@@ -1988,19 +2010,21 @@ group desc for stuff like metal siding
 	<property name="Weight" value="10" />
 	<property name="CanPickup" value="true" />
 	<drop event="Destroy" name="brokenGlass" count="1,2" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="278" name="tileFloor3Block">
-	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property name="Extends" value="adobeMaster" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="Texture" value="340" />
 </block>
 
 <block id="279" name="tile3Stairs50">
-	<property name="Extends" value="stoneMaster" />
+	<property name="Extends" value="cobblestoneMaster" />
 	<property name="Shape" value="StairsQuarterFilled" />
 	<property name="Texture" value="340" />
 	<property name="Place" value="TowardsPlacer" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 </block>
 
 <block id="280" name="glassShowerBlock">
@@ -2010,6 +2034,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="333" />
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="281" name="woodShinglesCNRFull">
@@ -2021,7 +2046,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar50" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rustyIronPillar50" /> </property>
 	<property name="DowngradeBlock" value="concretePillar50" />
 </block>
 
@@ -2042,6 +2067,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="44,43,43,43,43,43" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="286" name="cntMedicineCabinet">
@@ -2051,6 +2077,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="358,335,335,335,335,335" />
 	<property name="LootList" value="7" />
 	<drop event="Destroy" name="brokenGlass" count="1,2" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="287" name="awningGreenCNRFull">
@@ -2064,6 +2091,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" name="cloth" count="1" />
 	<drop event="Fall" name="cloth" count="1" prob="0.3" stick_chance="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="288" name="awningRedCNRInside">
@@ -2080,6 +2108,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="crushedSand" count="15" />
 	<drop event="Destroy" name="cloth" count="1" />
 	<property name="CanPickup" value="true" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="290" name="camoNetBlock">
@@ -2094,6 +2123,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" name="cloth" count="1" />
 	<drop event="Fall" name="cloth" count="1" prob="0.3" stick_chance="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="291" name="camoNetRamp">
@@ -2108,7 +2138,7 @@ group desc for stuff like metal siding
 
 <block id="293" name="rWoodBlock">
 	<property name="Extends" value="rWoodMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneBlock" /> </property>
 	<property name="DowngradeBlock" value="woodBlock" />
 </block>
 
@@ -2130,7 +2160,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcretePillar50" />
+	<property name="DowngradeBlock" value="corrugatedMetalPillar50" />
 </block>
 
 <block id="297" name="rock01">
@@ -2226,6 +2256,7 @@ group desc for stuff like metal siding
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	</property>
 	<property name="DescriptionKey" value="campfireDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="310" name="cookingPot">
@@ -2240,6 +2271,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="311" name="cntOven">
@@ -2259,6 +2291,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="312" name="oldChair">
@@ -2273,6 +2306,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="6" prob="1" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="CanPickup" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="313" name="sectionalMiddle">
@@ -2287,6 +2321,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="314" name="sectionalCorner">
@@ -2309,6 +2344,7 @@ group desc for stuff like metal siding
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="Model" value="Entities/Lighting/porchLight01Prefab" />
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="317" name="porchLight04">
@@ -2377,6 +2413,7 @@ group desc for stuff like metal siding
 	<property name="FuelValue" value="40" />
 	<property class="RepairItems"> <property name="forgedIron" value="2" /> <property name="wood" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="328" name="pew_segment01">
@@ -2389,6 +2426,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Harvest" name="wood" count="6" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="329" name="pew_segment02">
@@ -2401,6 +2439,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Harvest" name="wood" count="6" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="330" name="pew_segment03">
@@ -2413,11 +2452,12 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Harvest" name="wood" count="6" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="331" name="cntChest01">
 	<property name="Class" value="Loot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -2427,11 +2467,12 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="332" name="cntChest02">
 	<property name="Class" value="Loot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -2441,6 +2482,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="333" name="metalRivetSheet">
@@ -2452,6 +2494,7 @@ group desc for stuff like metal siding
 	<property name="DowngradeBlock" value="scrapIronSheet" />
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="334" name="adobeWhitePyramid">
@@ -2470,6 +2513,7 @@ group desc for stuff like metal siding
 	<property name="LootList" value="16" />
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="336" name="cntBin">
@@ -2482,6 +2526,7 @@ group desc for stuff like metal siding
 	<property name="LootList" value="2" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="337" name="cntNightstand">
@@ -2496,6 +2541,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="20" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="338" name="cntSuitcase">
@@ -2508,11 +2554,12 @@ group desc for stuff like metal siding
 	<property name="LootList" value="36" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="339" name="cntStorageChest">
 	<property name="Class" value="Loot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -2522,6 +2569,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="340" name="cntTrashPile01">
@@ -2534,6 +2582,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="341" name="cntTrashPile02">
@@ -2594,6 +2643,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="scrapIron" count="8" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="350" name="cntGasPump">
@@ -2614,6 +2664,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="forgedIron" value="15" /> </property>
 	<drop event="Destroy" count="0" />
 	<property name="LPHardnessScale" value="0" /> <!-- disable LP for TNT blocks -->
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="351" name="wallTorch">
@@ -2631,6 +2682,7 @@ group desc for stuff like metal siding
 	<property name="CanPickup" value="true" param1="torch" />
 	<drop event="Destroy" name="torch" count="1" />
 	<property name="Group" value="Basics,Decor/Miscellaneous" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="352" name="graveStone01">
@@ -2644,6 +2696,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="rockSmall" count="5" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".5"  stick_chance="1" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="353" name="graveStone02">
@@ -2690,6 +2743,7 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="FuelValue" value="100" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="361" name="cntCorpseLoot01">
@@ -2720,6 +2774,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="forgedIron" count="1" prob="0.03" />
 	<drop event="Harvest" name="forgedSteel" count="1" prob="0.015" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="364" name="streetLight01">
@@ -2732,6 +2787,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Entities/Lighting/street_light01Prefab" />
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="365" name="airConditioner">
@@ -2743,6 +2799,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="366" name="cntDeskSafe">
@@ -2759,6 +2816,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="367" name="cntWallSafe">
@@ -2775,6 +2833,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="368" name="cntCorpseLoot02">
@@ -2799,7 +2858,7 @@ group desc for stuff like metal siding
 
 <block id="372" name="treasureChest"> <!-- do not rename -->
 	<property name="Class" value="Loot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -2809,6 +2868,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="373" name="oilBarrel">
@@ -2842,6 +2902,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="rockSmall" count="5" />
 	<drop event="Destroy" name="rockSmall" count="5" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".5"  stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="375" name="solidWoodFrameBlock">
@@ -2861,6 +2922,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePillar100" /> </property>
+	<property name="DowngradeBlock" value="adobeWhitePillar100" />
 </block>
 
 <block id="378" name="concretePillar50">
@@ -2868,6 +2930,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePillar50" /> </property>
+	<property name="DowngradeBlock" value="adobeWhitePillar50" />
 </block>
 
 <block id="379" name="decals1">
@@ -2899,6 +2962,7 @@ group desc for stuff like metal siding
 	</property>
 	<property name="LPHardnessScale" value="0" /> <!-- disable LP for TNT blocks -->
 	<property name="Group" value="Tools/Traps" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </block>
 
 <block id="382" name="brickCNRInside">
@@ -2908,7 +2972,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="383" name="tileFloor5Block">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 	<property name="Texture" value="9" />
 </block>
@@ -2929,6 +2993,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building,Decor/Miscellaneous" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="385" name="metalTrussingBlock">
@@ -2941,6 +3006,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="386" name="redMetalPillar100">
@@ -2985,8 +3051,8 @@ group desc for stuff like metal siding
 </block>
 
 <block id="392" name="tileIndustrialPlate">
-	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhitePlate" /> </property>
+	<property name="Extends" value="adobeMaster" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCTRPlate" /> </property>
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="319" />
 </block>
@@ -3015,6 +3081,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="396" name="corrugatedMetalSheet">
@@ -3024,6 +3091,7 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="397" name="brickPlate">
@@ -3049,6 +3117,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="401" name="sidewalkHalf">
@@ -3059,7 +3128,7 @@ group desc for stuff like metal siding
 </block>
 
 <block id="402" name="metalTrussingSheet">
-	<property name="Material" value="Mmetal_hard" />
+	<property name="Material" value="Mmetal_medium" />
 	<property name="Shape" value="BillboardSingleOnWall" />
 	<property name="Mesh" value="cutout" />
 	<property name="Texture" value="310" />
@@ -3068,6 +3137,7 @@ group desc for stuff like metal siding
 	<property name="DowngradeBlock" value="scrapIronGrateSheet" />
 	<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="403" name="blueConcretePillar100">
@@ -3105,7 +3175,7 @@ group desc for stuff like metal siding
 
 <block id="408" name="trapSpikesNew">
 	<property name="Class" value="Spikes" />
-	<property name="Material" value="wood_weak" />
+	<property name="Material" value="wood_spikes" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Traps/trap_spikes01" param1="main_mesh" />
@@ -3123,7 +3193,7 @@ group desc for stuff like metal siding
 
 <block id="409" name="trapSpikesDamage1">
 	<property name="Class" value="Spikes" />
-	<property name="Material" value="wood_weak" />
+	<property name="Material" value="wood_spikes" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh" />
@@ -3166,7 +3236,7 @@ group desc for stuff like metal siding
 
 <block id="413" name="trapSpikesDamage5">
 	<property name="Class" value="Spikes" />
-	<property name="Material" value="wood_weak" />
+	<property name="Material" value="wood_spikes" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Traps/trap_spikes01_damage05" param1="main_mesh" />
@@ -3187,7 +3257,7 @@ group desc for stuff like metal siding
 
 <block id="414" name="steelBlock">
 	<property name="Extends" value="steelMaster" />
-	<property name="DowngradeBlock" value="rConcreteBlock" />
+	<property name="DowngradeBlock" value="rScrapIronBlock" />
 </block>
 
 <block id="415" name="corrugatedMetalCNRFull">
@@ -3223,7 +3293,7 @@ group desc for stuff like metal siding
 <block id="418" name="woodLogSpike1">
 	<property name="Class" value="Damage" />
 	<property name="Damage" value="5" />
-	<property name="Damage_received" value="15" />
+	<property name="Damage_received" value="75" />
 	<property name="Material" value="wood" />
 	<property name="Shape" value="Cone" />
 	<property name="Texture" value="21,21,116,116,116,116" />
@@ -3260,7 +3330,7 @@ group desc for stuff like metal siding
 
 <block id="421" name="scrapIronGrateSheet">
 	<property name="Group" value="Building" />
-	<property name="Material" value="Mmetal_medium" />
+	<property name="Material" value="metal" />
 	<property name="Shape" value="BillboardSingleOnWall" />
 	<property name="Mesh" value="cutout" />
 	<property name="Texture" value="357" />
@@ -3274,6 +3344,7 @@ group desc for stuff like metal siding
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1" prob=".7" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -3684,6 +3755,7 @@ kind of free
 	<drop event="Harvest" name="cloth" count="8" />
 	<drop event="Destroy" name="scrapIron" count="1" />
 	<property name="Group" value="Building,Decor/Miscellaneous" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="464" name="bed01Frame">
@@ -3696,6 +3768,7 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="465" name="mattress">
@@ -3707,6 +3780,7 @@ kind of free
 	<drop event="Harvest" name="plantedCotton3Harvest" count="2" />
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="466" name="mattressFlat">
@@ -3726,6 +3800,7 @@ kind of free
 	<drop event="Harvest" name="plantedCotton3Harvest" count="2" />
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 	<!-- Free -->
 
@@ -3764,6 +3839,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="471" name="signRoadAZ260eastSpeed65">
@@ -4073,6 +4149,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<drop event="Destroy" name="wood" count="6" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="519" name="cntDesk01">
@@ -4087,6 +4164,7 @@ kind of free
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="15" /> </property>
 	<drop event="Destroy" name="wood" count="6" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="520" name="cntDesk02">
@@ -4103,6 +4181,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="5" />
 	<!-- <drop event="Harvest" name="[recipe]" count="1" tool_category="Disassemble" />-->
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="521" name="officeChair01">
@@ -4121,6 +4200,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Harvest" name="leather" count="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="522" name="storeShelving01">
@@ -4134,6 +4214,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="2" />
 	<drop event="Destroy" name="scrapIron" count="1,2" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="523" name="storeShelving01Double">
@@ -4193,6 +4274,7 @@ kind of free
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Destroy" count="0" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="548" name="endTableLamp">
@@ -4206,6 +4288,7 @@ kind of free
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Destroy" count="0" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="549" name="sectionalArm2">
@@ -4219,6 +4302,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Harvest" name="leather" count="2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="550" name="sectionalCorner2">
@@ -4242,6 +4326,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
 	<property name="CanPickup" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="553" name="tv_fallen">
@@ -4292,6 +4377,7 @@ kind of free
 	<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
 	</property>
 	<property name="DescriptionKey" value="forgeDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="557" name="cntMunitionsBox">	<!-- military ammo -->
@@ -4306,6 +4392,7 @@ kind of free
 	<drop event="Harvest" name="forgedIron" count="1" prob="0.03" />
 	<drop event="Harvest" name="forgedSteel" count="1" prob="0.015" />
 	<drop event="Destroy" name="scrapIron" count="6" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="558" name="ironBars">
@@ -4319,6 +4406,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="559" name="treeJuniper6m">
@@ -4331,6 +4419,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_small_dust" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="pineSeed" count="1"/>
 </block>
 
 <block id="560" name="treeMountainPine8m">
@@ -4365,7 +4454,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1"/>
 </block>
 
 <block id="563" name="treeMountainPine19m">
@@ -4377,7 +4466,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1"/>
 </block>
 
 <block id="564" name="treeMountainPine20m">
@@ -4389,7 +4478,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1"/>
 </block>
 
 <block id="565" name="treeMountainPineDry">
@@ -4485,7 +4574,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="mapleSeed" count="1"/>
 </block>
 
 <block id="574" name="treeMaple16m">
@@ -4498,7 +4587,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="mapleSeed" count="1"/>
 </block>
 
 <block id="575" name="treeMaple17m">
@@ -4511,7 +4600,8 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="mapleSeed" count="1" prob="1" />
+	<drop event="Destroy" name="mapleSeed" count="1" prob="0.25" />
 </block>
 	<!-- Free -->
 
@@ -4621,6 +4711,7 @@ kind of free
 	<property name="UpwardsCount" value="1" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="blueSpruceSeed" count="1"/>
 	<property name="FallOver" value="true" />
 </block>
 
@@ -4633,7 +4724,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="blueSpruceSeed" count="1"/>
 </block>
 
 <block id="588" name="cntTreeStump">
@@ -4659,7 +4750,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="blueSpruceSeed" count="1"/>
 </block>
 
 <block id="590" name="treeWinterPine03">
@@ -4671,7 +4762,7 @@ kind of free
 	<property name="UpwardsCount" value="8" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="blueSpruceSeed" count="1"/>
 </block>
 
 <block id="591" name="treeDesertShrub">
@@ -4699,8 +4790,8 @@ kind of free
 </block>
 
 <block id="593" name="concreteDestroyed1">
-	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property name="Extends" value="adobeMaster" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/concrete_destroyed_1" param1="main_mesh" />
@@ -4816,7 +4907,7 @@ kind of free
 </block>
 
 <block id="608" name="concreteTrim2Broke1">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Buildings/concrete_trim2_broke1" param1="main_mesh" />
@@ -4908,33 +4999,22 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Plumbing/faucet02" param1="main_mesh" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="620" name="faucet04">
-	<property name="Material" value="brass" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
+	<property name="Extends" value="faucet02" />
 	<property name="Model" value="Plumbing/faucet04" param1="main_mesh" />
-	<property name="Collide" value="melee,bullet,arrow,rocket" />
 </block>
 
 <block id="621" name="faucetBrass02">
-	<property name="Material" value="brass" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
+	<property name="Extends" value="faucet02" />
 	<property name="Model" value="Plumbing/faucet_brass02" param1="main_mesh" />
-	<property name="Collide" value="melee,bullet,arrow,rocket" />
 </block>
 
 <block id="622" name="faucetBrass04">
-	<property name="Material" value="brass" />
-	<property name="StabilitySupport" value="false" />
-	<property name="Shape" value="Ext3dModel" />
-	<property name="Mesh" value="models" />
+	<property name="Extends" value="faucet02" />
 	<property name="Model" value="Plumbing/faucet_brass04" param1="main_mesh" />
-	<property name="Collide" value="melee,bullet,arrow,rocket" />
 </block>
 
 <block id="623" name="cntFileCabinet">
@@ -4948,6 +5028,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="624" name="cntCooler">
@@ -4962,6 +5043,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="625" name="schoolDesk">
@@ -4974,6 +5056,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="woodDebris" count="1,2" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="626" name="cntLockers">
@@ -4986,6 +5069,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="627" name="fountain">
@@ -4998,6 +5082,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="628" name="cntGunSafe">
@@ -5012,6 +5097,7 @@ kind of free
 	<property class="RepairItems"> <property name="forgedIron" value="15" /> </property>
 	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="629" name="cntGraniteSink">
@@ -5026,6 +5112,7 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="630" name="rockResource"> <!-- biome decoration -->
@@ -5074,6 +5161,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="6"/>
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building,Basics" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="632" name="blueMetalRamp1">
@@ -5087,8 +5175,8 @@ kind of free
 </block>
 
 <block id="634" name="blueDrywallBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property name="Extends" value="adobeMaster" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="Texture" value="436" />
 </block>
 
@@ -5113,7 +5201,7 @@ kind of free
 
 <block id="639" name="cntSecureStorageChest">
 	<property name="Class" value="SecureLoot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -5128,6 +5216,7 @@ kind of free
 	<property name="DowngradeBlock" value="cntStorageChest" />
 	<property name="Group" value="Basics,Building" />
 	<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="640" name="rockResource02"> <!-- biome decoration -->
@@ -5263,6 +5352,7 @@ kind of free
 	</property>
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="656" name="window02">
@@ -5281,7 +5371,8 @@ kind of free
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -5301,6 +5392,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="668" name="treeCactus01">
@@ -5400,7 +5492,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine16m" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1" prob="1" />
+	<drop event="Destroy" name="pineSeed" count="1" prob="0.25" />
 </block>
 
 <block id="678" name="treePlantedMountainPine16m">
@@ -5414,7 +5507,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine19m" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1" prob="1" />
+	<drop event="Destroy" name="pineSeed" count="1" prob="0.25" />
 </block>
 
 <block id="679" name="treePlantedMountainPine19m">
@@ -5428,7 +5522,8 @@ kind of free
 	<property name="PlantGrowing.Next" value="treeMountainPine20m" />
 	<drop event="Harvest" name="wood" count="400" />
 	<drop event="Destroy" name="wood" count="200" prob="1" />
-	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="pineSeed" count="1" prob="1" />
+	<drop event="Destroy" name="pineSeed" count="1" prob="0.25" />
 </block>
 
 <block id="680" name="treePlantedMaple1m">
@@ -5471,7 +5566,8 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch_small" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="mapleSeed" count="1" prob="1" />
+	<drop event="Destroy" name="mapleSeed" count="1" prob="0.25" />
 </block>
 
 <block id="683" name="treePlantedMaple15m">
@@ -5486,7 +5582,8 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch" />
 	<drop event="Harvest" name="wood" count="200" />
 	<drop event="Destroy" name="wood" count="100" prob="1" />
-	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="mapleSeed" count="1" prob="1" />
+	<drop event="Destroy" name="mapleSeed" count="1" prob="0.25" />
 </block>
 
 <block id="684" name="treePlantedMaple17m"> <!-- duplicate of 575 - can be removed if not used in prefabs -->
@@ -5500,27 +5597,27 @@ kind of free
 </block>
 
 <block id="686" name="clayRoofBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="brickMaster" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="687" name="clayRoofRamp">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="Wedged" />
 	<property name="Texture" value="170" />
 	<property name="Place" value="TowardsPlacer90" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 </block>
 
 <block id="688" name="clayRoofCNRFull">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteCNRFull" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRFull" /> </property>
 </block>
 
 <block id="689" name="adobeWhitePole">
@@ -5573,15 +5670,15 @@ kind of free
 </block>
 
 <block id="696" name="cremeDrywallBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="173" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="697" name="cremeDrywallBaseboardBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="174" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="698" name="tileFloor5Stairs25">
@@ -5590,7 +5687,7 @@ kind of free
 	<property name="Model" value="StairsFilled" />
 	<property name="Texture" value="9" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteStairs25" /> </property>
 </block>
 
 <block id="699" name="adobeWhitePillar100">
@@ -5602,7 +5699,7 @@ kind of free
 </block>
 
 <block id="700" name="asphaltDrywallBlock">
-	<property name="Extends" value="concreteBlock" />
+	<property name="Extends" value="brickBlock" />
 	<property name="Texture" value="10,217,10,10,10,10" />
 </block>
 
@@ -5649,14 +5746,14 @@ kind of free
 <block id="703" name="rWoodLogSpike2">
 	<property name="Class" value="Damage" />
 	<property name="Damage" value="6" />
-	<property name="Damage_received" value="15" />
+	<property name="Damage_received" value="10" />
 	<property name="Material" value="wood+wood" />
 	<property name="Shape" value="Cone" />
 	<property name="Texture" value="379" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="rWoodMetalLogSpike3" />
+		<property name="ToBlock" value="scrapIronLogSpike4" />
 		<property name="Item" value="scrapIron" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
@@ -5694,7 +5791,7 @@ kind of free
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPillar100" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhitePillar100" /> </property>
 	<property name="DowngradeBlock" value="woodPillar100" />
 </block>
 
@@ -5724,6 +5821,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="710" name="cabinetFillerBlock">
@@ -5732,6 +5830,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="711" name="cabinetOldTopPlate">
@@ -5758,7 +5857,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedCotton2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
 	<property class="UpgradeBlock">
@@ -5783,12 +5882,11 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedCotton3Harvest" count="1" prob="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="cottonSeed" count="1" prob="1" />
 </block>
 
 <block id="715" name="wallPlasterBaseboard2Block">
 	<property name="Extends" value="woodBlock" />
-	<property name="Material" value="wood_weak" />
 	<property name="Texture" value="59" />
 </block>
 
@@ -5803,7 +5901,6 @@ kind of free
 </block>
 
 <block id="718" name="plantedCotton3HarvestLarge"> <!-- farmed cotton -->
-    	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="plantedCotton3Harvest" />
 	<property name="Class" value="CropsGrown" />
 	<property name="Material" value="plants" />
@@ -5815,7 +5912,8 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Harvest" name="plantedCotton3Harvest" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="cottonSeed" count="1" prob="1" />
+	<drop event="Destroy" name="cottonSeed" count="1" prob="0.25" />
 </block>
 	<!-- Free -->
 
@@ -5835,10 +5933,11 @@ kind of free
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="217" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="722" name="dropCeiling2RoofAsphaltBlock">
-	<property name="Extends" value="concreteBlock" />
+	<property name="Extends" value="brickBlock" />
 	<property name="Texture" value="10,391,10,10,10,10" />
 </block>
 
@@ -5852,6 +5951,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="724" name="tileFloor3Stairs25">
@@ -5872,6 +5972,7 @@ kind of free
 	<property name="LootList" value="60" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="726" name="concreteTrim2TanDrywallBlock">
@@ -5895,28 +5996,27 @@ kind of free
 </block>
 
 <block id="730" name="clayRoofCNRInside">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="brickMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="170" />
 	<property name="DescriptionKey" value="clayRoofGroupDesc"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteCNRInside" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteCNRInside" /> </property>
 </block>
 
 <block id="731" name="cremeDrywallBaseboard2SidesBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="173,173,173,173,174,174" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="732" name="scrapIronBlock">
 	<property name="Extends" value="scrapIronMaster" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronBlock" /> </property>
-	<property name="DowngradeBlock" value="solidScrapIronFrameBlock" />
 </block>
 
 <block id="733" name="rScrapIronBlock">
 	<property name="Extends" value="rScrapIronMaster" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelBlock" /> </property>
 	<property name="DowngradeBlock" value="scrapIronBlock" />
 </block>
 
@@ -5949,6 +6049,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="738" name="adobeWhitePlate">
@@ -6040,7 +6141,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedCoffee2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -6064,7 +6165,7 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.Next" value="plantedCoffee3Harvest" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -6079,8 +6180,9 @@ kind of free
 	<property name="Texture" value="395" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Harvest" name="coffeeBeans" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="coffeeBeans" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="coffeeBeans" count="1" prob="1" />
+	<drop event="Destroy" name="coffeeBeans" count="1" prob="0.25" />
 </block>
 
 <block id="762" name="plantedGoldenrod1">
@@ -6098,7 +6200,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedGoldenrod2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -6125,7 +6227,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Destroy" count="0" />
 	<property name="PlantGrowing.Next" value="plantedGoldenrod3HarvestLarge" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 </block>
@@ -6144,7 +6246,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property name="CraftComponentTimeValue" value="10" />
 	<drop event="Harvest" name="plantedGoldenrod3Harvest" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="goldenrodSeed" count="1" prob="1" />
 </block>
 
 <block id="765" name="plantedGoldenrod3HarvestLarge"> <!-- farmed goldenrod -->
@@ -6160,8 +6262,9 @@ kind of free
 	<property name="Texture" value="362" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Harvest" name="plantedGoldenrod3Harvest" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="plantedGoldenrod3Harvest" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="goldenrodSeed" count="1" prob="1" />
+	<drop event="Destroy" name="goldenrodSeed" count="1" prob="0.25" />
 </block>
 	<!-- Free -->
 
@@ -6196,7 +6299,6 @@ kind of free
 
 <block id="770" name="woodLogPillar100">
 	<property name="Extends" value="woodMaster" />
-	<property name="MaxDamage" value="400" />
 	<property name="Class" value="Trunk" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
@@ -6237,6 +6339,7 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Half" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteHalf" /> </property>
+	<property name="DowngradeBlock" value="metalAsphaltHalf" />
 </block>
 	<!-- Free -->
 
@@ -6244,12 +6347,14 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="WedgedCorner" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRRamp" /> </property>
+	<property name="DowngradeBlock" value="brickCNRRamp" />
 </block>
 
 <block id="778" name="concretePyramid">
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Pyramid" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePyramid" /> </property>
+	<property name="DowngradeBlock" value="adobeWhitePyramid" />
 </block>
 
 <block id="779" name="concreteBricksBlock">
@@ -6263,18 +6368,21 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="WedgedCornerFull" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRFull" /> </property>
+	<property name="DowngradeBlock" value="brickCNRFull" />
 </block>
 
 <block id="782" name="concretePole">
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Pole" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePole" /> </property>
+	<property name="DowngradeBlock" value="adobeWhitePole" />
 </block>
 
 <block id="783" name="concretePlate">
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Plate" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePlate" /> </property>
+	<property name="DowngradeBlock" value="brickPlate" />
 </block>
 
 <block id="784" name="panelingBurntStairs25">
@@ -6292,6 +6400,7 @@ kind of free
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="54,54,73,54,73,54" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="787" name="rustyIronPole">
@@ -6361,6 +6470,7 @@ kind of free
 	<property name="Texture" value="63" />
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 	<drop event="Destroy" name="cloth" count="1,3" prob="1" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="800" name="sidingBluePlasterBaseboardBlock">
@@ -6432,6 +6542,7 @@ kind of free
 	<property name="Texture" value="229,54,50,50,50,50" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="814" name="panelingBurntBlock">
@@ -6441,9 +6552,18 @@ kind of free
 </block>
 
 <block id="815" name="corrugatedMetalCNRRamp">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="WedgedCorner" />
 	<property name="Texture" value="194" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="RcorrugatedMetalCNRRamp" /> </property>
+</block>
+
+<block id="806" name="RcorrugatedMetalCNRRamp">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="Shape" value="WedgedCorner" />
+	<property name="Texture" value="194" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCNRRamp" /> </property>
+	<property name="DowngradeBlock" value="corrugatedMetalCNRRamp" />
 </block>
 
 <block id="816" name="treePlainsTree">
@@ -6459,14 +6579,9 @@ kind of free
 </block>
 
 <block id="817" name="bridgeAsphaltBlock">
+	<property name="Extends" value="brickBlock" />
 	<property name="Material" value="Mbridge_asphalt" />
 	<property name="Texture" value="10" />
-	<property class="RepairItems">
-		<property name="concreteMix" value="10" />
-	</property>
-	<drop event="Harvest" name="rockSmall" count="8" />
-	<drop event="Destroy" name="rockSmall" count="8" />
-	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 </block>
 
 <block id="818" name="bridgeMetalRivetBlock">
@@ -6476,6 +6591,7 @@ kind of free
 		<property name="scrapIron" value="10" />
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="819" name="bridgeConcreteBlock">
@@ -6574,16 +6690,35 @@ kind of free
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 </block>
 	<!-- Free -->
+<block id="829" name="woodHalfFrame">
+	<property name="Extends" value="woodFrameMaster" />
+	<property name="Shape" value="Half" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodHalf" /> </property>
+</block>
+
+<block id="437" name="solidWoodHalfFrame">
+	<property name="Extends" value="woodHalfFrame" />
+	<property name="CustomIcon" value="woodHalfFrame" />
+	<property name="CanPickup" value="false" />
+</block>
 
 <block id="830" name="woodHalf">
-	<property name="Material" value="wood" />
+	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Half" />
-	<property name="Texture" value="241" />
-	<drop event="Destroy" count="0" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodHalf" /> </property>
+	<property name="DowngradeBlock" value="solidWoodHalfFrame" />
+</block>
+
+<block id="422" name="rWoodHalf">
+	<property name="Extends" value="rWoodMaster" />
+	<property name="Shape" value="Half" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="metalAsphaltHalf" /> </property>
+	<property name="DowngradeBlock" value="woodHalf" />
 </block>
 
 <block id="831" name="tanStuccoBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="245" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
 </block>
@@ -6601,6 +6736,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="8" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="834" name="concreteStairs50">
@@ -6612,6 +6748,7 @@ kind of free
 	<drop event="Harvest" name="rockSmall" count="13" />
 	<drop event="Destroy" name="rockSmall" count="12" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="835" name="redWoodStairs25">
@@ -6646,6 +6783,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> <property name="cobblestones" value="5" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="839" name="woodQuarter">
@@ -6653,6 +6791,7 @@ kind of free
 	<property name="Shape" value="Quarter" />
 	<property name="Texture" value="241" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="840" name="cntFridgeTop">
@@ -6672,6 +6811,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="3" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="841" name="cntFridgeBottom">
@@ -6690,6 +6830,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="3" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -6757,7 +6898,8 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedYucca3Harvest" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="Yucca_Seed" count="1" prob="1" />
+	<drop event="Destroy" name="Yucca_Seed" count="1" prob="0.25" />
 </block>
 
 <block id="854" name="plantedAloe3Harvest"> <!-- RWG aloe -->
@@ -6770,7 +6912,8 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedAloe3Harvest" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="Aloe_Seed" count="1" prob="1" />
+	<drop event="Destroy" name="Aloe_Seed" count="1" prob="0.25" />
 </block>
 	<!-- Free -->
 
@@ -6798,6 +6941,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property name="FallDamage" value="false" />
 	<drop event="Destroy" name="hayBaleBlock" count="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -6856,9 +7000,9 @@ kind of free
 </block>
 
 <block id="872" name="sidewalkBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="329" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="873" name="lootForest">
@@ -6910,7 +7054,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedChrysanthemum3Harvest" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="Chrysanthemum_Seed" count="1" prob="1" />
 </block>
 
 <block id="885" name="treePlant02"> <!-- pottedPlant -->
@@ -6938,6 +7082,7 @@ kind of free
 	<property name="Texture" value="276,270,270,270,270,270" />
 	<property name="LootList" value="1" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="893" name="woodFenceSheet">
@@ -6950,6 +7095,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="5" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="894" name="woodFenceFarmSheet">
@@ -6963,6 +7109,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="5" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="895" name="whitePicketFenceSheet">
@@ -6977,6 +7124,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="5" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="896" name="wroughtIronFenceSheet">
@@ -6988,6 +7136,7 @@ kind of free
 	<property name="DescriptionKey" value="fencesGroupDesc"/>
 	<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	<property class="RepairItems"> <property name="forgedIron" value="1" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="897" name="panelingBurntPillar100">
@@ -7022,7 +7171,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.Next" value="plantedCornTop1" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.LightLevelStay" value="0" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -7049,7 +7198,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
 	<property name="PlantGrowing.Next" value="plantedCornTop2" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.LightLevelStay" value="0" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
@@ -7087,7 +7236,8 @@ kind of free
 	<!-- Corn Stalk Grow stage 1 -->
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Harvest" name="corn" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="cornSeed" count="1" prob="1" />
+	<drop event="Destroy" name="cornSeed" count="1" prob="0.25" />
 </block>
 
 <block id="904" name="plantedCornStalk2Harvest">
@@ -7113,7 +7263,7 @@ kind of free
 	<property name="Collide" value="melee" />
 	<!-- Corn Top grown up 1 (finished) -->
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Harvest" name="corn" count="2" tool_category="Crops"/>
+	<drop event="Harvest" name="corn" count="1" tool_category="Crops"/>
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -7141,9 +7291,9 @@ kind of free
 </block>
 
 <block id="908" name="tileFloor4Block">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="361" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="909" name="treePlantedGrass">
@@ -7176,6 +7326,7 @@ kind of free
 	<property name="Texture" value="44,245,245,245,245,245" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="913" name="awningRedCNRFull">
@@ -7185,6 +7336,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer90" />
 	<property name="DescriptionKey" value="awningGroupDesc"/>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="914" name="awningTanCNRFull">
@@ -7194,6 +7346,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer90" />
 	<property name="DescriptionKey" value="awningGroupDesc"/>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="915" name="awningTanCNRInside">
@@ -7202,6 +7355,7 @@ kind of free
 	<property name="Texture" value="14" />
 	<property name="DescriptionKey" value="awningGroupDesc"/>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="916" name="awningGreenCNRInside">
@@ -7210,51 +7364,59 @@ kind of free
 	<property name="Texture" value="15" />
 	<property name="DescriptionKey" value="awningGroupDesc"/>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="917" name="peachDrywallBaseboardPillar100">
 	<property name="Extends" value="woodPillar100" />
 	<property name="Texture" value="215,215,216,216,216,216" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPillar100" /> </property>
 </block>
 
 <block id="918" name="powerPoleWoodPillar100">
 	<property name="Extends" value="woodPillar100" />
 	<property name="Texture" value="21,21,241,241,241,241" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPillar100" /> </property>
 </block>
 
 <block id="919" name="rustyIronPillar100">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="282" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronPillar100" /> </property>
 </block>
 
 <block id="920" name="corrugatedMetalPillar100">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="194" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronPillar100" /> </property>
 </block>
 
 <block id="921" name="powerPoleWoodPillar50">
-	<property name="Extends" value="woodNoUpgradeMaster" />
+	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="21,21,241,241,241,241" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhitePillar50" /> </property>
 </block>
 
 <block id="922" name="rustyIronPillar50">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="282" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="corrugatedMetalPillar50" /> </property>
 </block>
 
 <block id="923" name="corrugatedMetalPillar50">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole0.5m" />
 	<property name="Texture" value="194" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPillar50" /> </property>
 </block>
 
 <block id="924" name="decals2">
@@ -7277,21 +7439,24 @@ kind of free
 </block>
 
 <block id="927" name="whiteMetalPillar100">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="Pole1m" />
 	<property name="Texture" value="312" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronPillar100" /> </property>
 </block>
 
 <block id="928" name="whiteMetalBlock">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Texture" value="312" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronBlock" /> </property>
 </block>
 
 <block id="929" name="whiteMetalRamp">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="WedgedBackFaces" />
 	<property name="Texture" value="312" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronRamp" /> </property>
 </block>
 
 <block id="930" name="ventDuctRamp">
@@ -7305,6 +7470,7 @@ kind of free
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="372" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="932" name="concreteTrim2Ramp">
@@ -7372,6 +7538,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="945" name="flagstoneDrywallBlock">
@@ -7391,9 +7558,9 @@ kind of free
 </block>
 
 <block id="948" name="flagstoneBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="226" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
@@ -7461,9 +7628,9 @@ kind of free
 
 <block id="961" name="gravelHalf">
 	<property name="Extends" value="brickMaster" />
+	<property name="Material" value="Mgravel" />
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="11,8,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteHalf" /> </property>
 </block>
 
 <block id="962" name="graveStone1Half">
@@ -7474,6 +7641,7 @@ kind of free
 	<drop event="Harvest" name="tankTopWhite" count="1" prob=".03"/>
 	<drop event="Destroy" name="rockSmall" count="8" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="963" name="concreteAsphaltHalf">
@@ -7556,6 +7724,7 @@ kind of free
 	<property name="Texture" value="192" />
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="976" name="shinglesAsphaltPyramid">
@@ -7575,12 +7744,12 @@ kind of free
 </block>
 
 <block id="978" name="asphaltBlock">
-	<property name="Extends" value="concreteBlock" />
+	<property name="Extends" value="brickBlock" />
 	<property name="Texture" value="10" />
 </block>
 
 <block id="979" name="dropCeilingRoofAsphaltBlock">
-	<property name="Extends" value="concreteBlock" />
+	<property name="Extends" value="brickBlock" />
 	<property name="CustomIcon" value="asphaltBlock" />
 	<property name="Texture" value="10,342,10,10,10,10" />
 </block>
@@ -7676,11 +7845,11 @@ kind of free
 </block>
 
 <block id="1001" name="cabinFlagstoneRamp">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged" />
 	<property name="Texture" value="226,226,226,226,226,226" />
 	<property name="Place" value="TowardsPlacer90" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteRamp" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteRamp" /> </property>
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
@@ -7710,7 +7879,6 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronBlock" /> </property>
 	<property name="DowngradeBlock" value="solidScrapIronFrameBlock" />
 	<property name="Texture" value="282" />
-	<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 </block>
 
 <block id="1007" name="corrugatedMetalBlockDuplicate">
@@ -7721,7 +7889,6 @@ kind of free
 <block id="1008" name="rustyIronRamp">
 	<property name="Extends" value="scrapIronRamp" />
 	<property name="Texture" value="282" />
-	<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
 </block>
 
 <block id="1009" name="curtain_bottom1Sheet3">
@@ -7732,6 +7899,7 @@ kind of free
 	<property name="Texture" value="66" />
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 	<drop event="Destroy" name="cloth" count="1,3" prob="1" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1010" name="sidingBluePlasterMiddleBlock">
@@ -7896,12 +8064,13 @@ kind of free
 </block>
 
 <block id="1039" name="asphaltRamp">
-	<property name="Extends" value="concreteRamp" />
+	<property name="Extends" value="brickRamp" />
 	<property name="Texture" value="10" />
 </block>
 
 <block id="1040" name="gravelRamp">
-	<property name="Extends" value="concreteRamp" />
+	<property name="Extends" value="brickRamp" />
+	<property name="Material" value="Mgravel" />
 	<property name="Texture" value="11" />
 </block>
 
@@ -7927,12 +8096,12 @@ kind of free
 </block>
 
 <block id="1045" name="metalRivetStairs25">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" />
 	<property name="Texture" value="46" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property name="Group" value="Building" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelStairs25" /> </property>
 </block>
 
 <block id="1046" name="shinglesAsphaltGreenWedge"> <!-- xxx this is a WedgeTip -->
@@ -7941,6 +8110,7 @@ kind of free
 	<property name="Texture" value="229,54,51,51,51,51" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1047" name="shinglesAsphaltWhiteWedgeDuplicate">
@@ -7949,6 +8119,7 @@ kind of free
 	<property name="Texture" value="229,54,52,52,52,52" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1048" name="shinglesAsphaltYellowWedgeDuplicate">
@@ -7957,6 +8128,7 @@ kind of free
 	<property name="Texture" value="229,54,53,53,53,53" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1049" name="shinglesAsphaltTanWedgeDuplicate">
@@ -7965,6 +8137,7 @@ kind of free
 	<property name="Texture" value="229,54,77,77,77,77" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1050" name="shinglesAsphaltBurntWedgeDuplicate">
@@ -7973,6 +8146,7 @@ kind of free
 	<property name="Texture" value="229,302,302,302,302,302" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1051" name="dotsGreenShinglesCNRInside">
@@ -8008,6 +8182,7 @@ kind of free
 	<drop event="Harvest" name="rockSmall" count="8" />
 	<drop event="Destroy" name="rockSmall" count="8" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1058" name="dotsGreenShinglesGable">
@@ -8016,6 +8191,7 @@ kind of free
 	<property name="Texture" value="192,54,54,54,54,54" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1059" name="dotsAsphaltShinglesGable">
@@ -8024,6 +8200,7 @@ kind of free
 	<property name="Texture" value="229,54,54,54,54,54" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1060" name="corrugatedMetalGable">
@@ -8031,6 +8208,7 @@ kind of free
 	<property name="Shape" value="Gable" />
 	<property name="Texture" value="194,194,194,194,194,194" />
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1061" name="dotsWoodShinglesGable">
@@ -8039,6 +8217,7 @@ kind of free
 	<property name="Texture" value="44,54,54,54,54,54" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1062" name="woodShinglesGable">
@@ -8049,6 +8228,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -8083,6 +8263,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1070" name="carpet2Stairs25">
@@ -8109,6 +8290,7 @@ kind of free
 	<property name="Model" value="StairsFilled" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25" /> </property>
+	<property name="DowngradeBlock" value="cobblestoneStairs25" />
 </block>
 
 <block id="1073" name="tileFloor4Stairs25">
@@ -8127,6 +8309,7 @@ kind of free
 	<property name="LootList" value="3" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1075" name="cntCabinetOldTop">
@@ -8136,6 +8319,7 @@ kind of free
 	<property name="LootList" value="3" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1076" name="cntWallOven">
@@ -8153,6 +8337,7 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1077" name="cntCabinetTop">
@@ -8165,6 +8350,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1078" name="Carpet2Block">
@@ -8268,6 +8454,7 @@ kind of free
 	<property class="RepairItems"> <property name="forgedIron" value="2" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1096" name="cable1">
@@ -8280,6 +8467,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1097" name="garageDoor1Plate">
@@ -8323,6 +8511,7 @@ kind of free
 	</property>
 	<property class="RepairItems"> <property name="wood" value="5" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -8387,22 +8576,23 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedge" /> </property>
+	<property name="DowngradeBlock" value="asphaltWedge" />
 </block>
 	<!-- Free -->
 
 <block id="1129" name="sidewalkWedge">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="329,8,8,8,8,8" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedge" /> </property>
 </block>
 	<!-- Free -->
 
 <block id="1131" name="asphaltWedge">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Full" />
 	<property name="Texture" value="10" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedge" /> </property>
 </block>
 	<!-- Free -->
 
@@ -8410,13 +8600,14 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeTip" /> </property>
+	<property name="DowngradeBlock" value="asphaltWedgeTip" />
 </block>
 
 <block id="1136" name="gravelWedgeTip">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
+	<property name="Material" value="Mgravel" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="11" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedge" /> </property>
 </block>
 
 <block id="1137" name="barnWoodWedgeTip">
@@ -8425,22 +8616,20 @@ kind of free
 	<property name="Texture" value="44,193,193,193,193,193" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1138" name="asphaltWedgeTip">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="10" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteWedgeTip" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteWedgeTip" /> </property>
 </block>
 
 <block id="1139" name="woodWedgeTip">
-	<property name="Material" value="wood" />
+	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Wedged60Tip" />
-	<property name="Texture" value="241" />
-	<property class="RepairItems"> <property name="wood" value="10" /> </property>
-	<drop event="Destroy" name="wood" count="1" prob="1" />
-	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodShinglesWedgeTip" /> </property>
 </block>
 
 <block id="1140" name="brickMetalWedgeTip">
@@ -8471,6 +8660,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="4" /> </property>
 	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1144" name="railingOldWoodSheet">
@@ -8495,7 +8685,7 @@ kind of free
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.Next" value="plantedCotton3HarvestLarge" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
 	<drop event="Destroy" count="0" />
@@ -8563,6 +8753,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1159" name="glassBusinessCTRSheet">
@@ -8578,6 +8769,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1160" name="glassBusinessBlock">
@@ -8587,6 +8779,7 @@ kind of free
 	<property name="Texture" value="285" />
 	<property name="DescriptionKey" value="glassGroupDesc"/>
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- 1161 Free -->
 
@@ -8596,6 +8789,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1163" name="cabinetOldFiller2Block">
@@ -8604,6 +8798,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1164" name="commercialDoor1_v1">
@@ -8633,6 +8828,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1165" name="commercialDoor1_v2">
@@ -8674,6 +8870,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1167" name="commercialDoor2_v1">
@@ -8760,6 +8957,7 @@ kind of free
 	</property>
 	<drop event="Harvest" name="wood" count="3" prob="1" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- 1177-1179 Free -->
 
@@ -8796,6 +8994,7 @@ kind of free
 	<property name="Texture" value="423" />
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="cntLootCrateShamway" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1183" name="cntLootCrateShamway">
@@ -8805,6 +9004,7 @@ kind of free
 	<property name="LootList" value="59" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- 1184-1190 Free -->
 
@@ -8820,6 +9020,7 @@ kind of free
 	</property>
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1192" name="woodBarricadePlate">
@@ -8878,6 +9079,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1201" name="window03Broke2">
@@ -8894,6 +9096,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1202" name="window03Broke3">
@@ -8935,6 +9138,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1207" name="glassIndustrial02Broken01CTRPlate">
@@ -8956,6 +9160,7 @@ kind of free
 	<property name="Texture" value="416" />
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 	<drop event="Destroy" count="0" prob="1" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1210" name="miniblindBottomSheet">
@@ -8977,6 +9182,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1212" name="window04">
@@ -8994,6 +9200,7 @@ kind of free
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1213" name="doorFrameWhite1">
@@ -9004,6 +9211,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Collide" value="sight,melee" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1214" name="doorFrameWhite2">
@@ -9112,6 +9320,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1230" name="signShopGasLit">
@@ -9161,6 +9370,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1238" name="signShopGunStoreLit">
@@ -9212,15 +9422,17 @@ kind of free
 	<property name="Texture" value="423" />
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="cntLootCrateShotgunMessiah" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1246" name="cntLootCrateShotgunMessiah">
 	<property name="Class" value="Loot" />
 	<property name="LootList" value="50" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="Texture" value="424" />
 	<drop event="Destroy" count="0" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- block id 1247 Available Free -->
 
@@ -9251,6 +9463,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="12" prob="1" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1249" name="ironDoor1_v2">
@@ -9300,6 +9513,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="6"/>
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1252" name="woodHatch1_v2">
@@ -9346,6 +9560,7 @@ kind of free
 		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -9367,6 +9582,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1261" name="cntBeerCooler">
@@ -9382,6 +9598,7 @@ kind of free
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1262" name="greenMetalRamp">
@@ -9466,6 +9683,7 @@ kind of free
 	<property name="CanPickup" value="true" param1="candle" />
 	<drop event="Destroy" name="candle" count="1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1302" name="signShopBookStore">
@@ -9480,6 +9698,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1303" name="signShopBookStoreLit">
@@ -9537,6 +9756,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1311" name="signShopPharmacyLit">
@@ -9594,6 +9814,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1319" name="signShopToolStoreLit">
@@ -9648,6 +9869,7 @@ kind of free
 	<property name="Texture" value="427" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1327" name="candleTable">
@@ -9664,12 +9886,13 @@ kind of free
 	<drop event="Destroy" name="candle" count="1" />
 	<property name="Group" value="Building" />
 	<property name="IsDeveloper" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1328" name="orangeDrywallBlock">
-	<property name="Extends" value="stoneToAdobeMaster" />
+	<property name="Extends" value="adobeMaster" />
 	<property name="Texture" value="430" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhiteBlock" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="1329" name="brickModernOrangeDrywallBlock">
@@ -9682,6 +9905,7 @@ kind of free
 	<property name="Texture" value="423" />
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="cntLootCrateWorkingStiffs" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1331" name="cntLootCrateWorkingStiffs">
@@ -9691,6 +9915,7 @@ kind of free
 	<property name="Texture" value="431" />
 	<drop event="Destroy" count="0" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -9723,6 +9948,7 @@ kind of free
 	<property name="Model" value="LootContainers/cash_register_empty" param1="main_mesh" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1340" name="cntCashRegister">
@@ -9736,6 +9962,7 @@ kind of free
 	<property name="LootList" value="55" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1341" name="cntStorageAmmoInsecure">
@@ -9784,6 +10011,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1347" name="cntShoppingCart">
@@ -9798,6 +10026,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1348" name="shoppingBasketEmpty">
@@ -9809,6 +10038,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property name="PickupTarget" value="shoppingBasketItem" />
 	<drop event="Destroy" name="scrapIron" count="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1349" name="cntShoppingBasket">
@@ -9821,6 +10051,7 @@ kind of free
 	<property name="CustomIcon" value="shoppingBasketEmpty" />
 	<property name="LootList" value="58" />
 	<drop event="Harvest" name="shoppingBasketItem" count="1" prob="1" tool_category="Disassemble" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1350" name="woodShinglesWedge">
@@ -9829,13 +10060,11 @@ kind of free
 </block>
 
 <block id="1351" name="woodShinglesWedgeTip">
-	<property name="Material" value="wood" />
+	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="44" />
-	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
-	<property class="RepairItems"> <property name="wood" value="10" /> </property>
-	<drop event="Destroy" name="wood" count="1" prob="1" />
-	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="asphaltWedgeTip" /> </property>
+	<property name="DowngradeBlock" value="woodWedgeTip" />
 </block>
 
 <block id="1352" name="flagstoneStairs25">
@@ -9875,9 +10104,10 @@ kind of free
 </block>
 
 <block id="1357" name="greenMetalWedgeTip">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronMaster" />
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="428" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rGreenMetalWedgeTip" /> </property>
 </block>
 
 <block id="1358" name="greenMetalGable">
@@ -9899,6 +10129,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1361" name="signShopGroceryLit">
@@ -10007,6 +10238,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer" />
 	<property name="LootList" value="63" />
 	<drop event="Destroy" name="wood" count="0" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1374" name="cntApacheArtifactChest">
@@ -10028,6 +10260,7 @@ kind of free
 	</property>
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1378" name="WindowPlug01">
@@ -10080,7 +10313,8 @@ kind of free
 	<property name="CanPickup" value="true" param1="mushrooms" />
 	<property name="IsTerrainDecoration" value="true" />
 	<drop event="Harvest" name="mushrooms" count="1" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="mushroomSeed" count="1" prob="1" />
+	<drop event="Destroy" name="mushroomSeed" count="1" prob="0.25" />
 </block>
 
 <block id="1383" name="mushroom02">
@@ -10245,6 +10479,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<drop event="Destroy" name="scrapIron" count="0" prob="1" />
 	<property name="Group" value="Tools/Traps" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1409" name="window03WoodBroke1">
@@ -10309,6 +10544,7 @@ kind of free
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="window03WoodBroke1" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1414" name="window03WoodFrame">
@@ -10318,7 +10554,7 @@ kind of free
 	<!-- Free -->
 
 <block id="1416" name="woodTable">
-	<property name="Material" value="wood" />
+	<property name="Material" value="wood_weak" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="table" />
 	<property name="Texture" value="241" />
@@ -10329,12 +10565,12 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<property name="Group" value="Decor/Miscellaneous" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1417" name="redWoodTable">
 	<property name="Extends" value="woodTable" />
 	<property name="Texture" value="214" />
-	<property name="MaxDamage" value="300" />
 	<property name="FuelValue" value="120" />
 	<property class="RepairItems"> <property name="wood" value="15" /> </property>
 </block>
@@ -10349,6 +10585,7 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="8" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1419" name="dotsWoodTable">
@@ -10367,6 +10604,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="DescriptionKey" value="rustyIronTableDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!-- Free -->
 
@@ -10387,14 +10625,14 @@ kind of free
 	<property name="Model" value="StairsFilled" />
 	<property name="Texture" value="355,356,356,356,356,356" />
 	<property name="Place" value="TowardsPlacerInverted" />
-	<property name="DowngradeBlock" value="rConcreteStairs25" />
+	<property name="DowngradeBlock" value="rScrapIronStairs25" />
 </block>
 
 <block id="1425" name="steelRamp">
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Wedged" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteRamp" />
+	<property name="DowngradeBlock" value="rScrapIronRamp" />
 </block>
 
 <block id="1426" name="cntDeskSafeInsecure">
@@ -10412,6 +10650,7 @@ kind of free
 	<drop event="Harvest" name="forgedSteel" count="1" prob="0.015" />
 	<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1427" name="cntWallSafeInsecure">
@@ -10429,6 +10668,7 @@ kind of free
 	<drop event="Harvest" name="forgedSteel" count="1" prob="0.015" />
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1428" name="cntGunSafeInsecure">
@@ -10445,6 +10685,7 @@ kind of free
 	<drop event="Harvest" name="forgedSteel" count="1" prob="0.015" />
 	<drop event="Destroy" name="scrapIron" count="5,20" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!--
 
@@ -10530,12 +10771,13 @@ kind of free
 	<property name="Group" value="Building,Basics" />
 	<!--property name="Place" value="Door" THIS WORKS ONLY FOR 1x2m doors /-->
 	<property name="Place" value="TowardsPlacer" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1432" name="scrapIronLogSpike4">
 	<property name="Class" value="Damage" />
-	<property name="Damage" value="8" />
-	<property name="Damage_received" value="15" />
+	<property name="Damage" value="7" />
+	<property name="Damage_received" value="12" />
 	<property name="Material" value="Mmetal_medium" />
 	<property name="Shape" value="Cone" />
 	<property name="Texture" value="307" />
@@ -10548,7 +10790,7 @@ kind of free
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
-	<property name="DowngradeBlock" value="rWoodMetalLogSpike3" />
+	<property name="DowngradeBlock" value="rWoodLogSpike2" />
 	<property class="RepairItems">
 		<property name="scrapIron" value="10" />
 	</property>
@@ -10558,9 +10800,9 @@ kind of free
 
 <block id="1433" name="rScrapIronLogSpike5">
 	<property name="Class" value="Damage" />
-	<property name="Damage" value="9" />
-	<property name="Damage_received" value="15" />
-	<property name="Material" value="Mmetal_medium" />
+	<property name="Damage" value="8" />
+	<property name="Damage_received" value="11" />
+	<property name="Material" value="Mmetal_hard" />
 	<property name="Shape" value="Cone" />
 	<property name="Texture" value="352" />
 	<!--<property name="Mesh" value="opaque2" />-->
@@ -10635,6 +10877,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="IsTerrainDecoration" value="true" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 <block id="1447" name="spotlightNailedDown">
 	<property name="Material" value="metal" />
@@ -10674,6 +10917,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="25" prob="1" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1450" name="vaultDoor02">
@@ -10875,6 +11119,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="5" prob="1" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1464" name="scrapHatch_v2">
@@ -10925,6 +11170,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="2" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="2" />
 	<property name="Group" value="Building,Decor/Miscellaneous" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1468" name="cntCoffin">
@@ -10937,6 +11183,7 @@ kind of free
 	<property name="LootList" value="1" />
 	<property class="RepairItems"><property name="wood" value="10" /></property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1469" name="vaultHatch_v1">
@@ -10968,6 +11215,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="25" prob="1" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1470" name="vaultHatch_v2">
@@ -11070,6 +11318,7 @@ kind of free
 	<property name="LootList" value="68" />
 	<property class="RepairItems"><property name="scrapIron" value="40" /></property>
 	<drop event="Destroy" name="scrapIron" count="4" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1482" name="garbage_decor1">
@@ -11122,6 +11371,7 @@ kind of free
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteCNRInside" />
+	<property name="DowngradeBlock" value="brickCNRInside" />
 </block>
 	<!-- Free -->
 
@@ -11129,7 +11379,7 @@ kind of free
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="WedgedInnerFull" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteCNRInside" />
+	<property name="DowngradeBlock" value="rScrapIronCNRInside" />
 </block>
 	<!-- Free -->
 
@@ -11146,6 +11396,7 @@ kind of free
 	<drop event="Harvest" name="scrapCable" count="5" prob=".5"/>
 	<drop event="Harvest" name="scrapIron" count="4" prob="0.5" />
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1510" name="controlPanelBase02">
@@ -11220,6 +11471,7 @@ kind of free
 	<property name="Texture" value="519" />
 	<property class="RepairItems"><property name="scrapIron" value="5" /></property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1524" name="ductSoftCorner">
@@ -11245,6 +11497,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"><property name="scrapIron" value="5" /></property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1528" name="ductControlPanelCorner">
@@ -11255,6 +11508,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"><property name="scrapIron" value="5" /></property>
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1529" name="ductSoftCorner2">
@@ -11313,7 +11567,7 @@ kind of free
 <block id="1537" name="rWoodPole">
 	<property name="Extends" value="rWoodMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalPole" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="adobeWhitePole" /> </property>
 	<property name="DowngradeBlock" value="woodPole" />
 </block>
 
@@ -11334,14 +11588,14 @@ kind of free
 <block id="1540" name="rScrapIronPole">
 	<property name="Extends" value="rScrapIronMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePole" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPole" /> </property>
 	<property name="DowngradeBlock" value="scrapIronPole" />
 </block>
 
 <block id="1541" name="rConcretePole">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="Pole" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelPole" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPole" /> </property>
 	<property name="DowngradeBlock" value="concretePole" />
 </block>
 
@@ -11349,7 +11603,7 @@ kind of free
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="Pole" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcretePole" />
+	<property name="DowngradeBlock" value="rScrapIronPole" />
 </block>
 
 <block id="1543" name="corrugatedDecayedBrickGable">
@@ -11424,6 +11678,7 @@ kind of free
 	<property name="Model" value="Entities/Lighting/industrialLight01Prefab" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<drop event="Destroy" name="scrapIron" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1552" name="metalPipeValve">
@@ -11452,7 +11707,7 @@ kind of free
 <block id="1555" name="asphaltCracked">
 	<property name="CustomIcon" value="asphalt" />
 	<property name="CanMobsSpawnOn" value="true" />
-	<property name="Material" value="Mconcrete" />
+	<property name="Material" value="Mbrick" />
 	<property name="Shape" value="Terrain" />
 	<property name="Mesh" value="terrain" />
 	<property name="Texture" value="525" />
@@ -11525,6 +11780,7 @@ kind of free
 	<drop event="Destroy" name="[recipe]" count="1" />
 	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="cementMixerDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 	<!--
 
@@ -11572,6 +11828,7 @@ kind of free
 	<property name="Group" value="Basics,Building" />
 	<property class="RepairItems"> <property name="yuccaFibers" value="10" /> </property>
 	<drop event="Destroy" name="yuccaFibers" count="1,3" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1563" name="workbench">
@@ -11596,6 +11853,7 @@ kind of free
 	<property name="Modules" value="tools,output"/>
 	</property>
 	<property name="DescriptionKey" value="workbenchDesc"/>
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1564" name="treePlantedWinterPine1m">
@@ -11678,6 +11936,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1571" name="corrugatedMetalWall01Sheet2">
@@ -11755,6 +12014,7 @@ kind of free
 	<property name="Texture" value="329,8,8,8,8,8" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1580" name="plainsCurb">
@@ -11775,6 +12035,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1582" name="woodCross">
@@ -11784,6 +12045,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1583" name="plainsCNRCurb">
@@ -11826,6 +12088,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1587" name="elevatorTest">
@@ -11844,6 +12107,7 @@ kind of free
 	<property name="CloseSound" value="UseActions/close_door_wood" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1588" name="rustyIronWall01Sheet2">
@@ -11854,6 +12118,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"> <property name="scrapIron" value="5" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1589" name="rustyIronWall02Sheet2">
@@ -11933,17 +12198,9 @@ kind of free
 </block>
 
 <block id="1599" name="blueMetalPlate">
-	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="Extends" value="scrapIronPlate" />
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="435" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="rScrapIronPlate" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="8" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="DowngradeBlock" value="rWoodMetalPlate" />
-	<property class="RepairItems"> <property name="scrapIron" value="3" /> </property>
 </block>
 
 <block id="1600" name="greenMetalWall01Sheet2">
@@ -12220,6 +12477,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property class="RepairItems"> <property name="scrapIron" value="3" /> </property>
 	<drop event="Destroy" name="scrapIron" count="1,4" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </block>
 
 <block id="1801" name="metalSignLetter_b">
@@ -12371,6 +12629,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="DowngradeBlock" value="sandbag_2" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1903" name="sandbag_2">
@@ -12392,6 +12651,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1905" name="sandbag_4">
@@ -12443,6 +12703,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="DowngradeBlock" value="sandbagCorner2DMG1" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1911" name="sandbagCorner2DMG1">
@@ -12456,6 +12717,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1912" name="sandbag_5">
@@ -12470,6 +12732,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="DowngradeBlock" value="sandbag_5DMG1" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="1913" name="sandbag_5DMG1">
@@ -12499,7 +12762,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantChrysanthemumGrowing" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12521,7 +12784,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedChrysanthemum3HarvestLarge" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12538,7 +12801,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantTomatoGrowing" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12560,7 +12823,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantTomato" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12575,8 +12838,9 @@ kind of free
     <property name="Collide" value="melee" />
     <property name="CanDecorateOnSlopes" value="true" />
     <property name="IsTerrainDecoration" value="true" />
-    <drop event="Harvest" name="Tomato" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+    <drop event="Harvest" name="Tomato" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="Tomato_Seed" count="1" prob="1" />
+	<drop event="Destroy" name="Tomato_Seed" count="1" prob="0.25" />
   </block>
   
   
@@ -12593,7 +12857,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantWheatYoung" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12617,7 +12881,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantWheat" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12634,8 +12898,9 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
     <property name="Texture" value="350" />
     <property name="Collide" value="melee" />
-    <drop event="Harvest" name="Wheat" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+    <drop event="Harvest" name="Wheat" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="Wheat_Seed" count="1" prob="1" />
+	<drop event="Destroy" name="Wheat_Seed" count="1" prob="0.25" />
    </block>
    
   <block id="1928" name="plantAloeSprout">
@@ -12649,7 +12914,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantAloeYoung" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12671,7 +12936,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedAloe3Harvest" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12687,7 +12952,7 @@ kind of free
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.Next" value="plantMushroomYoung" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12708,7 +12973,7 @@ kind of free
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.Next" value="mushroom01" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12734,6 +12999,7 @@ kind of free
 	<drop event="Destroy" count="0" />
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1933" name="Composter_Filling">
 	<property name="Class" value="PlantGrowing" />
@@ -12781,7 +13047,7 @@ kind of free
     <property name="CustomIcon" value="airConditioner" />		
     <property name="PlantGrowing.FertileLevel" value="0" />
 	<property name="PlantGrowing.Next" value="dewCollector_filled" />
-	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.GrowthRate" value="180" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property name="PlantGrowing.GrowIfAnythinOnTop" value="true" />
 	<property name="Place" value="TowardsPlacerInverted" />
@@ -12791,6 +13057,7 @@ kind of free
 	<drop event="Destroy" name="dewCollector_filling"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1936" name="dewCollector_filled">
     <property name="Class" value="Loot" />
@@ -12816,7 +13083,7 @@ kind of free
 	<property class="UpgradeBlock">
       <property name="ToBlock" value="chickenCoop_stage2" />
       <property name="Item" value="Chicken_Feed" />
-      <property name="ItemCount" value="10" />
+      <property name="ItemCount" value="1" />
       <property name="UpgradeHitCount" value="1" />
     </property>
 	<property name="Place" value="TowardsPlacerInverted" />
@@ -12826,6 +13093,7 @@ kind of free
 	<drop event="Destroy" name="chickenCoop_stage1"/>
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1938" name="chickenCoop_stage2">
 	<property name="Class" value="PlantGrowing" />
@@ -12873,7 +13141,7 @@ kind of free
   </block>
   <block id="1940" name="chickenCoop_stage4">
     <property name="Class" value="Loot" />
-	<property name="Material" value="wood+wood" />
+	<property name="Material" value="wood" />
 	<property name="StabilitySupport" value="false"/>
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
@@ -12897,7 +13165,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
     <drop event="Destroy" count="0" />
 	<property name="PlantGrowing.Next" value="plantYuccaYoung" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<property class="UpgradeBlock">
@@ -12918,7 +13186,7 @@ kind of free
     <property name="IsTerrainDecoration" value="true" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="PlantGrowing.Next" value="plantedYucca3Harvest" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="5" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -12926,8 +13194,8 @@ kind of free
   
   <block id="1943" name="steelSpike">
     <property name="Class" value="Damage" />
-    <property name="Damage" value="10" />
-	<property name="Damage_received" value="15" />
+    <property name="Damage" value="9" />
+	<property name="Damage_received" value="10" />
     <property name="Material" value="Msteel" />
     <property name="Shape" value="Cone" />
     <property name="Texture" value="356" />
@@ -12944,7 +13212,7 @@ kind of free
   </block>
   <block id="1944" name="Research_Table">
     <property name="Class" value="Workstation" />
-    <property name="Material" value="metal" />
+    <property name="Material" value="wood_weak" />
 	<property name="StabilitySupport" value="false"/>
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
@@ -12962,9 +13230,9 @@ kind of free
 		<property name="scrapIron" value="10" />
 	</property>
     <property name="MultiBlockDim" value="2,1,1" />
-	<drop event="Destroy" name="scrapIron" count="5" />
-    <drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1945" name="Old_Oven">
     <property name="Class" value="Campfire" />
@@ -12992,6 +13260,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1946" name="New_Oven">
     <property name="Class" value="Campfire" />
@@ -13017,6 +13286,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1947" name="Omnigel_Station">
     <property name="Class" value="Campfire" />
@@ -13043,6 +13313,7 @@ kind of free
 	<drop event="Destroy" name="scrapIron" count="2" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Food/Cooking" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1948" name="Tailoring_Table">
     <property name="Class" value="Workstation" />
@@ -13066,6 +13337,7 @@ kind of free
 	<drop event="Destroy" name="woodDebris" count="1" />
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1949" name="Smithing_Table">
     <property name="Class" value="Workstation" />
@@ -13089,10 +13361,11 @@ kind of free
     <drop event="Fall" name="scrapMetalPile" prob="1.0"  stick_chance=".75" />
 	<property name="DescriptionKey" value="smithingTableDesc"/>
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1950" name="Crafting_Table">
     <property name="Class" value="Workstation" />
-    <property name="Material" value="wood" />
+    <property name="Material" value="wood_weak" />
 	<property name="StabilitySupport" value="false"/>
     <property name="Shape" value="New" />
     <property name="Model" value="table" />
@@ -13114,7 +13387,7 @@ kind of free
   </block>
   <block id="1951" name="Crafting_Table_Misc">
     <property name="Class" value="Workstation" />
-    <property name="Material" value="wood" />
+    <property name="Material" value="wood_weak" />
 	<property name="StabilitySupport" value="false"/>
     <property name="Shape" value="New" />
     <property name="Model" value="table" />
@@ -13134,6 +13407,7 @@ kind of free
 	<drop event="Destroy" name="woodDebris" count="1" />
     <drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1952" name="Ammunition_Table">
     <property name="Class" value="Workstation" />
@@ -13156,6 +13430,7 @@ kind of free
     <drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
     <drop event="Fall" name="scrapMetalPile" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Building" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
   </block>
   <block id="1953" name="tallGrassDiagonalSprout">
     <property name="Class" value="PlantGrowing" />
@@ -13167,7 +13442,7 @@ kind of free
     <property name="Collide" value="melee" />
     <property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.Next" value="treeTallGrassDiagonal" />
-	<property name="PlantGrowing.GrowthRate" value="180" />
+	<property name="PlantGrowing.GrowthRate" value="210" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
 	<property name="PlantGrowing.IsRandom" value="false" />
 	<drop event="Destroy" count="0" />
@@ -13190,9 +13465,30 @@ kind of free
 	<property name="Texture" value="244" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<drop event="Harvest" name="plantedChrysanthemum3Harvest" count="2" tool_category="Crops"/>
-	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="plantedChrysanthemum3Harvest" count="1" tool_category="Crops"/>
+	<drop event="Destroy" name="Chrysanthemum_Seed" count="1" prob="1" />
+	<drop event="Destroy" name="Chrysanthemum_Seed" count="1" prob="0.25" />
   </block>
+  
+  <block id="438" name="scrapIronHalfBlock">
+	<property name="Extends" value="scrapIronMaster" />
+	<property name="Shape" value="Half" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronHalfBlock" /> </property>
+  </block>
+
+  <block id="439" name="rScrapIronHalfBlock">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="Shape" value="Half" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelHalf" /> </property>
+	<property name="DowngradeBlock" value="scrapIronBlock" />
+  </block>
+  
+  <block id="442" name="rGreenMetalWedgeTip">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="Shape" value="Wedged60Tip" />
+	<property name="Texture" value="428" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedgeTip" /> </property>
+</block>
 
 
 </blocks>
