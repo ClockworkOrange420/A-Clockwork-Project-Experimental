@@ -112,7 +112,7 @@
 	</player_skill>
 
 	<!-- Crafting Skills -->
-	<crafting_skill name="Weapon Smithing" exp_to_level="500" icon="weapon_smithing" description_key="weaponSmithingDesc" title_key="weaponSmithing" group="weapons">
+	<crafting_skill name="Weapon Smithing" icon="weapon_smithing" description_key="weaponSmithingDesc" title_key="weaponSmithing" group="weapons">
 		<!-- Recipe locking example <recipe name="clubWood" unlock_level="1"/> -->
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
@@ -134,7 +134,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Tool Smithing" exp_to_level="500" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
+	<crafting_skill name="Tool Smithing" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -155,7 +155,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" exp_to_level="500" group="firearms">
+	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -176,7 +176,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Science" icon="science" description_key="scienceDesc" title_key="science" group="crafting">
+	<crafting_skill name="Science" icon="science" exp_to_level="100" description_key="scienceDesc" title_key="science" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -197,7 +197,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
+	<crafting_skill name="Tailoring" icon="tailoring" exp_to_level="100" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -218,7 +218,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
+	<crafting_skill name="Leatherworking" icon="armor_leather" exp_to_level="100" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -239,7 +239,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
+	<crafting_skill name="Armor Smithing" icon="forge" exp_to_level="100" description_key="armorerDesc" title_key="armorer" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
