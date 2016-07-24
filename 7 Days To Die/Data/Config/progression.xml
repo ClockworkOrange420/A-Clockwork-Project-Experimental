@@ -537,6 +537,11 @@
 		<recipe name="Bricks" unlock_level="1"/>
 	</perk>
 	
+	<perk name="Iron Working" icon="resource" description_key="ironWorkingDesc" title_key="ironWorking" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<requirement skill_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="40"/>
+		<recipe name="scrapIronPlate" unlock_level="1"/>
+	</perk>
+	
 	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 		<requirement skill_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="50"/>
 		<recipe name="forgedSteel" unlock_level="1"/>

@@ -679,8 +679,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="concreteMix" value="10" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="rockSmall" count="13" />
@@ -845,8 +845,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="scrapIron" value="8" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronMaster" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="8" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="scrapIron" count="2" />
@@ -868,8 +868,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="scrapIron" value="3" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="8" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
@@ -885,8 +885,8 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="scrapIron" value="4" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="8" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
@@ -5248,8 +5248,8 @@ kind of free
 	<property name="DowngradeBlock" value="secureDoorWooden" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalReinforcedDoorWooden" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
@@ -5754,8 +5754,8 @@ kind of free
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="woodLogSpike1" />
@@ -5776,8 +5776,8 @@ kind of free
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2" />
@@ -8838,8 +8838,8 @@ kind of free
 	<property name="Model" value="Entities/Doors/commercial_door_1_v2Prefab" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="commercialDoor1_v3" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="commercialDoor1_v1" />
@@ -8968,8 +8968,8 @@ kind of free
 	<property name="Model" value="Entities/Doors/house_frontDoor1_v2Prefab" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="houseFrontDoor1_v3" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="houseFrontDoor1_v1" />
@@ -9522,7 +9522,9 @@ kind of free
 	<property name="Model" value="Entities/Doors/woodenHatch1_v2Prefab" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodHatch1_v3" />
-		<property name="Item" value="scrapIron" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="woodHatch1_v1" />
 </block>
@@ -9534,7 +9536,9 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapHatch_v1" />
-		<property name="Item" value="scrapIron" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="wood" count="0"/>
 	<drop event="Harvest" name="scrapIron" count="6" prob="1" />
@@ -10286,8 +10290,8 @@ kind of free
 	<property name="Texture" value="23" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug04" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="WindowPlug02" />
@@ -10705,8 +10709,8 @@ kind of free
 	<property name="CloseSound" value="UseActions/close_door_metal" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v2" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
@@ -10731,8 +10735,8 @@ kind of free
 	<property name="CloseSound" value="UseActions/close_door_metal" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v2" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="garageDoorMetal_v1" />
@@ -10760,8 +10764,8 @@ kind of free
 	<property name="CloseSound" value="UseActions/close_door_metal" />
 	<!-- <property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v3" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="garageDoorMetal_v2" />
@@ -10786,8 +10790,8 @@ kind of free
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronLogSpike5" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2" />
@@ -11112,8 +11116,8 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="8" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapHatch_v2" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="8" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<drop event="Harvest" name="scrapIron" count="5" prob="1" />
@@ -11522,8 +11526,8 @@ kind of free
 	<property name="Texture" value="307" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronWindowPlug06CTRPlate" />
-		<property name="Item" value="scrapIron" />
-		<property name="ItemCount" value="10" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property class="RepairItems">

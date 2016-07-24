@@ -4062,6 +4062,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	
 	<!--Metal-->
+	<recipe name="scrapIronPlate" count="1" scrapable="False" craft_time = "4" craft_area="workbench" craft_tool="wrench" >
+		<ingredient name="scrapIron" count="10"/>
+	</recipe>
+	
 	<recipe name="railingBlackSheet" count="1" scrapable="False" craft_time = "4" craft_area="Crafting_Table_Misc" craft_tool="wrench" >
 		<ingredient name="scrapIron" count="4"/>
 	</recipe>
