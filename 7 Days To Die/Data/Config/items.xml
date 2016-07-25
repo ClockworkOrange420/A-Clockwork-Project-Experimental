@@ -60,7 +60,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="criticalBlunt" />
 		<property name="Buff_chance" value=".1" />
 		<property name="DamageBonus.head" value="4" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property name="CritChance" value=".10" />
@@ -75,7 +75,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0">
 		<property name="Buff" value="criticalBlunt" />
 		<property name="Buff_chance" value=".2" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
@@ -96,7 +96,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value=".3,.3" />
 		<property name="DamageBonus.head" value="5" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
@@ -118,7 +118,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value=".5,.4" />
 		<property name="DamageBonus.head" value="6" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
@@ -156,7 +156,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.head" value="4" />
 		<property name="DamageBonus.concrete" value=".5" />
 		<property name="DamageBonus.glass" value="20" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
@@ -275,6 +275,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.organic" value="8" />
 		<property name="ToolCategory.Butcher" value="0.75" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12" />
@@ -311,7 +313,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.organic" value="10" />
 		<property name="ToolCategory.Butcher" value="1" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
-		<property name="ActionExp" value="5" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Attributes">
@@ -350,7 +352,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.organic" value="3" />
 		<property name="ToolCategory.Butcher" value="1" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
-		<property name="ActionExp" value="1" />
+		<property name="ActionExp" value="20" />
+		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Melee" />
@@ -370,7 +373,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.stone" value="0.01" />
 		<property name="DamageBonus.organic" value="0.01" />
 		<property name="ToolCategory.Crops" value="1.5" />
-		<property name="ActionExp" value="0" />
+		<property name="ActionExp" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -423,6 +426,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="3" />
 		<property name="DamageBonus.earth" value=".4" />
 		<property name="DamageBonus.glass" value="25" />
+		<property name="ActionExp" value="5" />
+		<property name="ActionExpBonusMultiplier" value="10" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -472,6 +477,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="4" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
+		<property name="ActionExp" value="5" />
+		<property name="ActionExpBonusMultiplier" value="10" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -525,6 +532,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -578,6 +587,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -634,6 +645,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.glass" value="25" />
 		<property name="Buff" value="critGunMP5" />
 		<property name="Buff_chance" value=".1" />
+		<property name="ActionExp" value="4" />
+		<property name="ActionExpBonusMultiplier" value="13" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -690,6 +703,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.glass" value="25" />
 		<property name="Buff" value="critGunAK47" />
 		<property name="Buff_chance" value=".1" />
+		<property name="ActionExp" value="4" />
+		<property name="ActionExpBonusMultiplier" value="13" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -741,6 +756,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
+		<property name="ActionExp" value="25" />
+		<property name="ActionExpBonusMultiplier" value="2" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -792,6 +809,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
+		<property name="ActionExp" value="25" />
+		<property name="ActionExpBonusMultiplier" value="2" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -1679,8 +1698,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 		<property name="Max_strain_time" value=".5" />
-		<property name="ActionExp" value="2" /> <!-- ammunition can override Exp values -->
-		<property name="ActionExpBonusMultiplier" value="3" />
+		<property name="ActionExp" value="20" /> <!-- ammunition can override Exp values -->
+		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -1906,7 +1925,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
-		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property class="Attributes">
@@ -1940,7 +1958,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
-		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property class="Attributes">
@@ -1974,7 +1991,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value="0.1" />
 		<property name="DamageBonus.metal" value="0.1" />
 		<property name="DamageBonus.cloth" value="0.5" />
-		<property name="ActionExpBonusMultiplier" value="5" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property class="Attributes">
@@ -4827,7 +4843,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Resources" />
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="662" name="bloodBag">
@@ -4857,7 +4873,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="665" name="vitamins">
@@ -4879,7 +4895,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="666" name="painkillers">
@@ -4910,7 +4926,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="5"/>
+	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="667" name="herbalAntibiotics">
@@ -4944,7 +4960,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="668" name="antibiotics">
@@ -4979,7 +4995,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="671" name="brokenGlass">
@@ -5331,7 +5347,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff_chance" value="0.5" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="732" name="shamSandwich">
@@ -5834,6 +5850,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="788" name="grainAlcohol">
@@ -5856,6 +5873,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="DrinkGrainAlcohol" />
 	</property>
 	<property name="Group" value="Chemicals" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <!-- * * * * * * * * * * recipes, books, and schematics * * * * * * * * * * -->
@@ -5874,12 +5892,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Recipes_to_learn" value="sledgehammer,crossbow" />
 		<property name="Skills_to_gain" value="Gun Smithing,9mm Round Crafting" />
 		-->
-		<property name="Delay" value="1" />
-		<property name="ActionExp" value="125"/>
+		<property name="Delay" value="3" />
+		<property name="ActionExp" value="500"/>
 		<property name="ActionExpBonusMultiplier" value="1"/> <!-- When first learned the multiplier is applied. After that only the action exp is applied but it's applied for EACH item in the book. -->
 		<property name="Sound_start" value="Misc/recipe_unlocked" />
 	</property>
 	<property name="Group" value="Books" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="901" name="invisibleRecipesForRepairCost"> <!-- Gating book -->
@@ -5895,7 +5914,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Science_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5903,7 +5921,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Armor_Smithing_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5911,7 +5928,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Gun_Smithing_Skill" />
-		<property name="ActionExp" value="125"/>
 	</property>
 </item>
 
@@ -5919,7 +5935,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Leatherworking_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5927,7 +5942,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Medicine_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5935,7 +5949,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Tailoring_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5943,7 +5956,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Tool_Smithing_Skill" />
-		<property name="ActionExp" value="125"/>
 	</property>
 </item>
 
@@ -5951,7 +5963,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Weapon_Smithing_Skill" />
-		<property name="ActionExp" value="125"/>
 	</property>
 </item>
 
@@ -5959,7 +5970,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Archery_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5967,7 +5977,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Athletics_Skill" />
-		<property name="ActionExp" value="500"/>
 	</property>
 </item>
 
@@ -5975,7 +5984,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Blade_Weapons_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5983,7 +5991,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Blunt_Weapons_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -5991,7 +5998,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Mining_Tools_Skill" />
-		<property name="ActionExp" value="500"/>
 	</property>
 </item>
 
@@ -5999,7 +6005,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Pistols_Skill" />
-		<property name="ActionExp" value="50"/>
 	</property>
 </item>
 
@@ -6007,7 +6012,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Rifles_Skill" />
-		<property name="ActionExp" value="150"/>
 	</property>
 </item>
 
@@ -6015,7 +6019,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Shotguns_Skill" />
-		<property name="ActionExp" value="100"/>
 	</property>
 </item>
 
@@ -6023,7 +6026,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="Construction_Tools_Skill" />
-		<property name="ActionExp" value="500"/>
 	</property>
 </item>
 <!--
@@ -6731,7 +6733,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="2" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="Group" value="Resources,Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="1342" name="steelArrowHead">
@@ -6744,7 +6745,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="5" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="Group" value="Resources,Ammo/Weapons" />
-	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="1345" name="coal">
@@ -6774,7 +6774,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="21" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps" />
-	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="1348" name="buckshot">
@@ -7282,6 +7281,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Stacknumber" value="250" /> <!-- STK resource -->
 	<property name="Weight" value="5" />
 	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 
 <item id="1434" name="headlight">
@@ -7777,7 +7777,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="250" />
         <property name="Group" value="Food/Cooking" />
 		<property name="CraftingIngredientTime" value="30" />
-		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="CraftingSkillGroup" value="Science"/>
 		<property name="DescriptionKey" value="yeastDesc"/>
     </item>
 	<item id="1518" name="Chicken_Feed">
@@ -7842,7 +7842,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIcon" value="bottledWater" />
 		<property name="CustomIconTint" value="00082E" />
         <property name="Group" value="Resources" />
-		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+		<property name="CraftingSkillGroup" value="Science"/>
 		<property name="DescriptionKey" value="inkDesc"/>
     </item>
 	<item id="1522" name="Geometry_Set">
@@ -7875,6 +7875,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
 		<property name="DescriptionKey" value="chiselDesc"/>
+		<property name="CraftingSkillGroup" value="Tool Smithing"/>
     </item>
 	<item id="1525" name="Compost">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -8541,7 +8542,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="ActionSkillGroup" value="Medicine"/>
 		<property name="CraftingSkillGroup" value="Science"/>
 		<property name="Group" value="Medicine" />
-		<property name="ActionExp" value="10"/>
+		<property name="ActionExp" value="50"/>
     </item>
 	<item id="1592" name="Barbed_Wire">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -8563,6 +8564,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
     </item>
 	<item id="1594" name="Science_Skill">
         <property name="Extends" value="MasterSkill" />

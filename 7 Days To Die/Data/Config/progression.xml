@@ -11,13 +11,13 @@
 
 <skills 
 	max_level="100" 
-	exp_to_level="250" 
+	exp_to_level="1000" 
 	experience_multiplier="1" 
 	skill_point_cost_multiplier="0"
 	skill_point_cost_per_level="1" > <!-- these are defaults and can be used to modify individual skills as needed -->
 
 	<!-- Player Skills -->
-	<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" group="health">
+	<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" group="health">
 		<effect name="StaminaDegradation">
 			<multiply skill_level="1,99" value="1,0.65"/>
 			<multiply skill_level="100" value="0.5" />
@@ -28,7 +28,7 @@
 		</effect>
 	</player_skill>
 	
-	<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging">
+	<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" exp_to_level="200" title_key="scavenging" group="scavenging">
 		<effect name="LootTime">
 			<multiply skill_level="1,99" value="1,0.4"/>
 			<multiply skill_level="100" value="0.25" />
@@ -48,63 +48,63 @@
 	</player_skill>
 
 	<!-- Item Usage Skills -->
-	<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" exp_to_level="100" group="weapons">
+	<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" exp_to_level="100" group="weapons">
+	<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Mining Tools" exp_to_level="1000" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
+	<action_skill name="Mining Tools" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Construction Tools" exp_to_level="1000" icon="resource" description_key="constructionToolsDesc" title_key="constructionTools" group="tools">
+	<action_skill name="Construction Tools" icon="resource" description_key="constructionToolsDesc" title_key="constructionTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" exp_to_level="100" group="firearms">
+	<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" exp_to_level="200" group="firearms">
+	<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" exp_to_level="300" group="firearms">
+	<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 		
-	<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" exp_to_level="100" group="weapons">
+	<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,99" value="1,1.5"/>
 			<multiply skill_level="100" value="2" />
 		</effect>
 	</action_skill>
 	
-	<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" exp_to_level="100" group="health">
+	<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health">
 		<effect name="HealthGain">
 			<multiply skill_level="1,99" value="1.00,1.75"/>
 			<multiply skill_level="100" value="2.0"/>
@@ -176,7 +176,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Science" icon="science" exp_to_level="100" description_key="scienceDesc" title_key="science" group="crafting">
+	<crafting_skill name="Science" icon="science" description_key="scienceDesc" title_key="science" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -197,7 +197,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Tailoring" icon="tailoring" exp_to_level="100" description_key="tailoringDesc" title_key="tailoring" group="clothing">
+	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -218,7 +218,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Leatherworking" icon="armor_leather" exp_to_level="100" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
+	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -239,7 +239,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Armor Smithing" icon="forge" exp_to_level="100" description_key="armorerDesc" title_key="armorer" group="clothing">
+	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
@@ -260,7 +260,7 @@
 			</effect>
 	</crafting_skill>
 	
-	<crafting_skill name="Miscellaneous Crafting" exp_to_level="500" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
+	<crafting_skill name="Miscellaneous Crafting" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,99" value="1,0.75"/>
 				<multiply skill_level="100" value="0.5" />
