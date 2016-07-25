@@ -1137,10 +1137,10 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sphere" value="0.1" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="Stamina_usage" value="3" />
-		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.head" value="2" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="1" />
-		<property name="DamageBonus.metal" value="0.5" />
+		<property name="DamageBonus.metal" value="2" />
 		<property name="DamageBonus.earth" value="0.25" />
 		<property name="DamageBonus.organic" value="1" />
 		<property name="ActionExp" value="1" />
@@ -1382,7 +1382,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="11,27" />    
-		<property name="BlockDamage" value="26.5,66" /> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
+		<property name="BlockDamage" value="27,66" /> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
 		<property name="DegradationMax" value="1000,1000" />
 		<property name="DegradationRate" value="3,1" />
 	</property>
