@@ -3051,7 +3051,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	-->
 	<recipe name="rScrapIronPlateMine" count="1" scrapable="True" craft_time = "20" craft_exp_gain="56" craft_area="Ammunition_Table" craft_tool="toolAndDieSet">
-		<ingredient name="scrapIron" count="2"/>
+		<ingredient name="scrapIronPlate" count="1"/>
 		<ingredient name="gunPowder" count="3"/>
 		<ingredient name="ductTape" count="1"/>
 		<ingredient name="nail" count="10"/>
