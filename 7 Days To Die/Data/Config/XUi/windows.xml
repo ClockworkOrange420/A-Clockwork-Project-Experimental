@@ -72,7 +72,8 @@
 			top http://i67.tinypic.com/nn8own.png
 			top02 http://i63.tinypic.com/2uyja68.png
 			top 03 http://i64.tinypic.com/5chh1t.png
-			Top 03V2http://i65.tinypic.com/200b41z.png
+			Top 03V2 http://i65.tinypic.com/200b41z.png
+			Top 03v3 http://i63.tinypic.com/33adyys.png
 			
 		</grid>
 		-->
@@ -92,11 +93,13 @@
 			
 			<sprite depth="6" name="PlayerLevel" controller="PlayerStatsWindow" visible="{StatVisible}" size="51,51" pos="-47,-1" sprite="ui_game_filled_circle" justify="center" pivot="center" type="filled" fill="{PlayerLevelFill}" color="255,255,0" filldirection="radial360"/>
 			<sprite depth="6" name="Food" controller="HUDStatBar" stat_type="Food" visible="{StatVisible}" size="52,52" pos="28,-2" sprite="ui_game_filled_circle" justify="center" pivot="center" type="filled" fill="{StatFill}" color="0,255,0" filldirection="radial360"/>
-			
 			<sprite depth="6" name="Water" controller="HUDStatBar" stat_type="Water" visible="{StatVisible}" size="47,47" pos="-11,-40" sprite="ui_game_filled_circle" justify="center" pivot="center" type="filled" fill="{StatFill}" color="0,0,255" filldirection="radial360"/>
 			
-			<texture depth="7" name="WatchTop03" size="240,240" texture="@http://i65.tinypic.com/200b41z.png" material="Materials/Transparent Colored" pos="1,-8" justify="center" pivot="center"/>
+			<texture depth="7" name="WatchTop03" size="240,240" texture="@http://i63.tinypic.com/33adyys.png" material="Materials/Transparent Colored" pos="1,-8" justify="center" pivot="center"/>
 			
+			<label depth="8" name="TextContent" controller="PlayerStatsWindow" size="240,240" pos="-11,-47" font_size="12" color="[beige]" justify="center" pivot="center" text="{PlayerWater} %"/>
+			<label depth="8" name="TextContent" controller="PlayerStatsWindow" size="240,240" pos="28,-9" font_size="12" color="[beige]" justify="center" pivot="center" text="{PlayerFood} %"/>
+			<label depth="8" name="TextContent" controller="PlayerStatsWindow" size="240,240" pos="-48,-11" font_size="12" color="[beige]" justify="center" pivot="center" text="{PlayerLevel}"/>
 			<label depth="8" name="dayTimeLabel" controller="MapStats" size="240,240" pos="-10,35" text=" [DECEA3]{MapDayTime}[-]" font_size="24" justify="center" pivot="center"/>
 			<label depth="8" name="tempLabel" controller="MapStats" size="240,240" pos="-52,-40" text=" [DECEA3]{MapTemperature}[-]" font_size="24" justify="center" pivot="center"/>
 			<label depth="8" name="elevLabel" controller="MapStats" size="240,240" pos="30,-40" text=" [DECEA3]{MapElevation} M[-]" font_size="24" justify="center" pivot="center"/>
