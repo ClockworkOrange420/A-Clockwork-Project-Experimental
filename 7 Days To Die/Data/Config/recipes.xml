@@ -2197,12 +2197,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="wood" count="5"/>
     </recipe>
 
-    <recipe name="clubIron" count="1" scrapable="False" craft_time = "15" craft_exp_gain="83" craft_area="Smithing_Table" craft_tool="anvil">
+    <recipe name="clubIron" count="1" scrapable="False" craft_time = "15" craft_exp_gain="42" craft_area="Smithing_Table" craft_tool="anvil">
         <ingredient name="forgedIron" count="5"/>
         <ingredient name="wood" count="5"/>
     </recipe>
 
-    <recipe name="clubSpiked" count="1" scrapable="False" craft_time = "25" craft_exp_gain="143" craft_area="Smithing_Table" craft_tool="anvil">
+    <recipe name="clubSpiked" count="1" scrapable="False" craft_time = "25" craft_exp_gain="70" craft_area="Smithing_Table" craft_tool="anvil">
         <ingredient name="nail" count="50"/>
         <ingredient name="wood" count="5"/>
     </recipe>

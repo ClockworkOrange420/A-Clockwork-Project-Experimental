@@ -59,6 +59,7 @@
 				<label depth="6" name="TextContent" pos="0,-10" font_size="24" color="[white]" justify="center" pivot="topleft" text="{PlayerLevel}" height="30"/>
 			</rect>
 			
+			WATCH
 			Bottom http://i64.tinypic.com/2iubzw5.png
 			Bottom 02 http://i68.tinypic.com/160wjkm.png
 			Bottom03 http://i68.tinypic.com/317a4gn.png
@@ -75,6 +76,26 @@
 			Top 03V2 http://i65.tinypic.com/200b41z.png
 			Top 03v3 http://i63.tinypic.com/33adyys.png
 			
+			SILVER
+			DarkSilverCircle http://i64.tinypic.com/110lyfs.png
+			Banner http://i64.tinypic.com/3585477.png
+			LeftSide http://i65.tinypic.com/2zqa686.png
+			RightSide http://i66.tinypic.com/2ah8lj6.png
+			toolbeltV1 http://i63.tinypic.com/2pzwhma.png
+			ToolbeltV2 http://i66.tinypic.com/zo7z8k.png
+			Toolbeltv3 http://i63.tinypic.com/2v0oda8.png
+			BioBottom http://i63.tinypic.com/25yx635.png
+			BioMiddle http://i63.tinypic.com/2r7ahc1.png
+			BioMiddle02 http://i67.tinypic.com/2aev5aa.png
+			BioTopLightSilver http://i65.tinypic.com/2v95f92.png
+			BioTopDarkSilver http://i63.tinypic.com/1628zsh.png
+			BioTopDarkSilverGrill http://i68.tinypic.com/246ndc6.png
+			BioTopDarkGoldGrill http://i64.tinypic.com/2utssyd.png
+			BioTopDarkerSilverGrill http://i65.tinypic.com/2yudstl.png
+			BioTopDarkerSilverWhirlGrill http://i65.tinypic.com/k0kaq0.png
+			SilverBullet http://i67.tinypic.com/16a9tuu.png
+			SilverBulletFlipped http://i66.tinypic.com/30wnq6x.png
+			SilverBullletV2Flipped http://i66.tinypic.com/4ucemb.png
 		</grid>
 		-->
 	
