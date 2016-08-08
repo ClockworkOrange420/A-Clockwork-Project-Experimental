@@ -38,8 +38,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Stamina_usage" value="6" />
 		<property name="DamageBonus.head" value="4" /> <!-- these are multipliers -->
 		<property name="DamageBonus.glass" value="25" />
-		<property name="ActionExp" value="5" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,14" />
@@ -60,8 +60,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="criticalBlunt" />
 		<property name="Buff_chance" value=".1" />
 		<property name="DamageBonus.head" value="4" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property name="CritChance" value=".10" />
 	<property name="Group" value="Ammo/Weapons,Basics" />
@@ -75,8 +75,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0">
 		<property name="Buff" value="criticalBlunt" />
 		<property name="Buff_chance" value=".2" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="9,16" />
@@ -96,8 +96,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value=".3,.3" />
 		<property name="DamageBonus.head" value="5" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="10,22" />
@@ -118,8 +118,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="bleeding,criticalBlunt" />
 		<property name="Buff_chance" value=".5,.4" />
 		<property name="DamageBonus.head" value="6" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -156,8 +156,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.head" value="4" />
 		<property name="DamageBonus.concrete" value=".5" />
 		<property name="DamageBonus.glass" value="20" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="20,50" />
@@ -276,7 +276,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="ToolCategory.Butcher" value="0.75" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
 		<property name="ActionExp" value="10" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12" />
@@ -313,8 +313,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.organic" value="10" />
 		<property name="ToolCategory.Butcher" value="1" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="10,20" />
@@ -352,12 +352,12 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.organic" value="3" />
 		<property name="ToolCategory.Butcher" value="1" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
-		<property name="ActionExp" value="20" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" />
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Melee" />
-		<property name="Delay" value="0.2" />
+		<property name="Delay" value="0.1" />
 		<property name="Range" value="1" />
 		<property name="Sphere" value="0.1" />
 		<property name="Block_range" value="4" />
@@ -373,7 +373,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.stone" value="0.01" />
 		<property name="DamageBonus.organic" value="0.01" />
 		<property name="ToolCategory.Crops" value="1.5" />
-		<property name="ActionExp" value="4" />
+		<property name="ActionExp" value="1" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30" />
@@ -427,7 +427,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".4" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="ActionExp" value="5" />
-		<property name="ActionExpBonusMultiplier" value="10" />
+		<property name="ActionExpBonusMultiplier" value="8" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -478,7 +478,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="ActionExp" value="5" />
-		<property name="ActionExpBonusMultiplier" value="10" />
+		<property name="ActionExpBonusMultiplier" value="8" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -532,8 +532,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
-		<property name="ActionExp" value="10" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="5" />
+		<property name="ActionExpBonusMultiplier" value="8" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -587,8 +587,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
-		<property name="ActionExp" value="10" />
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="5" />
+		<property name="ActionExpBonusMultiplier" value="8" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -646,7 +646,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="critGunMP5" />
 		<property name="Buff_chance" value=".1" />
 		<property name="ActionExp" value="4" />
-		<property name="ActionExpBonusMultiplier" value="13" />
+		<property name="ActionExpBonusMultiplier" value="10" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -704,7 +704,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Buff" value="critGunAK47" />
 		<property name="Buff_chance" value=".1" />
 		<property name="ActionExp" value="4" />
-		<property name="ActionExpBonusMultiplier" value="13" />
+		<property name="ActionExpBonusMultiplier" value="10" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -756,7 +756,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
-		<property name="ActionExp" value="25" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="2" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -809,7 +809,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.plants" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
-		<property name="ActionExp" value="25" />
+		<property name="ActionExp" value="20" />
 		<property name="ActionExpBonusMultiplier" value="2" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -902,6 +902,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
+		<property name="ActionExp" value="20" />
+		<property name="ActionExpBonusMultiplier" value="2" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -1698,8 +1700,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 		<property name="Max_strain_time" value=".5" />
-		<property name="ActionExp" value="20" /> <!-- ammunition can override Exp values -->
-		<property name="ActionExpBonusMultiplier" value="5" />
+		<property name="ActionExp" value="10" /> <!-- ammunition can override Exp values -->
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -1737,8 +1739,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_end" value="" />
 		<property name="Sound_empty" value="Weapons/weapon_empty" />
 		<property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
-		<property name="ActionExp" value="3" /> <!-- ammunition can override Exp values -->
-		<property name="ActionExpBonusMultiplier" value="3" />
+		<property name="ActionExp" value="10" /> <!-- ammunition can override Exp values -->
+		<property name="ActionExpBonusMultiplier" value="4" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom" />
@@ -4713,6 +4715,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Debuff" value="brokenLeg2" />
 		<property name="Buff" value="splint" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4724,11 +4727,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Debuff" value="brokenLeg2" />
 		<property name="Buff" value="splint" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property name="Group" value="Medicine" />
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
-	<property name="ActionExp" value="10"/>
 </item>
 
 <item id="655" name="aloeCream">
@@ -4744,6 +4747,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_ointment" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4753,11 +4757,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_ointment" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property name="Group" value="Medicine" />
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
-	<property name="ActionExp" value="10"/>
 </item>
 
 <item id="656" name="bandage">
@@ -4777,6 +4781,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4787,21 +4792,23 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
 		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+		<property name="ActionExp" value="20"/>
 	</property>
 	<property name="Group" value="Medicine,Basics" />
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
-	<property name="ActionExp" value="10"/>
 </item>
 
 <item id="657" name="firstAidBandage">
 	<property name="Extends" value="bandage" />
 	<property class="Action0">
 		<property name="Buff" value="firstAid" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Buff" value="firstAid" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidBandageDesc"/>
 	<property name="CraftingSkillGroup" value="Science"/>
@@ -4813,11 +4820,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_health" value="50" />
 		<property name="Sound_start" value="UseActions/player_firstAidKit" />
 		<property name="Buff" value="firstAidLarge" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Gain_health" value="50" />
 		<property name="Sound_start" value="UseActions/player_firstAidKit" />
 		<property name="Buff" value="firstAidLarge" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
 	<property name="CraftingSkillGroup" value="Science"/>
@@ -4839,11 +4848,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_blooddraw" />
 		<property name="Consume" value="false" />
 		<property name="Create_item" value="bloodBag" />
+		<property name="ActionExp" value="50"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Resources" />
-	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="662" name="bloodBag">
@@ -4860,6 +4869,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="5" />
 		<property name="Sound_start" value="UseActions/player_blooddraw" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4869,11 +4879,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="5" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="665" name="vitamins">
@@ -4891,11 +4901,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="cured2" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="666" name="painkillers">
@@ -4912,6 +4922,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="-5" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="painkillerBuff" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4922,11 +4933,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="-5" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="painkillerBuff" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="667" name="herbalAntibiotics">
@@ -4945,6 +4956,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Debuff" value="infection,dysentery,dysentery2" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4956,11 +4968,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Debuff" value="infection,dysentery,dysentery2" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="668" name="antibiotics">
@@ -4979,6 +4991,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="cured" />
 		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat" />
@@ -4991,11 +5004,11 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_painkillers" />
 		<property name="Buff" value="cured" />
 		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
+		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 	<property name="Group" value="Medicine" />
-	<property name="ActionExp" value="100"/>
 </item>
 
 <item id="671" name="brokenGlass">
@@ -7476,6 +7489,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="bleeding" />
             <property name="Buff_chance" value="0.25" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="4" />
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="5,10" />
@@ -7514,6 +7529,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="bleeding" />
             <property name="Buff_chance" value="0.25" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="4" />
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="10,20" />
@@ -7552,6 +7569,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="DamageBonus.glass" value="25" />
 			<property name="Buff" value="bleeding" />
             <property name="Buff_chance" value="0.25" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="4" />
         </property>
         <property class="Attributes">
             <property name="EntityDamage" value="15,30" />
@@ -8687,7 +8706,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CraftingIngredientTime" value="10" />
 		<property class="Action0"> <!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="0.2" />
+			<property name="Delay" value="0.1" />
 			<property name="Range" value="1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -8726,6 +8745,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Upgrade_action_sound" value="Weapons/Motorized/Nailgun/nailgun_fire" />
 			<property name="Allowed_upgrade_items" value="wood,clayLump,scrapIron,scrapIronPlate,forgedIron,forgedSteel,concreteMix,cobblestones,yuccaFibers,nail" />
 			<!--<property name="Restricted_upgrade_items" value="concrete" />-->
+			<property name="ActionExp" value="1" />
 		</property>
 	</item>
 	<item id="1615" name="Bricks">
