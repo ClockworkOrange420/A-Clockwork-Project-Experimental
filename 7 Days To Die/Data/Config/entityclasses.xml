@@ -215,7 +215,7 @@
 	<property name="NightWanderSpeed" value="0.1" />
 	<property name="NightApproachSpeed" value="1.2" />
 	<property name="PanicSpeed" value="0.55" />
-	<property name="MaxHealth" value="1500" />
+	<property name="MaxHealth" value="1200" />
 	<property name="ExperienceGain" value="2000"/>
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -289,7 +289,6 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="ExperienceGain" value="100"/>
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -311,7 +310,6 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="ExperienceGain" value="100"/>
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -333,7 +331,6 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="ExperienceGain" value="100"/>
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -355,7 +352,6 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="5" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="ExperienceGain" value="100"/>
 	<property name="PhysicsBody" value="zombieStandardFemale" />
@@ -408,7 +404,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="MaxHealth" value="450" />
+	<property name="MaxHealth" value="500" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -439,7 +435,6 @@
 	<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 	<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
 	<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
-	<property name="MaxHealth" value="150" />
 	<property name="WanderSpeed" value="0.08" />
 	<property name="ApproachSpeed" value="0.2" />
 	<property name="NightWanderSpeed" value="0.08" />
@@ -762,7 +757,7 @@
 	<property name="AITask-5" value="Wander" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="50" />
+	<property name="MaxHealth" value="100" />
 	<property name="MaxViewAngle" value="180" />
 	<property name="WanderSpeed" value="0.7" />
 	<property name="PanicSpeed" value="2.0" />
@@ -877,7 +872,7 @@
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="1500" />
+	<property name="MaxHealth" value="1200" />
 	<property name="MaxViewAngle" value="180" />
 	<property name="WanderSpeed" value="0.25" />
 	<property name="PanicSpeed" value="2.0" />
