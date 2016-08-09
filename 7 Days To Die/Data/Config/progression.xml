@@ -458,7 +458,7 @@
 		<requirement skill_level="1" required_skill_name="Tool Smithing" required_skill_level="60"/>
 		<requirement skill_level="1" required_skill_name="Tailoring" required_skill_level="30"/>
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="30"/>
-		<requirement skill_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="50"/>
+		<requirement skill_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="60"/>
 		<recipe name="minibikeChassis" unlock_level="1"/>
 		<recipe name="minibikeSeat" unlock_level="1"/>
 		<recipe name="minibikeHandlebars" unlock_level="1"/>
