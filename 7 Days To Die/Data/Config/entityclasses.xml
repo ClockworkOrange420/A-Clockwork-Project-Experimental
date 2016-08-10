@@ -757,7 +757,7 @@
 	<property name="AITask-5" value="Wander" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="100" />
+	<property name="MaxHealth" value="75" />
 	<property name="MaxViewAngle" value="180" />
 	<property name="WanderSpeed" value="0.7" />
 	<property name="PanicSpeed" value="2.0" />

@@ -314,7 +314,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="EntityDamage" value="10,20" />
 		<property name="BlockDamage" value="1,2" />
 		<property name="DegradationMax" value="360,360" />
-		<property name="DegradationRate" value="12,1" />
+		<property name="DegradationRate" value="6,1" />
 		<property name="DismembermentBaseChance" value="0,0.1"/>
 		<property name="DismembermentBonus" value="0,0.00036"/>
 	</property>
@@ -373,7 +373,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="EntityDamage" value="20,30" />
 		<property name="BlockDamage" value="4,10" />
 		<property name="DegradationMax" value="1600,1600" />
-		<property name="DegradationRate" value="53,3" />
+		<property name="DegradationRate" value="26,2" />
 		<property name="DismembermentBaseChance" value="0.1,0.3"/>
 		<property name="DismembermentBonus" value="0,0.00036"/>
 	</property>
