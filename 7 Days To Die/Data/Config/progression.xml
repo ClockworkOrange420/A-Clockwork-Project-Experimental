@@ -500,21 +500,29 @@
 	
 	<!--Explosive-->
 	
-	<perk name="Explosives Crafting" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+	<perk name="Explosives Crafting Stage 1" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 		<requirement skill_level="1" required_skill_name="Science" required_skill_level="10"/>
-		<requirement skill_level="2" required_skill_name="Science" required_skill_level="20"/>
-		<requirement skill_level="3" required_skill_name="Science" required_skill_level="30"/>
-		<requirement skill_level="4" required_skill_name="Science" required_skill_level="40"/>
-		<requirement skill_level="5" required_skill_name="Science" required_skill_level="50"/>
 		<recipe name="gunPowder" unlock_level="1"/>
-		<recipe name="mineCandyTin" unlock_level="2"/>
-		<recipe name="pipeBomb" unlock_level="2"/>
-		<recipe name="mineHubcap" unlock_level="2"/>
-		<recipe name="mineAirFilter" unlock_level="2"/>
-		<recipe name="rScrapIronPlateMine" unlock_level="2"/>
-		<recipe name="dynamite" unlock_level="3"/>
-		<recipe name="explodingCrossbowBolt" unlock_level="4"/>
-		<recipe name="tnt" unlock_level="5"/>
+	</perk>
+	<perk name="Explosives Crafting Stage 2" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="20"/>
+		<recipe name="mineCandyTin" unlock_level="1"/>
+		<recipe name="pipeBomb" unlock_level="1"/>
+		<recipe name="mineHubcap" unlock_level="1"/>
+		<recipe name="mineAirFilter" unlock_level="1"/>
+		<recipe name="rScrapIronPlateMine" unlock_level="1"/>
+	</perk>
+	<perk name="Explosives Crafting Stage 3" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="30"/>
+		<recipe name="dynamite" unlock_level="1"/>
+	</perk>
+	<perk name="Explosives Crafting Stage 4" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="40"/>
+		<recipe name="explodingCrossbowBolt" unlock_level="1"/>
+	</perk>
+	<perk name="Explosives Crafting Stage 5" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="50"/>
+		<recipe name="tnt" unlock_level="1"/>
 	</perk>
 	
 	<!--Resource Unlocks-->
