@@ -13512,6 +13512,9 @@ kind of free
 	<property name="CustomIconTint" value="194F5A" />
 	<property name="BuffsWhenWalkedOn" value="bleedingBurningSmall"/>
     <property name="DowngradeBlock" value="steelSpike" />
+	<property class="RepairItems">
+		<property name="gasCan" value="4" />
+	</property>
 	<property name="Group" value="Tools/Traps" />
   </block>
 
