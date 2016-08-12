@@ -929,7 +929,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Range" value="1.8" />
 		<property name="Sphere" value="0.1" />
 		<property name="Block_range" value="2.5" />
-		<property name="DamageEntity" value="10" />
+		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="20" />
 		<property name="Sound_start" value="swoosh" />
 		<property name="DamageBonus.glass" value="25" />
@@ -976,7 +976,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="handMaster" />
 	<property name="IsDeveloper" value="true" />
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="DamageEntity" value="10" />
+		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="20" />
 		<property name="Buff" value="bleeding,infection,stunned" />
 		<property name="Buff_chance" value="0.04,0.04,0.4" />
@@ -1000,7 +1000,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0">
 		<property name="Class" value="Melee" />
 		<property name="Sphere" value="0.4" />
-		<property name="DamageEntity" value="12" />
+		<property name="DamageEntity" value="15" />
 		<property name="DamageBlock" value="10" />
 		<property name="Buff" value="burningSmall,infection,stunned" />
 		<property name="Buff_chance" value="0.8,0.04,0.4" />
@@ -1013,7 +1013,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Degradation" value="99999" param1="true" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Range" value="1.9" />
-		<property name="DamageEntity" value="20" />
+		<property name="DamageEntity" value="40" />
 		<property name="DamageBlock" value="30" />
 		<property name="Buff" value="bleeding,infection,stunned" />
 		<property name="Buff_chance" value="0.3,0.4,0.4" />
@@ -1046,7 +1046,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="IsDeveloper" value="true" />
 	<property class="Action1">
 		<property name="Class" value="Projectile" />
-		<property name="DamageEntity" value="10" />
+		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="150" />
 		<property name="Explosion.ParticleIndex" value="7" />
 		<property name="Velocity" value="20" />
@@ -1069,7 +1069,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Range" value="3" />
 		<property name="Sphere" value="0.4" />
 		<property name="Block_range" value="2.5" />
-		<property name="DamageEntity" value="15" />
+		<property name="DamageEntity" value="30" />
 		<property name="DamageBlock" value="15" />
 		<property name="Sound_start" value="swoosh" />
 	</property>
@@ -1082,8 +1082,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0">
 		<property name="Delay" value="0.7" />
 		<property name="Range" value="1.4" />
-		<property name="DamageEntity" value="18" />
-		<property name="DamageBlock" value="18" />
+		<property name="DamageEntity" value="25" />
+		<property name="DamageBlock" value="20" />
 		<property name="Buff" value="bleeding,infection" />
 		<property name="Buff_chance" value="0.3,0.3" />
 		<property name="DamageBonus.earth" value="4" />
@@ -1099,7 +1099,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Range" value="2.0" />
 		<property name="Block_range" value="3" />
 		<property name="Sphere" value="0.4" />
-		<property name="DamageEntity" value="30" />
+		<property name="DamageEntity" value="60" />
 		<property name="DamageBlock" value="50" />
 		<property name="Buff" value="bleeding,stunned" />
 		<property name="Buff_chance" value="0.4,0.3" />
@@ -7781,8 +7781,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="IsDeveloper" value="true" />
         <property class="Action0"><!-- AttackAction -->
             <property name="Range" value="1.9" />
-            <property name="DamageEntity" value="50" />
-            <property name="DamageBlock" value="40" />
+            <property name="DamageEntity" value="80" />
+            <property name="DamageBlock" value="50" />
             <property name="Buff" value="brokenLeg,bleeding,infection,stunned" />
             <property name="Buff_chance" value="0.2,0.2,0.2,0.3" />
         </property>
