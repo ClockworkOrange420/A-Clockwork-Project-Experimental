@@ -404,7 +404,6 @@
 		<recipe name="rocket" unlock_level="1"/>
 		<recipe name="rocketCasing" unlock_level="1"/>
 		<recipe name="rocketTip" unlock_level="1"/>
-		<recipe name="explodingCrossbowBolt" unlock_level="1"/>
 	</perk>
 	
 	<!--Tool Unlocks-->
@@ -497,6 +496,25 @@
 		<recipe name="ironChestArmor" unlock_level="1"/>
 		<recipe name="ironHelmet" unlock_level="1"/>
 		<recipe name="ironGloves" unlock_level="1"/>
+	</perk>
+	
+	<!--Explosive-->
+	
+	<perk name="Explosives" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="10"/>
+		<requirement skill_level="2" required_skill_name="Science" required_skill_level="20"/>
+		<requirement skill_level="3" required_skill_name="Science" required_skill_level="30"/>
+		<requirement skill_level="4" required_skill_name="Science" required_skill_level="40"/>
+		<requirement skill_level="5" required_skill_name="Science" required_skill_level="50"/>
+		<recipe name="gunPowder" unlock_level="1"/>
+		<recipe name="mineCandyTin" unlock_level="2"/>
+		<recipe name="pipeBomb" unlock_level="2"/>
+		<recipe name="mineHubcap" unlock_level="2"/>
+		<recipe name="mineAirFilter" unlock_level="2"/>
+		<recipe name="rScrapIronPlateMine" unlock_level="2"/>
+		<recipe name="dynamite" unlock_level="3"/>
+		<recipe name="explodingCrossbowBolt" unlock_level="4"/>
+		<recipe name="tnt" unlock_level="5"/>
 	</perk>
 	
 	<!--Resource Unlocks-->
