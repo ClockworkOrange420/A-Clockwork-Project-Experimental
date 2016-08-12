@@ -211,9 +211,9 @@
 	<property name="WalkType" value="2" />
 	<property name="HandItem" value="handFeralZombie" />
 	<property name="WanderSpeed" value="0.08" />
-	<property name="ApproachSpeed" value="0.5" />
+	<property name="ApproachSpeed" value="0.8" />
 	<property name="NightWanderSpeed" value="0.1" />
-	<property name="NightApproachSpeed" value="1.2" />
+	<property name="NightApproachSpeed" value="1.3" />
 	<property name="PanicSpeed" value="0.55" />
 	<property name="MaxHealth" value="1200" />
 	<property name="ExperienceGain" value="2000"/>
