@@ -500,7 +500,7 @@
 	
 	<!--Explosive-->
 	
-	<perk name="Explosives" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+	<perk name="Explosives Crafting" icon="ui_game_symbol_fire" description_key="ExplosivesDesc" title_key="ExplosivesCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 		<requirement skill_level="1" required_skill_name="Science" required_skill_level="10"/>
 		<requirement skill_level="2" required_skill_name="Science" required_skill_level="20"/>
 		<requirement skill_level="3" required_skill_name="Science" required_skill_level="30"/>
