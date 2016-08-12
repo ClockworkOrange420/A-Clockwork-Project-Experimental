@@ -401,9 +401,6 @@
 	<perk name="RPG Crafting" icon="gunsmithing" description_key="RPGDesc" title_key="RPGCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement skill_level="1" required_skill_name="Gun Smithing" required_skill_level="70"/>
 		<recipe name="gunRocketLauncher" unlock_level="1"/>
-		<recipe name="rocket" unlock_level="1"/>
-		<recipe name="rocketCasing" unlock_level="1"/>
-		<recipe name="rocketTip" unlock_level="1"/>
 	</perk>
 	
 	<!--Tool Unlocks-->
@@ -515,6 +512,9 @@
 		<recipe name="dynamite" unlock_level="3"/>
 		<recipe name="explodingCrossbowBolt" unlock_level="4"/>
 		<recipe name="tnt" unlock_level="5"/>
+		<recipe name="rocket" unlock_level="5"/>
+		<recipe name="rocketCasing" unlock_level="5"/>
+		<recipe name="rocketTip" unlock_level="5"/>
 	</perk>
 	
 	<!--Resource Unlocks-->
