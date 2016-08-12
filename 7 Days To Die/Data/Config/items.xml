@@ -7780,7 +7780,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Extends" value="handMaster" />
 		<property name="IsDeveloper" value="true" />
         <property class="Action0"><!-- AttackAction -->
-            <property name="Range" value="1.9" />
+            <property name="Range" value="2.5" />
             <property name="DamageEntity" value="80" />
             <property name="DamageBlock" value="50" />
             <property name="Buff" value="brokenLeg,bleeding,infection,stunned" />
