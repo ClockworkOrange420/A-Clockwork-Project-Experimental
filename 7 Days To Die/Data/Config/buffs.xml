@@ -491,4 +491,5 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="warmByFire13" stack="discard" duration="0" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="90"/>
 </buff>
+<buff id="bleedingBurningSmall" actions="buff(burningSmall);buff(bleeding)" duration="1" />
 </buffs>

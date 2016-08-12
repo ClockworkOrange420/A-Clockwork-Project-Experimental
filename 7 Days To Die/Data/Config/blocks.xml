@@ -13207,6 +13207,12 @@ kind of free
 	<property name="CustomIconTint" value="194F5A" />
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
     <property name="DowngradeBlock" value="rScrapIronLogSpike5" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="trapSteelFireSpike" />
+		<property name="Item" value="gasCan" />
+		<property name="ItemCount" value="2" />
+		<property name="UpgradeHitCount" value="1" />
+	</property>
 	<property class="RepairItems">
 		<property name="forgedSteel" value="10" />
 	</property>
@@ -13492,7 +13498,22 @@ kind of free
 	<property name="Shape" value="Wedged60Tip" />
 	<property name="Texture" value="428" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedgeTip" /> </property>
-</block>
+  </block>
+
+  <block id="1956" name="trapSteelFireSpike">
+    <property name="Class" value="Damage" />
+	<property name="MaxDamage" value="2" />
+    <property name="Damage" value="9" />
+	<property name="Damage_received" value="1" />
+    <property name="Material" value="Msteel" />
+    <property name="Shape" value="Cone" />
+    <property name="Texture" value="356" />
+	<property name="CustomIcon" value="rScrapIronLogSpike5" />
+	<property name="CustomIconTint" value="194F5A" />
+	<property name="BuffsWhenWalkedOn" value="bleedingBurningSmall"/>
+    <property name="DowngradeBlock" value="steelSpike" />
+	<property name="Group" value="Tools/Traps" />
+  </block>
 
 
 </blocks>
