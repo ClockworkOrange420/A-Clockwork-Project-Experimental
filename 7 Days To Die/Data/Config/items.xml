@@ -2149,7 +2149,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="25" />
 	<property name="Stacknumber" value="50" /> <!-- STK explosives -->
 	<property name="Explosion.BlockDamage" value="10" /> <!-- End: Needed for  damage for blocks in the center of the explosion -->
-	<property name="Explosion.EntityDamage" value="150" /> <!-- End: Needed for  damage for entities in the center of the explosion -->
+	<property name="Explosion.EntityDamage" value="200" /> <!-- End: Needed for  damage for entities in the center of the explosion -->
 	<property name="Explosion.ParticleIndex" value="1" /> <!-- End: Needed for  which Prefab/particle is used -->
 	<property name="Explosion.RadiusBlocks" value="5" /> <!-- End: Needed for  damage radius for blocks -->
 	<property name="Explosion.RadiusEntities" value="5" /> <!-- End: Needed for  damage radius for entities -->
