@@ -3310,7 +3310,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 	<recipe name="stone" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="cementMixer">
 		<ingredient name="crushedSand" count="10"/>
-		<ingredient name="rockSmall" count="18"/>
+		<ingredient name="rockSmall" count="25"/>
 		<ingredient name="cement" count="4"/>
 	</recipe>
 
