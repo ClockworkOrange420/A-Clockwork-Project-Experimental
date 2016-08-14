@@ -407,28 +407,31 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="0.4"/>
 </buff>
 
-<buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />
-<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0)"
+<buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 3)"/>
+<buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -1, 1, 0, 0)"
 	icon="ui_game_symbol_map_bed" name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip">
 	<modify id="0" stat="health" amount="1" rate="30" />
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 </buff>
+<buff id="sleepingBagEffect2" duration="0" mutex="rested" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(fatigue, -1, 1, 0, 0)"/>
 
-<buff id="sleepingBedTrigger" duration="1" actions="setvar(CTRbed, 10)" />
-<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0)"
+<buff id="sleepingBedTrigger" duration="1" actions="setvar(CTRbed, 3)" />
+<buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -1, 1, 0, 0)"
 	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
 	<modify id="0" stat="health" amount="1" rate="15" />
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 </buff>
+<buff id="sleepingBedEffect2" duration="0" mutex="rested" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(fatigue, -1, 1, 0, 0)"/>
 
-<buff id="sleepingBigBedTrigger" duration="1" actions="setvar(CTRbigbed, 10)" />
-<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -3, 2, 0, 0)"
+<buff id="sleepingBigBedTrigger" duration="1" actions="setvar(CTRbigbed, 3)" />
+<buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -1, 1, 0, 0)"
 	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
 	<modify id="0" stat="health" amount="1" rate="5" />
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 </buff>
+<buff id="sleepingBigBedEffect2" duration="0" mutex="rested" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(fatigue, -1, 1, 0, 0)"/>
 
-<buff id="asphaltStaBoostTrigger" duration="1" actions="setvar(CTRroadrun, 10)" />
+<buff id="asphaltStaBoostTrigger" duration="1" actions="setvar(CTRroadrun, 3)" />
 <buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)" >
 	<modify id="0" stat="stamina" amount="1" rate="2"/>
 </buff>
@@ -491,5 +494,34 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="warmByFire13" stack="discard" duration="0" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="90"/>
 </buff>
+
 <buff id="bleedingBurningSmall" actions="buff(burningSmall);buff(bleeding)" duration="1" />
+
+<buff id="FatigueMain" duration="0" buffif="coretemp lequal 300" actions="increment(fatigue, 1, 100t, 0, 0)"/>
+<buff id="rested" duration="0" buffif="fatigue lequal 12" debuffif="fatigue gequal 13" actions="debuff(sleepingBagEffect2);debuff(sleepingBedEffect2);debuff(sleepingBigBedEffect2)" icon="ui_game_symbol_map_bed" name_key="Well rested" description_key="You are well rested" tooltip_key="Well rested" />
+<buff id="tired" buffif="fatigue gequal 24" debuffif="fatigue lequal 23" mutex="prettyTired,veryTired,extremelyTired,insanelyTired,deadtiredWarning" icon="ui_game_symbol_character" name_key="Tired" description_key="You are tired and should get some rest" tooltip_key="You are tired">
+	<modify id="0" stat="speedmodifier" setValue="0.90"/>
+</buff>
+<buff id="prettyTired" buffif="fatigue gequal 48" debuffif="fatigue lequal 47" actions="debuff(tired)" mutex="veryTired,extremelyTired,insanelyTired,deadtiredWarning" icon="ui_game_symbol_stunned" name_key="Pretty Tired" description_key="You are feeling pretty tired and should go to sleep" tooltip_key="You are pretty damn tired!">
+	<modify id="0" stat="stamina" amount="-1" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.80"/>
+</buff>
+<buff id="veryTired" buffif="fatigue gequal 72" debuffif="fatigue lequal 71" actions="debuff(prettyTired)" mutex="extremelyTired,insanelyTired,deadtiredWarning" icon="ui_game_symbol_stunned" name_key="Very Tired" description_key="You are very tired and need to sleep!" tooltip_key="You are very tired!">
+	<modify id="0" stat="stamina" amount="-2" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.70"/>
+</buff>
+<buff id="extremelyTired" buffif="fatigue gequal 96" debuffif="fatigue lequal 95" actions="debuff(veryTired)" mutex="insanelyTired,deadtiredWarning" icon="ui_game_symbol_oxygen" name_key="Extremely Tired" description_key="You are extremely tired and need to sleep!" tooltip_key="You are extremely tired!">
+	<modify id="0" stat="stamina" amount="-2" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.60"/>
+</buff>
+<buff id="insanelyTired" buffif="fatigue gequal 120" debuffif="fatigue lequal 119" actions="debuff(extremelyTired)" mutex="deadtiredWarning" icon="ui_game_symbol_oxygen" name_key="Insanely Tired" description_key="You are insanely tired and running on fumes!" tooltip_key="You are insanely tired!">
+	<modify id="0" stat="stamina" amount="-2" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.50"/>
+</buff>
+<buff id="deadtiredWarning" buffif="fatigue gequal 144" debuffif="fatigue lequal 143" actions="debuff(insanelyTired)" icon="ui_game_symbol_skull" name_key="Dead Tired" description_key="You are dead tired, and if you dont sleep soon you will die!" tooltip_key="You are now dead tired!">
+	<modify id="0" stat="stamina" amount="-2" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="0.40"/>
+</buff>
+<buff id="deadTired" buffif="fatigue gequal 168" actions="kill"/>
+
 </buffs>

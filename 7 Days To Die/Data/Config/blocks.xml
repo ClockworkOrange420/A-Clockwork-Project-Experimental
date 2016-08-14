@@ -254,9 +254,7 @@ then add recipes for those white/red/green metals
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CanMobsSpawnOn" value="true" />
 	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
-	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
-	-->
 </block>
 
 <block id="16" name="gravel">
@@ -3738,9 +3736,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="FuelValue" value="6" />
-	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
-	-->
 	<property class="RepairItems">
 		<property name="cloth" value="20" />
 		<property name="plantedCotton3Harvest" value="20" />
@@ -3794,9 +3790,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="FuelValue" value="12" />
-	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
-	-->
 	<drop event="Harvest" name="plantedCotton3Harvest" count="2" />
 	<drop event="Harvest" name="cloth" count="2" />
 	<drop event="Destroy" count="0" />
@@ -5880,7 +5874,6 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedCotton3Harvest" count="1" prob="1" tool_category="Crops"/>
 	<drop event="Destroy" name="cottonSeed" count="1" prob="1" />
 </block>
@@ -6243,7 +6236,6 @@ kind of free
 	<property name="Texture" value="362" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanPickup" value="true" />
 	<property name="CraftComponentTimeValue" value="10" />
 	<drop event="Harvest" name="plantedGoldenrod3Harvest" count="1" tool_category="Crops"/>
 	<drop event="Destroy" name="goldenrodSeed" count="1" prob="1" />
@@ -6896,7 +6888,6 @@ kind of free
 	<property name="Texture" value="187" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedYucca3Harvest" count="1" tool_category="Crops"/>
 	<drop event="Destroy" name="Yucca_Seed" count="1" prob="1" />
 	<drop event="Destroy" name="Yucca_Seed" count="1" prob="0.25" />
@@ -6910,7 +6901,6 @@ kind of free
 	<property name="Texture" value="188" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedAloe3Harvest" count="1" tool_category="Crops"/>
 	<drop event="Destroy" name="Aloe_Seed" count="1" prob="1" />
 	<drop event="Destroy" name="Aloe_Seed" count="1" prob="0.25" />
@@ -7052,7 +7042,6 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="CanDecorateOnSlopes" value="true" />
 	<property name="IsTerrainDecoration" value="true" />
-	<property name="CanPickup" value="true" />
 	<drop event="Harvest" name="plantedChrysanthemum3Harvest" count="1" tool_category="Crops"/>
 	<drop event="Destroy" name="Chrysanthemum_Seed" count="1" prob="1" />
 </block>
@@ -11155,9 +11144,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Furniture/bed02" param1="main_mesh" />
 	<property name="MultiBlockDim" value="2,1,2" />
-	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBigBedTrigger"/>
-	-->
 	<property name="Group" value="Building" />
 	<property class="RepairItems">
 		<property name="cloth" value="40" />
@@ -11825,9 +11812,7 @@ kind of free
 	<property name="RotationAllowed" value="pivotOnFloor" />
 	<property name="FuelValue" value="6" />
 	<property name="CanPickup" value="true" />
-	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBagTrigger"/>
-	-->
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Group" value="Basics,Building" />
 	<property class="RepairItems"> <property name="yuccaFibers" value="10" /> </property>
