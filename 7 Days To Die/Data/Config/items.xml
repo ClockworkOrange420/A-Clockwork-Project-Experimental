@@ -351,7 +351,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Melee" />
-		<property name="Delay" value="0.1" />
+		<property name="Delay" value="0.2" />
 		<property name="Range" value="1" />
 		<property name="Sphere" value="0.1" />
 		<property name="Block_range" value="4" />
@@ -8710,7 +8710,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CraftingIngredientTime" value="10" />
 		<property class="Action0"> <!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="0.1" />
+			<property name="Delay" value="0.2" />
 			<property name="Range" value="1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
