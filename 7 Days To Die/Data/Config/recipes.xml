@@ -1163,6 +1163,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     </recipe>
 
 	<!-- Clothing-->
+	<recipe name="Dry Towel" count="1" scrapable="False" craft_time = "10" craft_exp_gain="28" craft_area="Tailoring_Table" craft_tool="Sewing_Machine">
+		<ingredient name="cloth" count="10"/>
+	</recipe>
+	<recipe name="Wet Towel" count="1" scrapable="False" craft_time = "10" craft_exp_gain="28">
+		<ingredient name="Dry Towel" count="1"/>
+		<ingredient name="bottledWater" count="1"/>
+	</recipe>
+	<recipe name="Wet Cloth" count="1" scrapable="False" craft_time = "5" craft_exp_gain="14">
+		<ingredient name="cloth" count="5"/>
+		<ingredient name="bottledWater" count="1"/>
+	</recipe>
+	
 	<recipe name="militaryFiber" count="1" scrapable="False" craft_time = "20" craft_exp_gain="56" craft_area="Tailoring_Table" craft_tool="Sewing_Machine">
 		<ingredient name="cloth" count="1"/>
 		<ingredient name="leather" count="1"/>

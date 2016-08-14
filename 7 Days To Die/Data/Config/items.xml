@@ -978,8 +978,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="20" />
-		<property name="Buff" value="bleeding,infection,stunned" />
-		<property name="Buff_chance" value="0.04,0.04,0.4" />
+		<property name="Buff" value="bleeding,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.04,0.4,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -989,8 +989,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="24" />
 	<property class="Action0">
 		<property name="Delay" value="2.0" />
-		<property name="Buff" value="sprainedLeg,infection" />
-		<property name="Buff_chance" value="0.2,0.025" />
+		<property name="Buff" value="sprainedLeg,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.2,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -1002,8 +1002,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sphere" value="0.4" />
 		<property name="DamageEntity" value="15" />
 		<property name="DamageBlock" value="10" />
-		<property name="Buff" value="burningSmall,infection,stunned" />
-		<property name="Buff_chance" value="0.8,0.04,0.4" />
+		<property name="Buff" value="burningSmall,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.8,0.4,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -1015,8 +1015,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Range" value="1.9" />
 		<property name="DamageEntity" value="40" />
 		<property name="DamageBlock" value="30" />
-		<property name="Buff" value="bleeding,infection,stunned" />
-		<property name="Buff_chance" value="0.3,0.4,0.4" />
+		<property name="Buff" value="bleeding,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.3,0.4,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit" />
@@ -1035,8 +1035,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_end" value="" />
 		<property name="Sound_empty" value="" />
 		<property name="Sound_reload" value="" />
-		<property name="Buff" value="infection" />
-		<property name="Buff_chance" value="0.2" />
+		<property name="Buff" value="infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -1072,6 +1072,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageEntity" value="30" />
 		<property name="DamageBlock" value="15" />
 		<property name="Sound_start" value="swoosh" />
+		<property name="Buff" value="bleeding,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.1,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -1084,8 +1086,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Range" value="1.4" />
 		<property name="DamageEntity" value="36" />
 		<property name="DamageBlock" value="20" />
-		<property name="Buff" value="bleeding,infection" />
-		<property name="Buff_chance" value="0.3,0.3" />
+		<property name="Buff" value="bleeding,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.3,0.05,0.2,0.3,0.4,0.5" />
 		<property name="DamageBonus.earth" value="4" />
 	</property>
 </item>
@@ -1101,8 +1103,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sphere" value="0.4" />
 		<property name="DamageEntity" value="60" />
 		<property name="DamageBlock" value="50" />
-		<property name="Buff" value="bleeding,stunned" />
-		<property name="Buff_chance" value="0.4,0.3" />
+		<property name="Buff" value="bleeding,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.4,0.3,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -1110,8 +1112,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Extends" value="handBear" />
 	<property name="IsDeveloper" value="true" />
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="Buff" value="bleeding,stunned,infection" />
-		<property name="Buff_chance" value="0.4,0.3,0.4" />
+		<property name="Buff" value="bleeding,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.4,0.3,0.05,0.2,0.3,0.4,0.5" />
 	</property>
 </item>
 
@@ -4711,7 +4713,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="brokenLeg2" />
+		<property name="Debuff" value="woundActivatorClean,woundActivatorDirty,woundActivatorGrimy,woundActivatorFilthy,woundActivatorInfectious" />
 		<property name="Buff" value="splint" />
 		<property name="ActionExp" value="20"/>
 	</property>
@@ -4723,7 +4725,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="brokenLeg2" />
+		<property name="Debuff" value="woundActivatorClean,woundActivatorDirty,woundActivatorGrimy,woundActivatorFilthy,woundActivatorInfectious" />
 		<property name="Buff" value="splint" />
 		<property name="ActionExp" value="20"/>
 	</property>
@@ -4778,7 +4780,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+		<property name="Debuff" value="bleeding,arrowCriticalBleedout,woundActivatorClean,woundActivatorDirty,woundActivatorGrimy,woundActivatorFilthy,woundActivatorInfectious" />
 		<property name="ActionExp" value="20"/>
 	</property>
 	<property class="Action1">
@@ -4789,7 +4791,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_food" value="0" />
 		<property name="Gain_water" value="0" />
 		<property name="Sound_start" value="UseActions/player_bandage" />
-		<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+		<property name="Debuff" value="bleeding,arrowCriticalBleedout,woundActivatorClean,woundActivatorDirty,woundActivatorGrimy,woundActivatorFilthy,woundActivatorInfectious" />
 		<property name="ActionExp" value="20"/>
 	</property>
 	<property name="Group" value="Medicine,Basics" />
@@ -4846,6 +4848,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Sound_start" value="UseActions/player_blooddraw" />
 		<property name="Consume" value="false" />
 		<property name="Create_item" value="bloodBag" />
+		<property name="Buff" value="infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+		<property name="Buff_chance" value="0.1,0.2,0.3,0.4" />
 		<property name="ActionExp" value="50"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
@@ -4953,7 +4957,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="0" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
-		<property name="Debuff" value="infection,dysentery,dysentery2" />
+		<property name="Buff" value="recoveringSmall" />
+		<property name="Debuff" value="dysentery,dysentery2" />
 		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
@@ -4987,8 +4992,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="0" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
-		<property name="Buff" value="cured" />
-		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
+		<property name="Buff" value="recovering" />
+		<property name="Debuff" value="dysentery,dysentery2" />
 		<property name="ActionExp" value="40"/>
 	</property>
 	<property class="Action1">
@@ -5000,8 +5005,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Gain_water" value="0" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_painkillers" />
-		<property name="Buff" value="cured" />
-		<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2" />
+		<property name="Buff" value="recovering" />
+		<property name="Debuff" value="dysentery,dysentery2" />
 		<property name="ActionExp" value="40"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
@@ -7784,8 +7789,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 			<property name="Block_range" value="3" />
             <property name="DamageEntity" value="80" />
             <property name="DamageBlock" value="50" />
-            <property name="Buff" value="brokenLeg,bleeding,infection,stunned" />
-            <property name="Buff_chance" value="0.2,0.2,0.2,0.3" />
+            <property name="Buff" value="brokenLeg,bleeding,stunned,infectionActivatorClean,infectionActivatorDirty,infectionActivatorGrimy,infectionActivatorFilthy,infectionActivatorInfectious" />
+            <property name="Buff_chance" value="0.2,0.2,0.3,0.05,0.2,0.3,0.4,0.5" />
         </property>
     </item>
 	<item id="1517" name="Yeast">
@@ -8553,7 +8558,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
             <property name="Gain_water" value="0" />
             <property name="Gain_stamina" value="40" />
             <property name="Sound_start" value="UseActions/player_drinking" />
-			<property name="Debuff" value="infection" />
+			<property name="Buff" value="recoveringTiny" />
 			<property name="Create_item" value="emptyJar" />
         </property>
 		<property name="DescriptionKey" value="honeyPoulticeDesc"/>
@@ -8755,6 +8760,61 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
+	</item>
+	<item id="1616" name="Dry Towel">
+		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="25" />
+		<property name="FuelValue" value="1" />
+		<property class="Action1"> <!-- UseAction -->
+			<property name="Class" value="ExchangeItem" />
+			<property name="Delay" value="1.0" />
+			<property name="Change_item_to" value="Wet Towel" />
+			<property name="Do_block_action" value="deplete1" />
+			<property name="Focused_blockname_1" value="water" />
+			<property name="Focused_blockname_2" value="waterMoving" />
+			<property name="Focused_blockname_3" value="waterStaticBucket" />
+			<property name="Focused_blockname_4" value="waterMovingBucket" />
+			<property name="Focused_blockname_5" value="waterSource8" />
+			<property name="Sound_start" value="UseActions/bucketfill_water" />
+		</property>
+		<property name="Group" value="Resources,Clothing" />
+		<property name="CraftingSkillGroup" value="Tailoring"/>
+	</item>
+	<item id="1617" name="Wet Towel">
+		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="25" />
+		<property name="FuelValue" value="1" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Sound_start" value="UseActions/player_drinking" />
+			<property name="Create_item" value="Dry Towel" />
+			<property name="Debuff" value="burningSmall,burning" />
+			<property name="Buff" value="rinsingOff" />
+		</property>
+		<property name="Group" value="Resources,Clothing" />
+	</item>
+	<item id="1618" name="Wet Cloth">
+		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="14" />
+		<property name="Stacknumber" value="25" />
+		<property name="FuelValue" value="1" />
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Sound_start" value="UseActions/player_drinking" />
+			<property name="Create_item" value="Dry Towel" />
+			<property name="Debuff" value="burningSmall,burning" />
+			<property name="Buff" value="rinsingOffSmall" />
+		</property>
+		<property name="Group" value="Resources,Clothing" />
 	</item>
 
 </items>
