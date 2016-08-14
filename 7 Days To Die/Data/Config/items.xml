@@ -1136,7 +1136,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DamageBonus.head" value="2" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="1" />
-		<property name="DamageBonus.metal" value="2" />
+		<property name="DamageBonus.metal" value="1" />
 		<property name="DamageBonus.earth" value="0.25" />
 		<property name="DamageBonus.organic" value="1" />
 		<property name="ActionExp" value="1" />
