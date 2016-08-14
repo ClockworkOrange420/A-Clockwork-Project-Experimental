@@ -8763,6 +8763,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1616" name="Dry Towel">
 		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="DescriptionKey" value="DryTowelDesc"/>
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="14" />
 		<property name="Stacknumber" value="25" />
@@ -8784,6 +8785,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1617" name="Wet Towel">
 		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="DescriptionKey" value="WetTowelDesc"/>
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="14" />
 		<property name="Stacknumber" value="25" />
@@ -8801,6 +8803,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</item>
 	<item id="1618" name="Wet Cloth">
 		<property name="Meshfile" value="Items/Crafting/cloth" />
+		<property name="DescriptionKey" value="WetClothDesc"/>
 		<property name="Material" value="cloth" />
 		<property name="HoldType" value="14" />
 		<property name="Stacknumber" value="25" />
