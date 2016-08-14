@@ -498,7 +498,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="bleedingBurningSmall" actions="buff(burningSmall);buff(bleeding)" duration="1" />
 
 <buff id="FatigueMain" duration="0" buffif="coretemp lequal 300" actions="increment(fatigue, 1, 100t, 0, 0)"/>
-<buff id="rested" duration="0" buffif="fatigue lequal 12" debuffif="fatigue gequal 13" actions="debuff(sleepingBagEffect2);debuff(sleepingBedEffect2);debuff(sleepingBigBedEffect2)" icon="ui_game_symbol_map_bed" name_key="Well rested" description_key="You are well rested" tooltip_key="Well rested" />
+<buff id="rested" duration="0" buffif="fatigue lequal 2" debuffif="fatigue gequal 18" actions="debuff(sleepingBagEffect2);debuff(sleepingBedEffect2);debuff(sleepingBigBedEffect2)" icon="ui_game_symbol_map_bed" name_key="Well rested" description_key="You are well rested" tooltip_key="Well rested" />
 <buff id="tired" buffif="fatigue gequal 24" debuffif="fatigue lequal 23" mutex="prettyTired,veryTired,extremelyTired,insanelyTired,deadtiredWarning" icon="ui_game_symbol_character" name_key="Tired" description_key="You are tired and should get some rest" tooltip_key="You are tired">
 	<modify id="0" stat="speedmodifier" setValue="0.90"/>
 </buff>
