@@ -3090,7 +3090,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="wood" count="5"/>
 		<ingredient name="nail" count="2"/>
 	</recipe>
-
+	<!--
 	<recipe name="rebarFrameBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" craft_tool="anvil" material_based="true">
 		<ingredient name="unit_iron" count="5"/>
 		<ingredient name="unit_clay" count="1"/>
@@ -3110,7 +3110,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="5"/>
 		<ingredient name="unit_clay" count="1"/>
 	</recipe>
-
+	-->
 	<recipe name="redWoodBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="clawHammer">
 		<ingredient name="plantedChrysanthemum3Harvest" count="1"/>
 		<ingredient name="wood" count="15"/>
