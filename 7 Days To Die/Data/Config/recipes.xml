@@ -117,147 +117,147 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	
 	<recipe name="adobeTanBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeTanRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachCNRFull" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachCNRInside" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachCNRRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachPillar100" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobePeachPillar50" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachPlate" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachPole" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachWedge" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobePeachWedgeTip" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteCNRFull" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteCNRInside" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteCNRRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhitePillar100" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhitePillar50" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhitePlate" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhitePole" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteWedge" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="adobeWhiteWedgeTip" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 
 	<recipe name="aloeCream" count="1" scrapable="False" craft_time = "4" craft_exp_gain="100">
@@ -328,6 +328,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	
 	<!-- Modded -->
 	<!--
+	<recipe name="blueberrySeed" count="1" scrapable="False" craft_time = "1">
+		<ingredient name="blueberries" count="1"/>
+	</recipe>
+	
+	<recipe name="cornSeed" count="1" scrapable="False" craft_time = "1">
+		<ingredient name="corn" count="1"/>
+	</recipe>
+
+	<recipe name="cottonSeed" count="1" scrapable="False" craft_time = "1">
+		<ingredient name="plantedCotton3Harvest" count="1"/>
+	</recipe>
+	
+	<recipe name="goldenrodSeed" count="1" scrapable="False" craft_time = "1">
+		<ingredient name="plantedGoldenrod3Harvest" count="1"/>
+	</recipe>
+	
+	<recipe name="potatoSeed" count="1" scrapable="False" craft_time = "1">
+		<ingredient name="potato" count="1"/>
+	</recipe>
+	
 	<recipe name="Chrysanthemum_Seed" count="1" scrapable="False" craft_time = "1">
         <ingredient name="plantedChrysanthemum3Harvest" count="1"/>
     </recipe>
@@ -2007,11 +2027,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="bioFuel" count="3" scrapable="False" craft_time = "30" craft_exp_gain="84" craft_area="New_Oven" craft_tool="beaker">
 		<ingredient name="oilShale" count="50"/>
 	</recipe>
-	<!--
-	<recipe name="blueberrySeed" count="1" scrapable="False" craft_time = "1">
-		<ingredient name="blueberries" count="1"/>
-	</recipe>
-	-->
+	
 	<recipe name="blunderbuss" count="1" scrapable="False" craft_time = "60" craft_exp_gain="167">
 		<ingredient name="forgedIron" count="4"/>
 		<ingredient name="shortMetalPipe" count="2"/>
@@ -2029,77 +2045,77 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 	<recipe name="brickBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickCNRFull" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickCNRInside" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickCNRRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickDecayedBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickPaversBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickPaversStairs25" count="1" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true" scrapable="False">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<!--
 	<recipe name="brickPillar100" count="1" scrapable="False" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickPillar50" count="1" scrapable="False" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	-->
 
 	<recipe name="brickPlate" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<!--
 	<recipe name="brickPole" count="1" scrapable="False" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	-->
 
 	<recipe name="brickRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<!--
 	<recipe name="brickWedge" count="1" scrapable="False" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="brickWedgeTip" count="1" scrapable="False" craft_area="forge" material_based="true">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	-->
 
@@ -2177,22 +2193,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 	<recipe name="clayRoofBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="clayRoofRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="clayRoofCNRFull" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="clayRoofCNRInside" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 
 	<recipe name="clawHammer" count="1" scrapable="False" craft_time = "20" craft_exp_gain="56" craft_area="Smithing_Table" craft_tool="anvil">
@@ -2364,6 +2380,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="rockSmall" count="1"/>
     </recipe>
 	
+	<recipe name="concreteMix" count="1" scrapable="False" craft_area="cementMixer" craft_exp_gain="0">
+		<ingredient name="crushedSand" count="3"/>
+		<ingredient name="cement" count="1"/>
+	</recipe>
+	
 	<recipe name="concreteBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="concreteMix" count="10"/>
 	</recipe>
@@ -2390,11 +2411,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 	<recipe name="concreteHalf" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="concreteMix" count="10"/>
-	</recipe>
-
-	<recipe name="concreteMix" count="1" scrapable="False" craft_area="cementMixer" craft_exp_gain="0">
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="cement" count="1"/>
 	</recipe>
 
 	<recipe name="concretePillar100" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
@@ -2445,15 +2461,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="50"/>
 		<ingredient name="unit_clay" count="10"/>
 	</recipe>
-	<!--
-	<recipe name="cornSeed" count="1" scrapable="False" craft_time = "1">
-		<ingredient name="corn" count="1"/>
-	</recipe>
-
-	<recipe name="cottonSeed" count="1" scrapable="False" craft_time = "1">
-		<ingredient name="plantedCotton3Harvest" count="1"/>
-	</recipe>
-	-->
+	
 	<recipe name="crossbow" count="1" scrapable="False" craft_time = "60" craft_exp_gain="167" craft_area="Smithing_Table" craft_tool="anvil">
 		<ingredient name="forgedIron" count="5"/>
 		<ingredient name="leather" count="4"/>
@@ -2622,11 +2630,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="femur" count="1"/>
 		<ingredient name="bottledWater" count="1"/>
 	</recipe>
-	<!--
-	<recipe name="goldenrodSeed" count="1" scrapable="False" craft_time = "1">
-		<ingredient name="plantedGoldenrod3Harvest" count="1"/>
-	</recipe>
-	-->
+	
 	<recipe name="grass" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12">
 		<ingredient name="fertileDirt" count="1"/>
 	</recipe>
@@ -3057,11 +3061,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="plainsGround" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12">
 		<ingredient name="fertileDirt" count="1"/>
 	</recipe>
-	<!--
-	<recipe name="potatoSeed" count="1" scrapable="False" craft_time = "1">
-		<ingredient name="potato" count="1"/>
-	</recipe>
-	-->
+	
 	<recipe name="rScrapIronPlateMine" count="1" scrapable="True" craft_time = "20" craft_exp_gain="56" craft_area="Ammunition_Table" craft_tool="toolAndDieSet">
 		<ingredient name="scrapIronPlate" count="1"/>
 		<ingredient name="gunPowder" count="3"/>
@@ -3632,149 +3632,149 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	
 	<recipe name="brickCNRRound" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	
 	<recipe name="brickModernBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	
 	<recipe name="brickpaintedBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	<recipe name="brickDecayedTanBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	<recipe name="brickDecayedRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	<recipe name="brickDecayedTanRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	<recipe name="brickPaintedRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
 		<ingredient name="Bricks" count="8"/>
-		<ingredient name="concreteMix" count="2"/>
+		<ingredient name="concreteMix" count="3"/>
 	</recipe>
 	
 	<!--Adobe-->
 	
 	<recipe name="tanStuccoBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="workbench" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="tileFloor3Block" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="tileFloor5Block" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="tileIndustrialPlate" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="tile3Stairs50" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="blueDrywallBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="orangeDrywallBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="cremeDrywallBaseboard2SidesBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="peachDrywallBaseboardPillar100" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhitePyramid" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhiteDrywallBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhiteDrywallBaseboardBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhiteTrimRamp" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhiteTrimCNRFull" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobeWhiteTrimCNRInside" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobePeachDrywallBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="adobePeachDrywallBaseboardBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="cremeDrywallBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<recipe name="cremeDrywallBaseboardBlock" count="1" scrapable="False" craft_time = "4" craft_exp_gain="12" craft_area="Crafting_Table_Misc" craft_tool="Chisel">
-		<ingredient name="cement" count="2"/>
-		<ingredient name="crushedSand" count="3"/>
-		<ingredient name="wood" count="5"/>
+		<ingredient name="cement" count="1"/>
+		<ingredient name="crushedSand" count="1"/>
+		<ingredient name="cobblestones" count="8"/>
 	</recipe>
 	
 	<!--wood-->
