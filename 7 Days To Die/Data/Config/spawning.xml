@@ -79,7 +79,7 @@
 	
 	<biome name="water">
 		<spawn maxcount="3" respawndelay="4" time="Day"   entitygroup="ZombiesAll" />
-       	<spawn maxcount="1" respawndelay="8" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
+       	<spawn maxcount="1" respawndelay="15" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
 	</biome>
 	
 

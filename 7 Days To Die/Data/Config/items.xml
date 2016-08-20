@@ -370,7 +370,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="ActionExp" value="1" />
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="20,30" />
+		<property name="EntityDamage" value="15,30" />
 		<property name="BlockDamage" value="4,10" />
 		<property name="DegradationMax" value="1600,1600" />
 		<property name="DegradationRate" value="26,2" />
