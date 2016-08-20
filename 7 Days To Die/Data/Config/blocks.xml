@@ -1726,6 +1726,7 @@ group desc for stuff like metal siding
     	<property name="IsDeveloper" value="true" />
 	<property name="Shape" value="PlateCentered" />
 	<property name="UpgradeRated.ToBlock" value="rConcreteCTRPlate" />
+	<property name="DowngradeBlock" value="WindowPlug04" />
 </block>
 
 <block id="254" name="rConcreteCNRInside">
@@ -5919,6 +5920,7 @@ kind of free
 	<property name="Extends" value="concreteMaster" />
 	<property name="Shape" value="PlateCentered" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCTRPlate" /> </property>
+	<property name="DowngradeBlock" value="WindowPlug04" />
 </block>
 
 <block id="721" name="drywallWhitePlate">
@@ -10287,12 +10289,15 @@ kind of free
 </block>
 
 <block id="1381" name="WindowPlug04">
-	<property name="Extends" value="WindowPlug03" />
 	<property name="Material" value="wood+metal" />
 	<property name="Model" value="WindowPlug04" />
 	<property name="Texture" value="384" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWindowPlug05CTRPlate" /> </property>
-	<property name="DowngradeBlock" value="WindowPlug03" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="concreteCTRPlate" />
+		<property name="Item" value="concreteMix" />
+		<property name="ItemCount" value="10" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 </block>
 
 <block id="1382" name="mushroom01">
@@ -11530,8 +11535,8 @@ kind of free
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="352" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="pouredConcreteCTRPlate" />
-		<property name="Item" value="concreteMix" />
+		<property name="ToBlock" value="steelCTRPlate" />
+		<property name="Item" value="forgedSteel" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
@@ -11545,7 +11550,12 @@ kind of free
 <block id="1532" name="rConcreteCTRPlate">
 	<property name="Extends" value="rConcreteMaster" />
 	<property name="Shape" value="PlateCentered" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="steelCTRPlate" /> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="scrapIronWindowPlug05CTRPlate" />
+		<property name="Item" value="scrapIronPlate" />
+		<property name="ItemCount" value="1" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 	<property name="DowngradeBlock" value="concreteCTRPlate" />
 </block>
 	<!-- Free -->
@@ -11554,7 +11564,7 @@ kind of free
 	<property name="Extends" value="steelMaster" />
 	<property name="Shape" value="PlateCentered" />
 	<property name="Texture" value="356" />
-	<property name="DowngradeBlock" value="rConcreteCTRPlate" />
+	<property name="DowngradeBlock" value="rScrapIronWindowPlug06CTRPlate" />
 </block>
 
 <block id="1537" name="rWoodPole">
