@@ -14107,6 +14107,7 @@ kind of free
 	<property name="FuelValue" value="80" />
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
 	<property name="Place" value="TowardsPlacer" />
+	<property name="CanPickup" value="true" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cntTrapChest"/>
@@ -14131,7 +14132,7 @@ kind of free
 	<property name="Group" value="Basics,Building" />
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4" />
-		<property name="RadiusBlocks" value="5" />
+		<property name="RadiusBlocks" value="1" />
 		<property name="BlockDamage" value="1" />
 		<property name="RadiusEntities" value="5" />
 		<property name="EntityDamage" value="1000" />
