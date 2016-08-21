@@ -13532,6 +13532,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1958" name="hiddenSteelOpen">
@@ -13576,6 +13577,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1961" name="hiddenRScrapIronOpen">
@@ -13618,6 +13620,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1964" name="hiddenScrapIronOpen">
@@ -13658,6 +13661,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1967" name="hiddenRConcreteOpen">
@@ -13700,6 +13704,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1970" name="hiddenConcreteOpen">
@@ -13742,6 +13747,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1973" name="hiddenCobblestoneOpen">
@@ -13782,6 +13788,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1976" name="hiddenBrickPaverOpen">
@@ -13824,6 +13831,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1979" name="hiddenBrickBlockOpen">
@@ -13864,6 +13872,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1982" name="hiddenBrickDecayedOpen">
@@ -13906,6 +13915,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1985" name="hiddenBrickDecayedTanOpen">
@@ -13948,6 +13958,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1988" name="hiddenBrickPaintedOpen">
@@ -13990,6 +14001,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1991" name="hiddenBrickModernOpen">
@@ -14032,6 +14044,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1994" name="hiddenRWoodOpen">
@@ -14074,6 +14087,7 @@ kind of free
 		<property name="ItemCount" value="0"/>
 		<property name="UpgradeHitCount" value="1"/>
     </property>
+	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="hiddenDoorDesc"/>
   </block>
   <block id="1997" name="hiddenWoodOpen">
@@ -14116,6 +14130,7 @@ kind of free
 		<property name="UpgradeHitCount" value="1"/>
     </property>
 	<drop event="Destroy" name="cntTrapChestUpgrade" count="1" />
+	<property name="Group" value="Tools/Traps" />
 	<property name="DescriptionKey" value="cntTrapChestUpgradeDesc"/>
   </block>
   <block id="2000" name="cntTrapChest">
