@@ -404,6 +404,86 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="plantedYucca3Harvest" count="1"/>
     </recipe>
 	
+	<recipe name="Remote" count="1" scrapable="False" craft_time = "30" craft_exp_gain="84" craft_area="Smithing_Table" craft_tool="wrench">
+        <ingredient name="spring" count="1" />
+		<ingredient name="scrapCable" count="1" />
+		<ingredient name="Batteries" count="1" />
+		<ingredient name="shortMetalPipe" count="1" />
+		<ingredient name="forgedSteel" count="2" />
+    </recipe>
+	
+	<recipe name="hiddenSteelPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+        <ingredient name="forgedSteel" count="60" />
+    </recipe>
+	<recipe name="hiddenRScrapIronPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+        <ingredient name="scrapIronPlate" count="4" />
+    </recipe>
+	<recipe name="hiddenScrapIronPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+        <ingredient name="scrapIronPlate" count="2" />
+    </recipe>
+	<recipe name="hiddenRConcretePlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+        <ingredient name="concreteMix" count="40"/>
+		<ingredient name="cobblestones" count="20"/>
+    </recipe>
+	<recipe name="hiddenConcretePlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+        <ingredient name="concreteMix" count="20"/>
+		<ingredient name="cobblestones" count="20"/>
+    </recipe>
+	<recipe name="hiddenCobblestonePlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="cobblestones" count="20"/>
+    </recipe>
+	<recipe name="hiddenBrickPaverPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenBrickBlockPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenBrickDecayedPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenBrickDecayedTanPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenBrickPaintedPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenBrickModernPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="Bricks" count="16"/>
+		<ingredient name="concreteMix" count="6"/>
+    </recipe>
+	<recipe name="hiddenRWoodPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="wood" count="40"/>
+		<ingredient name="nail" count="10"/>
+    </recipe>
+	<recipe name="hiddenWoodPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="wood" count="20"/>
+		<ingredient name="nail" count="10"/>
+    </recipe>
+	<recipe name="cntTrapChestUpgrade" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
+        <ingredient name="spring" count="10" />
+		<ingredient name="tnt" count="5"/>
+		<ingredient name="nail" count="10"/>
+    </recipe>
+	
 	<recipe name="ironTippedSpear" count="1" scrapable="False" craft_time = "15" craft_exp_gain="42" craft_area="Smithing_Table" craft_tool="anvil">
         <ingredient name="ironArrowHead" count="1"/>
         <ingredient name="wood" count="4" />

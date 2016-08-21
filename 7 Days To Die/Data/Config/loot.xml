@@ -729,6 +729,7 @@
 	<item name="doorKnob" count="1"/>
 	<item name="oil" count="2,6"/>
 	<item name="Ink" count="1,2"/>
+	<item name="Batteries" count="1,2"/>
 	<item name="shortMetalPipe" count="1"/>
 	<item name="fishingWeight" count="1,3"/>
 	<item name="scrapLead" count="1"/>
@@ -962,6 +963,7 @@
 	<item name="cookingPot"/>
 	<item name="leather"/>
 	<item name="firstAidKit"/>
+	<item name="Batteries" count="1,2"/>
 	<item name="padlock"/>
 	<item name="bedroll"/>
 	<item group="skullCapAll"/>
@@ -1081,6 +1083,8 @@
 	<item name="flashlight02"/>
 	<item name="Dry Towel"/>
 	<item group="trophyGroup"/>
+	<item name="Remote" count="1"/>
+	<item name="Batteries" count="1,2"/>
 	<item group="ammo"/>
 	<item group="books" count="1"/>
 	<item group="medicine"/>
@@ -1470,6 +1474,14 @@
 	</lootgroup>
 	<lootcontainer id="77"  count="1" size="2,2" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="composter" prob="1" />
+	</lootcontainer>
+	
+	<!--for trap chest-->
+	<lootgroup name="trapChest" count="all" >
+		<item name="paper" count="1" />
+	</lootgroup>
+	<lootcontainer id="78" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="trapChest" prob="1" />
 	</lootcontainer>
 
 </lootcontainers>

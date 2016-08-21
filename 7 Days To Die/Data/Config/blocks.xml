@@ -2319,6 +2319,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="6" /> <property name="cloth" value="4" /> </property>
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Harvest" name="cloth" count="2" />
+	<drop event="Harvest" name="Remote" count="1" prob="0.05"/>
 	<drop event="Destroy" count="0" />
 	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
@@ -4296,6 +4297,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="6" /> <property name="leather" value="4" /> </property>
 	<drop event="Harvest" name="wood" count="2" />
 	<drop event="Harvest" name="leather" count="2" />
+	<drop event="Harvest" name="Remote" count="1" prob="0.05"/>
 	<drop event="Destroy" count="0" />
 	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
@@ -13513,6 +13515,627 @@ kind of free
 		<property name="gasCan" value="4" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
+  </block>
+  <block id="1957" name="hiddenSteelPlacement">
+	<property name="Material" value="Msteel" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenSteelClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1958" name="hiddenSteelOpen">
+	<property name="Extends" value="steelMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="steelBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenSteelClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenRScrapIronOpen" />
+  </block>
+  <block id="1959" name="hiddenSteelClosed">
+	<property name="Extends" value="steelMaster" />
+	<property name="Material" value="Msteel" />
+	<property name="CustomIcon" value="steelBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenSteelOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenRScrapIronClosed" />
+  </block>
+  <block id="1960" name="hiddenRScrapIronPlacement">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRScrapIronClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1961" name="hiddenRScrapIronOpen">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="CustomIcon" value="rScrapIronBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRScrapIronClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenScrapIronOpen" />
+  </block>
+  <block id="1962" name="hiddenRScrapIronClosed">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="CustomIcon" value="rScrapIronBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRScrapIronOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenScrapIronClosed" />
+  </block>
+  <block id="1963" name="hiddenScrapIronPlacement">
+	<property name="Extends" value="scrapIronMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenScrapIronClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1964" name="hiddenScrapIronOpen">
+	<property name="Extends" value="scrapIronMaster" />
+	<property name="CustomIcon" value="rScrapIronBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenScrapIronClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1965" name="hiddenScrapIronClosed">
+	<property name="Extends" value="scrapIronMaster" />
+	<property name="CustomIcon" value="rScrapIronBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenScrapIronOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1966" name="hiddenRConcretePlacement">
+	<property name="Extends" value="rConcreteMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRConcreteClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1967" name="hiddenRConcreteOpen">
+	<property name="Extends" value="rConcreteMaster" />
+	<property name="CustomIcon" value="rConcreteBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRConcreteClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenConcreteOpen" />
+  </block>
+  <block id="1968" name="hiddenRConcreteClosed">
+	<property name="Extends" value="rConcreteMaster" />
+	<property name="CustomIcon" value="rConcreteBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRConcreteOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenConcreteClosed" />
+  </block>
+  <block id="1969" name="hiddenConcretePlacement">
+	<property name="Extends" value="concreteMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenConcreteClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1970" name="hiddenConcreteOpen">
+	<property name="Extends" value="concreteMaster" />
+	<property name="CustomIcon" value="concreteBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenConcreteClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenCobblestoneOpen" />
+  </block>
+  <block id="1971" name="hiddenConcreteClosed">
+	<property name="Extends" value="concreteMaster" />
+	<property name="CustomIcon" value="concreteBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenConcreteOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenCobblestoneClosed" />
+  </block>
+  <block id="1972" name="hiddenCobblestonePlacement">
+	<property name="Extends" value="cobblestoneMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenCobblestoneClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1973" name="hiddenCobblestoneOpen">
+	<property name="Extends" value="cobblestoneMaster" />
+	<property name="CustomIcon" value="cobblestoneBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenCobblestoneClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1974" name="hiddenCobblestoneClosed">
+	<property name="Extends" value="cobblestoneMaster" />
+	<property name="CustomIcon" value="cobblestoneBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenCobblestoneOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1975" name="hiddenBrickPaverPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaverClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1976" name="hiddenBrickPaverOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickPaversBlock" />
+	<property name="Texture" value="247" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaverClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1977" name="hiddenBrickPaverClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickPaversBlock" />
+	<property name="Texture" value="247" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaverOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1978" name="hiddenBrickBlockPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickBlockClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1979" name="hiddenBrickBlockOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickBlockClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1980" name="hiddenBrickBlockClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickBlockOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1981" name="hiddenBrickDecayedPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1982" name="hiddenBrickDecayedOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickDecayedBlock" />
+	<property name="Texture" value="299,299,299,299,299,299" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1983" name="hiddenBrickDecayedClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickDecayedBlock" />
+	<property name="Texture" value="299,299,299,299,299,299" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1984" name="hiddenBrickDecayedTanPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedTanClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1985" name="hiddenBrickDecayedTanOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickDecayedTanBlock" />
+	<property name="Texture" value="328" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedTanClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1986" name="hiddenBrickDecayedTanClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickDecayedTanBlock" />
+	<property name="Texture" value="328" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickDecayedTanOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1987" name="hiddenBrickPaintedPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaintedClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1988" name="hiddenBrickPaintedOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickpaintedBlock" />
+	<property name="Texture" value="332" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaintedClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1989" name="hiddenBrickPaintedClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickpaintedBlock" />
+	<property name="Texture" value="332" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickPaintedOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1990" name="hiddenBrickModernPlacement">
+	<property name="Extends" value="brickMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickModernClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1991" name="hiddenBrickModernOpen">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickModernBlock" />
+	<property name="Texture" value="227" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickModernClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1992" name="hiddenBrickModernClosed">
+	<property name="Extends" value="brickMaster" />
+	<property name="CustomIcon" value="brickModernBlock" />
+	<property name="Texture" value="227" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenBrickModernOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1993" name="hiddenRWoodPlacement">
+	<property name="Extends" value="rWoodMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRWoodClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1994" name="hiddenRWoodOpen">
+	<property name="Extends" value="rWoodMaster" />
+	<property name="CustomIcon" value="rWoodBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRWoodClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenWoodOpen" />
+  </block>
+  <block id="1995" name="hiddenRWoodClosed">
+	<property name="Extends" value="rWoodMaster" />
+	<property name="CustomIcon" value="rWoodBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenRWoodOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DowngradeBlock" value="hiddenWoodClosed" />
+  </block>
+  <block id="1996" name="hiddenWoodPlacement">
+	<property name="Extends" value="woodMaster" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenWoodClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="1997" name="hiddenWoodOpen">
+	<property name="Extends" value="woodMaster" />
+	<property name="CustomIcon" value="woodBlock" />
+	<property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenWoodClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1998" name="hiddenWoodClosed">
+	<property name="Extends" value="woodMaster" />
+	<property name="CustomIcon" value="woodBlock" />
+	<property name="MultiBlockDim" value="1,1,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenWoodOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="1999" name="cntTrapChestUpgrade">
+	<property name="Material" value="wood+wood" />
+	<property name="CustomIcon" value="cntSecureStorageChest" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="FuelValue" value="80" />
+	<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
+	<property name="Place" value="TowardsPlacer" />
+	<property class="RepairItems"> <property name="wood" value="10" /> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntTrapChest"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<drop event="Destroy" name="cntTrapChestUpgrade" count="1" />
+	<property name="DescriptionKey" value="cntTrapChestUpgradeDesc"/>
+  </block>
+  <block id="2000" name="cntTrapChest">
+	<property name="Class" value="CarExplodeLoot" />
+	<property name="Material" value="wood+wood" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="FuelValue" value="80" />
+	<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
+	<property name="Place" value="TowardsPlacer" />
+	<property name="LootList" value="78" />
+	<property class="RepairItems"> <property name="wood" value="10" /> </property>
+	<property name="Group" value="Basics,Building" />
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4" />
+		<property name="RadiusBlocks" value="5" />
+		<property name="BlockDamage" value="1" />
+		<property name="RadiusEntities" value="5" />
+		<property name="EntityDamage" value="1000" />
+	</property>
   </block>
 
 
