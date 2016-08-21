@@ -63,11 +63,11 @@ then add recipes for those white/red/green metals
 	<property name="DropScale" value="2" />
 	<property name="LPHardnessScale" value="2" />
 	<property name="Weight" value="125" />
-	<property class="RepairItems"> <property name="rockSmall" value="20" /> </property>
+	<property class="RepairItems"> <property name="rockSmall" value="40" /> </property>
 	<drop event="Harvest" name="rockSmall" count="14" />
 	<drop event="Destroy" name="rockSmall" count="19" />
 	<drop event="Destroy" name="scrapIron" count="2" />
-	<drop event="Fall" name="rockSmall" count="50" prob=".23"  stick_chance="0" />
+	<drop event="Fall" name="rockSmall" count="40" prob=".23"  stick_chance="0" />
 	<drop event="Fall" name="scrapIron" count="4" prob=".23"  stick_chance="0" />
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.1"  stick_chance=".5" />
 	<!-- Better to have fewer stacks with higher numbers for performance reasons. -->
