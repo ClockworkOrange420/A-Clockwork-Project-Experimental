@@ -2962,6 +2962,7 @@ group desc for stuff like metal siding
 	</property>
 	<property name="LPHardnessScale" value="0" /> <!-- disable LP for TNT blocks -->
 	<property name="Group" value="Tools/Traps" />
+	<property name="CanPickup" value="true" />
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </block>
 
