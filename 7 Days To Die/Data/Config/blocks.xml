@@ -10284,15 +10284,15 @@ kind of free
 	<property name="Texture" value="23" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug04" />
-		<property name="Item" value="scrapIronPlate" />
-		<property name="ItemCount" value="1" />
+		<property name="Item" value="cobblestones" />
+		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
 	</property>
 	<property name="DowngradeBlock" value="WindowPlug02" />
 </block>
 
 <block id="1381" name="WindowPlug04">
-	<property name="Material" value="wood+metal" />
+	<property name="Material" value="Mcobblestone" />
 	<property name="Model" value="WindowPlug04" />
 	<property name="Texture" value="384" />
 	<property class="UpgradeBlock">
