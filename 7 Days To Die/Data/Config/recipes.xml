@@ -1207,7 +1207,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_clay" count="5"/>
     </recipe>
 	
-	<recipe name="omnigel" count="100" scrapable="False" craft_time = "240" craft_exp_gain="667" craft_area="Omnigel_Station" craft_tool="beaker">
+	<recipe name="omnigel" count="100" scrapable="False" craft_time = "60" craft_exp_gain="167" craft_area="Omnigel_Station" craft_tool="beaker">
         <ingredient name="potato" count="4"/>
         <ingredient name="blueberries" count="4"/>
 		<ingredient name="mushrooms" count="4"/>
