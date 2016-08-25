@@ -7552,16 +7552,14 @@ kind of free
 </block>
 
 <block id="948" name="flagstoneBlock">
-	<property name="Extends" value="adobeMaster" />
+	<property name="Extends" value="brickBlock" />
 	<property name="Texture" value="226" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="concreteBlock" /> </property>
 	<property name="DescriptionKey" value="flagstoneGroupDesc"/>
 </block>
 
 <block id="949" name="brickPaversBlock">
-	<property name="Extends" value="brickMaster" />
+	<property name="Extends" value="brickBlock" />
 	<property name="Texture" value="247" />
-	<property class="UpgradeBlock">	<property name="ToBlock" value="concreteBlock" /> </property>
 </block>
 
 <block id="950" name="flagstoneDrywallBaseboardBlock">
