@@ -840,7 +840,7 @@ group desc for stuff like metal siding
 	<property name="Material" value="Mmetal_medium" />
 	<property name="Texture" value="307" />
     	<property name="IsDeveloper" value="true" />
-	<property class="RepairItems"> <property name="scrapIron" value="8" /> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronMaster" />
 		<property name="Item" value="scrapIronPlate" />
