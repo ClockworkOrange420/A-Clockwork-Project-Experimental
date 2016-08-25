@@ -14111,7 +14111,54 @@ kind of free
 		<property name="UpgradeHitCount" value="1"/>
     </property>
   </block>
-  <block id="1999" name="cntTrapChestUpgrade">
+    <block id="1999" name="hiddenGlassPlacement">
+	<property name="Material" value="glass" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,2,2" />
+	<property name="Place" value="Door" />
+	<property name="PlaceEverywhere" value="true" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenGlassClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+	<property name="Group" value="Building" />
+	<property name="DescriptionKey" value="hiddenDoorDesc"/>
+  </block>
+  <block id="2000" name="hiddenGlassOpen">
+    <property name="Material" value="glass" />
+	<property name="Shape" value="CubeCutout" />
+	<property name="Mesh" value="transparent" />
+	<property name="Texture" value="333" />
+	<property name="CustomIcon" value="glassShowerBlock" />
+	<property name="MultiBlockDim" value="1,2,1" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenGlassClosed"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="2001" name="hiddenGlassClosed">
+    <property name="Material" value="glass" />
+	<property name="Shape" value="CubeCutout" />
+	<property name="Mesh" value="transparent" />
+	<property name="Texture" value="333" />
+	<property name="CustomIcon" value="glassShowerBlock" />
+	<property name="MultiBlockDim" value="1,2,2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hiddenGlassOpen"/>
+		<property name="Item" value="Remote"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="1"/>
+    </property>
+  </block>
+  <block id="2002" name="cntTrapChestUpgrade">
 	<property name="Material" value="wood+wood" />
 	<property name="CustomIcon" value="cntSecureStorageChest" />
 	<property name="StabilitySupport" value="false" />
@@ -14132,7 +14179,7 @@ kind of free
 	<property name="Group" value="Tools/Traps" />
 	<property name="DescriptionKey" value="cntTrapChestUpgradeDesc"/>
   </block>
-  <block id="2000" name="cntTrapChest">
+  <block id="2003" name="cntTrapChest">
 	<property name="Class" value="CarExplodeLoot" />
 	<property name="Material" value="wood+wood" />
 	<property name="StabilitySupport" value="false" />
