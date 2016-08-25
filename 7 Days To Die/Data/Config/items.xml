@@ -7886,7 +7886,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 		<property name="DescriptionKey" value="sewingMachineDesc"/>
     </item>
-	<item id="1524" name="Chisel">
+	<item id="1524" name="Trowel">
         <property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
         <property name="Material" value="metal" />
@@ -7894,7 +7894,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="HoldType" value="45" />
         <property name="Stacknumber" value="1" />
 		<property name="Group" value="Resources" />
-		<property name="DescriptionKey" value="chiselDesc"/>
+		<property name="DescriptionKey" value="trowelDesc"/>
 		<property name="CraftingSkillGroup" value="Tool Smithing"/>
     </item>
 	<item id="1525" name="Compost">
