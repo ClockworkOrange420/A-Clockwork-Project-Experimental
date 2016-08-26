@@ -414,7 +414,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	
 	<recipe name="hiddenGlassPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
         <ingredient name="spring" count="10" />
-		<ingredient name="glassShowerBlock" count="1" />
+		<ingredient name="glassShowerBlock" count="4" />
     </recipe>
 	<recipe name="hiddenSteelPlacement" count="1" scrapable="False" craft_time = "12" craft_exp_gain="36" craft_area="workbench" craft_tool="wrench" >
         <ingredient name="spring" count="10" />
