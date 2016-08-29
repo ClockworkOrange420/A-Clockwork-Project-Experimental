@@ -508,8 +508,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
 		<property name="Magazine_items" value="shotgunShell, shotgunSlug, Unload" />
-		<property name="Magazine_item_ray_counts" value="9, 1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0.6, 0, 0" />
+		<property name="Magazine_item_ray_counts" value="8, 1, 1" />
+		<property name="Magazine_item_ray_spreads" value="0.9, 0, 0" />
 		<property name="Reload_time" value="2.6" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire" />
@@ -564,7 +564,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Magazine_size" value="8" />
 		<property name="Magazine_items" value="shotgunShell, shotgunSlug, Unload" />
 		<property name="Magazine_item_ray_counts" value="8, 1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0.4, 0, 0" />
+		<property name="Magazine_item_ray_spreads" value="0.75, 0, 0" />
 		<property name="Reload_time" value="2.6" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire" />
