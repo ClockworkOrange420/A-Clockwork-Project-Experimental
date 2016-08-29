@@ -492,7 +492,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="cured2" stack="reset" duration="3000" actions="increment(@wellness, 0.035, 100, 0, 0)" />
 
-<buff id="warmByFire" onexpired="warmByFire2" duration="0" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
+<buff id="warmByFire" onexpired="warmByFire2" duration="10" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
 	<modify id="0" stat="coretemp" modifyValue="30"/>
 </buff>
 <buff id="warmByFire2" onexpired="warmByFire3" duration="10" stack="discard" debuffif="+heatSource less 1" type="coretemp" icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
