@@ -125,11 +125,11 @@ built-in buff variables:
 
 <buffs>
 
-<buff id="woundActivatorClean" duration="50" onexpired="infection" requires="clean" mutex="cured,infection,infection1,infection2,infection3"/>
-<buff id="woundActivatorDirty" duration="30" onexpired="infection" requires="dirty" mutex="cured,infection,infection1,infection2,infection3"/>
-<buff id="woundActivatorGrimy" duration="15" onexpired="infection" requires="grimy" mutex="cured,infection,infection1,infection2,infection3"/>
-<buff id="woundActivatorFilthy" duration="10" onexpired="infection" requires="filthy" mutex="cured,infection,infection1,infection2,infection3"/>
-<buff id="woundActivatorInfectious" duration="5" onexpired="infection" requires="infectious" mutex="cured,infection,infection1,infection2,infection3"/>
+<buff id="woundActivatorClean" duration="30" onexpired="infection" requires="clean" mutex="cured,infection,infection1,infection2,infection3"/>
+<buff id="woundActivatorDirty" duration="15" onexpired="infection" requires="dirty" mutex="cured,infection,infection1,infection2,infection3"/>
+<buff id="woundActivatorGrimy" duration="10" onexpired="infection" requires="grimy" mutex="cured,infection,infection1,infection2,infection3"/>
+<buff id="woundActivatorFilthy" duration="5" onexpired="infection" requires="filthy" mutex="cured,infection,infection1,infection2,infection3"/>
+<buff id="woundActivatorInfectious" duration="1" onexpired="infection" requires="infectious" mutex="cured,infection,infection1,infection2,infection3"/>
 <buff id="bleeding" duration="60" type="bleeding" actions="buff(woundActivatorClean);buff(woundActivatorDirty);buff(woundActivatorGrimy);buff(woundActivatorFilthy);buff(woundActivatorInfectious);debuff(fullBuff);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
