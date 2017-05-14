@@ -1242,9 +1242,9 @@ Stew
 <buff id="NutritionGood" duration="0" mutex="NutritionGreat,NutritionBest" buffif="Nutrition gequal 10" debuffif="Nutrition lequal 9" actions="increment(@wellness, 1, 7200t, 0, 0);debuff(NutritionNeutral);debuff(NutritionLow);debuff(NutritionBad);debuff(NutritionVeryBad);debuff(NutritionExtremelyBad)" />
 <buff id="NutritionGreat" duration="0" mutex="NutritionBest" buffif="Nutrition gequal 20" debuffif="Nutrition lequal 19" actions="increment(@wellness, 1, 4800t, 0, 0);debuff(NutritionGood);debuff(NutritionNeutral);debuff(NutritionLow);debuff(NutritionBad);debuff(NutritionVeryBad);debuff(NutritionExtremelyBad)" />
 <buff id="NutritionBest" duration="0" buffif="Nutrition gequal 30" debuffif="Nutrition lequal 29" actions="increment(@wellness, 1, 2400t, 0, 0);debuff(NutritionGreat);debuff(NutritionGood);debuff(NutritionNeutral);debuff(NutritionLow);debuff(NutritionBad);debuff(NutritionVeryBad);debuff(NutritionExtremelyBad)" />
-
+<!--
 <buff id="NutritionDecay" duration="0" buffif="Nutrition gequal 1" debuffif="Nutrition less 1" actions="increment(Nutrition, -1, 240t, 0, 0);min(Nutrition, 0)" />
-
+-->
 <buff id="eatRawBad" duration="1" actions="increment(RawBad, 1, 1, 0, 0);max(RawBad, 50)"/>
 <buff id="MetabolizeRawBad" buffif="RawBad greater 0" debuffif="RawBad less 1" actions="increment(RawBad, -1, 100t, 0, 0);min(RawBad, 0)"/>
 <buff id="NutritionDownTiny" duration="0" buffif="RawBad gequal -20" debuffif="RawBad lequal -21" actions="increment(Nutrition, -1, 100t, 0, 0)" />
