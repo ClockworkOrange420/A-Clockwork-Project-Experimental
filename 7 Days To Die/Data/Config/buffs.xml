@@ -1228,9 +1228,9 @@ Stew
 
 
 
-<buff id="Bifecta5" duration="0" mutex="Bifecta5" actions="increment(Nutrition, 1, 100t, 0, 0);max(Nutrition, 15)" />
-<buff id="Bifecta10" duration="0" mutex="Bifecta10" actions="increment(Nutrition, 1, 50t, 0, 0);max(Nutrition, 20)" name_key="Peak Bifecta" description_key="Peak Bifecta Nutritional Level." tooltip_key="Peak Bifecta Nutritional Level." />
-<buff id="Trifecta5" duration="0" mutex="Trifecta5" actions="increment(Nutrition, 1, 100t, 0, 0);max(Nutrition, 25)" />
+<buff id="Bifecta5" duration="0" mutex="Bifecta5" actions="increment(Nutrition, 1, 100t, 0, 0);max(Nutrition, 25)" />
+<buff id="Bifecta10" duration="0" mutex="Bifecta10" actions="increment(Nutrition, 1, 50t, 0, 0);max(Nutrition, 25)" name_key="Peak Bifecta" description_key="Peak Bifecta Nutritional Level." tooltip_key="Peak Bifecta Nutritional Level." />
+<buff id="Trifecta5" duration="0" mutex="Trifecta5" actions="increment(Nutrition, 1, 100t, 0, 0);max(Nutrition, 40)" />
 <buff id="Trifecta10" duration="0" mutex="Trifecta10" actions="increment(Nutrition, 1, 50t, 0, 0);max(Nutrition, 40)" name_key="Peak Trifecta" description_key="Peak Trifecta Nutritional Level." tooltip_key="Peak Trifecta Nutritional Level." />
 
 
