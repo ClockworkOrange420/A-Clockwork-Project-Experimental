@@ -4,7 +4,7 @@
 	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >	
 	
 	id = ID used for the quest
-	name_key - localization key for the quest used when displayed in the quest list.
+	name_key - localization key for the quest used when displayed in the quest list. 
 	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
 	description_key = localization key for the description displayed in the description window.
 	offer_key = localization key for the offer window description.
@@ -48,7 +48,6 @@
 		<reward type="Quest" id="quest_FirearmAssembly07" />
 		<reward type="Quest" id="quest_FirearmAssembly08" />
 		<reward type="Quest" id="quest_FirearmAssembly09" />
-		<reward type="ShowTip" value="tutorialTipQuest04" stage="aftercomplete" />
     </quest>
 	<!-- Basic Survival 1 - Craft a Stone Axe /> -->
     <quest id="quest_BasicSurvival0" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival0" subtitle_key="quest_BasicSurvival0_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_hammer" category_key="Quest">
@@ -61,6 +60,7 @@
 		<objective type="Craft" id="stoneAxe" value="1" />
 		
 		<reward type="SkillPoints" value="1" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
     </quest>
 	
 	
@@ -122,7 +122,7 @@
 
 	<!-- Basic Survival 7 - Craft a Bedroll /> -->	
 	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_bed" category_key="Quest">
-		<objective type="FetchKeep" id="plantedCotton3Harvest" value="50" />
+		<objective type="FetchKeep" id="cottonPlant" value="50" />
 		<objective type="FetchKeep" id="cloth" value="15" />
 		<objective type="Craft" id="bedroll" value="1" />
 		<objective type="BlockPlace" id="bedroll" value="1" />
@@ -136,6 +136,14 @@
 		<objective type="Craft" id="campfire" value="1" />
 		<objective type="BlockPlace" id="campfire" value="1" />
 		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
+    </quest>
+	
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<objective type="Goto" id="trader" value="5" />
+	
 		<reward type="SkillPoints" value="1" />
     </quest>
 	
@@ -828,7 +836,6 @@
 	<quest id="quest_ZombieSlayer01" name_key="quest_ZombieSlayer01" subtitle_key="quest_ZombieSlayer01_subtitle" description_key="quest_ZombieSlayer01_offer" icon="ui_game_symbol_zombie" 
 	offer_key="quest_ZombieSlayer01_offer" category_key="Quest" difficulty="easy">
 	
-		<reward type="ShowTip" value="tutorialTipQuest05" />
 		<reward type="Quest" id="quest_ZombieSlayer02" />
 	</quest>
 	
@@ -853,18 +860,18 @@
 		<objective type="ZombieKill" value="250"  />
 		
 		<reward type="SkillPoints" value="15" />
-		<!--
-		<reward type="Quest" id="quest_ZombieSlayer05" />
-		-->
-	</quest>
-	<!--
-	<quest id="quest_ZombieSlayer05" group_name_key="quest_ZombieSlayer0" name_key="quest_ZombieSlayer05" subtitle_key="quest_ZombieSlayer05_subtitle" description_key="quest_ZombieSlayer05_description" icon="ui_game_symbol_zombie" 
-	repeatable="true" category_key="Quest" difficulty="insane">
-		<objective type="ZombieKill" value="1000"  />
+		<reward type="Item" id="qt_zombieRepeat" value="1" />
 		
-		<reward type="SkillPoints" value="50" />
 	</quest>
-	-->
+	
+	<quest id="quest_ZombieSlayer05" group_name_key="quest_ZombieSlayer0" name_key="quest_ZombieSlayer05" subtitle_key="quest_ZombieSlayer05_subtitle" description_key="quest_ZombieSlayer05_description" icon="ui_game_symbol_zombie" 
+	repeatable="true" offer_key="quest_ZombieSlayer05_offer" category_key="Quest" difficulty="hard">
+		<objective type="ZombieKill" value="100"  />
+		
+		<reward type="SkillPoints" value="5" />
+		<reward type="Item" id="qt_zombieRepeat" value="1" />
+	</quest>
+	
 	
 	<!--End Modded-->
 	
