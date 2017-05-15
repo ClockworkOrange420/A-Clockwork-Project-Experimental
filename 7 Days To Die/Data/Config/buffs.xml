@@ -916,7 +916,7 @@ Stew
 <buff id="NutritionDownLarge" duration="0" buffif="LargeBad gequal 1" debuffif="LargeBad less 1" actions="increment(Nutrition, 4, 100t, 0, 0)" />
 
 
-<buff id="eatFruit" duration="1" actions="increment(Fruit, 1, 0, 0, 1);max(Fruit, 50)" icon="ui_game_symbol_natural_healing" name_key="Eat Fruit" description_key="Eat Fruit." tooltip_key="Eat Fruit."/>
+<buff id="eatFruit" duration="1" actions="increment(Fruit, 1, 0, 0, 1);max(Fruit, 50)"/>
 <buff id="MetabolizeFruit" buffif="Fruit greater 0" debuffif="Fruit less 1" actions="increment(Fruit, -1, 100t, 0, 0);min(Fruit, 0) "/>
 
 <buff id="PositiveFruit5Deactivator" duration="1" actions="debuff(Single5)" />
