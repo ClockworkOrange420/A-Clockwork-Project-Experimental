@@ -1041,14 +1041,14 @@ Stew
 <buff id="NegativeDairy50" ondebuff="NegativeDairy50Deactivator" buffif="Dairy gequal 50" debuffif="Dairy lequal 49" actions="buff(NegativeSingle50);debuff(NegativeDairy45)" icon="ui_game_symbol_natural_healing" name_key="Negative Dairy" description_key="Negative Dairy Nutritional Level." tooltip_key="Negative Dairy Nutritional Level." />
 
 
-<buff id="NegativeSingle15" duration="0" actions="increment(Nutrition, 1, 600t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle20" duration="0" actions="increment(Nutrition, 1, 500t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle25" duration="0" actions="increment(Nutrition, 1, 400t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle30" duration="0" actions="increment(Nutrition, 1, 300t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle35" duration="0" actions="increment(Nutrition, 1, 200t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle40" duration="0" actions="increment(Nutrition, 1, 100t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle45" duration="0" actions="increment(Nutrition, 1, 50t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
-<buff id="NegativeSingle50" duration="0" actions="increment(Nutrition, 1, 25t, 0, 0)" icon="ui_game_symbol_natural_healing" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle15" duration="0" actions="increment(Nutrition, 1, 600t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle20" duration="0" actions="increment(Nutrition, 1, 500t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle25" duration="0" actions="increment(Nutrition, 1, 400t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle30" duration="0" actions="increment(Nutrition, 1, 300t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle35" duration="0" actions="increment(Nutrition, 1, 200t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle40" duration="0" actions="increment(Nutrition, 1, 100t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle45" duration="0" actions="increment(Nutrition, 1, 50t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
+<buff id="NegativeSingle50" duration="0" actions="increment(Nutrition, 1, 25t, 0, 0)" icon="ui_game_symbol_lightbulb" name_key="Negative Single" description_key="Negative Single Nutritional Level." tooltip_key="Negative Single Nutritional Level." />
 
 
 <buff id="PositiveFruitMeat5Deactivator" duration="1" actions="debuff(PositiveFruitMeat5);debuff(Bifecta5)"/>
