@@ -6219,7 +6219,7 @@ which does not exist, yet. -->
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="10" />
 		<property name="Gain_wellness" value="0" />
-		<property name="Buff" value="eatSmallBad,eatGrain" />
+		<property name="Buff" value="eatRawBad,eatGrain" />
 	</property>
 </item>
 
@@ -6229,7 +6229,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="7" />
 		<property name="Gain_water" value="0" />
-		<property name="Buff" value="eatSmallBad,eatGrain" />
+		<property name="Buff" value="eatRawBad,eatGrain" />
 	</property>
 </item>
 
@@ -6239,7 +6239,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="0" />
-		<property name="Buff" value="eatSmallBad,eatVeg" />
+		<property name="Buff" value="eatRawBad,eatVeg" />
 	</property>
 </item>
 
@@ -6249,7 +6249,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="10" />
-		<property name="Buff" value="eatSmallBad,eatFruit" />
+		<property name="Buff" value="eatRawBad,eatFruit" />
 	</property>
 </item>
 
@@ -6259,7 +6259,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="10" />
-		<property name="Buff" value="eatSmallBad,eatVeg" />
+		<property name="Buff" value="eatRawBad,eatVeg" />
 	</property>
 </item>
 
@@ -6269,7 +6269,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="10" />
-		<property name="Buff" value="eatSmallBad,eatVeg" />
+		<property name="Buff" value="eatRawBad,eatVeg" />
 	</property>
 </item>
 
@@ -6279,7 +6279,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-2" />
-		<property name="Buff" value="eatSmallBad,eatMeat" />
+		<property name="Buff" value="eatRawBad,eatMeat" />
 	</property>
 </item>
 
@@ -6300,7 +6300,7 @@ which does not exist, yet. -->
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 		<property name="Create_item" value="canEmpty" />
-		<property name="Buff" value="eatSmallBad,eatMeat" />
+		<property name="Buff" value="eatRawBad,eatMeat" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -6439,7 +6439,7 @@ which does not exist, yet. -->
 		<property name="Gain_water" value="0" />
 		<property name="Gain_sickness" value="30" />
 		<property name="Sound_start" value="UseActions/player_eating" />
-		<property name="Buff" value="foodPoisoning,eatGrain,eatMedBad" />
+		<property name="Buff" value="foodPoisoning,eatGrain,eatRawBad" />
 	</property>
 	<property name="Group" value="Food/Cooking" />
 </item>
@@ -7007,7 +7007,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_water" value="8" />
 		<property name="Gain_stamina" value="0" />
-		<property name="Buff" value="megaCrushBuff,eatFruit,eatRawBad" />
+		<property name="Buff" value="megaCrushBuff,eatFruit" />
 		<property name="Debuff" value="burningSmall,burning" />
 	</property>
 </item>

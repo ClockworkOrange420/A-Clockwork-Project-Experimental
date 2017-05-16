@@ -899,19 +899,19 @@ Stew
 
 <buff id="NutritionHighLock" duration="1" ondebuff="NutritionLockRemover" buffif="Nutrition gequal 964" debuffif="Nutrition lequal 963" actions="buff(NutritionLock);debuff(NutritionBase)" />
 
-<buff id="eatRawBad" duration="1" actions="increment(RawBad, 6, 0, 0, 1);max(RawBad, 50)"/>
+<buff id="eatRawBad" duration="1" actions="increment(RawBad, 2, 0, 0, 1);max(RawBad, 50)"/>
 <buff id="MetabolizeRawBad" buffif="RawBad greater 0" debuffif="RawBad less 1" actions="increment(RawBad, -1, 100t, 0, 0);min(RawBad, 0)"/>
 <buff id="NutritionDownTiny" duration="0" buffif="RawBad gequal 1" debuffif="RawBad less 1" actions="increment(Nutrition, 1, 25t, 0, 0)" />
 
-<buff id="eatSmallBad" duration="1" actions="increment(SmallBad, 12, 0, 0, 1);max(SmallBad, 50)"/>
+<buff id="eatSmallBad" duration="1" actions="increment(SmallBad, 4, 0, 0, 1);max(SmallBad, 50)"/>
 <buff id="MetabolizeSmallBad" buffif="SmallBad greater 0" debuffif="SmallBad less 1" actions="increment(SmallBad, -1, 100t, 0, 0);min(SmallBad, 0)"/>
 <buff id="NutritionDownSmall" duration="0" buffif="SmallBad gequal 1" debuffif="SmallBad less 1" actions="increment(Nutrition, 2, 50t, 0, 0)" />
 
-<buff id="eatMedBad" duration="1" actions="increment(MedBad, 18, 0, 0, 1);max(MedBad, 50)"/>
+<buff id="eatMedBad" duration="1" actions="increment(MedBad, 6, 0, 0, 1);max(MedBad, 50)"/>
 <buff id="MetabolizeMedBad" buffif="MedBad greater 0" debuffif="MedBad less 1" actions="increment(MedBad, -1, 100t, 0, 0);min(MedBad, 0)"/>
 <buff id="NutritionDownMed" duration="0" buffif="MedBad gequal 1" debuffif="MedBad less 1" actions="increment(Nutrition, 1, 25t, 0, 0)" />
 
-<buff id="eatLargeBad" duration="1" actions="increment(LargeBad, 24, 0, 0, 1);max(LargeBad, 50)"/>
+<buff id="eatLargeBad" duration="1" actions="increment(LargeBad, 8, 0, 0, 1);max(LargeBad, 50)"/>
 <buff id="MetabolizeLargeBad" buffif="LargeBad greater 0" debuffif="LargeBad less 1" actions="increment(LargeBad, -1, 100t, 0, 0);min(LargeBad, 0)"/>
 <buff id="NutritionDownLarge" duration="0" buffif="LargeBad gequal 1" debuffif="LargeBad less 1" actions="increment(Nutrition, 4, 100t, 0, 0)" />
 
