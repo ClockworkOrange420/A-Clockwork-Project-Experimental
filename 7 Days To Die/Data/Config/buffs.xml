@@ -915,6 +915,23 @@ Stew
 <buff id="MetabolizeLargeBad" buffif="LargeBad greater 0" debuffif="LargeBad less 1" actions="increment(LargeBad, -1, 100t, 0, 0);min(LargeBad, 0)"/>
 <buff id="NutritionDownLarge" duration="0" buffif="LargeBad gequal 1" debuffif="LargeBad less 1" actions="increment(Nutrition, 4, 100t, 0, 0)" />
 
+<buff id="eatVitamin" duration="1" actions="increment(Vitamin, 6, 0, 0, 1);max(Vitamin, 50)"/>
+<buff id="MetabolizeVitamin" buffif="Vitamin greater 0" debuffif="Vitamin less 1" actions="increment(Vitamin, -1, 100t, 0, 0);min(Vitamin, 0)"/>
+<buff id="NutritionUpTiny" duration="0" buffif="Vitamin gequal 1" debuffif="Vitamin less 1" actions="increment(Nutrition, -1, 25t, 0, 0)" />
+
+<buff id="eatSmallGood" duration="1" actions="increment(SmallGood, 12, 0, 0, 1);max(SmallGood, 50)"/>
+<buff id="MetabolizeSmallGood" buffif="SmallGood greater 0" debuffif="SmallGood less 1" actions="increment(SmallGood, -1, 100t, 0, 0);min(SmallGood, 0)"/>
+<buff id="NutritionUpSmall" duration="0" buffif="SmallGood gequal 1" debuffif="SmallGood less 1" actions="increment(Nutrition, -2, 50t, 0, 0)" />
+
+<buff id="eatMedGood" duration="1" actions="increment(MedGood, 18, 0, 0, 1);max(MedGood, 50)"/>
+<buff id="MetabolizeMedGood" buffif="MedGood greater 0" debuffif="MedGood less 1" actions="increment(MedGood, -1, 100t, 0, 0);min(MedGood, 0)"/>
+<buff id="NutritionUpMed" duration="0" buffif="MedGood gequal 1" debuffif="MedGood less 1" actions="increment(Nutrition, -1, 25t, 0, 0)" />
+
+<buff id="eatLargeGood" duration="1" actions="increment(LargeGood, 24, 0, 0, 1);max(LargeGood, 50)"/>
+<buff id="MetabolizeLargeGood" buffif="LargeGood greater 0" debuffif="LargeGood less 1" actions="increment(LargeGood, -1, 100t, 0, 0);min(LargeGood, 0)"/>
+<buff id="NutritionUpLarge" duration="0" buffif="LargeGood gequal 1" debuffif="LargeGood less 1" actions="increment(Nutrition, -4, 100t, 0, 0)" />
+
+
 
 <buff id="eatFruit" duration="1" actions="increment(Fruit, 1, 0, 0, 1);max(Fruit, 50)"/>
 <buff id="MetabolizeFruit" buffif="Fruit greater 0" debuffif="Fruit less 1" actions="increment(Fruit, -1, 100t, 0, 0);min(Fruit, 0) "/>
