@@ -535,7 +535,7 @@
 			</module>
 			<module name="land" type="ClampOutput">
 				<property name="sourceModule" value="scaleLandBase"/>
-				<property name="bounds" value="0.01,0.15"/>
+				<property name="bounds" value="0,0.05"/>
 			</module>
 			
 			<module name="landBase2" type="FastBillow" no_seed="true">
@@ -554,7 +554,7 @@
 			</module>
 			<module name="land2" type="ClampOutput">
 				<property name="sourceModule" value="scaleLandBase2"/>
-				<property name="bounds" value="0.01,0.15"/>
+				<property name="bounds" value="0,0.05"/>
 			</module>
 			
 			<module name="mountainsBase" type="FastNoise" no_seed="true">
@@ -621,7 +621,7 @@
 				<property name="controlModule" value="Control"/>
 				<property name="sourceModule1" value="Water"/>
 				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,10000"/>
+				<property name="bounds" value="0,5000"/>
 				<property name="edgeFalloff" value="0.5"/>
 			</module>
 			
@@ -629,7 +629,7 @@
 				<property name="controlModule" value="Control"/>
 				<property name="sourceModule1" value="landMntWater"/>
 				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,10000"/> <!-- want more water make the value="" closer "0,1000" etc,. -->
+				<property name="bounds" value="0,5000"/> <!-- want more water make the value="" closer "0,1000" etc,. -->
 				<property name="edgeFalloff" value="0.5"/>
 			</module>
 			
@@ -653,7 +653,7 @@
 		<biome_generator name="vanilla">
 		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
+				<property name="frequency" value="0.0008"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 			</module>
 			<module name="biasOutput" type="BiasOutput">
@@ -692,7 +692,7 @@
 		<biome_intensity_generator name="vanilla">
 		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
+				<property name="frequency" value="0.0008"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 				<property name="distanceEnabled" value="true"/>
 			</module>
