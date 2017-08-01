@@ -2618,7 +2618,7 @@
 	</block>
 	<block id="267" name="animalGore">
 		<property name="CreativeMode" value="Dev"/>
-		<property name="Class" value="Gore" />
+		<!--<property name="Class" value="Gore" />-->
 		<property name="Material" value="organic"/>
 		<property name="Shape" value="ModelEntity"/>
 		<!-- A ModelEntity does NOT need a texture entry. -->
@@ -2627,7 +2627,6 @@
 		<property name="Tag" value="Gore"/>
 		<property name="IsTerrainDecoration" value="true"/>
 		<property name="FallDamage" value="false"/>
-		<property name="LootList" value="99"/>
 		<!-- WILL NOT WORK WITH GORE ANY MORE<property name="UpgradeRated.ToBlock" value="air"/-->
 		<!-- 1=min, 15=max NOTE: 1 tick is approximately a 1 to 2 minute real-time interval. -->
 		<!-- property name="UpgradeRated.Rate" value="15"/>-->
