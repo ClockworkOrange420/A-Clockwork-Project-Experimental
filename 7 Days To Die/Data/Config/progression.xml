@@ -644,6 +644,7 @@
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="30"/>
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="solarbank" unlock_level="1"/>
+		<recipe name="solarCell" unlock_level="1"/>
 	</perk>
 	<perk name="electricBatteryBankPerk" icon="battery" description_key="This perk will unlock recipes for electrical devices." title_key="Battery Bank" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="40"/>
