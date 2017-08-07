@@ -1,6 +1,6 @@
 Install Instrictions:
 
--Open A Clockwork Project Master folder 
+-Open A Clockwork Project Experimental Master folder 
 
 -then open the 7 Days To Die folder
 
