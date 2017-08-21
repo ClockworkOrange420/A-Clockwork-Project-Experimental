@@ -1337,7 +1337,6 @@
 	<item name="bulletCasing" count="20,50"/>
 	<item name="bulletTip" count="20,50"/>
 	<item group="motorToolParts"/>
-	<item name="Silencer" count="1"/>
 	<item group="nailgunParts"/>
 	<item group="weaponsCompoundBowParts"/>
 	<item group="weaponsCommonParts"/>
