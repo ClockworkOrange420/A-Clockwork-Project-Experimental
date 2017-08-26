@@ -7828,7 +7828,7 @@
 	</block>
 	<block id="767" name="treeBrownGrassDiagonal">
 		<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
-		<property name="Texture" value="201,306,371,201,306,371"/>
+		<property name="Texture" value="306,306,371,371,306,371"/>
 	</block>
 	<block id="768" name="treeTallGrassDiagonal">
 		<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
