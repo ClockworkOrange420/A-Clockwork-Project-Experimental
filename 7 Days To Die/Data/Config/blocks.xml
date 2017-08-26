@@ -11150,6 +11150,7 @@
 	<block id="1205" name="window03Frame">
 		<property name="Extends" value="window03Broke2"/>
 		<property name="Material" value="wood_weak"/>
+		<property name="MaxDamage" value="100"/>
 		<property name="Model" value="Buildings/window03_frame" param1="main_mesh"/>
 		<property class="RepairItems">
 			<property name="wood" value="5"/>
@@ -11205,44 +11206,10 @@
 		<property name="Texture" value="417"/>
 	</block>
 	<block id="1211" name="window04Frame">
-		<property name="Material" value="wood_weak"/>
-		<property name="LightOpacity" value="0"/>
-		<property name="Shape" value="Ext3dModel"/>
-		<property name="Texture" value="293"/>
-		<property name="Mesh" value="models"/>
-		<property name="Model" value="Buildings/window04_frame" param1="main_mesh"/>
-		<property name="Place" value="TowardsPlacer"/>
-		<property name="Collide" value="movement,melee,rocket"/>
-		<property class="RepairItems">
-			<property name="wood" value="5"/>
-		</property>
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="plainWoodWindowPlug"/>
-			<property name="Item" value="wood"/>
-			<property name="ItemCount" value="10"/>
-			<property name="UpgradeHitCount" value="4"/>
-		</property>
-		<property name="CustomUpgradeSound" value="place_block_wood"/>
-		<drop event="Destroy" count="0"/>
+		<property name="Extends" value="window03Frame"/>
 	</block>
 	<block id="1212" name="window04">
-		<property name="Material" value="glass"/>
-		<property name="LightOpacity" value="0"/>
-		<property name="Shape" value="Ext3dModel"/>
-		<property name="Texture" value="293"/>
-		<property name="Mesh" value="models"/>
-		<property name="Model" value="Buildings/window04" param1="main_mesh"/>
-		<property name="Place" value="TowardsPlacer"/>
-		<property name="Collide" value="movement,melee,rocket"/>
-		<property class="UpgradeBlock">
-			<property name="ToBlock" value="plainWoodWindowPlug"/>
-			<property name="Item" value="wood"/>
-			<property name="ItemCount" value="10"/>
-			<property name="UpgradeHitCount" value="4"/>
-		</property>
-		<property name="CustomUpgradeSound" value="place_block_wood"/>
-		<property name="DowngradeBlock" value="window04Frame"/>
-		<drop event="Destroy" name="brokenGlass" count="1" tool_category="Harvest"/>
+		<property name="Extends" value="window03Broke1"/>
 	</block>
 	<block id="1213" name="doorFrameWhite1">
 		<property name="Material" value="wood_weak"/>
@@ -12656,7 +12623,7 @@
 			<property name="wood" value="10"/>
 		</property>
 		<property class="UpgradeBlock">
-			<property name="ToBlock" value="WindowPlug01"/>
+			<property name="ToBlock" value="WindowPlug03"/>
 			<property name="Item" value="wood"/>
 			<property name="ItemCount" value="10"/>
 			<property name="UpgradeHitCount" value="4"/>
@@ -12701,7 +12668,7 @@
 			<property name="UpgradeHitCount" value="4"/>
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_metal"/>
-		<property name="DowngradeBlock" value="WindowPlug02"/>
+		<property name="DowngradeBlock" value="plainWoodWindowPlug"/>
 	</block>
 	<block id="1381" name="WindowPlug04">
 		<property name="Extends" value="WindowPlug03"/>
@@ -13008,7 +12975,7 @@
 			<property name="UpgradeHitCount" value="4"/>
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_wood"/>
-		<property name="DowngradeBlock" value="window03WoodBroke1"/>
+		<property name="DowngradeBlock" value="window03WoodFrame"/>
 		<drop event="Destroy" name="brokenGlass" count="1" tool_category="Harvest"/>
 		<property name="Group" value="Building"/>
 		<property name="EconomicValue" value="8"/>
@@ -13016,7 +12983,7 @@
 	</block>
 	<block id="1414" name="window03WoodFrame">
 		<property name="Extends" value="window03WoodBroke2"/>
-		<property name="Material" value="wood_regular"/>
+		<property name="Material" value="wood_weak"/>
 		<property name="MaxDamage" value="100"/>
 		<property name="Model" value="Buildings/window03_wood_frame" param1="main_mesh"/>
 		<property class="RepairItems">
