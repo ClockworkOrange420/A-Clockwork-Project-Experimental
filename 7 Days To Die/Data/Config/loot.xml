@@ -1080,6 +1080,7 @@
 	<item name="Noodles" count="1,3"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="seeds" count="1,3" prob="0.5"/>
+	<item group="farmCrops" count="1,3" prob="0.5"/>
 	<item name="bottledWater" prob="0.5"/>
 	<item name="emptyJar" count="1,4"/>
 	<item group="sinkTools" count="1" prob="0.15"/>
@@ -1559,7 +1560,7 @@
 	<item name="cookingPot" count="1"/>
 	<item name="emptyJar" count="1,2"/>
 	<item name="canEmpty" count="1,2"/>
-	<item name="coffeeBeans" count="1,4"/>
+	<item group="farmCrops" count="1,3"/>
 	<item name="shortMetalPipe" count="1,2"/>
 	<item group="sinkTools" count="1" prob="0.3"/>
 	<item name="scrapLead" count="1,10"/>
