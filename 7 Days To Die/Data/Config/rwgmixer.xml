@@ -404,10 +404,10 @@
 			<prefab name="cabin_snow_hidden_01"/>
 			<prefab name="ranger_station1" />
 			<prefab name="snowy_ski_lodge" />
-			<prefab name="utility_celltower_01" max_count="1"/>
-			<prefab name="utility_celltower_02" max_count="1"/>
-			<prefab name="bombshelter_lg_01" max_count="1"/>
-			<prefab name="bombshelter_md_01" max_count="1"/>
+			<prefab name="utility_celltower_01" prob="0.1"/>
+			<prefab name="utility_celltower_02" prob="0.1"/>
+			<prefab name="bombshelter_lg_01" prob="0.05"/>
+			<prefab name="bombshelter_md_01" prob="0.05"/>
 			<prefab name="campsite_01" />
 			<prefab name="campsite_02" />
 			<prefab name="campsite_03" />
