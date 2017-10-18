@@ -750,12 +750,12 @@ ingredient in the list so ammo recipes have been re-ordered as a temp fix. -->
 		<ingredient name="unit_iron" count="200"/>
 		<ingredient name="unit_clay" count="20"/>
 	</recipe>
-	<recipe name="arrow" count="1" craft_time = "4" craft_exp_gain="1" >
+	<recipe name="arrow" count="1" craft_time = "4" craft_exp_gain="4" >
 		<ingredient name="rockSmall" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
 	</recipe>
-	<recipe name="arrow" count="1" craft_time = "4" craft_exp_gain="1" craft_area="Ammunition_Table" >
+	<recipe name="arrow" count="1" craft_time = "4" craft_exp_gain="4" craft_area="Ammunition_Table" >
 		<ingredient name="rockSmall" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
@@ -2596,17 +2596,17 @@ ingredient in the list so ammo recipes have been re-ordered as a temp fix. -->
 		<ingredient name="forgedIron" count="10"/>
 		<ingredient name="wood" count="8"/>
 	</recipe>
-	<recipe name="ironArrow" count="1" craft_time = "4" craft_exp_gain="9" craft_area="Ammunition_Table" >
+	<recipe name="ironArrow" count="1" craft_time = "4" craft_exp_gain="4" craft_area="Ammunition_Table" >
 		<ingredient name="ironArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
 	</recipe>
-	<recipe name="ironArrow" count="1" craft_time = "4" craft_exp_gain="9" >
+	<recipe name="ironArrow" count="1" craft_time = "4" craft_exp_gain="4" >
 		<ingredient name="ironArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
 	</recipe>
-	<recipe name="ironArrowHead" count="1" craft_time = "4" craft_exp_gain="14" craft_area="forge" craft_tool="anvil" material_based="true" >
+	<recipe name="ironArrowHead" count="1" craft_time = "4" craft_exp_gain="4" craft_area="forge" craft_tool="anvil" material_based="true" >
 		<ingredient name="unit_iron" count="2"/>
 		<ingredient name="unit_clay" count="1"/>
 	</recipe>
@@ -2618,7 +2618,7 @@ ingredient in the list so ammo recipes have been re-ordered as a temp fix. -->
 		<ingredient name="shortMetalPipe" count="4"/>
 		<ingredient name="forgedIron" count="3"/>
 	</recipe>
-	<recipe name="ironCrossbowBolt" count="1" craft_time = "4" craft_exp_gain="9" craft_area="Ammunition_Table" >
+	<recipe name="ironCrossbowBolt" count="1" craft_time = "4" craft_exp_gain="4" craft_area="Ammunition_Table" >
 		<ingredient name="ironArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
@@ -3197,21 +3197,21 @@ ingredient in the list so ammo recipes have been re-ordered as a temp fix. -->
 		<ingredient name="wood" count="2"/>
 		<ingredient name="ductTape" count="1"/>
 	</recipe>
-	<recipe name="steelArrow" count="1" craft_time = "4" craft_exp_gain="14" craft_area="Ammunition_Table" >
+	<recipe name="steelArrow" count="1" craft_time = "4" craft_exp_gain="4" craft_area="Ammunition_Table" >
 		<ingredient name="steelArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
 	</recipe>
-	<recipe name="steelArrow" count="1" craft_time = "4" craft_exp_gain="14" >
+	<recipe name="steelArrow" count="1" craft_time = "4" craft_exp_gain="4" >
 		<ingredient name="steelArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
 	</recipe>
-	<recipe name="steelArrowHead" count="1" craft_time = "4" craft_exp_gain="14" craft_area="forge" craft_tool="anvil" material_based="true" >
+	<recipe name="steelArrowHead" count="1" craft_time = "4" craft_exp_gain="4" craft_area="forge" craft_tool="anvil" material_based="true" >
 		<ingredient name="unit_iron" count="4"/>
 		<ingredient name="unit_clay" count="1"/>
 	</recipe>
-	<recipe name="steelCrossbowBolt" count="1" craft_time = "4" craft_exp_gain="14" craft_area="Ammunition_Table" >
+	<recipe name="steelCrossbowBolt" count="1" craft_time = "4" craft_exp_gain="4" craft_area="Ammunition_Table" >
 		<ingredient name="steelArrowHead" count="1"/>
 		<ingredient name="wood" count="1"/>
 		<ingredient name="feather" count="1"/>
