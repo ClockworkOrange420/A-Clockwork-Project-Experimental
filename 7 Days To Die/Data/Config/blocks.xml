@@ -13884,7 +13884,7 @@ NOT the TextureNumber.
 		<property name="resourceForgedIron" value="4"/>
 		<property name="resourceElectricParts" value="4"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="3" tool_category="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="3" tool_category="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tool_category="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="0,2" tool_category="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0,2" tool_category="salvageHarvest"/>
