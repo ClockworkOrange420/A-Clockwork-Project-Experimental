@@ -3597,16 +3597,6 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffMagazinePerkFromTheShadows" tooltip_key="buffMagazinePerkFromTheShadowsTooltip" hidden="true" remove_on_death="false">
-		<stack_type value="replace"/>
-		<duration value="1800"/>
-		<effect_group>
-			<passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkFromTheShadows"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffMagazineAttIntellect"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-		</effect_group>
-	</buff>
-
 	<buff name="buffMagazinePerkBetterBarter" tooltip_key="buffMagazinePerkBetterBarterTooltip" hidden="true" remove_on_death="false">
 		<stack_type value="replace"/>
 		<duration value="1800"/>
