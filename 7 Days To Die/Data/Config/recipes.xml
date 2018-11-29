@@ -2989,10 +2989,10 @@
 	</recipe>
 	<!--Modded-->
 	<recipe name="resourceScrapIronPlating" count="1" craft_time = "4" craft_exp_gain="9" craft_area="workbench" tags="learnable">
-		<ingredient name="scrapIron" count="10"/>
+		<ingredient name="resourceScrapIron" count="10"/>
 	</recipe>
 	<recipe name="resourceForgedSteelPlating" count="1" craft_time = "4" craft_exp_gain="9" craft_area="workbench" tags="learnable">
-		<ingredient name="forgedSteel" count="5"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
 	</recipe>
 </recipes>
 <!-- To do (maybe / later)<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="forge" craft_tool="toolCalipers" material_based="true"><recipe name="book" count="1"><ingredient name="resourcePaper" count="64"/></recipe>mattress? boardedWindowsSheet4 window02 storeShelving01Double storeShelving01Top storeShelving01TopDouble Bookcases -->
