@@ -12280,25 +12280,28 @@ So no clothing dyes until that can be resolved. -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="scrapIronPlate"/>
 	<property name="Material" value="Miron_scrap"/>
 	<property name="Weight" value="50"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="500"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
-	<property name="DescriptionKey" value="scrapIronPlatingDesc"/>
+	<property name="DescriptionKey" value="resourceScrapIronPlatingDesc"/>
 </item>
 
 <item name="resourceForgedSteelPlating">
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="steelPlate"/>
 	<property name="Material" value="Msteel"/>
 	<property name="Weight" value="50"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="1000"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
+	<property name="DescriptionKey" value="resourceForgedSteelPlatingDesc"/>
 </item>
 
 

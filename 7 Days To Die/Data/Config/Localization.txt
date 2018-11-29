@@ -7067,3 +7067,8 @@ xuiSkillNerfedEffect,UI,Skills,New,Disabled by status effect,,,,,
 xuiDefault,UI,Options Video,New,Default,,,,,
 activeBlockPrompt,,Block prompt,New,([DECEA3]Active[-]) {0},,,,,
 inactiveBlockPrompt,,Block prompt,New,(Inactive) {0},,,,,
+
+resourceScrapIronPlating,blocks,Block,New,Scrap Iron Plating,,,,,
+resourceScrapIronPlatingDesc,items,Item,KgNone,Used to upgrade blocks into scrap iron.\n [ Crafted in Workbench with a Wrench. ],,,,
+resourceForgedSteelPlating,blocks,Block,New,Forged Steel Plating,,,,,
+resourceForgedSteelPlatingDesc,items,Item,KgNone,Used to upgrade blocks into steel.\n [ Crafted in Workbench with a Wrench. ],,,,
