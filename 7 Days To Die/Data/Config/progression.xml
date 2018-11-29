@@ -1433,8 +1433,8 @@
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="forge,meleeToolFireaxeIron,meleeToolPickaxeIron,meleeToolHoeIron,meleeToolShovelIron,meleeToolClawHammer,meleeToolSledgehammer,meleeToolHuntingKnife"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="armorLeatherBoots,armorLeatherGloves,armorLeatherHood,armorLeatherChest,armorLeatherPants,armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs,"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="toolForgeCrucible,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="resourceScrapIronPlating,armorLeatherBoots,armorLeatherGloves,armorLeatherHood,armorLeatherChest,armorLeatherPants,armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs,"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="resourceForgedSteelPlating,toolForgeCrucible,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelBoots,armorSteelChest,armorSteelGloves,armorSteelHelmet,armorSteelLegs,"/>
 			<effect_description level="1" desc_key="perkHammerForgeRank1Desc"/>
 			<effect_description level="2" desc_key="perkHammerForgeRank2Desc"/>
