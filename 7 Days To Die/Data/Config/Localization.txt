@@ -7068,6 +7068,8 @@ xuiDefault,UI,Options Video,New,Default,,,,,
 activeBlockPrompt,,Block prompt,New,([DECEA3]Active[-]) {0},,,,,
 inactiveBlockPrompt,,Block prompt,New,(Inactive) {0},,,,,
 
+resourceCordage,items,Item,KgNone,Cordage,,,,
+resourceCordageDesc,items,Item,KgNone,A strong rope fashioned from plant fibers.\n [ Crafted in Tailoring Table. ],,,,
 resourceDirtLump,items,Item,EnChanged,Black Dirt,Morceau d'argile,Lehmige Erde,,Terrón de arcilla,
 resourceDirtLumpDesc,items,Item,EnChanged,Black Dirt is a key resource for forging and farming and can be harvested from the soil of nearly every biome.,,,,,
 resourceScrapIronPlating,blocks,Block,New,Scrap Iron Plating,,,,,

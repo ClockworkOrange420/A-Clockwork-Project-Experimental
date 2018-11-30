@@ -1121,7 +1121,7 @@
 		<ingredient name="resourceForgedIron" count="16"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="meleeToolHuntingKnife" count="1" tags="learnable">
+	<recipe name="meleeToolHuntingKnife" count="1" tags="learnable" craft_time = "16" craft_exp_gain="40">
 		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceWood" count="4"/>
 		<ingredient name="resourceLeather" count="2"/>
@@ -2237,15 +2237,15 @@
 		<ingredient name="resourceRockSmall" count="18"/>
 		<ingredient name="resourceCement" count="4"/>
 	</recipe>
-	<recipe name="meleeToolStoneAxe" count="1">
+	<recipe name="meleeToolStoneAxe" count="1" craft_time = "12" craft_exp_gain="40">
 		<ingredient name="resourceRockSmall" count="4"/>
-		<ingredient name="resourceYuccaFibers" count="2"/>
-		<ingredient name="resourceWood" count="2"/>
+		<ingredient name="resourceCordage" count="1"/>
+		<ingredient name="resourceWood" count="5"/>
 	</recipe>
-	<recipe name="meleeToolShovelStone" count="1">
+	<recipe name="meleeToolShovelStone" count="1" craft_time = "12" craft_exp_gain="40">
 		<ingredient name="resourceRockSmall" count="5"/>
-		<ingredient name="resourceYuccaFibers" count="3"/>
-		<ingredient name="resourceWood" count="3"/>
+		<ingredient name="resourceCordage" count="1"/>
+		<ingredient name="resourceWood" count="5"/>
 	</recipe>
 	<recipe name="storeShelving01" count="1">
 		<ingredient name="resourceForgedIron" count="3"/>
@@ -2254,7 +2254,7 @@
 		<ingredient name="resourceAnimalFat" count="1"/>
 	</recipe>
 	<recipe name="tnt" count="1" craft_area="workbench">
-		<ingredient name="resourceYuccaFibers" count="1"/>
+		<ingredient name="resourceCordage" count="1"/>
 		<ingredient name="resourceGunPowder" count="20"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 		<ingredient name="resourcePaper" count="10"/>
@@ -2988,6 +2988,10 @@
 		<ingredient name="resourceCobblestones" count="4"/>
 	</recipe>
 	<!--Modded-->
+	<!--Resources-->
+	<recipe name="resourceCordage" count="1" craft_time = "4" craft_exp_gain="10" >
+		<ingredient name="resourceYuccaFibers" count="2"/>
+	</recipe>
 	<recipe name="resourceScrapIronPlating" count="1" craft_time = "4" craft_exp_gain="9" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceScrapIron" count="10"/>
 	</recipe>

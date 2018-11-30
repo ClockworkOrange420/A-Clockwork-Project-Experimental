@@ -98,27 +98,19 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
-
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="11"/> <!-- meleeBoneShiv -->
-		<passive_effect name="BlockDamage" operation="base_set" value="23"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="8" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="16" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="23" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="4" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="6" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/> <!-- meleeBoneShiv -->
+		<passive_effect name="BlockDamage" operation="base_set" value="6,12" tier="1,6"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100,100" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="2,1" tier="1,6"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="50,100" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 	</effect_group>
@@ -160,9 +152,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Damage_type" value="Slashing"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="ToolCategory.Butcher" value="1" param1="3.36"/>
+		<property name="ToolCategory.Butcher" value="0.5" param1="3.36"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
 	<property class="Action1">
@@ -172,7 +164,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="1" param1="3.36"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
@@ -180,24 +172,19 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="13"/> <!-- meleeToolHuntingKnife -->
-		<passive_effect name="BlockDamage" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="8,16" tier="1,6"/> <!-- meleeToolHuntingKnife -->
+		<passive_effect name="BlockDamage" operation="base_set" value="8,16" tier="1,6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="12" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="22" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="46" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="8" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="12" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.25" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.4" tags="organic"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/> <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500,500" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="5,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -246,23 +233,15 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="9"/> <!-- meleeToolFlashlight02 -->
-		<passive_effect name="BlockDamage" operation="base_set" value="4"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5,10" tier="1,6"/> <!-- meleeToolFlashlight02 -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="4" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="6" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="10" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="4" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="6" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="125,250" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="2000,2000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="20,8" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<triggered_effect trigger="onSelfItemActivate" action="SetTransformActive" active="true" parent_transform="Gunjoint" transform_path="lightSource"/>
 		<triggered_effect trigger="onSelfItemDeactivate" action="SetTransformActive" active="false" parent_transform="Gunjoint" transform_path="lightSource"/>
@@ -291,33 +270,29 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
-		<property name="Delay" value="1"/> <!-- Repair actions still need the delay amount -->
-		<property name="Repair_amount" value="250"/>
-		<property name="Upgrade_hit_offset" value="-3"/>
+		<property name="Delay" value="0.4"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="550"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronPlating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="11"/> <!-- meleeToolClawHammer -->
-		<passive_effect name="BlockDamage" operation="base_set" value="20"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="8,16" tier="1,6"/> <!-- meleeToolClawHammer -->
+		<passive_effect name="BlockDamage" operation="base_set" value="8,16" tier="1,6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="66" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="28" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="36" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="12" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="12" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2.25" tags="organic"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.75" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10,2" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -349,40 +324,35 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="ToolCategory.Butcher" value="0.25" param1="4"/>
+		<property name="ToolCategory.Butcher" value="0.25" param1="1"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
-		<property name="Delay" value="0.7"/> <!-- Repair actions still need the delay amount -->
-		<property name="Repair_amount" value="100"/>
+		<property name="Delay" value="0.5"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="150"/>
 		<property name="Upgrade_hit_offset" value="0"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronplating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="11"/> <!-- meleeToolStoneAxe -->
-		<passive_effect name="BlockDamage" operation="base_set" value="45"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/> <!-- meleeToolStoneAxe -->
+		<passive_effect name="BlockDamage" operation="base_set" value="18,36" tier="1,6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
 		<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="37" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="64" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="54" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="3" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="48" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.7" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-0.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.3" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-0.3" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.01" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,3" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -404,24 +374,18 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="12"/> <!-- meleeToolStoneAxeTazas -->
-		<passive_effect name="BlockDamage" operation="base_set" value="80"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="7,14" tier="1,6"/> <!-- meleeToolStoneAxeTazas -->
+		<passive_effect name="BlockDamage" operation="base_set" value="27,54" tier="1,6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/> <!-- A16 .8 -->
 		<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="82" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="102" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="118" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="9" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="56" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.7" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-0.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.3" tags="stone"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="100,250" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="5,2" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -461,24 +425,20 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeClubWood -->
-		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="5" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="15" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="35" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="3" tags="earth"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/> <!-- meleeClubWood -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="organic"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="2" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="base_set" value="2" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="18" tags="head"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.03" tags="head"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/> <!-- A16 1.33 -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500,500" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="5,2" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -533,8 +493,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="55"/> <!-- meleeClubIron -->
-		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="12,24"/> <!-- meleeClubIron -->
+		<passive_effect name="BlockDamage" operation="base_set" value="7,14"/>
 		<passive_effect name="DamageModifier" operation="base_set" value="10" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="base_set" value="30" tags="metal"/>
@@ -545,12 +505,12 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="base_set" value="10" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="44" tags="head"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.06" tags="head"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="52"/> <!-- A16 1.15 -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="500,500" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="3,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -606,6 +566,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="AlwaysActive" value="true"/>
 
 	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="DegradationMax" operation="base_set" value="25" />
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
 		<passive_effect name="EntityDamage" operation="base_set" value="5"/> <!-- meleeToolTorch -->
@@ -662,7 +623,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0.5" param1="5.14"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
 			Also, param1  is the damage multiplier for corpse harvesting. -->
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
@@ -674,7 +635,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0.5" param1="5.14"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
@@ -682,8 +643,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="38"/> <!-- meleeToolMachete -->
-		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="28,56" tier="1,6"/> <!-- meleeToolMachete -->
+		<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
 		<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
@@ -697,8 +658,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="base_set" value="24" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="base_set" value="46" tags="head"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="head"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.15" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
@@ -817,9 +777,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
-		<property name="Delay" value="1"/> <!-- Repair actions still need the delay amount -->
+		<property name="Delay" value="0.4"/> <!-- Repair actions still need the delay amount -->
 		<property name="Repair_amount" value="350"/>
-		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="repair_block"/>
 		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 	</property>
@@ -1103,7 +1063,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="ToolCategory.Butcher" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0.5" param1="1"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
@@ -2557,7 +2517,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value="0.25"/> <!-- Repair actions still need the delay amount -->
-		<property name="Repair_amount" value="250"/>
+		<property name="Repair_amount" value="750"/>
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
@@ -2589,8 +2549,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="KickDegreesVertical" operation="base_set" value="-.7,.7"/>
 		<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-.6,.6"/>
 		<display_value name="dRecoil" value="1" />
-		<passive_effect name="DegradationMax" operation="base_set" value="2000,4000" tier="1,6"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="5" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -2631,14 +2591,14 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Bashing"/>
 		<property name="DamageEntity" value="7"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
 		<property name="UsePowerAttackAnimation" value="true"/>
-		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+		<property name="ToolCategory.cropHarvest" value="0.5" param1="1"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3331,11 +3291,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.50" tags="buffInjuryBleeding"/>
 	</effect_group>
 </item>
@@ -10840,7 +10796,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropScale" value="6"/>
 	<property name="Material" value="Mstone"/>
 	<property name="Stacknumber" value="2000"/> <!-- STK resource -->
-	<property name="RepairAmount" value="300"/>
+	<property name="RepairAmount" value="150"/>
+	<property name="RepairTime" value="3"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -11584,7 +11541,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Stacknumber" value="50"/> <!-- STK repairKit -->
 	<property name="EconomicValue" value="186"/>
 	<property name="RepairTime" value="2"/>
-	<property name="RepairAmount" value="2500"/>
+	<property name="RepairAmount" value="1000"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -12505,6 +12462,24 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <!--Resources-->
+<item name="resourceCordage"> <!-- scrap material -->
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Weight" value="2"/>
+	<property name="Material" value="Mplants"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="30"/>
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="FuelValue" value="2"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="10"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property name="DescriptionKey" value="resourceCordageDesc"/>
+</item>
 
 <item name="resourceDirtLump">
 	<property name="HoldType" value="45"/>
