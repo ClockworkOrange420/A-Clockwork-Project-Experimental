@@ -85,7 +85,7 @@
 			<effect_description level="7" desc_key="attStrengthRank7Desc"/>
 			<effect_description level="8" desc_key="attStrengthRank8Desc"/>
 			<effect_description level="9" desc_key="attStrengthRank9Desc"/>
-			<effect_description level="10" desc_key="attStrengthRank10Desc"/>750
+			<effect_description level="10" desc_key="attStrengthRank10Desc"/>
 		</effect_group>
 	</attribute>
 

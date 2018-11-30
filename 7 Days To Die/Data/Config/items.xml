@@ -2347,7 +2347,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
-
+		<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8"/>
 		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".26"/>
@@ -2428,8 +2428,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 
-		<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
-		<passive_effect name="BlockDamage" operation="perc_add" value=".3"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".5"/>
+		<passive_effect name="DismemberChance" operation="base_set" value="0.07" tags="head"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.67"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.67"/>
@@ -2501,7 +2502,7 @@ We _want_ players to specialise so we also have to make it feasible.
 
 		<passive_effect name="EntityDamage" operation="perc_add" value=".45"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
-
+		<passive_effect name="DismemberChance" operation="base_set" value="0.09" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="perc_add" value="0.5"/>
 
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35"/>
@@ -2571,9 +2572,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group name="Base Effects"> <!-- gunToolNailgun -->
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="3"/>
 		<passive_effect name="MaxRange" operation="base_set" value="10"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="50"/>
 		<!-- <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>  does not work at all on the nailgun -->
-
+		<passive_effect name="DismemberChance" operation="base_set" value="0.02" tags="head"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3"/>
 		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".4"/>
@@ -2612,7 +2613,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Range" value="1.65"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.1"/>
 		<property name="Block_range" value="2.5"/>
-		<property name="DamageEntity" value="10"/>
+		<property name="DamageEntity" value="12"/>
 		<property name="DamageBlock" value="16"/>
 		<property name="Sound_start" value="swoosh"/>
 	</property>
@@ -2629,6 +2630,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Bashing"/>
+		<property name="DamageEntity" value="7"/>
 		<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
 		<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
 	</property>
@@ -2703,7 +2705,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="10" tags="primary"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="20" tags="primary"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="16" tags="primary"/>
 		<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
@@ -2716,7 +2718,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="meleeHandZombie01"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="26"/>
 		<property name="DamageBlock" value="32"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -2766,7 +2768,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Class" value="Melee"/>
 		<property name="Sphere" value="0.4"/>
 		<property name="DamageEntity" value="12"/>
-		<property name="DamageBlock" value="2"/>
+		<property name="DamageBlock" value="15"/>
 		<property name="Buff" value="buffBurningElement,buffIllInfection0,buffInjuryStunned1"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -2783,7 +2785,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="24"/>
-		<property name="DamageBlock" value="4"/>
+		<property name="DamageBlock" value="18"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2800,7 +2802,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="24"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="2"/>
+		<property name="DamageBlock" value="11"/>
 		<property name="Delay" value="2.0"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Buff" value="buffLegSprained,buffIllInfection0,buffBurningElement"/>
 	</property>
@@ -2819,8 +2821,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="200"/>
+		<property name="DamageEntity" value="32"/>
+		<property name="DamageBlock" value="120"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -2859,23 +2861,18 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="10"/>
-		<property name="DamageBlock" value="120"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="150"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
 		<property name="CollisionRadius" value="0.5"/>
-		<property name="DamageBonus.earth" value="0"/>
 		<property name="Buff" value="buffIllInfection0"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.30" tags="buffIllInfection0"/>
 	</effect_group>
 </item>
@@ -2885,7 +2882,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="220"/>
+		<property name="DamageBlock" value="160"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
 		<property name="Magazine_items" value="ammoProjectileZombieVomitFeral"/>
@@ -2907,17 +2904,16 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="1"/>
+		<property name="DamageBlock" value="150"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Explosion.RadiusBlocks" value="2"/>
-		<property name="Explosion.BlockDamage" value="105"/>
+		<property name="Explosion.BlockDamage" value="150"/>
 		<property name="Explosion.RadiusEntities" value="1"/>
-		<property name="Explosion.EntityDamage" value="1"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.EntityDamage" value="20"/>
+		<property name="Explosion.DamageBonus.metal" value="1"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
@@ -2947,7 +2943,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="DamageEntity" value="25"/>
-		<property name="DamageBlock" value="1"/>
+		<property name="DamageBlock" value="145"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
 		<property name="LifeTime" value="4"/>
@@ -2955,9 +2951,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Explosion.RadiusBlocks" value="2"/>
 		<property name="Explosion.BlockDamage" value="145"/>
 		<property name="Explosion.RadiusEntities" value="1"/>
-		<property name="Explosion.EntityDamage" value="1"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.EntityDamage" value="25"/>
+		<property name="Explosion.DamageBonus.metal" value="1"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.40" tags="buffIllInfection0"/>
@@ -2970,8 +2965,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
-		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="14"/>
+		<property name="DamageEntity" value="16"/>
+		<property name="DamageBlock" value="16"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -2991,7 +2986,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="meleeHandAnimalZombieDog"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="16"/>
+		<property name="DamageEntity" value="18"/>
 		<property name="DamageBlock" value="28"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3006,8 +3001,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="meleeHandMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="40"/>
+		<property name="DamageEntity" value="35"/>
+		<property name="DamageBlock" value="60"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3045,8 +3040,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Delay" value="1.5"/> <!-- obsolete if rounds per minute exists -->
 		<property name="Range" value="3.75"/>
 		<property name="Sphere" value="0.4"/>
-		<property name="DamageEntity" value="30"/>
-		<property name="DamageBlock" value="40"/>
+		<property name="DamageEntity" value="60"/>
+		<property name="DamageBlock" value="100"/>
 		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3062,8 +3057,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
 		<property name="Range" value="2.75"/>
-		<property name="DamageEntity" value="50"/>
-		<property name="DamageBlock" value="80"/>
+		<property name="DamageEntity" value="70"/>
+		<property name="DamageBlock" value="120"/>
 		<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1,buffIllInfection0"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3079,8 +3074,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="meleeHandAnimalZombieBear"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="70"/>
-		<property name="DamageBlock" value="120"/>
+		<property name="DamageEntity" value="80"/>
+		<property name="DamageBlock" value="140"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -3112,8 +3107,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="32"/>
+		<property name="DamageEntity" value="26"/>
+		<property name="DamageBlock" value="38"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -3129,7 +3124,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="DamageBlock" value="80"/>
+		<property name="DamageEntity" value="30"/>
+		<property name="DamageBlock" value="90"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -3145,8 +3141,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="200"/>
+		<property name="DamageEntity" value="38"/>
+		<property name="DamageBlock" value="110"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -3162,6 +3158,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
+		<property name="DamageEntity" value="32"/>
+		<property name="DamageBlock" value="45"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -3178,8 +3176,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
-		<property name="DamageBlock" value="32"/>
+		<property name="DamageEntity" value="36"/>
+		<property name="DamageBlock" value="56"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -3226,8 +3224,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="meleeHandZombieStripper"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="500"/>
-		<property name="DamageBlock" value="2000"/>
+		<property name="DamageEntity" value="150"/>
+		<property name="DamageBlock" value="250"/>
 		<property name="Range" value="4"/>
 		<property name="Sphere" value="2"/>
 		<property name="Block_range" value="5"/>
@@ -3247,8 +3245,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value="0.7"/> <!-- obsolete if rounds per minute exists -->
-		<property name="DamageEntity" value="8"/>
-		<property name="DamageBlock" value="8"/>
+		<property name="DamageEntity" value="16"/>
+		<property name="DamageBlock" value="16"/>
 		<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
 	</property>
 	<property class="Action1">
@@ -3295,11 +3293,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Buff" value="buffIllInfection0"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false">
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
 		<passive_effect name="BuffProcChance" operation="base_set" value="0.20" tags="buffIllInfection0"/>
 	</effect_group>
 </item>
@@ -3312,7 +3306,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Delay" value="2.5"/>
 		<property name="Range" value="1.2"/>
 		<property name="DamageEntity" value="10"/>
-		<property name="DamageBlock" value="2"/>
+		<property name="DamageBlock" value="10"/>
 		<property name="Buff" value="buffInjuryBleeding"/>
 		<property name="Buff_chance" value="0.4,0.2"/>
 	</property>
@@ -3560,12 +3554,12 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Explosion.BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
 		<property name="Explosion.RadiusEntities" value="7"/> <!-- damage radius for entities -->
 		<property name="Explosion.EntityDamage" value="350"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
-
+		
 		<property name="Explosion.DamageBonus.water" value="0"/>
 		<property name="Explosion.DamageBonus.wood" value="3"/>
 		<property name="Explosion.DamageBonus.metal" value="8"/>
-		<property name="Explosion.DamageBonus.organic" value="0"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.organic" value="1"/>
+		<property name="Explosion.DamageBonus.earth" value="1"/>
 		<property name="Explosion.DamageBonus.stone" value="5"/>
 		<property name="Gravity" value="-6"/>
 		<property name="FlyTime" value=".2"/>
@@ -3575,7 +3569,7 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Group" value="Ammo/Weapons"/>
 	<effect_group name="Base Effects" tiered="false">
 		<passive_effect name="EntityDamage" operation="base_set" value="350"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="500"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<display_value name="ExRadius" value="5" />
 	</effect_group>
@@ -3585,21 +3579,22 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Extends" value="ammoRocketHE"/>
 	<property name="CustomIcon" value="ammoRocketHE"/><property name="CustomIconTint" value="107,12,12"/>
 	<property class="Action1">
-		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
-		<property name="Explosion.BlockDamage" value="20"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="250"/> <!-- damage for blocks in the center of the explosion -->
 		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
-		<property name="Explosion.EntityDamage" value="450"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+		<property name="Explosion.EntityDamage" value="350"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 
-		<property name="Explosion.DamageBonus.stone" value="0.1"/>
-		<property name="Explosion.DamageBonus.metal" value="0.05"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
-		<property name="Explosion.DamageBonus.wood" value="0.5"/>
 		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="3"/>
+		<property name="Explosion.DamageBonus.metal" value="8"/>
+		<property name="Explosion.DamageBonus.organic" value="1"/>
+		<property name="Explosion.DamageBonus.earth" value="1"/>
+		<property name="Explosion.DamageBonus.stone" value="5"/>
 
 	</property>
 	<effect_group name="Base Effects" tiered="false">
 		<passive_effect name="EntityDamage" operation="base_set" value="350"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="50"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="250"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<display_value name="ExRadius" value="6" />
 <!--
@@ -3647,13 +3642,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowStone -->
-		<passive_effect name="EntityDamage" operation="base_set" value="25"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="19"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3669,13 +3660,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Gravity" value="-3.5"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowIron -->
-		<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="35"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="3"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3690,13 +3677,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property name="Damage_type" value="Piercing"/>
 	<property name="StickyOffset" value="0.5"/>
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowSteelAP -->
-		<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="52"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3722,13 +3705,9 @@ We _want_ players to specialise so we also have to make it feasible.
 	</property>
 
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowFlaming -->
-		<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="40"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 
@@ -3759,19 +3738,11 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Gravity" value="-3"/>
 		<property name="FlyTime" value="0"/>
 		<property name="LifeTime" value="17"/>
-		<!-- <property name="DamageBonus.earth" value="0"/>
-		<property name="DamageBonus.metal" value="0"/>
-		<property name="DamageBonus.cloth" value="0"/> -->
 	</property>
-
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltStone -->
-		<passive_effect name="EntityDamage" operation="base_set" value="25"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="22"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="1"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3804,13 +3775,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="GetQualityFromWeapon" value="true"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltIron -->
-		<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="44"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3831,10 +3798,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="GetQualityFromWeapon" value="true"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
-		<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="88"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0.1" tags="wood"/>
-		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 	</effect_group>
@@ -3855,8 +3821,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<property class="Action1">
 		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
 		<property name="Gravity" value="-5"/>
-		<property name="Explosion.BlockDamage" value="10"/>
-		<property name="Explosion.EntityDamage" value="80"/>
+		<property name="Explosion.BlockDamage" value="25"/>
+		<property name="Explosion.EntityDamage" value="100"/>
 		<property name="Explosion.ParticleIndex" value="1"/>
 		<property name="Explosion.RadiusBlocks" value="3"/>
 		<property name="Explosion.RadiusEntities" value="4"/>
@@ -3867,13 +3833,9 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Explosion.DamageBonus.water" value="0"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltExploding -->
-		<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="100"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 			<!-- do we have damage modifiers for explosions? -->
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="30"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
@@ -11584,13 +11546,9 @@ So no clothing dyes until that can be resolved. -->
 		<property name="LifeTime" value=".5"/>
 	</property>
 	<effect_group name="Base Effects" tiered="false"> <!-- nail -->
-		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="15"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="0.1"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 		<passive_effect name="ProjectileVelocity" operation="base_set" value="20"/>
 		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 	</effect_group>
