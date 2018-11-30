@@ -4006,7 +4006,7 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="Combined test 2: Has none of the buffs AND has either buff."/>
 		</effect_group>
 	</buff>
-	
+	<!--Modded-->
 	<buff name="buffBurningVomit" hidden="true">
 		<damage_type value="heat"/>
 		<stack_type value="replace"/>
