@@ -71,7 +71,11 @@
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="melee"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.1,0.70" level="1,10"/>
-			<passive_effect name="BlockDamage" operation="perc_add" value="0.1,0.70" level="1,10"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,10" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,10" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,10" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,10" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,10" tags="stone"/>
 			<effect_description level="1" desc_key="attStrengthRank1Desc"/>
 			<effect_description level="2" desc_key="attStrengthRank2Desc"/>
 			<effect_description level="3" desc_key="attStrengthRank3Desc"/>
@@ -81,7 +85,7 @@
 			<effect_description level="7" desc_key="attStrengthRank7Desc"/>
 			<effect_description level="8" desc_key="attStrengthRank8Desc"/>
 			<effect_description level="9" desc_key="attStrengthRank9Desc"/>
-			<effect_description level="10" desc_key="attStrengthRank10Desc"/>
+			<effect_description level="10" desc_key="attStrengthRank10Desc"/>750
 		</effect_group>
 	</attribute>
 
@@ -526,7 +530,7 @@
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkSalvageOperations"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" level="1,5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,5" tags="metal"/>
 				<!-- wrench (or other relevant tools) do a base_add=1 to hop on the salvage train -->
 				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="salvageHarvest"/>
 		</effect_group>
@@ -549,8 +553,14 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
 
 		<effect_group>
-			<requirement name="HoldingItemHasTags" tags="melee"/>
+			<requirement name="HoldingItemHasTags" tags="hammer"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.05,0.25" level="1,5" tags="secondary"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="head"/>
 			<effect_description level="1" desc_key="perkWreckingCrewRank1Desc"/>
 			<effect_description level="2" desc_key="perkWreckingCrewRank2Desc"/>
 			<effect_description level="3" desc_key="perkWreckingCrewRank3Desc"/>
@@ -860,7 +870,10 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="BlockDamage" operation="perc_add" value=".2,1" level="1,5"  tags="secondary"/>
+			<requirement name="HoldingItemHasTags" tags="miningTool"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,5" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,5" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,5" tags="stone"/>
 
 			<effect_description level="1" desc_key="perkMiner69rRank1Desc"/>
 			<effect_description level="2" desc_key="perkMiner69rRank2Desc"/>
@@ -900,7 +913,7 @@
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
-			<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="oreWoodHarvest"/>
+			<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="oreHarvest"/>
 
 			<effect_description level="1" desc_key="perkMotherLodeRank1Desc"/>
 			<effect_description level="2" desc_key="perkMotherLodeRank2Desc"/>
