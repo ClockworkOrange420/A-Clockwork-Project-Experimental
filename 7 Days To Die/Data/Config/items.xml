@@ -181,7 +181,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/> <!-- affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
 		<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,500" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="4,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
@@ -272,7 +272,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="550"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronPlating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronPlating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -333,7 +333,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="150"/>
 		<property name="Upgrade_hit_offset" value="0"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronplating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceScrapIronplating,resourceForgedIron,resourceForgedSteel,resourceForgedSteelPlating,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 		<property name="UsePowerAttackAnimation" value="false"/>
 	</property>
 	<effect_group name="Base Effects">
@@ -633,8 +633,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.15" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="4,1" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="5,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -696,8 +696,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="18" tags="stone"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.03" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="2000,2000" tier="1,6"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="20,3" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="4,1" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -746,7 +746,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers"/>
 	</property>
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
@@ -958,8 +958,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="DamageModifier" operation="perc_add" value="0.625" tags="head"/>
 		<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="4,1" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1600,1600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,2" tier="1,6"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -2420,7 +2420,7 @@ We _want_ players to specialise so we also have to make it feasible.
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
-		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceSteelPolish,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
+		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -4754,7 +4754,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4780,7 +4781,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4806,7 +4808,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4851,7 +4854,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="head,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4885,7 +4889,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4912,7 +4917,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4939,7 +4945,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.20" />
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -4966,7 +4973,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
 		<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 		<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="500,1000" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -5004,7 +5012,8 @@ We _want_ players to specialise so we also have to make it feasible.
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
 		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="240,600" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 		<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
@@ -5065,7 +5074,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="320,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.06"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.045" tags="walking"/>
@@ -5104,7 +5114,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="240,600" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
@@ -5135,7 +5146,8 @@ We _want_ players to specialise so we also have to make it feasible.
 	<effect_group>
 		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="350,800" tier="1,6"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 
 		<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
@@ -10811,7 +10823,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources,Basics"/>
-	<property name="RepairAmount" value="100"/>
+	<property name="RepairAmount" value="50"/>
+	<property name="RepairTime" value="1.2"/>
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value="0.25"/>
 </item>
@@ -10851,8 +10864,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
-	<property name="RepairTime" value="0.5"/>
-	<property name="RepairAmount" value="20"/>
+	<property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="100"/>
 	<property name="CraftingIngredientTime" value="0.2"/>
 </item>
 
@@ -10865,8 +10878,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="EconomicValue" value="12"/>
 	<property name="CraftingIngredientExp" value="10"/>
 	<property name="CraftingIngredientTime" value="10"/>
-	<property name="RepairTime" value="0.5"/>
-	<property name="RepairAmount" value="270"/>
+	<property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="100"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -10890,8 +10903,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="15"/>
-	<property name="RepairTime" value="1"/>
-	<property name="RepairAmount" value="400"/>
+	<property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="100"/>
 </item>
 
 <item name="resourceScrapPolymers"> <!-- scrap material -->
@@ -10905,8 +10918,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
-	<!-- <property name="RepairTime" value="2"/>
-	<property name="RepairAmount" value="400"/> -->
+	<property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="100"/>
 </item>
 
 <item name="resourceOilShale">
@@ -10943,7 +10956,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mleather"/>
 	<property name="Weight" value="5"/>
-	<property name="RepairAmount" value="80"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="RepairTime" value="2"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
 	<property name="EconomicValue" value="22"/>
@@ -11152,7 +11166,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mcloth"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
-	<property name="RepairAmount" value="50"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="RepairTime" value="2"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -11192,7 +11207,8 @@ So no clothing dyes until that can be resolved. -->
 	<property name="CraftingIngredientExp" value="10"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property name="RepairTime" value="0.6"/>
-	<property name="RepairAmount" value="400"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="RepairTime" value="2"/>
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -11461,7 +11477,7 @@ So no clothing dyes until that can be resolved. -->
 	<property name="Material" value="Msteel"/>
 	<property name="Stacknumber" value="50"/> <!-- STK repairKit -->
 	<property name="EconomicValue" value="186"/>
-	<property name="RepairTime" value="2"/>
+	<property name="RepairTime" value="12"/>
 	<property name="RepairAmount" value="1000"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -12383,6 +12399,7 @@ So no clothing dyes until that can be resolved. -->
 </item>
 
 <!--Resources-->
+
 <item name="resourceCordage"> <!-- scrap material -->
 	<property name="HoldType" value="16"/>
 	<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
@@ -12395,8 +12412,6 @@ So no clothing dyes until that can be resolved. -->
 	<property name="FuelValue" value="2"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="10"/>
-	<property name="RepairTime" value="1"/>
-	<property name="RepairAmount" value="10"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
 	<property name="DescriptionKey" value="resourceCordageDesc"/>

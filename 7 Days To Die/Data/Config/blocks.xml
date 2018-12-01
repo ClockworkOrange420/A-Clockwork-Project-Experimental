@@ -20457,7 +20457,7 @@ NOT the TextureNumber.
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="autoTurretSteelCased"/>
-		<property name="Item" value="resourceSteelPolish"/>
+		<property name="Item" value="resourceForgedSteelPlating"/>
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>

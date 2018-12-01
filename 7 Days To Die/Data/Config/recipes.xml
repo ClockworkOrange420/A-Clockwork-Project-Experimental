@@ -189,133 +189,133 @@
 	<recipe name="medicalAloeCream" count="1">
 		<ingredient name="resourceCropAloeLeaf" count="4"/>
 	</recipe>
-	<recipe name="armorClothBoots" count="1">
-		<ingredient name="resourceCloth" count="5"/>
+	<recipe name="armorClothBoots" count="1" craft_time = "12" craft_exp_gain="60">
+		<ingredient name="resourceCloth" count="6"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorClothGloves" count="1">
-		<ingredient name="resourceCloth" count="5"/>
+	<recipe name="armorClothGloves" count="1" craft_time = "12" craft_exp_gain="60">
+		<ingredient name="resourceCloth" count="6"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorClothHat" count="1">
-		<ingredient name="resourceCloth" count="5"/>
+	<recipe name="armorClothHat" count="1" craft_time = "16" craft_exp_gain="80">
+		<ingredient name="resourceCloth" count="8"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorClothJacket" count="1">
-		<ingredient name="resourceCloth" count="5"/>
+	<recipe name="armorClothJacket" count="1" craft_time = "20" craft_exp_gain="100">
+		<ingredient name="resourceCloth" count="10"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorClothPants" count="1">
-		<ingredient name="resourceCloth" count="5"/>
+	<recipe name="armorClothPants" count="1" craft_time = "20" craft_exp_gain="100">
+		<ingredient name="resourceCloth" count="10"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorLeatherBoots" count="1" tags="learnable">
-		<ingredient name="resourceLeather" count="7"/>
+	<recipe name="armorLeatherBoots" count="1" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceLeather" count="6"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorLeatherGloves" count="1" tags="learnable">
-		<ingredient name="resourceLeather" count="7"/>
+	<recipe name="armorLeatherGloves" count="1" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceLeather" count="6"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorLeatherHood" count="1" tags="learnable">
-		<ingredient name="resourceLeather" count="7"/>
+	<recipe name="armorLeatherHood" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceLeather" count="8"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorLeatherChest" count="1" tags="learnable">
-		<ingredient name="resourceLeather" count="7"/>
+	<recipe name="armorLeatherChest" count="1" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceLeather" count="10"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorLeatherPants" count="1" tags="learnable">
-		<ingredient name="resourceLeather" count="7"/>
+	<recipe name="armorLeatherPants" count="1" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceLeather" count="10"/>
 		<ingredient name="resourceDuctTape" count="1"/>
 	</recipe>
-	<recipe name="armorScrapBoots" count="1" >
-		<ingredient name="resourceScrapIron" count="120"/>
+	<recipe name="armorScrapBoots" count="1" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceScrapIron" count="6"/>
 		<ingredient name="resourceLeather" count="3"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 	</recipe>
-	<recipe name="armorScrapChest" count="1" >
-		<ingredient name="resourceScrapIron" count="120"/>
+	<recipe name="armorScrapChest" count="1" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceScrapIron" count="10"/>
 		<ingredient name="resourceLeather" count="3"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 	</recipe>
-	<recipe name="armorScrapGloves" count="1" >
-		<ingredient name="resourceScrapIron" count="120"/>
+	<recipe name="armorScrapGloves" count="1" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceScrapIron" count="6"/>
 		<ingredient name="resourceLeather" count="3"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 	</recipe>
-	<recipe name="armorScrapHelmet" count="1" >
-		<ingredient name="resourceScrapIron" count="120"/>
+	<recipe name="armorScrapHelmet" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceScrapIron" count="8"/>
 		<ingredient name="resourceLeather" count="3"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 	</recipe>
-	<recipe name="armorScrapLegs" count="1" >
-		<ingredient name="resourceScrapIron" count="120"/>
+	<recipe name="armorScrapLegs" count="1" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceScrapIron" count="10" />
 		<ingredient name="resourceLeather" count="3"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 	</recipe>
-	<recipe name="armorMilitaryBoots" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceMilitaryFiber" count="12"/>
+	<recipe name="armorMilitaryBoots" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceMilitaryFiber" count="6"/>
 		<ingredient name="resourceLeather" count="3"/>
 	</recipe>
-	<recipe name="armorMilitaryVest" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceMilitaryFiber" count="12"/>
+	<recipe name="armorMilitaryVest" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceMilitaryFiber" count="10"/>
 		<ingredient name="resourceLeather" count="3"/>
 	</recipe>
-	<recipe name="armorMilitaryGloves" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceMilitaryFiber" count="12"/>
+	<recipe name="armorMilitaryGloves" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceMilitaryFiber" count="6"/>
 		<ingredient name="resourceLeather" count="3"/>
 	</recipe>
-	<recipe name="armorMilitaryHelmet" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceMilitaryFiber" count="12"/>
+	<recipe name="armorMilitaryHelmet" count="1" craft_area="workbench" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceMilitaryFiber" count="8"/>
 		<ingredient name="resourceLeather" count="3"/>
 	</recipe>
-	<recipe name="armorMilitaryLegs" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceMilitaryFiber" count="12"/>
+	<recipe name="armorMilitaryLegs" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceMilitaryFiber" count="10"/>
 		<ingredient name="resourceLeather" count="3"/>
 	</recipe>
-	<recipe name="armorIronBoots" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="24"/>
+	<recipe name="armorIronBoots" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceForgedIron" count="6"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorIronChest" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="24"/>
+	<recipe name="armorIronChest" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceLeather" count="10"/>
+	</recipe>
+	<recipe name="armorIronGloves" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceForgedIron" count="6"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorIronGloves" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="24"/>
+	<recipe name="armorIronHelmet" count="1" craft_area="workbench" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorIronHelmet" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="24"/>
+	<recipe name="armorIronLegs" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorIronLegs" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="24"/>
+	<recipe name="armorSteelBoots" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="6"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorSteelBoots" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="24"/>
+	<recipe name="armorSteelChest" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="10"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorSteelChest" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="24"/>
+	<recipe name="armorSteelGloves" count="1" craft_area="workbench" craft_time = "12" craft_exp_gain="60" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="6"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorSteelGloves" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="24"/>
+	<recipe name="armorSteelHelmet" count="1" craft_area="workbench" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="8"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
-	<recipe name="armorSteelHelmet" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="24"/>
-		<ingredient name="resourceLeather" count="4"/>
-	</recipe>
-	<recipe name="armorSteelLegs" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="24"/>
+	<recipe name="armorSteelLegs" count="1" craft_area="workbench" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="10"/>
 		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
 	<recipe name="leatherPoncho" count="1" >
-		<ingredient name="resourceLeather" count="20"/>
+		<ingredient name="resourceLeather" count="10"/>
 	</recipe>
 	<recipe name="drugAntibiotics" count="1" craft_area="chemistryStation">
 		<ingredient name="foodMoldyBread" count="1"/>
@@ -440,8 +440,8 @@
 		<ingredient name="resourceDuctTape" count="3"/>
 		<ingredient name="resourceScrapPolymers" count="12"/>
 	</recipe>
-	<recipe name="gunBlunderbuss" count="1" >
-		<ingredient name="resourceForgedIron" count="16"/>
+	<recipe name="gunBlunderbuss" count="1" craft_time = "20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceMetalPipe" count="2"/>
 		<ingredient name="resourceGlue" count="1"/>
 		<ingredient name="resourceDuctTape" count="1"/>
@@ -611,18 +611,18 @@
 	<recipe name="foodCharredMeat" count="1" craft_area="campfire">
 		<ingredient name="foodRawMeat" count="5"/>
 	</recipe>
-	<recipe name="meleeToolClawHammer" count="1" tags="learnable">
-		<ingredient name="resourceForgedIron" count="12"/>
-		<ingredient name="resourceWood" count="6"/>
+	<recipe name="meleeToolClawHammer" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
+		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="resourceCloth" count="1">
 		<ingredient name="resourceCropCottonPlant" count="2"/>
 	</recipe>
-	<recipe name="meleeClubWood" count="1">
-		<ingredient name="resourceWood" count="6"/>
+	<recipe name="meleeClubWood" count="1" craft_time = "12" craft_exp_gain="40">
+		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="meleeClubIron" count="1">
-		<ingredient name="resourceScrapIron" count="100"/>
+	<recipe name="meleeClubIron" count="1" craft_time = "12" craft_exp_gain="60">
+		<ingredient name="resourceScrapIron" count="6"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="cntBeerCooler" count="1" craft_area="workbench">
@@ -887,8 +887,8 @@
 		<ingredient name="foodCropCorn" count="1"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
-	<recipe name="gunCrossbow" count="1" craft_area="workbench" tags="learnable" >
-		<ingredient name="resourceForgedIron" count="10"/>
+	<recipe name="gunCrossbow" count="1" craft_area="workbench" craft_time = "10" craft_exp_gain="50" tags="learnable" >
+		<ingredient name="resourceForgedIron" count="5"/>
 		<ingredient name="resourceLeather" count="2"/>
 		<ingredient name="resourceGlue" count="2"/>
 		<ingredient name="resourceDuctTape" count="1"/>
@@ -933,12 +933,12 @@
 		<ingredient name="resourceDuctTape" count="4"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
 	</recipe>
-	<recipe name="meleeToolFireaxeIron" count="1" tags="learnable">
-		<ingredient name="resourceForgedIron" count="20"/>
+	<recipe name="meleeToolFireaxeIron" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="meleeToolFireaxeSteel" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="20"/>
+	<recipe name="meleeToolFireaxeSteel" count="1" craft_area="workbench" craft_time = "24" craft_exp_gain="120" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="12"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="medicalFirstAidBandage" count="1" tags="learnable">
@@ -1117,14 +1117,14 @@
 		<ingredient name="resourcePotassiumNitratePowder" count="3"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
-	<recipe name="meleeToolHoeIron" count="1" tags="learnable">
-		<ingredient name="resourceForgedIron" count="16"/>
+	<recipe name="meleeToolHoeIron" count="1" craft_area="workbench" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="meleeToolHuntingKnife" count="1" tags="learnable" craft_time = "16" craft_exp_gain="40">
+	<recipe name="meleeToolHuntingKnife" count="1" tags="learnable" craft_time = "16" craft_exp_gain="80">
 		<ingredient name="resourceForgedIron" count="8"/>
-		<ingredient name="resourceWood" count="4"/>
-		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceWood" count="8"/>
+		<ingredient name="resourceLeather" count="4"/>
 	</recipe>
 	<recipe name="modGunBarrelExtender" count="1" craft_area="workbench" tags="learnable">
 		<ingredient name="modGunBarrelExtenderSchematic" count="1"/>
@@ -1556,8 +1556,8 @@
 	<recipe name="cntLockersShortClosed" count="1" craft_area="workbench">
 		<ingredient name="resourceForgedIron" count="2"/>
 	</recipe>
-	<recipe name="meleeToolMachete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="20"/>
+	<recipe name="meleeToolMachete" count="1" craft_area="workbench" craft_time="20" craft_exp_gain="100" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="10"/>
 		<ingredient name="resourceWood" count="4"/>
 		<ingredient name="resourceLeather" count="1"/>
 	</recipe>
@@ -1942,12 +1942,12 @@
 		<ingredient name="resourceCropGoldenrodPlant" count="1"/>
 		<ingredient name="drinkJarRiverWater" count="1"/>
 	</recipe>
-	<recipe name="meleeToolPickaxeIron" count="1" tags="learnable">
-		<ingredient name="resourceForgedIron" count="20"/>
+	<recipe name="meleeToolPickaxeIron" count="1" craft_area="workbench" craft_time="16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="meleeToolPickaxeSteel" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="20"/>
+	<recipe name="meleeToolPickaxeSteel" count="1" craft_area="workbench" craft_time="24" craft_exp_gain="120" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="12"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="plantedAloe1" count="1" craft_time="1" tags="learnable">
@@ -2083,7 +2083,7 @@
 		<ingredient name="resourceDuctTape" count="4"/>
 		<ingredient name="resourceScrapPolymers" count="4"/>
 	</recipe>
-	<recipe name="armorMiningHelmet" count="1" craft_area="workbench" tags="learnable">
+	<recipe name="armorMiningHelmet" count="1" craft_area="workbench" craft_time = "16" craft_exp_gain="80" tags="learnable">
 		<ingredient name="armorFootballHelmet" count="1"/>
 		<ingredient name="meleeToolFlashlight02" count="1"/>
 		<ingredient name="resourceElectricParts" count="8"/>
@@ -2169,16 +2169,16 @@
 		<ingredient name="unit_iron" count="10"/>
 		<ingredient name="unit_clay" count="5"/>
 	</recipe>
-	<recipe name="meleeToolShovelIron" count="1" tags="learnable">
+	<recipe name="meleeToolShovelIron" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
+		<ingredient name="resourceForgedIron" count="8"/>
+		<ingredient name="resourceWood" count="10"/>
+	</recipe>
+	<recipe name="meleeToolShovelSteel" count="1" craft_area="workbench" craft_time = "24" craft_exp_gain="140" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="14"/>
+		<ingredient name="resourceWood" count="10"/>
+	</recipe>
+	<recipe name="meleeToolSledgehammer" count="1" craft_time = "32" craft_exp_gain="160" tags="learnable">
 		<ingredient name="resourceForgedIron" count="16"/>
-		<ingredient name="resourceWood" count="10"/>
-	</recipe>
-	<recipe name="meleeToolShovelSteel" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="20"/>
-		<ingredient name="resourceWood" count="10"/>
-	</recipe>
-	<recipe name="meleeToolSledgehammer" count="1" tags="learnable">
-		<ingredient name="resourceForgedIron" count="30"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="medicalSnowberryExtract" count="1" craft_area="chemistryStation">
@@ -2243,7 +2243,7 @@
 		<ingredient name="resourceWood" count="5"/>
 	</recipe>
 	<recipe name="meleeToolShovelStone" count="1" craft_time = "12" craft_exp_gain="40">
-		<ingredient name="resourceRockSmall" count="5"/>
+		<ingredient name="resourceRockSmall" count="4"/>
 		<ingredient name="resourceCordage" count="1"/>
 		<ingredient name="resourceWood" count="5"/>
 	</recipe>
@@ -2353,9 +2353,9 @@
 		<ingredient name="resourceNail" count="10"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
-	<recipe name="gunWoodenBow" count="1">
-		<ingredient name="resourceWood" count="8"/>
-		<ingredient name="resourceYuccaFibers" count="3"/>
+	<recipe name="gunWoodenBow" count="1" craft_time = "12" craft_exp_gain="40">
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceCordage" count="2"/>
 	</recipe>
 	<recipe name="woodArrowSlitHalf" count="1" craft_area="tablesaw">
 		<ingredient name="resourceWood" count="4"/>
@@ -2410,8 +2410,8 @@
 		<ingredient name="resourceElectricParts" count="10"/>
 		<ingredient name="resourceSpring" count="4"/>
 	</recipe>
-	<recipe name="meleeToolWrench" count="1" craft_area="workbench">
-		<ingredient name="resourceForgedSteel" count="12"/>
+	<recipe name="meleeToolWrench" count="1" craft_area="workbench" craft_time="40" craft_exp_gain="200" tags="learnable">
+		<ingredient name="resourceForgedSteel" count="20"/>
 		<ingredient name="resourceMechanicalParts" count="4"/>
 	</recipe>
 	<recipe name="wroughtIronFenceSheet" count="1" craft_area="forge" craft_tool="toolAnvil" material_based="true">
@@ -2998,5 +2998,6 @@
 	<recipe name="resourceForgedSteelPlating" count="1" craft_time = "4" craft_exp_gain="9" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceForgedSteel" count="5"/>
 	</recipe>
+	
 </recipes>
 <!-- To do (maybe / later)<recipe name="resourceArrowHeadSteelAP" count="1" craft_area="forge" craft_tool="toolCalipers" material_based="true"><recipe name="book" count="1"><ingredient name="resourcePaper" count="64"/></recipe>mattress? boardedWindowsSheet4 window02 storeShelving01Double storeShelving01Top storeShelving01TopDouble Bookcases -->
