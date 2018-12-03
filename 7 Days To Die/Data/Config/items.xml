@@ -10078,7 +10078,6 @@
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mplants"/>
 		<property name="Stacknumber" value="50"/>
-		<property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
 		<!-- STK resource -->
 		<property name="EconomicValue" value="12"/>
 		<property name="EconomicBundleSize" value="5"/>

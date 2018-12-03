@@ -25730,6 +25730,26 @@ NOT the TextureNumber.
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcretePole"/> </property>
 </block>
 
+<block name="woodBlockRelay">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Powered"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="DisplayType" value="blockElectrical" />
+	<property name="RequiredPower" value="1"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems"> <property name="resourceFormedIron" value="1"/></property>
+	<drop event="Harvest" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="woodBlockRelay" count="1" tool_category="Disassemble"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="EconomicValue" value="28"/>
+	<property name="FilterTags" value="fdecor,felectrical"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
 <!-- Crops -->
 
 <block name="plantedLotusFlower1">
