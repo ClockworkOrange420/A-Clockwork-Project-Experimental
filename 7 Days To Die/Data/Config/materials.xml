@@ -1179,4 +1179,42 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="0"/>
 </material>
 
+<material id="Mcompost">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="resourceCompost" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="lightopacity" value="4" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="100" />
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="Mfeather">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="resourceFeather" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="lightopacity" value="4" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="100" />
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="Mwood_choppingBlock">
+	<property name="damage_category" value="Chop" />
+	<property name="surface_category" value="wood" />
+	<property name="forge_category" value="wood" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="wood" />
+	<property name="stability_glue" value="40" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="1000" />
+	<property name="Experience" value="0"/>
+</material>
+
 </materials>

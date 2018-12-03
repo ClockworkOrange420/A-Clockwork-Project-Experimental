@@ -535,6 +535,7 @@ Example of using the seed (creation time) on a weapon to activate an effect
 		<property name="Stacknumber" value="1"/>
 
 		<effect_group tiered="false">
+			<passive_effect name="WeaponHandling" operation="perc_add" value="0.3"/>
 		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 	</item_modifier>
@@ -807,7 +808,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 
 		<!-- Increases durability, increases block efficiency, all melee -->
 		<effect_group tiered="false">
-			<passive_effect name="BlockDamage" operation="perc_add" value=".15"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".25"/>
 			<passive_effect name="DegradationMax" operation="perc_add" value=".3"/>
 		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>

@@ -1,7 +1,7 @@
 <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 
 <progression>
-<level max_level="300" exp_to_level="10000" experience_multiplier="1.008" skill_points_per_level="1">
+<level max_level="300" exp_to_level="20000" experience_multiplier="1.011" skill_points_per_level="1">
 <!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 <!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 </level>
@@ -162,8 +162,8 @@
 			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.52,0.70" level="11,20"/>-->
 
 			<passive_effect name="CraftingTier" operation="base_set" level="1,10" value="1,6"/>
-			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.1,1" level="1,10"/>
-			<passive_effect name="RepairTime" operation="perc_subtract" value="0.1,1" level="1,10"/>
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.1,0.5" level="1,10"/>
+			<passive_effect name="RepairTime" operation="perc_subtract" value="0.1,0.5" level="1,10"/>
 			<effect_description level="1" desc_key="attIntellectRank1Desc"/>
 			<effect_description level="2" desc_key="attIntellectRank2Desc"/>
 			<effect_description level="3" desc_key="attIntellectRank3Desc"/>
@@ -532,11 +532,12 @@
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkSalvageOperations"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.1,0.70" level="1,5" tags="metal"/>
-				<!-- wrench (or other relevant tools) do a base_add=1 to hop on the salvage train -->
 				<passive_effect name="HarvestCount" operation="perc_add" value=".2,1" level="1,5" tags="salvageHarvest"/>
 		</effect_group>
 
 		<effect_group>
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.1,0.5" level="1,5"/>
+			<passive_effect name="RepairAmount" operation="perc_add" value="0.1,1" level="1,5"/>
 			<effect_description level="1" desc_key="perkSalvageOperationsRank1Desc"/>
 			<effect_description level="2" desc_key="perkSalvageOperationsRank2Desc"/>
 			<effect_description level="3" desc_key="perkSalvageOperationsRank3Desc"/>
@@ -556,12 +557,12 @@
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="hammer"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.05,0.25" level="1,5" tags="secondary"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="wood"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="metal"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="organic"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="earth"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="stone"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,10" tags="head"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.05,0.25" level="1,5" tags="head"/>
 			<effect_description level="1" desc_key="perkWreckingCrewRank1Desc"/>
 			<effect_description level="2" desc_key="perkWreckingCrewRank2Desc"/>
 			<effect_description level="3" desc_key="perkWreckingCrewRank3Desc"/>
@@ -1011,11 +1012,11 @@
 
 		<effect_group>
 			
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="plantedBlueberry1,plantedCotton1"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="plantedCorn1,plantedPotato1,plantedYucca1"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="plantedCoffee1,plantedGoldenrod1,plantedChrysanthemum1,plantedHop1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="plantedBlueberry1,plantedWheat1,plantedCotton1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="plantedCorn1,plantedPotato1,plantedTomato1,plantedYucca1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="meleeToolScythe,plantedCoffee1,plantedGoldenrod1,plantedChrysanthemum1,plantedHop1"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="plantedAloe1,plantedMushroom1"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5,5" tags="plantedGraceCorn1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5,5" tags="plantedLotusFlower1"/>
 
 			<effect_description level="1" desc_key="perkLivingOffTheLandRank1Desc" />
 			<effect_description level="2" desc_key="perkLivingOffTheLandRank2Desc" />
@@ -1369,10 +1370,10 @@
 
 <!-- Influence Perks (Intellect) -->
 	<perk name="perkBetterBarter" parent="skillInfluence" name_key="perkBetterBarterName" desc_key="perkBetterBarterDesc" icon="ui_game_symbol_barter">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
@@ -1386,10 +1387,10 @@
 		</effect_group>
 	</perk>
 	<perk name="perkDaringAdventurer" parent="skillInfluence" name_key="perkDaringAdventurerName" desc_key="perkDaringAdventurerDesc" icon="ui_game_symbol_adventure">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
@@ -1404,10 +1405,10 @@
 		</effect_group>
 	</perk>
 	<perk name="perkCharismaticNature" max_level="4" parent="skillInfluence" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
@@ -1438,38 +1439,59 @@
 		</effect_group>
 	</perk>
 <!-- Craftsmanship Perks (Intellect) -->
-	<perk name="perkHammerForge" parent="skillCraftsmanship" max_level="4" name_key="perkHammerForgeName" desc_key="perkHammerForgeDesc" icon="ui_game_symbol_forge">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel4"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel8"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
-		<!--<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>-->
-
+	<perk name="perkHammerForge" parent="skillCraftsmanship" name_key="perkHammerForgeName" desc_key="perkHammerForgeDesc" icon="ui_game_symbol_forge">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel9"/></level_requirements>
+		
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="forge,meleeToolFireaxeIron,meleeToolPickaxeIron,meleeToolHoeIron,meleeToolShovelIron,meleeToolClawHammer,meleeToolSledgehammer,meleeToolHuntingKnife"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="resourceScrapIronPlating,armorLeatherBoots,armorLeatherGloves,armorLeatherHood,armorLeatherChest,armorLeatherPants,armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs,"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="resourceForgedSteelPlating,toolForgeCrucible,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelBoots,armorSteelChest,armorSteelGloves,armorSteelHelmet,armorSteelLegs,"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" 
+				tags="toolForgeCrucible,forge"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" 
+				tags="meleeClubIron,meleeToolFireaxeIron,meleeToolPickaxeIron,meleeToolHoeIron,meleeToolShovelIron,meleeToolClawHammer,meleeToolHuntingKnife,armorLeatherBoots,armorLeatherGloves,armorLeatherHood,armorLeatherChest,armorLeatherPants"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" 
+				tags="resourceFormedIron,meleeToolSledgehammer,armorScrapBoots,armorScrapChest,armorScrapGloves,armorScrapHelmet,armorScrapLegs,armorMiningHelmet"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,4" 
+				tags="resourceFormedSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete,armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" 
+				tags="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelBoots,armorSteelChest,armorSteelGloves,armorSteelHelmet,armorSteelLegs"/>
+			
 			<effect_description level="1" desc_key="perkHammerForgeRank1Desc"/>
 			<effect_description level="2" desc_key="perkHammerForgeRank2Desc"/>
 			<effect_description level="3" desc_key="perkHammerForgeRank3Desc"/>
 			<effect_description level="4" desc_key="perkHammerForgeRank4Desc"/>
-			<!--<effect_description level="5" desc_key="perkHammerForgeRank5Desc"/>-->
+			<effect_description level="5" desc_key="perkHammerForgeRank5Desc"/>
 		</effect_group>
 	</perk>
 	<perk name="perkGreaseMonkey" parent="skillCraftsmanship" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="vehicleWheels,vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleBicyclePlaceable"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleMinibikePlaceable"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,vehicleMotorcyclePlaceable"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="vehicle4x4TruckChassis,vehicle4x4TruckAccessories,vehicle4x4TruckPlaceable"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,vehicleGyrocopterPlaceable"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" 
+				tags="meleeToolWrench,vehicleWheels,vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleBicyclePlaceable"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" 
+				tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleMinibikePlaceable"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" 
+				tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,vehicleMotorcyclePlaceable"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" 
+				tags="vehicle4x4TruckChassis,vehicle4x4TruckAccessories,vehicle4x4TruckPlaceable"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" 
+				tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,vehicleGyrocopterPlaceable"/>
+			
 			<effect_description level="1" desc_key="perkGreaseMonkeyRank1Desc"/>
 			<effect_description level="2" desc_key="perkGreaseMonkeyRank2Desc"/>
 			<effect_description level="3" desc_key="perkGreaseMonkeyRank3Desc"/>
@@ -1478,20 +1500,29 @@
 		</effect_group>
 	</perk>
 	<perk name="perkAdvancedEngineering" parent="skillCraftsmanship" name_key="perkAdvancedEngineeringName" desc_key="perkAdvancedEngineeringDesc" icon="ui_game_symbol_workbench">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel6"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="workbench,tableSaw,generatorbank,electricwirerelay,switch,ceilingLight01_player,switch,gunCrossbow,gunCompoundBow,armorMiningHelmet"/>
+				tags="tripwirepost,workbench,tableSaw,SewingTable,"/>
+			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
-				tags="gunPistol,gunPumpShotgun,gunHuntingRifle,spotlightPlayer,speaker,pressureplate,pressureplateLong,electrictimerrelay,motionsensor,cementMixer,tripwirepost"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="electricfencepost,bladeTrap,dartTrap,gunSMG5,gun44Magnum,gunAK47,gunMR10,batterybank,ammoDartSteel"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="shotgunTurret,gunRocketLauncher,gunToolNailgun"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="autoTurret,meleeToolAuger,meleeToolChainsaw"/>
+				tags="gunPistol,gunCrossbow,generatorbank,cementMixer,resourceBricks,electricfencepost,switch,ceilingLight01_player,speaker,pressureplate,pressureplateLong,gunPistol,gunCrossbow"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" 
+				tags="gunToolNailgun,batterybank,workstationResearchTable,electricwirerelay,bladeTrap,dartTrap,ammoDartSteel,spotlightPlayer,electrictimerrelay,toolAndDieSet,toolCalipers,gunPumpShotgun,gunHuntingRifle,gunSMG5,gunCompoundBow"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" 
+				tags="meleeToolAuger,meleeToolChainsaw,motionsensor,gun44Magnum,gunAK47,gunMR10"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" 
+				tags="gunRocketLauncher,autoTurret,shotgunTurret"/>
+			
+			
 			<effect_description level="1" desc_key="perkAdvancedEngineeringRank1Desc"/>
 			<effect_description level="2" desc_key="perkAdvancedEngineeringRank2Desc"/>
 			<effect_description level="3" desc_key="perkAdvancedEngineeringRank3Desc"/>
@@ -1500,41 +1531,28 @@
 		</effect_group>
 	</perk>
 	<perk name="perkYeahScience" parent="skillCraftsmanship" name_key="perkYeahScienceName" desc_key="perkYeahScienceDesc" icon="ui_game_symbol_chemistry">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel7"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="ammoGasCan,drinkJarGrainAlcohol,ammo9mmBullet,ammo44MagnumBullet,ammoShotgunShell,ammo762mmBulletFMJ,chemistryStation,thrownAmmoPipeBomb,mineHubcap,mineCookingPot"/>
-			<!-- Tier 1 Weapon mods -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="modGunMuzzleBrake,modGunFlashlight,modGunScopeSmall,modGunTriggerGroupSemi,modGunBipod,modGunForegrip,modGunDuckbill,modGunChoke,modGunMagazineExtender,modShotgunSawedOffBarrel,modGunMeleeTheHunter,modMeleeSerratedBlade,modMeleeWeightedHead,modMeleeStructuralBrace,modMeleeGraveDigger,modMeleeWoodSplitter"/>				
-			<!-- Tier 1 Armor mods -->				
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="modArmorCoolingMesh,modArmorInsulatedLiner,modArmorReinforcedPadding,modArmorScrapPlating,modArmorImprovedFittings,modArmorStoragePocket,modArmorHelmetLight"/>				
+				tags="ammoGasCan,thrownAmmoMolotovCocktail,modGunFlashlight,modGunMeleeTheHunter,modArmorReinforcedPadding,modArmorStoragePocket,modArmorHelmetLight,modMeleeTemperedBlade,modArmorPlasticPlating,modArmorImpactBracing"/>
+			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
-				tags="thrownDynamite,ammo9mmBulletSteel,ammo44MagnumBulletSteel,ammo762mmBulletFMJSteel,ammoShotgunSlug,ammoArrowSteelAP,ammoCrossbowBoltSteelAP,ammoArrowFlaming,mineAirFilter,resourceMilitaryFiber,modMeleeBunkerBuster"/>
-			<!-- Tier 2 Weapon mods -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
-				tags="modMeleeClubBurningShaft,modGunSoundSuppressorSilencer,modGunBarrelExtender,modGunLaserSight,modGunScopeMedium,modGunReflexSight,modGunTriggerGroupBurst,modGunRetractingStock,modGunCrippleEm,modMeleeTemperedBlade,modMeleeFortifyingGrip,modMeleeClubBarbedWire"/>		
-			<!-- Tier 2 Armor mods -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
-				tags="modArmorPlasticPlating,modArmorIronPlating,modArmorSpikedKnuckles,modArmorCustomizedFittings,modArmorDoubleStoragePocket,modArmorMuffledConnectors,modArmorImpactBracing,modArmorWaterPurifier"/>								
+				tags="ammo9mmBullet,thrownAmmoPipeBomb,thrownDynamite,mineCandyTin,mineHubcap,mineAirFilter,mineCookingPot,modMeleeStructuralBrace,modMeleeGraveDigger,modMeleeWoodSplitter,modArmorScrapPlating,modArmorSpikedKnuckles,modArmorMuffledConnectors,modMeleeClubBarbedWire,modMeleeClubMetalSpikes,modGunRodAndSpring"/>
+			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
-				tags="ammoCrossbowBoltExploding"/>
-			<!-- Tier 3 Weapon mods -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
-				tags="modGunScopeLarge,modGunTriggerGroupAutomatic,modGunRodAndSpring,modGunBowPolymerString,modMeleeErgonomicGrip,modMeleeClubMetalSpikes,modMeleeIronBreaker,modArmorBandolier"/>				
-			<!-- Tier 3 Armor mods -->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
-				tags="modArmorMilitaryPlating,modArmorSteelPlating,modArmorTripleStoragePocket,modArmorAdvancedMuffledConnectors"/>				
+				tags="resourceAcid,carBattery,tnt,ammoShotgunSlug,ammoShotgunShell,modGunMuzzleBrake,modGunForegrip,modGunDuckbill,modGunChoke,modShotgunSawedOffBarrel,modGunBarrelExtender,chemistryStation,drinkJarGrainAlcohol,modGunScopeSmall,modGunTriggerGroupSemi,modGunMagazineExtender,modMeleeSerratedBlade,modArmorCoolingMesh,modArmorInsulatedLiner,modArmorImprovedFittings,ammoArrowFlaming,modArmorIronPlating,modMeleeBunkerBuster,modMeleeWeightedHead,modGunBowPolymerString,modArmorDoubleStoragePocket"/>
+				
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5"
-				tags="resourceRocketTip,resourceRocketCasing,ammoRocketHE,ammoRocketFrag"/>
+				tags="ammo44MagnumBullet,ammo762mmBulletFMJ,modGunBipod,ammo9mmBulletSteel,ammoArrowSteelAP,ammoCrossbowBoltSteelAP.modMeleeClubBurningShaft,modGunSoundSuppressorSilencer,modGunLaserSight,modGunScopeMedium,modGunReflexSight,modGunTriggerGroupBurst,modGunCrippleEm,modMeleeIronBreaker,modArmorSteelPlating,modArmorAdvancedMuffledConnectors"/>
+			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5"
-				tags="batterybank"/>			
+				tags="ammo44MagnumBulletSteel,ammo762mmBulletFMJSteel,resourceMilitaryFiber,modMeleeFortifyingGrip,modArmorCustomizedFittings,modArmorWaterPurifier,ammoCrossbowBoltExploding,modGunScopeLarge,modGunTriggerGroupAutomatic,modMeleeErgonomicGrip,modArmorBandolier,modArmorMilitaryPlating,modArmorTripleStoragePocket,resourceRocketTip,resourceRocketCasing,ammoRocketHE,ammoRocketFrag"/>		
+				
 			<effect_description level="1" desc_key="perkYeahScienceRank1Desc"/>
 			<effect_description level="2" desc_key="perkYeahScienceRank2Desc"/>
 			<effect_description level="3" desc_key="perkYeahScienceRank3Desc"/>
@@ -1544,16 +1562,17 @@
 	</perk>
 
 	<perk name="perkPhysician" parent="skillCraftsmanship" name_key="perkPhysicianName" desc_key="perkPhysicianDesc" icon="ui_game_symbol_medical">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel7"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel8"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel3"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel5"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel7"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="medicalFirstAidBandage,medicalPlasterCast"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="medicalFirstAidKit,drugSteroids"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="drugRecog"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="drugHerbalAntibiotics,medicalFirstAidBandage,medicalPlasterCast"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="medicalSnowberryExtract,medicalFirstAidKit"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="drugAntibiotics,drugSteroids"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="medicalLotusExtract,drugRecog"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="drugFortBites"/>
 
 
@@ -1568,42 +1587,23 @@
 		</effect_group>
 	</perk>
 	<perk name="perkMasterChef" parent="skillCraftsmanship" name_key="perkMasterChefName" desc_key="perkMasterChefDesc" icon="ui_game_symbol_spatula">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel8"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="foodBaconAndEggs,foodEggBoiled,foodBoiledMeat,foodGrilledMeat,foodBakedPotato,foodCornBread,foodCornOnTheCob,drinkJarRedTea,drinkJarCoffee,drinkJarGoldenRodTea"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="foodSteakAndPotato,foodBlueberryPie,foodMeatStew,foodVegetableStew"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="foodShamChowder,foodHoboStew,foodFishTacos"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="drinkYuccaJuiceSmoothie,foodChiliDog"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="foodEggBoiled,foodGrilledMeat,foodBakedPotato,foodCornBread,foodCornOnTheCob,drinkJarCoffee"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="drinkJarBeerfoodSteakAndPotato,foodBlueberryPie,foodBoiledMeat,foodMeatStew,foodVegetableStew,drinkJarRedTea,drinkJarGoldenRodTea"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="foodShamChowder,foodFishTacos"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="drinkYuccaJuiceSmoothie,foodChiliDog,foodBaconAndEggs"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1" tags="drinkCanMegaCrush,drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir"/>
 			<effect_description level="1" desc_key="perkMasterChefRank1Desc"/>
 			<effect_description level="2" desc_key="perkMasterChefRank2Desc"/>
 			<effect_description level="3" desc_key="perkMasterChefRank3Desc"/>
 			<effect_description level="4" desc_key="perkMasterChefRank4Desc"/>
 			<effect_description level="5" desc_key="perkMasterChefRank5Desc"/>
-		</effect_group>
-	</perk>
-	
-	<perk name="perkScrimpAndScrounge" parent="skillCraftsmanship" name_key="Scrimp and Scrounge" desc_key="Make the most out of your resources" icon="quality_joe">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel7"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
-
-		<effect_group>
-			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.1,1" level="1,5"/>
-			<passive_effect name="RepairAmount" operation="perc_add" value="0.1,1" level="1,5"/>
-
-			<effect_description level="1" desc_base="Reduces crafting time by 10% and reduces the amount of resources required when repairing tools."/>
-			<effect_description level="2" desc_base="Reduces crafting time by 32.5% and reduces the amount of resources required when repairing tools."/>
-			<effect_description level="3" desc_base="Reduces crafting time by 55% and reduces the amount of resources required when repairing tools."/>
-			<effect_description level="4" desc_base="Reduces crafting time by 77.5% and reduces the amount of resources required when repairing tools."/>
-			<effect_description level="5" desc_base="Reduces crafting time by 100% and reduces the amount of resources required when repairing tools."/>
 		</effect_group>
 	</perk>
 
