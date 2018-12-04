@@ -2349,7 +2349,7 @@
 			<!--<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/> all tools but not player hands -->
 		</effect_group>
 		<effect_group name="Power Attack">
-			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="-.1" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
