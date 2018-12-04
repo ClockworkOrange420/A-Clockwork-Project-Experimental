@@ -829,9 +829,6 @@ tbnsew:
 	<drop event="Harvest" name="foodRottingFlesh" count="2" tool_category="Butcher" />
 	<drop event="Destroy" name="resourceFemur" count="1" />
 	<drop event="Destroy" name="foodRottingFlesh" count="1" />
-	<property name="HeatMapStrength" value="5.0"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="1"/>
 </block>
 
 <block name="terrBurntForestFromDirt">
