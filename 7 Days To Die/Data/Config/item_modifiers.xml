@@ -728,7 +728,7 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	</item_modifier>
 	-->
 
-	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="club,sledge" modifier_tags="damage" type="attachment" rarity="0.5">
+	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="shock,club,sledge" modifier_tags="damage" type="attachment" rarity="0.5">
 		<property name="Stacknumber" value="1"/>
 
 		<!-- Changes damage type to electric
