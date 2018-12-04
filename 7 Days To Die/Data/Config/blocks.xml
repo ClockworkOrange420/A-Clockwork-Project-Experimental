@@ -19677,9 +19677,6 @@ NOT the TextureNumber.
 	<property name="OnlySimpleRotations" value="true"/>
 	<!--<property name="ParticleName" value="candleWall_flame"/>-->
 	<property name="CanPickup" value="true" param1="candle"/>
-	<property name="HeatMapStrength" value="1"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
 	<drop event="Destroy" name="candle" count="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="torchGroupDesc"/>
