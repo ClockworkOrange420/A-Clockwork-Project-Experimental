@@ -3327,19 +3327,23 @@
 		<ingredient name="resourceWood" count="20"/>
 		<ingredient name="resourceNail" count="10"/>
 	</recipe>
-	<recipe name="chickenCoop1" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolClawHammer">
+	<recipe name="chickenCoop1" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolClawHammer" tags="learnable">
 		<ingredient name="resourceWood" count="20"/>
 		<ingredient name="resourceNail" count="15"/>
 		<ingredient name="resourceGlue" count="15"/>
 		<ingredient name="foodEgg" count="8"/>
 	</recipe>
-	<recipe name="dewCollectorFilling" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench">
+	<recipe name="dewCollectorFilling" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="resourceFormedIron" count="10"/>
 		<ingredient name="resourceWood" count="10"/>
 		<ingredient name="resourceLeather" count="10"/>
 		<ingredient name="resourceDuctTape" count="5"/>
 	</recipe>
 	<!-- Food -->
+	<recipe name="resourceChickenFeed" count="1" craft_time = "4" craft_exp_gain="20">
+		<ingredient name="plantedCorn1" count="1"/>
+		<ingredient name="plantedWheat1" count="1"/>
+	</recipe>
 	<recipe name="plantedTomato1" count="1" craft_time="1" craft_exp_gain="0" tags="learnable">
 		<ingredient name="foodCropTomato" count="2"/>
 	</recipe>
@@ -3721,29 +3725,29 @@
 	<recipe name="resourceFormedSteel" count="1" craft_time = "1" craft_exp_gain="5" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="resourceForgedSteel" count="1"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="50" craft_time = "300" craft_exp_gain="250" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="50" craft_time = "300" craft_exp_gain="250" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="foodCropPotato" count="5"/>
 		<ingredient name="foodCropBlueberries" count="5"/>
 		<ingredient name="foodCropMushrooms" count="5"/>
 		<ingredient name="foodCropWheat" count="5"/>
 		<ingredient name="foodCropTomato" count="5"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="resourceScrapIron" count="100"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="resourceScrapLead" count="100"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="resourceScrapBrass" count="100"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="resourceScrapPolymers" count="100"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="resourceFemur" count="100"/>
 	</recipe>
-	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker">
+	<recipe name="resourceOmnigel" count="10" craft_time = "60" craft_exp_gain="50" craft_area="chemistryStation" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="foodRottingFlesh" count="100"/>
 	</recipe>
 	<recipe name="resourceOilShale" count="100" craft_time = "12" craft_exp_gain="40" craft_area="chemistryStation">

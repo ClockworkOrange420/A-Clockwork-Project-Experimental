@@ -2788,7 +2788,7 @@
 	<lootgroup name="chickenCoop" count="all" >
 		<item name="foodEgg" count="4" />
 		<item name="resourceFeather" count="15" />
-		<item name="foodRawMeat" count="2" />
+		<item name="foodRawChicken" count="6" />
 		<item group="seeds" count="1"/>
 	</lootgroup>
 	<lootcontainer id="121"  count="1" size="2,2" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
