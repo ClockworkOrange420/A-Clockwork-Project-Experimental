@@ -2804,6 +2804,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property name="HoldType" value="9"/>
 		<property class="Action0">
+			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 			<property name="DamageEntity" value="30"/>
 			<property name="DamageBlock" value="90"/>
 		</property>
@@ -11244,6 +11245,24 @@
 	</item>
 	<!-- Modded -->
 	<!-- Melee Tools / Weapons -->
+	<item name="meleeHandZombieElectricWorker">
+		<property name="Extends" value="meleeHandZombieWorker"/>
+		<property name="CreativeMode" value="None"/>
+		<property name="HoldType" value="9"/>
+		<property class="Action0">
+			<property name="Buff" value="buffShocked,buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
+			<property name="DamageEntity" value="20"/>
+			<property name="DamageBlock" value="90"/>
+		</property>
+		<effect_group name="Base Effects">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
+			<passive_effect name="BuffProcChance" operation="base_set" value="1" tags="buffShocked"/>
+			<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
+			<passive_effect name="BuffProcChance" operation="base_set" value="0.10" tags="buffIllInfection0"/>
+			<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryStunned1"/>
+		</effect_group>
+	</item>
 	<item name="meleeToolScythe">
 		<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts"/>
 		<property name="DisplayType" value="melee"/>
