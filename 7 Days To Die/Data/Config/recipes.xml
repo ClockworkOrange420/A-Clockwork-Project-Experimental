@@ -196,7 +196,7 @@
 		<ingredient name="resourceFeather" count="1"/>
 	</recipe>
 	<recipe name="burningBarrelPlayer" count="1" craft_time = "4" craft_exp_gain="20"  craft_area="workbench">
-		<ingredient name="resourceForgedIron" count="5"/>
+		<ingredient name="resourceFormedIron" count="5"/>
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="medicalAloeCream" count="1" craft_time = "4" craft_exp_gain="20">
@@ -700,7 +700,7 @@
 		<ingredient name="unit_stone" count="5"/>
 	</recipe>
 	<recipe name="cementMixer" count="1" craft_time="60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceFormedIron" count="25"/>
 		<ingredient name="resourceSpring" count="4"/>
 		<ingredient name="smallEngine" count="1"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
@@ -717,15 +717,6 @@
 		<ingredient name="resourceForgedSteel" count="10"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
 	</recipe>
-	<recipe name="foodCharredMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire">
-		<ingredient name="foodRawMeat" count="5"/>
-	</recipe>
-	<recipe name="foodCharredMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven">
-		<ingredient name="foodRawMeat" count="5"/>
-	</recipe>
-	<recipe name="foodCharredMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven">
-		<ingredient name="foodRawMeat" count="5"/>
-	</recipe>
 	<recipe name="meleeToolClawHammer" count="1" craft_time = "16" craft_exp_gain="80" tags="learnable">
 		<ingredient name="resourceForgedIron" count="8"/>
 		<ingredient name="resourceWood" count="10"/>
@@ -741,7 +732,7 @@
 		<ingredient name="resourceWood" count="10"/>
 	</recipe>
 	<recipe name="cntBeerCooler" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench">
-		<ingredient name="resourceForgedIron" count="4"/>
+		<ingredient name="resourceFormedIron" count="4"/>
 		<ingredient name="resourceMetalPipe" count="3"/>
 		<ingredient name="resourceElectricParts" count="5"/>
 		<ingredient name="resourceMechanicalParts" count="1"/>
@@ -783,7 +774,7 @@
 		<ingredient name="resourceSpring" count="5"/>
 		<ingredient name="resourceMechanicalParts" count="5"/>
 	</recipe>
-	<!--<recipe name="cntFridge" count="1" craft_area="workbench"><ingredient name="resourceForgedIron" count="10"/><ingredient name="resourceMetalPipe" count="2"/><ingredient name="resourceMechanicalParts" count="2"/><ingredient name="resourceElectricParts" count="8"/></recipe>-->
+	<!--<recipe name="cntFridge" count="1" craft_area="workbench"><ingredient name="resourceFormedIron" count="10"/><ingredient name="resourceMetalPipe" count="2"/><ingredient name="resourceMechanicalParts" count="2"/><ingredient name="resourceElectricParts" count="8"/></recipe>-->
 	<recipe name="cntFridgeBottom" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench">
 		<ingredient name="resourceFormedIron" count="5"/>
 		<ingredient name="resourceMetalPipe" count="2"/>
@@ -1251,27 +1242,6 @@
 	<recipe name="drinkJarGrainAlcohol" count="1" craft_time="20" craft_exp_gain="100" craft_area="workstationOldOven" craft_tool="toolBeaker" tags="learnable">
 		<ingredient name="drinkJarBeer" count="1"/>
 		<ingredient name="resourceYeast" count="1"/>
-	</recipe>
-	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-	</recipe>
-	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-	</recipe>
-	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-	</recipe>
-	<recipe name="foodGrilledMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
-	</recipe>
-	<recipe name="foodGrilledMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven" craft_tool="toolCookingGrill" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
-	</recipe>
-	<recipe name="foodGrilledMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven" craft_tool="toolCookingGrill" tags="learnable">
-		<ingredient name="foodRawMeat" count="5"/>
 	</recipe>
 	<recipe name="resourceGunPowder" count="1" craft_time="4" craft_exp_gain="20" craft_area="workstationAmmunitionTable" craft_tool="toolPestle">
 		<ingredient name="resourceCoal" count="1"/>
@@ -1754,19 +1724,19 @@
 		<ingredient name="resourceLeather" count="1"/>
 	</recipe>
 	<recipe name="foodMeatStew" count="1" craft_time="30" craft_exp_gain="150" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="10"/>
+		<ingredient name="foodRawMeat" count="2"/>
 		<ingredient name="foodCropPotato" count="2"/>
 		<ingredient name="foodCropCorn" count="2"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
 	<recipe name="foodMeatStew" count="1" craft_time="30" craft_exp_gain="150" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="10"/>
+		<ingredient name="foodRawMeat" count="2"/>
 		<ingredient name="foodCropPotato" count="2"/>
 		<ingredient name="foodCropCorn" count="2"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
 	<recipe name="foodMeatStew" count="1" craft_time="30" craft_exp_gain="150" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
-		<ingredient name="foodRawMeat" count="10"/>
+		<ingredient name="foodRawMeat" count="2"/>
 		<ingredient name="foodCropPotato" count="2"/>
 		<ingredient name="foodCropCorn" count="2"/>
 		<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -2749,7 +2719,7 @@
 		<ingredient name="resourceWood" count="100"/>
 	</recipe>
 	<recipe name="workstationTableSaw" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceFormedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="20"/>
 		<ingredient name="resourceElectricParts" count="10"/>
 		<ingredient name="resourceSpring" count="4"/>
@@ -2931,12 +2901,12 @@
 		<ingredient name="resourceMechanicalParts" count="3"/>
 	</recipe>
 	<recipe name="generatorbank" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceFormedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
 		<ingredient name="resourceElectricParts" count="14"/>
 	</recipe>
 	<recipe name="batterybank" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceFormedIron" count="10"/>
 		<ingredient name="resourceElectricParts" count="11"/>
 		<ingredient name="resourceScrapPolymers" count="6"/>
 	</recipe>
@@ -2956,7 +2926,7 @@
 		<ingredient name="resourceFormedIron" count="50"/>
 	</recipe>
 	<recipe name="speaker" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="4"/>
+		<ingredient name="resourceFormedIron" count="4"/>
 		<ingredient name="resourceElectricParts" count="3"/>
 	</recipe>
 	<recipe name="switch" count="1" craft_time = "12" craft_exp_gain="60" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
@@ -2965,12 +2935,12 @@
 		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>
 	<recipe name="pressureplate" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceFormedIron" count="10"/>
 		<ingredient name="resourceMechanicalParts" count="2"/>
 		<ingredient name="resourceElectricParts" count="2"/>
 	</recipe>
 	<recipe name="pressureplateLong" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="50"/>
+		<ingredient name="resourceFormedIron" count="50"/>
 		<ingredient name="resourceMechanicalParts" count="8"/>
 		<ingredient name="resourceElectricParts" count="6"/>
 	</recipe>
@@ -2988,19 +2958,18 @@
 		<ingredient name="resourceElectricParts" count="5"/>
 	</recipe>
 	<recipe name="electricfencepost" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedIron" count="5"/>
+		<ingredient name="resourceFormedIron" count="5"/>
 		<ingredient name="resourceElectricParts" count="2"/>
 	</recipe>
 	<recipe name="bladeTrap" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<!-- trap -->
-		<ingredient name="resourceForgedIron" count="10"/>
-		<ingredient name="resourceForgedSteel" count="10"/>
-		<ingredient name="resourceMechanicalParts" count="8"/>
+		<ingredient name="resourceFormedIron" count="20"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
 		<ingredient name="resourceElectricParts" count="6"/>
 	</recipe>
 	<recipe name="dartTrap" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<!-- trap -->
-		<ingredient name="resourceForgedIron" count="20"/>
+		<ingredient name="resourceFormedIron" count="20"/>
 		<ingredient name="resourceMechanicalParts" count="6"/>
 		<ingredient name="resourceElectricParts" count="4"/>
 	</recipe>
@@ -3009,7 +2978,7 @@
 		<ingredient name="unit_clay" count="1"/>
 	</recipe>
 	<recipe name="shotgunTurret" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
-		<ingredient name="resourceForgedSteel" count="40"/>
+		<ingredient name="resourceFormedSteel" count="40"/>
 		<ingredient name="resourceMechanicalParts" count="10"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 		<ingredient name="resourceScrapPolymers" count="10"/>
@@ -3017,14 +2986,13 @@
 	</recipe>
 	<recipe name="autoTurret" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="motionsensor" count="1"/>
-		<ingredient name="resourceForgedSteel" count="30"/>
+		<ingredient name="resourceFormedSteel" count="30"/>
 		<ingredient name="resourceMechanicalParts" count="9"/>
 		<ingredient name="resourceDuctTape" count="2"/>
 		<ingredient name="resourceScrapPolymers" count="5"/>
 	</recipe>
 	<recipe name="toolForgeCrucible" count="1" craft_time = "60" craft_exp_gain="300" tags="learnable">
-		<ingredient name="resourceForgedIron" count="40"/>
-		<ingredient name="resourceMechanicalParts" count="10"/>
+		<ingredient name="resourceScrapIron" count="200"/>
 		<ingredient name="resourceRockSmall" count="1200"/>
 		<ingredient name="resourceClayLump" count="900"/>
 	</recipe>
@@ -3320,12 +3288,12 @@
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
 	<recipe name="workstationSmithingTable" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench">
-		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceFormedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="20"/>
 		<ingredient name="resourceSpring" count="4"/>
 	</recipe>
 	<recipe name="workstationAmmunitionTable" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench">
-		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceFormedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="20"/>
 		<ingredient name="resourceSpring" count="4"/>
 	</recipe>
@@ -3415,6 +3383,282 @@
 	<recipe name="foodShamSandwich" count="1" craft_time = "6" craft_exp_gain="30" craft_area="woodTable" craft_tool="meleeToolHuntingKnife">
 		<ingredient name="foodBread" count="2"/>
 		<ingredient name="foodRawMeat" count="2"/>
+	</recipe>
+	<recipe name="foodCharredMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawMeat" count="1"/>
+	</recipe>
+	<recipe name="foodCharredMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodCharredMeat" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawMeat" count="1"/>
+	</recipe>
+	<recipe name="foodCharredChicken" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodCharredChicken" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodCharredChicken" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodCharredRabbit" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodCharredRabbit" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodCharredRabbit" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodCharredPork" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodCharredPork" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodCharredPork" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodCharredWolf" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodCharredWolf" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodCharredWolf" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodCharredBear" count="1" craft_time="8" craft_exp_gain="40" craft_area="campfire">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodCharredBear" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationNewOven">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodCharredBear" count="1" craft_time="8" craft_exp_gain="40" craft_area="workstationOldOven">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledMeat" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledChicken" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledChicken" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledChicken" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawChicken" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledRabbit" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledRabbit" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledRabbit" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill">
+		<ingredient name="foodRawRabbit" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledPork" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledPork" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledPork" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledWolf" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledWolf" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledWolf" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledBear" count="1" craft_time="10" craft_exp_gain="50" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledBear" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationNewOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodGrilledBear" count="1" craft_time="10" craft_exp_gain="50" craft_area="workstationOldOven" craft_tool="toolCookingGrill" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledMeat" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledChicken" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot">
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledChicken" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot">
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledChicken" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot">
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledRabbit" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot">
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledRabbit" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot">
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledRabbit" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot">
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledPork" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledPork" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledPork" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawPork" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledWolf" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledWolf" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledWolf" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledBear" count="1" craft_time="12" craft_exp_gain="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledBear" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBoiledBear" count="1" craft_time="12" craft_exp_gain="60" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodChickenStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawChicken" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodChickenStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawChicken" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodChickenStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawChicken" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodRabbitStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawRabbit" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodRabbitStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawRabbit" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodRabbitStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawRabbit" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodWolfStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodWolfStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodWolfStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawWolf" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBearStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBearStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodBearStew" count="1" craft_time="16" craft_exp_gain="80" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawBear" count="2"/>
+		<ingredient name="foodCropPotato" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodHeartyStew" count="1" craft_time="20" craft_exp_gain="100" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodHeartyStew" count="1" craft_time="20" craft_exp_gain="100" craft_area="workstationNewOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+	<recipe name="foodHeartyStew" count="1" craft_time="20" craft_exp_gain="100" craft_area="workstationOldOven" craft_tool="toolCookingPot" tags="learnable">
+		<ingredient name="foodRawMeat" count="1"/>
+		<ingredient name="foodRawChicken" count="1"/>
+		<ingredient name="foodRawRabbit" count="1"/>
+		<ingredient name="foodRawWolf" count="1"/>
+		<ingredient name="foodRawBear" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
 	
 	<!-- Resources -->

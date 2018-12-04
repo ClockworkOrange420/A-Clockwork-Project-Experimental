@@ -783,7 +783,7 @@
 		<item name="toolCookingGrill"  prob=".5"/>
 		<item name="foodRottingFlesh" count="1,2" prob="1"/>
 		<item name="resourceFemur" count="1,2" prob=".5"/>
-		<item name="meleeToolHuntingKnife" prob=".1"/>
+		<item name="meleeToolHuntingKnife" prob=".2"/>
 	</lootgroup>
 
 	<lootgroup name="commonBooks" count="1">
@@ -1051,12 +1051,30 @@
 		<item name="foodCanChicken"/>
 		<item name="foodCanLamb"/>
 	</lootgroup>
+	
+	<lootgroup name="foodRawMeatAll">
+		<item name="foodRawMeat" count="5,10"/>
+		<item name="foodRawChicken" count="5,10"/>
+		<item name="foodRawRabbit" count="5,10"/>
+		<item name="foodRawPork" count="5,10"/>
+		<item name="foodRawWolf" count="5,10"/>
+		<item name="foodRawBear" count="5,10"/>
+	</lootgroup>
+	
+	<lootgroup name="foodStewAll">
+		<item name="foodMeatStew"/>
+		<item name="foodChickenStew"/>
+		<item name="foodRabbitStew"/>
+		<item name="foodPorkStew"/>
+		<item name="foodWolfStew"/>
+		<item name="foodBearStew"/>
+	</lootgroup>
 
 	<lootgroup name="coldfood">
 		<item name="foodEgg" count="1,2"/>
 		<item name="foodBlueberryPie"/>
-		<item name="foodMeatStew"/>
-		<item name="foodRawMeat" count="5,10"/>
+		<item group="foodStewAll"/>
+		<item group="foodRawMeatAll"/>
 		<item name="foodRottingFlesh" count="1,2"/>
 		<item name="foodCropCorn"/>
 		<item name="foodCropTomato"/>
@@ -1113,7 +1131,8 @@
 		<item name="resourceFishingWeight" count="1,3"/>
 		<item name="resourceScrapLead" count="1,10"/>
 		<item name="resourceWood" count="1,4"/>
-		<item name="resourceGlue" count="1"/>
+		<item name="resourceGlue" count="1,3"/>
+		<item name="resourceInk" count="1,3"/>
 		<item name="resourceNail" count="1,10"/>
 		<item name="casinoCoin" count="1,5"/>
 		<item name="resourceBulletCasing" count="1,10"/>
@@ -1307,8 +1326,6 @@
 		<item name="resourceRepairKit" count="1,4"/>
 		<item name="gunToolNailgun"/>
 		<item group="rareTools"/>
-		<item name="resourceForgedIron" count="1,4" prob="0.41"/>
-		<item name="resourceForgedSteel" count="1,4" prob="0.22"/>
 		<item name="meleeToolPaintTool" prob="0.3"/>
 		<item name="meleeToolWireTool"/>
 		<item name="toolSawBlade" count="1"/>
@@ -1327,17 +1344,17 @@
 		<item name="woodFrameBlock" count="10,30"/>
 		<item name="rebarFrameBlock" count="10,20"/>
 		<item name="resourceNail" count="10,40"/>
-		<item name="resourceWood" count="50,250"/>
 		<item name="toolAnvil" count="1"/>
 		<item name="ironDoor1_v1"/>
 		<item name="meleeToolSledgehammer"/>
 		<item name="gunToolNailgun"/>
-		<!-- <item name="toolCalipers" prob="0.67"/> -->
+		<item name="toolCalipers" prob="0.67"/>
 		<item name="toolAndDieSet" prob="0.67"/>
 		<item group="rareTools"/>
 		<item group="automotive" prob="2"/>
-		<item name="resourceForgedIron" count="1,4" prob="0.31"/> <!-- together 3% per crate -->
-		<item name="resourceForgedSteel" count="1,4" prob="0.24"/>
+		<item name="resourceBricks" count="20,100" prob="0.31"/>
+		<item name="resourceForgedIron" count="10,50" prob="0.31"/> <!-- together 3% per crate -->
+		<item name="resourceForgedSteel" count="5,25" prob="0.24"/>
 		<item group="electricalDevices" prob="1"/>
 		<item name="resourceMechanicalParts" count="4,10" prob="1"/>
 		<item name="resourceScrapPolymers" count="1,8" prob="0.4"/>
@@ -1907,6 +1924,7 @@
 		<item group="medicine"/>
 		<item group="weaponsPistol+ammo" prob="1.5"/>
 		<item name="meleeToolFlashlight02"/>
+		<item name="resourceSchematicPage" count="1,2" prob="0.05"/>
 	</lootcontainer>
 
 	<!-- medicine cabinets -->
@@ -2045,6 +2063,7 @@
 		<item group="medicine"/>
 		<item group="weaponsPistol+ammo" prob="1.5"/>
 		<item name="meleeToolFlashlight02"/>
+		<item name="resourceSchematicPage" count="1,2" prob="0.05"/>
 	</lootcontainer>
 
 	<!-- birds nest-->
@@ -2095,6 +2114,7 @@
 		<item group="weaponsBasicGuns+ammo" prob="0.03"/>
 		<item group="weaponsMelee" prob="0.03"/>
 		<item group="ammo"/>
+		<item name="resourceSchematicPage" count="1,2" prob="0.02"/>
 	</lootcontainer>
 
 	<!-- Bath tub filled with... don't ask. -->
@@ -2146,6 +2166,7 @@
 		<item group="modAllT1" prob=".1"/>
 		<item group="modAllT2" prob=".1"/>
 		<item group="modAllT3" prob=".1"/>
+		<item name="resourceSchematicPage" count="1,5" prob="0.2"/>
 	</lootcontainer>
 
 	<!-- gun safe -->
@@ -2171,8 +2192,8 @@
 		<item group="medicine" prob="0.05"/>
 		<item group="trophyGroup"/>
 		<item name="resourceGunPowder" count="1,5"/>
-		<item name="toolGeometrySet" count="1" prob="0.2"/>
-		<item name="resourceSchematicPage" count="1,3" prob="0.3"/>
+		<item name="toolGeometrySet" count="1" prob="0.05"/>
+		<item name="resourceSchematicPage" count="1,3" prob="0.1"/>
 	</lootcontainer>
 
 	<!-- file cabinet -->
@@ -2184,7 +2205,7 @@
 		<item name="oldCash" count="1,6" prob="0.3"/>
 		<item name="drugPainkillers" prob="0.05"/>
 		<item name="toolGeometrySet" count="1" prob="0.2"/>
-		<item name="resourceSchematicPage" count="1,3" prob="0.3"/>
+		<item name="resourceSchematicPage" count="1,3" prob="0.2"/>
 		<item group="trophyGroup"/>
 	</lootcontainer>
 

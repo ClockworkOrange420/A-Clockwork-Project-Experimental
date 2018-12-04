@@ -2173,7 +2173,7 @@
 	<property name="ExperienceGain" value="327"/>
 	<property name="TimeStayAfterDeath" value="120"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/> <!-- this triggers the special harvesting animation like on the knife -->
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/> <!-- animalStag -->
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalStag -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="9"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
@@ -2191,7 +2191,7 @@
 
 	<!-- Gameplay -->
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalStag -->
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="6"/> <!-- animalStag -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="6"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
@@ -2224,7 +2224,7 @@
 	<property name="ExperienceGain" value="173"/>
 	<property name="DeadBodyHitPoints" value="175"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalRabbit -->
+	<drop event="Harvest" name="foodRawRabbit" tag="butcherHarvest" count="5"/> <!-- animalRabbit -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
 
 	<effect_group name="Base Effects">
@@ -2254,7 +2254,7 @@
 	<property name="ExperienceGain" value="173"/>
 	<property name="DeadBodyHitPoints" value="175"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalChicken -->
+	<drop event="Harvest" name="foodRawChicken" tag="butcherHarvest" count="5"/> <!-- animalChicken -->
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="23"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="10"/>
@@ -2411,7 +2411,7 @@
 	<property name="DeadBodyHitPoints" value="600"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalBear -->
+	<drop event="Harvest" name="foodRawBear" tag="butcherHarvest" count="14"/> <!-- animalBear -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="7"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="5"/>
@@ -2525,7 +2525,7 @@
 	</effect_group>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="20"/> <!-- animalWolf -->
+	<drop event="Harvest" name="foodRawWolf" tag="butcherHarvest" count="12"/> <!-- animalWolf -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
@@ -2557,7 +2557,7 @@
 	<property name="ExperienceGain" value="1200"/> <!-- XP strong -->
 	<property name="DeadBodyHitPoints" value="450"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/> <!-- animalDireWolf -->
+	<drop event="Harvest" name="foodRawWolf" tag="butcherHarvest" count="14"/> <!-- animalDireWolf -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="7"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
@@ -2765,7 +2765,6 @@
 	<property name="ExperienceGain" value="170"/>
 	<property name="DeadBodyHitPoints" value="150"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalSnake -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
 
 	<effect_group name="Base Effects">
@@ -2823,7 +2822,7 @@
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalBoar -->
+	<drop event="Harvest" name="foodRawPork" tag="butcherHarvest" count="8"/> <!-- animalBoar -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="7"/>
 	<drop event="Harvest" name="resourceAnimalFat" count="6" tag="butcherHarvest"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
@@ -2862,8 +2861,8 @@
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
 
 	<property name="ExperienceGain" value="1000"/> <!-- XP strong feral -->
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBoar -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="70"/>
+	<drop event="Harvest" name="foodRawPork" tag="butcherHarvest" count="30"/> <!-- animalBoar -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="30"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="60"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="2"/>

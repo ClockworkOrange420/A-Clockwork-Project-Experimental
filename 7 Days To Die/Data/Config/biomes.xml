@@ -605,6 +605,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<layers>
 			<layer filluptorg="60" blockname="water"/>
 			<layer depth="1" blockname="terrDesertGround"> <resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
+			<layer depth="2" blockname="terrDesertGround"> <resource blockname="bladeTrapBroken" cluster="2" prob="0.005" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrSandStone"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="3" blockname="terrClayInSandstone"> <resource blockname="terrOreSandPlusIron" prob="0.811" rwgGenerationType="all"/> </layer>
 			<layer depth="*" blockname="terrSandStone">
@@ -846,6 +847,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock01" prob =".01"/>
 				<decoration type="block" blockname="rock02" prob =".01"/>
 				<decoration type="block" blockname="rock04" prob =".01"/>
+				<decoration type="block" blockname="autoTurretBroken" prob ="0.0005" rotatemax="7"/>
+				<decoration type="block" blockname="shotgunTurretBroken" prob ="0.0005" rotatemax="7"/>
 				<decoration type="block" blockname="rockResource" prob =".02" checkresource="true" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob =".02" checkresource="true" rotatemax="3"/>
 				<decoration type="block" blockname="driftwood" prob ="0.001" rotatemax="3"/>
@@ -928,6 +931,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7"/>
 			<decoration type="block" blockname="treeDeadTree02" prob="0.002" rotatemax="7"/>
 			<decoration type="block" blockname="treeDeadPineLeaf" prob ="0.010" rotatemax="7"/>
+			<decoration type="block" blockname="autoTurretBroken" prob ="0.0005" rotatemax="7"/>
+			<decoration type="block" blockname="shotgunTurretBroken" prob ="0.0005" rotatemax="7"/>
 			<decoration type="prefab" name="waste_rubble_bldg_01" prob=".003"/>
 			<decoration type="prefab" name="waste_rubble_bldg_02" prob=".003"/>
 			<decoration type="prefab" name="waste_rubble_bldg_03" prob=".003"/>
