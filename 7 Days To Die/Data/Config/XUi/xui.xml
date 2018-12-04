@@ -137,6 +137,15 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
+		<window_group name="workstation_workstationTableSaw" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsWorkstationTableSaw" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
 		<!--Modded End-->
 		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">

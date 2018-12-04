@@ -11619,6 +11619,8 @@
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="CustomIcon" value="drinkJarBoiledWater"/>
+		<property name="CustomIconTint" value="00082E"/>
 		<property name="Material" value="Morganic"/>
 		<property name="Weight" value="6"/>
 		<property name="Stacknumber" value="50"/>

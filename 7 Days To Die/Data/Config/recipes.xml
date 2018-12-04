@@ -2748,7 +2748,7 @@
 		<ingredient name="resourceGlue" count="10"/>
 		<ingredient name="resourceWood" count="100"/>
 	</recipe>
-	<recipe name="tableSaw" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench">
+	<recipe name="workstationTableSaw" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="resourceForgedIron" count="100"/>
 		<ingredient name="resourceMechanicalParts" count="20"/>
 		<ingredient name="resourceElectricParts" count="10"/>
@@ -3307,16 +3307,16 @@
 	<recipe name="woodLogPillar100" count="1" craft_time = "0" craft_exp_gain="0">
 		<ingredient name="choppingBlock" count="1"/>
 	</recipe>
-	<recipe name="resourceWood" count="40" craft_time = "16" craft_exp_gain="100" craft_area="choppingBlock" craft_tool="meleeToolStoneAxe">
+	<recipe name="resourceWood" count="40" craft_time = "22" craft_exp_gain="110" craft_area="choppingBlock" craft_tool="meleeToolStoneAxe">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
-	<recipe name="resourceWood" count="40" craft_time = "8" craft_exp_gain="100" craft_area="choppingBlock" craft_tool="meleeToolFireaxeIron">
+	<recipe name="resourceWood" count="40" craft_time = "16" craft_exp_gain="80" craft_area="choppingBlock" craft_tool="meleeToolFireaxeIron">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
-	<recipe name="resourceWood" count="40" craft_time = "4" craft_exp_gain="50" craft_area="choppingBlock" craft_tool="meleeToolFireaxeSteel">
+	<recipe name="resourceWood" count="40" craft_time = "10" craft_exp_gain="50" craft_area="choppingBlock" craft_tool="meleeToolFireaxeSteel">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
-	<recipe name="resourceWood" count="40" craft_time = "2" craft_exp_gain="20" craft_area="tableSaw">
+	<recipe name="resourceWood" count="40" craft_time = "4" craft_exp_gain="20" craft_area="workstationTableSaw">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
 	<recipe name="workstationSmithingTable" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench">

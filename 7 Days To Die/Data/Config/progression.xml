@@ -1508,7 +1508,7 @@
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5"
-				tags="tripwirepost,workbench,tableSaw,SewingTable,"/>
+				tags="tripwirepost,workbench,workstationTableSaw,SewingTable,"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
 				tags="gunPistol,gunCrossbow,generatorbank,cementMixer,resourceBricks,electricfencepost,switch,ceilingLight01_player,speaker,pressureplate,pressureplateLong,gunPistol,gunCrossbow"/>

@@ -18362,20 +18362,13 @@ NOT the TextureNumber.
 <block name="tableSaw">
 	<property name="Extends" value="cementMixer" param1="DescriptionKey,CraftSound,CraftCompleteSound"/>
 	<property name="Model" value="Entities/Crafting/table_sawPrefab"/>
-	<property class="Workstation">
-		<property name="Modules" value="output"/>
-		<property name="CraftingAreaRecipes" value="tablesaw"/>
-	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_table_saw" />
-	<property name="CraftActionName" value="lblContextActionCraft" />
-	<property name="CraftIcon" value="ui_game_symbol_table_saw" />
-	<property name="OpenSound" value="open_workbench" />
-	<property name="CloseSound" value="close_workbench" />
-	<property name="WorkstationJournalTip" value="tableSawTip" />
-	<property name="WorkstationWindow" value="workstation_cementMixer" />
-	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" name="chemistryStation" count="1" tag="salvageHarvest"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="workstationTableSaw"/>
+	<property name="PlantGrowing.GrowthRate" value="5"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
 </block>
 <block name="cntShippingCrateHero">
 	<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>
@@ -26330,7 +26323,6 @@ NOT the TextureNumber.
 	<property name="SortOrder2" value="0735"/> <!-- SortShape -->
 	<property name="Texture" value="21,21,116,116,116,116"/>
 	<property name="UseGlobalUV" value="Local"/>
-	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<property name="FuelValue" value="300"/>
 	<property name="FilterTags" value="fbuilding,fwood"/>
@@ -26342,6 +26334,36 @@ NOT the TextureNumber.
 	<drop event="Destroy" name="choppingBlock" count="1"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="DescriptionKey" value="choppingBlockDesc"/>
+	<property name="Group" value="Building,Basics"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="10"/>
+</block>
+
+<block name="workstationTableSaw">
+	<property name="CustomIcon" value="tableSaw"/>
+	<property name="Class" value="Workstation"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Miron_scrap"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Crafting/table_sawPrefab"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="Group" value="Building"/>
+	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="FilterTags" value="fbuilding,fwood"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+	</property>
+	<property class="RepairItems"> <property name="resourceFormedIron" value="10"/> </property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="workstationTableSaw" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="DescriptionKey" value="tableSawDesc"/>
 	<property name="Group" value="Building,Basics"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -26381,7 +26403,7 @@ NOT the TextureNumber.
 	<property name="CraftSound" value="campfire_cook_click" />
 	<property name="CraftCompleteSound" value="campfire_complete_item" />
 	<property name="WorkstationJournalTip" value="campfireTip" />
-	<property class="RepairItems"> <property name="resourceFormedIron" value="8"/> </property>
+	<property class="RepairItems"> <property name="resourceFormedIron" value="10"/> </property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="workstationOldOven" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -26424,9 +26446,9 @@ NOT the TextureNumber.
 	<property name="CraftSound" value="campfire_cook_click" />
 	<property name="CraftCompleteSound" value="campfire_complete_item" />
 	<property name="WorkstationJournalTip" value="campfireTip" />
-	<property class="RepairItems"> <property name="resourceRockSmall" value="8"/> </property>
+	<property class="RepairItems"> <property name="resourceFormedIron" value="10"/> </property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-	<drop event="Destroy" name="workstationOldOven" count="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="workstationNewOven" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Food/Cooking,Basics,Building"/>
 	<property name="DescriptionKey" value="campfireDesc"/>
