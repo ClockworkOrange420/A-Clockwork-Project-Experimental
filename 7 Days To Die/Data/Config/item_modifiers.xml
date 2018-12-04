@@ -844,7 +844,11 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<property name="HandMeshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
 			<property name="CustomIcon" value="meleeClubBarbed"/>
 		</item_property_overrides>
-
+		
+		<effect_group tiered="false">
+			<requirement name="HoldingItemHasTags" tags="club" />
+			<passive_effect name="EntityDamage" operation="perc_add" value="2" />
+		</effect_group>
 		<effect_group tiered="false">
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
 				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
@@ -868,7 +872,9 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 		</item_property_overrides>
 
 		<effect_group tiered="false">
+			<requirement name="HoldingItemHasTags" tags="club" />
 			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffArmorShredding"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="3" />
 		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 	</item_modifier>
