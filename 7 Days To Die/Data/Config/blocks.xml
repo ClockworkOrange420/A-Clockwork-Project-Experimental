@@ -19702,9 +19702,6 @@ NOT the TextureNumber.
 	<property name="CustomIcon" value="wallTorchLight"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="4.05"/>
-	<property name="HeatMapTime" value="1200"/> <!-- str1, t600, f5 = 2.5; str1, t900, f5 = 4; str4.05, t1200, f15 = 4.05-8.1; -->
-	<property name="HeatMapFrequency" value="15"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 </block>
 
@@ -19715,10 +19712,7 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="candleWallLight"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="1"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
+	<property name="Class" value="Light"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 </block>
 
@@ -19740,10 +19734,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/Lighting/barrel03_burning_playerPrefab"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Stacknumber" value="50"/>
-	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="4.05"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="15"/>
+	<property name="Class" value="Light"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
 	<property name="SortOrder1" value="70a0"/>
