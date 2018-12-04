@@ -9968,7 +9968,7 @@
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mplants"/>
 		<property name="Stacknumber" value="50"/>
-		<!-- STK resource -->
+		<property name="CustomIcon" value="plantedHop3Harvest"/>
 		<property name="EconomicValue" value="5"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="SellableToTrader" value="false"/>
