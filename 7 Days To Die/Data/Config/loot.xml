@@ -668,6 +668,7 @@
 		<item name="modMeleeErgonomicGrip"/>
 		<item name="modMeleeTemperedBlade"/>
 		<item name="modMeleeIronBreaker"/>
+		<item name="modGunMeleeNiCdBattery"/>
 	</lootgroup>
 
 	<lootgroup name="modGunMeleeT2" count="1">
@@ -833,6 +834,7 @@
 		<item name="modMeleeStructuralBraceSchematic"/>
 		<item name="modMeleeErgonomicGripSchematic"/>
 		<item name="modMeleeFortifyingGripSchematic"/>
+		<item name="modGunMeleeNiCdBatterySchematic"/>
 		<item name="modMeleeClubBarbedWireSchematic"/>
 		<item name="modMeleeClubMetalSpikesSchematic"/>
 		<item name="modMeleeClubBurningShaftSchematic"/>

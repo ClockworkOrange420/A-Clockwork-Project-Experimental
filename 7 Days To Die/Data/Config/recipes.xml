@@ -1532,6 +1532,13 @@
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceSpring" count="10"/>
 	</recipe>
+	<recipe name="modGunMeleeNiCdBattery" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
+		<ingredient name="modGunMeleeNiCdBatterySchematic" count="1"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceAcid" count="5"/>
+	</recipe>
 	<recipe name="modMeleeWoodSplitter" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="modMeleeWoodSplitterSchematic" count="1"/>
 		<ingredient name="resourceForgedSteel" count="5"/>
@@ -4139,6 +4146,12 @@
 		<ingredient name="resourceSchematicPage" count="2"/>
 	</recipe>
 	<recipe name="modMeleeIronBreakerSchematic" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workstationResearchTable" craft_tool="toolGeometrySet">
+		<ingredient name="resourcePaper" count="1"/>
+		<ingredient name="resourceInk" count="1"/>
+		<ingredient name="resourceFeather" count="1"/>
+		<ingredient name="resourceSchematicPage" count="2"/>
+	</recipe>
+	<recipe name="modGunMeleeNiCdBatterySchematic" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workstationResearchTable" craft_tool="toolGeometrySet">
 		<ingredient name="resourcePaper" count="1"/>
 		<ingredient name="resourceInk" count="1"/>
 		<ingredient name="resourceFeather" count="1"/>

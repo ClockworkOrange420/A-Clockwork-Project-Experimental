@@ -7071,6 +7071,8 @@ xuiDefault,UI,Options Video,New,Default,,,,,
 activeBlockPrompt,,Block prompt,New,([DECEA3]Active[-]) {0},,,,,
 inactiveBlockPrompt,,Block prompt,New,(Inactive) {0},,,,,
 
+modGunMeleeNiCdBattery,items,mod,New,NiCad Battery,,,,,
+modGunMeleeNiCdBatteryDesc,items,mod,New,A Nickle cadmium battery which can be installed onto a club that will have a 30% chance to shock an enemy and increases block dmage by 40% for those of you who like to carry a big hammer. ,,,,,
 Remote,items,Item,KgNone,Remote,,,,
 RemoteDesc,items,Item,KgNone,A remote that can be used to open and close hidden doors and arm trap chests.\n [ Crafted in Smithing Table with a Wrench. ],,,,
 wetCloth,items,Item,KgNone,Wet Cloth,,,,

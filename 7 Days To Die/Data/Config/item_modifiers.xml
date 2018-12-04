@@ -728,18 +728,23 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 	</item_modifier>
 	-->
 
-	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="club,sledge" modifier_tags="damage" type="attachment" rarity="0.5">
 		<property name="Stacknumber" value="1"/>
 
-		<!-- Changes damage type to electric -->
+		<!-- Changes damage type to electric
 		<item_property_overrides name="*">
 			<property name="DamageType" value="Electrical"/>
-		</item_property_overrides>
+		</item_property_overrides> -->
+		<effect_group tiered="false">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+		</effect_group>
 
 		<effect_group tiered="false">
 			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
 		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		<property name="DescriptionKey" value="modGunMeleeNiCdBatteryDesc"/>
 	</item_modifier>
 
 	<item_modifier name="modGunMeleeFlammableOil" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
