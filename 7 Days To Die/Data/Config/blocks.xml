@@ -824,6 +824,9 @@ tbnsew:
 	<property name="Class" value="UpgradeRated"/>
 	<property name="UpgradeRated.ToBlock" value="air"/>
 	<property name="UpgradeRated.Rate" value="30"/>
+	<property name="HeatMapStrength" value="2.0"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="1"/>
 	<drop event="Destroy" count="0" prob="1"/>
 	<drop event="Harvest" name="resourceFemur" count="2" tool_category="Butcher" />
 	<drop event="Harvest" name="foodRottingFlesh" count="2" tool_category="Butcher" />
