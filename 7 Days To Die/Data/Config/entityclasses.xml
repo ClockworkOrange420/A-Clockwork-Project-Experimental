@@ -1627,6 +1627,31 @@
 	</effect_group>
 </entity_class>
 
+<entity_class name="zombieElectricUtilityWorker" extends="zombieTemplateMale">
+	<property name="Tags" value="zombie,walker"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" value="Zombies/zombieStandardWorkerRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="6"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="TintMaterial2" value="41,41,41"/>
+	<property name="Buffs" value="zombieElectricBuff"/>
+	<!-- Gameplay -->
+	<property name="HandItem" value="meleeHandZombieElectricWorker"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="250"/>
+		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+	</effect_group>
+</entity_class>
+
 <entity_class name="zombieUtilityWorkerFeral" extends="zombieUtilityWorker">
 	<property name="Tags" value="zombie,walker"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
