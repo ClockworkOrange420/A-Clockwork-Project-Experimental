@@ -11752,6 +11752,17 @@
 		<property name="EconomicValue" value="32"/>
 		<property name="DescriptionKey" value="toolTrowelDesc"/>
 	</item>
+	<item name="toolSawBlade">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Miron"/>
+		<property name="Weight" value="100"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property name="EconomicValue" value="32"/>
+		<property name="DescriptionKey" value="toolSawBladeDesc"/>
+	</item>
 	<item name="toolPestle">
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>

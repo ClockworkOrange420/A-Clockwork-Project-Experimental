@@ -3316,7 +3316,7 @@
 	<recipe name="resourceWood" count="40" craft_time = "10" craft_exp_gain="50" craft_area="choppingBlock" craft_tool="meleeToolFireaxeSteel">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
-	<recipe name="resourceWood" count="40" craft_time = "4" craft_exp_gain="20" craft_area="workstationTableSaw">
+	<recipe name="resourceWood" count="40" craft_time = "4" craft_exp_gain="20" craft_area="workstationTableSaw" craft_tool="toolSawBlade">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
 	<recipe name="workstationSmithingTable" count="1" craft_time = "60" craft_exp_gain="300" craft_area="workbench" craft_tool="meleeToolWrench">
@@ -3572,6 +3572,10 @@
 		<ingredient name="unit_clay" count="50"/>
 	</recipe>
 	<recipe name="toolTrowel" count="1" craft_time = "12" craft_exp_gain="60" craft_area="workstationSmithingTable" craft_tool="toolAnvil">
+		<ingredient name="resourceForgedIron" count="10"/>
+		<ingredient name="resourceWood" count="5"/>
+	</recipe>
+	<recipe name="toolSawBlade" count="1" craft_time = "12" craft_exp_gain="60" craft_area="workstationSmithingTable" craft_tool="toolAnvil">
 		<ingredient name="resourceForgedIron" count="10"/>
 		<ingredient name="resourceWood" count="5"/>
 	</recipe>

@@ -18360,11 +18360,14 @@ NOT the TextureNumber.
 	<property name="SortOrder1" value="70i0"/>
 </block>
 <block name="tableSaw">
-	<property name="Extends" value="cementMixer" param1="DescriptionKey,CraftSound,CraftCompleteSound"/>
+	<property name="Material" value="Miron_scrap"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
 	<property name="Model" value="Entities/Crafting/table_sawPrefab"/>
 	<property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.Next" value="workstationTableSaw"/>
-	<property name="PlantGrowing.GrowthRate" value="5"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.GrowthRate" value="0.2"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
@@ -26354,7 +26357,7 @@ NOT the TextureNumber.
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<property name="FuelValue" value="300"/>
-	<property name="Place" value="TowardsPlacer"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="FilterTags" value="fbuilding,fwood"/>
 	<property class="Workstation">
 		<property name="Modules" value="tools,output"/>
