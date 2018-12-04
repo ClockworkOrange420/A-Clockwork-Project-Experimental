@@ -408,8 +408,10 @@
 		<ingredient name="resourceWood" count="20"/>
 		<ingredient name="resourceMetalPipe" count="10"/>
 	</recipe>
-	<recipe name="bedroll" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workstationTailoringTable" craft_tool="toolSewingMachine">
-		<ingredient name="resourceYuccaFibers" count="20"/>
+	<recipe name="bedroll" count="1" craft_time = "20" craft_exp_gain="100" craft_area="workstationTailoringTable" craft_tool="toolSewingMachine">
+		<ingredient name="resourceCloth" count="10"/>
+		<ingredient name="resourceCropCottonPlant" count="10"/>
+		<ingredient name="resourceCordage" count="5"/>
 	</recipe>
 	<recipe name="toolBellows" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench">
 		<ingredient name="resourceWood" count="6"/>
