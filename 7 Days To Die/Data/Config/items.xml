@@ -206,7 +206,7 @@
 		<effect_group name="Base Effects">
 			<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
 			<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
-			<passive_effect name="EntityDamage" operation="base_set" value="8,16" tier="1,6"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="4,8" tier="1,6"/>
 			<!-- meleeToolClawHammer -->
 			<passive_effect name="BlockDamage" operation="base_set" value="8,16" tier="1,6"/>
 			<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
@@ -364,7 +364,7 @@
 			<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
-			<passive_effect name="DismemberChance" operation="base_set" value="0.03" tags="head"/>
+			<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
 			<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
 			<!-- A16 1.33 -->
 			<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>

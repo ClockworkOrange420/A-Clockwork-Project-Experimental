@@ -11694,12 +11694,12 @@ NOT the TextureNumber.
 	<property name="CreativeMode" value="Player"/>
 	<property name="Texture" value="306"/>
 </block>
-<!--
+
 <block name="forestFlower">
 	<property name="Extends" value="treeGrassMaster" param1="CustomIcon"/>
 	<property name="Class" value="Tallgrass"/>
 	<property name="Texture" value="567"/>
-</block>-->
+</block>
 
 <block name="mushroom01">
 	<!--<property name="DisplayInfo" value="Description"/>-->
