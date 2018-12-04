@@ -25763,10 +25763,7 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="10,40" prob="1" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="autoTurretBroken" count="1" tag="salvageHarvest"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -25783,6 +25780,9 @@ NOT the TextureNumber.
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="shotgunTurret"/>
 	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="shotgunTurretBroken" count="1" tag="salvageHarvest"/>
 </block>
 
 <block name="bladeTrapBroken">
@@ -25807,10 +25807,7 @@ NOT the TextureNumber.
 	</property>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceElectricParts" count="1,3" tag="salvageHarvest"/>
-	<drop event="Harvest" name="resourceScrapIron" count="1,5" tag="allHarvest"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="bladeTrapBroken" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
