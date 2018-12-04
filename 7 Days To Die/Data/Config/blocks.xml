@@ -25686,6 +25686,7 @@ NOT the TextureNumber.
 
 <block name="brickPillar100">
 	<property name="Extends" value="brickMaster"/>
+	<property name="CustomIcon" value="flagstonePillar100"/>
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Pole1m"/>
@@ -25697,6 +25698,7 @@ NOT the TextureNumber.
 
 <block name="brickPillar50">
 	<property name="Extends" value="brickMaster"/>
+	<property name="CustomIcon" value="flagstonePillar50"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Path" value="solid"/>
@@ -25710,6 +25712,7 @@ NOT the TextureNumber.
 
 <block name="brickPole">
 	<property name="Extends" value="brickMaster"/>
+	<property name="CustomIcon" value="flagstonePole"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Model" value="pole_square"/>
