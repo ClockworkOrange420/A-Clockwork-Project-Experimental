@@ -1065,7 +1065,6 @@
 		<item name="foodMeatStew"/>
 		<item name="foodChickenStew"/>
 		<item name="foodRabbitStew"/>
-		<item name="foodPorkStew"/>
 		<item name="foodWolfStew"/>
 		<item name="foodBearStew"/>
 	</lootgroup>
