@@ -3267,7 +3267,12 @@
 	</recipe>
 	
 	<!-- Modded -->
-	
+	<!-- Blocks -->
+	<recipe name="woodBlockRelay" count="1" craft_time = "12" craft_exp_gain="60" craft_area="workbench" craft_tool="meleeToolWrench" tags="learnable">
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceWood" count="10"/>
+	</recipe>
 	<!-- workstations -->
 	<recipe name="choppingBlock" count="1" craft_time = "0" craft_exp_gain="0">
 		<ingredient name="woodLogPillar100" count="1"/>
