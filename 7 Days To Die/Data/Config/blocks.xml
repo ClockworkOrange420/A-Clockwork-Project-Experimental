@@ -810,29 +810,35 @@ tbnsew:
 	<property name="FilterTags" value="fterrain"/>
 </block>
 
-<!-- commenting out for optimization
+
 <block name="terrGore">
 	<property name="CreativeMode" value="Dev"/>
-	<property name="Class" value="Gore"/>
+	<property name="Class" value="PlantGrowing"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
-	<property name="Texture" value="22"/>
-	<property name="Tag" value="Gore"/>
+	<property name="Texture" value="2"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Density" value="0.9"/>
 	<property name="FallDamage" value=".9"/>
-	<drop event="Destroy" count="0" prob="1"/>
+	<property name="Class" value="UpgradeRated"/>
 	<property name="UpgradeRated.ToBlock" value="air"/>
-	<property name="UpgradeRated.Rate" value="15"/>
-	<property name="DisplayType" value="blockTerrain" />
-</block>-->
+	<property name="UpgradeRated.Rate" value="30"/>
+	<drop event="Destroy" count="0" prob="1"/>
+	<drop event="Harvest" name="resourceFemur" count="2" tool_category="Butcher" />
+	<drop event="Harvest" name="foodRottingFlesh" count="2" tool_category="Butcher" />
+	<drop event="Destroy" name="resourceFemur" count="1" />
+	<drop event="Destroy" name="foodRottingFlesh" count="1" />
+	<property name="HeatMapStrength" value="5.0"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="1"/>
+</block>
 
 <block name="terrBurntForestFromDirt">
 	<property name="Extends" value="terrForestFromDirt"/>
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="terrDirt"/>
-	<property name="UpgradeRated.ToBlock" value="terrBurntForestGround"/>
+	<property name="PlantGrowing.Next" value="terrBurntForestGround"/>
 	<property name="FilterTags" value="fterrain"/>
 </block>
 
