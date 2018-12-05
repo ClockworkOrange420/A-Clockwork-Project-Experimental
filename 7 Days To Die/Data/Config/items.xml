@@ -279,6 +279,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.7" tags="metal"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-0.8" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.3" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="2.1" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-0.3" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.01" tags="head"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="Chop"/>
@@ -319,6 +320,7 @@
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.7" tags="metal"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-0.8" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.3" tags="stone"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
 			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
@@ -917,7 +919,7 @@
 			<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.3" tags="metal"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.45" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-0.99" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="Chop"/>
@@ -961,7 +963,7 @@
 			<passive_effect name="HarvestCount" operation="base_set" value=".25" tags="butcherHarvest"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1.6" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.99" tags="earth"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="Chop"/>
@@ -11251,6 +11253,13 @@
 		<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	</item>
 	<!-- Modded -->
+	<!-- Shematics / Perks / quests -->
+	<item name="zombieRepeat">
+		<property name="Extends" value="questMaster"/>
+		<property class="Action0">
+			<!--<property name="QuestGiven" value="qt_zombieRepeat"/>-->
+		</property>
+	</item>
 	<!-- Melee Tools / Weapons -->
 	<item name="meleeHandZombieElectricWorker">
 		<property name="Extends" value="meleeHandZombieWorker"/>

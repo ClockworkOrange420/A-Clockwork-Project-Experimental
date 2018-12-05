@@ -16311,7 +16311,6 @@ NOT the TextureNumber.
 
 <block name="bodyBagBlack">
 	<property name="Material" value="Morganic"/>
-	<property name="MaxDamage" value="200"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Misc/body_bagPrefab"/>
 	<property name="DisplayType" value="blockMulti" />
@@ -21943,7 +21942,7 @@ NOT the TextureNumber.
 <block name="goreBlockAnimal">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="Morganic"/>
-	<property name="MaxDamage" value="50"/>
+	<property name="MaxDamage" value="150"/>
 	<property name="Shape" value="ModelEntity"/> <!-- A ModelEntity does NOT need a texture entry. -->
 	<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
