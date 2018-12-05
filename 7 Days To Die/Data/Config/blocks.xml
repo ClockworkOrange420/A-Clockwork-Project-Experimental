@@ -824,7 +824,7 @@ tbnsew:
 	<property name="Class" value="UpgradeRated"/>
 	<property name="UpgradeRated.ToBlock" value="air"/>
 	<property name="UpgradeRated.Rate" value="30"/>
-	<property name="HeatMapStrength" value="2.0"/>
+	<property name="HeatMapStrength" value="1.0"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="1"/>
 	<drop event="Destroy" count="0" prob="1"/>
