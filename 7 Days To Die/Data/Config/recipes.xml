@@ -3880,11 +3880,6 @@
 		<ingredient name="resourceWood" count="5"/>
 	</recipe>
 	<!-- Quest -->
-	<recipe name="zombieRepeat" count="1" craft_time = "12" craft_exp_gain="40" craft_area="workstationResearchTable" craft_tool="toolGeometrySet" tags="learnable">
-		<ingredient name="resourcePaper" count="1"/>
-		<ingredient name="resourceInk" count="1"/>
-		<ingredient name="resourceFeather" count="1"/>
-	</recipe>
 	<!-- Schematic Pages -->
 	<recipe name="ammoArrowFlamingSchematic" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workstationResearchTable" craft_tool="toolGeometrySet">
 		<ingredient name="resourcePaper" count="1"/>
