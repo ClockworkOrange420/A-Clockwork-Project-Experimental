@@ -533,7 +533,7 @@
 		<effect_group name="Base Effects">
 			<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 			<passive_effect name="BlockRange" operation="base_set" value="3"/>
-			<passive_effect name="EntityDamage" operation="base_set" value="20,50" tier="1,6"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="15,38" tier="1,6"/>
 			<!-- meleeToolMachete -->
 			<passive_effect name="BlockDamage" operation="base_set" value="28,56" tier="1,6"/>
 			<passive_effect name="AttacksPerMinute" operation="base_set" value="80"/>
