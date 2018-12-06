@@ -4045,22 +4045,69 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 	
+	<buff name="NiCadSparkLoopStart" hidden="true" remove_on_death="true"> 
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="NiCadSparkLoopMiddle"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoop"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoopBack"/>
+		</effect_group>
+	</buff>
+	<buff name="NiCadSparkLoop" hidden="true" remove_on_death="true"> 
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint">
+			<requirement name="HasBuff" buff="NiCadSparkLoopStart"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadSparkLoopBottom"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
+		</effect_group>
+	</buff>
+	<buff name="NiCadSparkLoopMiddle" hidden="true" remove_on_death="true"> 
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_fence_sparks" local_offset="0,0.25,0.05" parent_transform="Gunjoint">
+			<requirement name="HasBuff" buff="NiCadSparkLoopStart"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadSparkLoop"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
+		</effect_group>
+	</buff>
+	<buff name="NiCadSparkLoopBottom" hidden="true" remove_on_death="true"> 
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_fence_sparks" local_offset="0,0.19,0.02" parent_transform="Gunjoint">
+			<requirement name="HasBuff" buff="NiCadSparkLoopStart"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadSparkLoopMiddle"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
+		</effect_group>
+	</buff>
+	
 	<buff name="zombieInvisible"  hidden="true"> 
 		<duration value="10"/>
 		<stack_type value="ignore"/>
 		<effect_group>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="zombieInvisibleNotification">
 			<requirement name="NotHasBuff" buff="zombieInvisibleBlocker"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="zombieInvisibleNotification"/>
-			<passive_effect name="LightMultiplier" operation="perc_subtract" value="2"/>
+			</triggered_effect>
+			<passive_effect name="LightMultiplier" operation="perc_subtract" value="2">
+			<requirement name="NotHasBuff" buff="zombieInvisibleBlocker"/>
+			</passive_effect>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="zombieInvisibleBlocker"/>
 		</effect_group>
 	</buff>
-	
 	<buff name="zombieInvisibleNotification" name_key="Camoflauge" description_key="Invisible to zombies for 8 seconds, effect cannot occure more than oce every 60 seconds" tooltip_key="Shh... Quiet! zombies cant see you" icon="ui_game_symbol_defense" icon_color="135,206,250" remove_on_death="true"> 
 		<duration value="10"/>
 		<stack_type value="ignore"/>
 	</buff>
-	
 	<buff name="zombieInvisibleBlocker" name_key="UhUhUh" description_key="You have recently become invisible to zombies, they are on to your shenanigans" tooltip_key="Oh shit, they're on to me" icon="ui_game_symbol_speed" icon_color="255,140,0" remove_on_death="true"> 
 		<stack_type value="ignore"/>
 		<duration value="60"/>
