@@ -170,6 +170,7 @@
 		
 		<window_group name="compass" actionSet="false">
 			<window name="windowCompass" />
+			<window name="HUDInfoPanel" />
 			<!--<window name="windowTargetBar" anchor="CenterTop" />-->
 		</window_group>
 		
@@ -203,6 +204,7 @@
 			<window name="windowGroupBars" anchor="LeftTop" />
 			<!--Modded-->
 			<window name="windowToolbeltNumbersHUD" />
+			<window name="HUDTempWaterFood" />
 			<!--End-->
 		</window_group>
 		
