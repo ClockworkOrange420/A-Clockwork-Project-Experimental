@@ -746,9 +746,6 @@ Use 762 ammo in smaller caliber guns. 98% chance for the gun to explode on firin
 			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
 		</effect_group>
 
-		<effect_group tiered="false">
-			<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
-		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 		<property name="DescriptionKey" value="modGunMeleeNiCdBatteryDesc"/>
 	</item_modifier>
