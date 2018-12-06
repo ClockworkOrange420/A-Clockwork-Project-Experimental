@@ -18,14 +18,14 @@
 				
 				<sprite depth="1" pos="447,65" name="waterEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst" justify="center" pivot="center" foregroundlayer="true"/>
 				<sprite depth="2" pos="447,65" name="waterEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst" justify="center" pivot="center" foregroundlayer="true"/>
-				<sprite depth="3" pos="447,65" size="97,70" controller="PlayerStatsWindow" stat_type="Water" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst_full" justify="center" pivot="center" type="filled" fill="{playerwaterfill}" foregroundlayer="true" filldirection="Vertical"/>
-				<label depth="4" pos="447,20" size="97,70" controller="PlayerStatsWindow" stat_type="Water" name="TextContent" font_size="20" color="[white]" justify="center" pivot="center" text="{statcurrentwithmax}"/>
+				<sprite depth="3" pos="447,65" size="97,70" controller="PlayerStatsWindow" stat_type="Water" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst_full" justify="center" pivot="center" type="filled" fill="{statmodifiedmax}" foregroundlayer="true" filldirection="Vertical"/>
+				<label depth="4" pos="447,20" size="97,70" controller="PlayerStatsWindow" stat_type="Water" name="TextContent" font_size="20" color="[white]" justify="center" pivot="center" text="{playerwater}%"/>
 				
 				
 				<sprite depth="1" pos="360,65" name="foodEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_food" justify="center" pivot="center" foregroundlayer="true"/>
 				<sprite depth="2" pos="360,65" name="foodEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_food" justify="center" pivot="center" foregroundlayer="true"/>
-				<sprite depth="3" pos="360,65" size="97,70" controller="PlayerStatsWindow" stat_type="Food" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_food_full" justify="center" pivot="center" type="filled" fill="{playerfoodfill}" foregroundlayer="true" filldirection="Vertical"/>
-				<label depth="4" pos="360,20" size="97,70" controller="PlayerStatsWindow" stat_type="Food" name="TextContent" font_size="20" color="[white]" justify="center" pivot="center" text="{statcurrentwithmax}"/>
+				<sprite depth="3" pos="360,65" size="97,70" controller="PlayerStatsWindow" stat_type="Food" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_food_full" justify="center" pivot="center" type="filled" fill="{statmodifiedmax}" foregroundlayer="true" filldirection="Vertical"/>
+				<label depth="4" pos="360,20" size="97,70" controller="PlayerStatsWindow" stat_type="Food" name="TextContent" font_size="20" color="[white]" justify="center" pivot="center" text="{playerfood}%"/>
 				
 				
 				<sprite depth="1" pos="534,65" name="PlayerLevel" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_level" justify="center" pivot="center" foregroundlayer="true"/>
@@ -1398,6 +1398,23 @@
 			<sprite depth="1" color="[darkGrey]" type="sliced" />
 			<rect depth="2" pos="6,-5">
 				<grid name="stats" rows="10" cols="1" pos="3,-5" cell_width="360" cell_height="30" repeat_content="false" controller="PlayerStatsWindow">
+					<panel height="30" width="320" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_trophy"/>
+
+						<label depth="1" width="200" pos="30,0" font_size="26" text="{playerleveltitle}: [DECEA3]{playerlevel}[-]" />
+
+						<sprite depth="2" width="107" pos="190, -7" height="10" type="sliced" color="[black]" />
+						<sprite depth="2" width="105" pos="191, -8" height="8" type="sliced" color="[mediumGrey]" />
+						<sprite depth="2" width="105" pos="191, -8" height="8" type="filled" color="49,91,203" fill="{playerlevelfill}" />
+					</panel>
+					<panel height="30" width="320" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_fork"/>
+						<label depth="1" width="200" pos="30,0" name="lblFood" font_size="26" text="{playerfoodtitle}: [DECEA3]{playerfood}%[-]" />
+
+						<sprite depth="2" width="107" pos="190, -7" height="10" type="sliced" color="[black]" />
+						<sprite depth="2" width="105" pos="191, -8" height="8" type="sliced" color="[mediumGrey]" />
+						<sprite depth="2" width="105" pos="191, -8" height="8" type="filled" color="52,174,86" fill="{playerfoodfill}" />
+					</panel>
 					<panel height="30" width="320" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_water"/>
 						<label depth="1" width="200" pos="30,0" name="lblWater" font_size="26" text="{playerwatertitle}: [DECEA3]{playerwater}%[-]" />
