@@ -4038,18 +4038,54 @@ icon="ui_game_symbol_pack_mule"
 	
 	
 	<buff name="zombieElectricBuff" hidden="true" remove_on_death="true"> 
-		<duration value="0"/>
+		<duration value="3"/>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
-			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="shockMeDaddy" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="zombieElectricRoll1"/>
 		</effect_group>
 	</buff>
 	
-	<buff name="zombieInvisible" hidden="true" remove_on_death="true"> 
-		<duration value="8"/>
+	<buff name="zombieElectricRoll1" hidden="true" remove_on_death="true"> 
+		<duration value="3"/>
 		<effect_group>
-			<passive_effect name="LightMultiplier" operation="perc_subtract" value="2"/>
+			<requirement name="CVarCompare" cvar="shockMeDaddy" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="shockMeDaddy" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="zombieElectricRoll2"/>
 		</effect_group>
+	</buff>
+	
+	<buff name="zombieElectricRoll2" hidden="true" remove_on_death="true"> 
+		<duration value="3"/>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="shockMeDaddy" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="shockMeDaddy" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="zombieElectricRoll1"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="zombieInvisible"  hidden="true"> 
+		<duration value="10"/>
+		<stack_type value="ignore"/>
+		<effect_group>
+			<requirement name="NotHasBuff" buff="zombieInvisibleBlocker"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="zombieInvisibleNotification"/>
+			<passive_effect name="LightMultiplier" operation="perc_subtract" value="2"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="zombieInvisibleBlocker"/>
+		</effect_group>
+	</buff>
+	
+	<buff name="zombieInvisibleNotification" name_key="Camoflauge" description_key="Invisible to zombies for 8 seconds, effect cannot occure more than oce every 60 seconds" tooltip_key="Shh... Quiet! zombies cant see you" icon="ui_game_symbol_defense" icon_color="255,0,0" remove_on_death="true"> 
+		<duration value="10"/>
+		<stack_type value="ignore"/>
+	</buff>
+	
+	<buff name="zombieInvisibleBlocker" name_key="UhUhUh" description_key="You have recently become invisible to zombies, they are on to your shenanigans" tooltip_key="Oh shit, they're on to me" icon="ui_game_symbol_speed" icon_color="255,0,0" remove_on_death="true"> 
+		<stack_type value="ignore"/>
+		<duration value="60"/>
 	</buff>
 	
 
