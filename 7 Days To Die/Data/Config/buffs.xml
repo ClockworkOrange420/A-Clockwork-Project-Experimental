@@ -4050,7 +4050,8 @@ icon="ui_game_symbol_pack_mule"
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="NiCadSparkLoopMiddle"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoop"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoopBack"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoopMiddle"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadSparkLoopBottom"/>
 		</effect_group>
 	</buff>
 	<buff name="NiCadSparkLoop" hidden="true" remove_on_death="true"> 
@@ -4086,6 +4087,39 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0.3,0" parent_transform="Gunjoint"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadSparkLoopMiddle"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
+		</effect_group>
+	</buff>
+	
+	<buff name="NiCadRangedSparkLoopStart" hidden="true" remove_on_death="true"> 
+		<duration value="0"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="NiCadRangedSparkLoop"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadRangedSparkLoop"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveBuff" target="self" buff="NiCadRangedSparkLoopBottom"/>
+		</effect_group>
+	</buff>
+	<buff name="NiCadRangedSparkLoop" hidden="true" remove_on_death="true"> 
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_fence_sparks" local_offset="0,0,0.05" parent_transform="Gunjoint">
+			<requirement name="HasBuff" buff="NiCadRangedSparkLoopStart"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadRangedSparkLoopBottom"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
+		</effect_group>
+	</buff>
+	<buff name="NiCadRangedSparkLoopBottom" hidden="true" remove_on_death="true"> 
+		<duration value="2"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_fence_sparks" local_offset="0,0,0.05" parent_transform="Gunjoint">
+			<requirement name="HasBuff" buff="NiCadRangedSparkLoopStart"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" local_offset="0,0,0" parent_transform="Gunjoint"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="NiCadRangedSparkLoop"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_fence_sparks" />
 		</effect_group>
 	</buff>
