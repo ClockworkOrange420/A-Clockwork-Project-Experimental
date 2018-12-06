@@ -1,7 +1,7 @@
 <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 
 <progression>
-<level max_level="300" exp_to_level="20000" experience_multiplier="1.011" skill_points_per_level="1">
+<level max_level="300" exp_to_level="15000" experience_multiplier="1.011" skill_points_per_level="1">
 <!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 <!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 </level>
@@ -1512,7 +1512,7 @@
 				tags="gunPistol,gunCrossbow,generatorbank,cementMixer,resourceBricks,electricfencepost,switch,ceilingLight01_player,speaker,pressureplate,pressureplateLong,gunPistol,gunCrossbow"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" 
-				tags="gunToolNailgun,batterybank,solarbank,solarCell,workstationResearchTable,electricwirerelay,bladeTrap,dartTrap,ammoDartSteel,spotlightPlayer,electrictimerrelay,toolAndDieSet,toolCalipers,gunPumpShotgun,gunHuntingRifle,gunSMG5,gunCompoundBow"/>
+				tags="gunToolNailgun,batterybank,solarbank,solarCell,workstationResearchTable,electricwirerelay,woodBlockRelay,bladeTrap,dartTrap,ammoDartSteel,spotlightPlayer,electrictimerrelay,toolAndDieSet,toolCalipers,gunPumpShotgun,gunHuntingRifle,gunSMG5,gunCompoundBow"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" 
 				tags="meleeToolAuger,meleeToolChainsaw,motionsensor,gun44Magnum,gunAK47,gunMR10"/>

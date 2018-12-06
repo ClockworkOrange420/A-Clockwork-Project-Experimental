@@ -55,7 +55,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.2" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
 			<!-- using perc_add here increases StaminaOT for no obvious reason -->
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
@@ -123,7 +123,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.2" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -283,7 +283,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="-0.3" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.01" tags="head"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="100" tags="Chop"/>
-			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="11" tags="primary"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="8,3" tier="1,6"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -323,7 +323,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="organic"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.3" tags="stone"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
-			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="11" tags="primary"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="5,2" tier="1,6"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -377,9 +377,9 @@
 			<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		</effect_group>
 		<effect_group name="Power Attack">
-			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.4" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="22" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 			<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
@@ -431,9 +431,9 @@
 			<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 		</effect_group>
 		<effect_group name="Power Attack">
-			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.4" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="22.5" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -546,7 +546,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.15" tags="head"/>
-			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="5,1" tier="1,6"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -556,7 +556,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.1" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -612,7 +612,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.1" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="21" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -733,7 +733,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
 		</effect_group>
 		<property name="Group" value="Tools/Traps,Basics"/>
@@ -775,7 +775,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
 		</effect_group>
 		<property name="Group" value="Tools/Traps"/>
@@ -812,7 +812,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="24" tags="secondary"/>
 		</effect_group>
 	</item>
@@ -875,7 +875,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.2" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="30" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -937,7 +937,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="27" tags="secondary"/>
 		</effect_group>
 		<property name="Group" value="Tools/Traps"/>
@@ -980,7 +980,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="27" tags="secondary"/>
 		</effect_group>
 	</item>
@@ -1022,7 +1022,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".3" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="28.5" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
@@ -2353,7 +2353,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="-.1" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="-.2" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
 		</effect_group>
 		<property name="ActionSkillGroup" value="attAgility"/>
@@ -7476,9 +7476,9 @@
 		</property>
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="8"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 		</effect_group>
 	</item>
@@ -7501,9 +7501,9 @@
 		<property name="Smell" value="largeSmell"/>
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="36"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="16"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="18"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 		</effect_group>
 	</item>
@@ -7589,6 +7589,7 @@
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="zombieInvisible"/>
 			<display_value name="FoodPoisoningRisk" value="1" />
 		</effect_group>
 	</item>
@@ -7610,9 +7611,8 @@
 		</property>
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="4"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIllFoodPoisoning0">
 				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="10"/>
@@ -11257,7 +11257,7 @@
 	<item name="zombieRepeat">
 		<property name="Extends" value="questMaster"/>
 		<property class="Action0">
-			<!--<property name="QuestGiven" value="qt_zombieRepeat"/>-->
+			<property name="QuestGiven" value="qt_zombieRepeat"/>
 		</property>
 	</item>
 	<!-- Melee Tools / Weapons -->
@@ -12494,12 +12494,39 @@
 		<property name="Smell" value="ExLargeSmell"/>
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 		</effect_group>
 		<property name="DescriptionKey" value="foodCookieDesc"/>
+	</item>
+	<item name="foodCookies">
+		<property name="HoldType" value="31"/>
+		<property name="DisplayType" value="food"/>
+		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Mcompost"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="50"/>
+		<!-- STK food -->
+		<property name="EconomicValue" value="4"/>
+		<property name="CraftingIngredientTime" value="3"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<property name="Smell" value="ExLargeSmell"/>
+		<property name="Group" value="Food/Cooking"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="15"/>
+			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		</effect_group>
+		<property name="DescriptionKey" value="foodCookiesDesc"/>
 	</item>
 	<!-- Workstation Tools -->
 	<item name="toolTrowel">

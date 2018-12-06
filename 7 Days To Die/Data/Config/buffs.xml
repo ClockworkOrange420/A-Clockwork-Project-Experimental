@@ -4037,13 +4037,21 @@ icon="ui_game_symbol_pack_mule"
 	</buff>
 	
 	
-	<buff name="zombieElectricBuff" hidden="true"> 
+	<buff name="zombieElectricBuff" hidden="true" remove_on_death="true"> 
 		<duration value="0"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" local_offset="0,0.75,0"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
 		</effect_group>
 	</buff>
+	
+	<buff name="zombieInvisible" hidden="true" remove_on_death="true"> 
+		<duration value="8"/>
+		<effect_group>
+			<passive_effect name="LightMultiplier" operation="perc_subtract" value="2"/>
+		</effect_group>
+	</buff>
+	
 
 
 </buffs>

@@ -14076,7 +14076,7 @@ NOT the TextureNumber.
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Appliances/stove_old" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="LootList" value="47"/>
+	<property name="LootList" value="5"/>
 	<property class="RepairItems">
 		<property name="resourceFormedIron" value="10"/>
 		<property name="resourceElectricParts" value="4"/>
@@ -14719,12 +14719,14 @@ NOT the TextureNumber.
 </block>
 
 <block name="cntFancyGarbageCan">
+	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_thin"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="Entities/LootContainers/fancy_garbage_canPrefab" />
 	<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="12"/>
 	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="16"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
 	<property name="FilterTags" value="floot,ffurniture"/>
@@ -17113,7 +17115,7 @@ NOT the TextureNumber.
 	<property name="Model" value="Entities/LootContainers/backpack01Prefab" />
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<property name="LootList" value="9"/>
+	<property name="LootList" value="23"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
 	<drop event="Destroy" name="resourceCloth" count="1"/>
@@ -17142,18 +17144,21 @@ NOT the TextureNumber.
 <block name="cntDuffle01">
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="LootList" value="9"/>
 	<property name="Model" value="Entities/LootContainers/duffle01Prefab" />
 </block>
 
 <block name="cntSportsBag01">
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="LootList" value="9"/>
 	<property name="Model" value="Entities/LootContainers/sports_bag01Prefab" />
 </block>
 
 <block name="cntSportsBag02">
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="CreativeMode" value="Player"/>
+	<property name="LootList" value="9"/>
 	<property name="Model" value="Entities/LootContainers/sports_bag02Prefab" />
 </block>
 
