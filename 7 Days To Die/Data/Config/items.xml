@@ -65,7 +65,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	</item>
 	<item name="meleeToolHuntingKnife">
-		<property name="Tags" value="shock,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+		<property name="Tags" value="shock,huntingKnife,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="HoldType" value="36"/>
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
@@ -490,7 +490,7 @@
 		</effect_group>
 	</item>
 	<item name="meleeToolMachete">
-		<property name="Tags" value="shock,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+		<property name="Tags" value="machete,shock,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 		<property name="DisplayType" value="melee"/>
 		<property name="HoldType" value="47"/>
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
