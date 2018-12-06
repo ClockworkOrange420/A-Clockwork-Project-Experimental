@@ -2353,7 +2353,7 @@
 		<effect_group name="Power Attack">
 			<passive_effect name="EntityDamage" operation="perc_add" value="1.5" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="-.2" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value=".2" tags="secondary"/>
 			<passive_effect name="StaminaLoss" operation="base_add" value="12" tags="secondary"/>
 		</effect_group>
 		<property name="ActionSkillGroup" value="attAgility"/>
