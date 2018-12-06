@@ -393,7 +393,6 @@ quest_tier6_complete_description,,Quest Info,New,Special reward for completing a
 quest_tier_complete_competion,,Quest Info,New,THANK YOU SURVIVOR FOR FINISHING SOME OF THOSE TASKS FOR ME. HERE IS A REWARD FOR ALL YOUR HARD WORK. CHECK BACK TOMORROW AND I WILL HAVE SOME HARDER JOBS FOR YOU THAT SHOULD BE MORE REWARDING.,,,,
 quest_tier6_complete_competion,,Quest Info,New,THANK YOU SURVIVOR FOR FINISHING SOME OF THOSE TASKS FOR ME. HERE IS A REWARD FOR ALL YOUR HARD WORK. WE HAVE NO HARDER QUESTS FOR YOU NOW.,,,,
 
-
 Nighty_Night_Desc,,Quest Info,KgNone,"congratulations!,\n\nYour walk home just got shorter...",,,,
-
+Nighty_Night_Desc_title,,Popup Tip,,Nighty Night,,,,
 
