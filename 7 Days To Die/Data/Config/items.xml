@@ -840,7 +840,7 @@
 			<property name="Sphere" value="0.15"/>
 			<!-- limit to 0.15, else the sphere cast can overlap the target already -->
 			<property name="Sound_start" value="SlowSwoosh"/>
-			<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
+			<property name="ToolCategory.harvestingTools" value="0.1" param1="1"/>
 		</property>
 		<property class="Action1">
 			<property name="Class" value="DynamicMelee"/>
