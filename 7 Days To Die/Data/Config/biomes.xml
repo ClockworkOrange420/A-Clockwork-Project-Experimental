@@ -312,8 +312,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".1"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
-		<terrain class="Mountains"/>
-		<spectrum name="snow"/>
+		<spectrum name="pine_forest" />
 	</biome>
 
 
@@ -472,7 +471,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeMountainPine48m" prob ="0.0005" rotatemax="7"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
-		<spectrum name="pine_forest"/>
+		<spectrum name="pine_forest" />
 	</biome>
 
 
@@ -906,7 +905,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 		</layers>
 
-		<spectrum name="wasteland"/>
 		<!-- Decorations Main: Wasteland -->
 		<decorations>
 			<decoration type="block" blockname="cntWastelandRandomLootHelper" prob="0.00025"/>
@@ -949,7 +947,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="mineHubcap" prob="0.0001"/>
 			<decoration type="block" blockname="hubcapNoMine" prob="0.0011"/>
 		</decorations>
-		<terrain class="Wasteland"/>
+		<spectrum name="pine_forest" />
 	</biome>
 
 
@@ -966,7 +964,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<Precipitation min="50" max="100" prob=".75"/>
 			<Wind min="10" max="20" prob="0.9"/>
 			<Wind min="20" max="100" prob="0.1"/>
-      <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="14"/>
+      <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
     </weather>
 
 		<subbiome prob="0.02"> <!-- Burnt Forest Sub Biome -->
@@ -1118,7 +1116,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".02"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
-		<spectrum name="pine_forest"/>
+		<spectrum name="pine_forest" />
 	</biome>
 
 

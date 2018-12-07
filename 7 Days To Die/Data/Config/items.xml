@@ -2402,7 +2402,7 @@
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
-			<passive_effect name="EntityDamage" operation="base_set" value="20" tags="primary"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="16" tags="primary"/>
 			<passive_effect name="BlockDamage" operation="base_set" value="16" tags="primary"/>
 			<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>  A16 .8 -->
 			<passive_effect name="BuffProcChance" operation="base_set" value="0.15" tags="buffInjuryBleeding"/>
@@ -2463,7 +2463,7 @@
 			<property name="Class" value="Melee"/>
 			<property name="Sphere" value="0.4"/>
 			<property name="DamageEntity" value="12"/>
-			<property name="DamageBlock" value="15"/>
+			<property name="DamageBlock" value="3"/>
 			<property name="Buff" value="buffBurningElement,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2479,7 +2479,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="24"/>
-			<property name="DamageBlock" value="18"/>
+			<property name="DamageBlock" value="6"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2514,7 +2514,7 @@
 		<property name="Degradation" value="99999" param1="true"/>
 		<property class="Action0">
 			<property name="Range" value="1.75"/>
-			<property name="DamageEntity" value="32"/>
+			<property name="DamageEntity" value="26"/>
 			<property name="DamageBlock" value="120"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
@@ -2555,7 +2555,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action1">
 			<property name="Class" value="Projectile"/>
-			<property name="DamageEntity" value="20"/>
+			<property name="DamageEntity" value="15"/>
 			<property name="DamageBlock" value="150"/>
 			<property name="Explosion.ParticleIndex" value="7"/>
 			<property name="Velocity" value="18"/>
@@ -2574,7 +2574,7 @@
 		<property name="Extends" value="meleeHandZombieCop"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="40"/>
+			<property name="DamageEntity" value="35"/>
 			<property name="DamageBlock" value="160"/>
 		</property>
 		<property class="Action1">
@@ -2596,7 +2596,7 @@
 		<property name="Extends" value="ammoProjectileZombieVomit"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action1">
-			<property name="DamageEntity" value="20"/>
+			<property name="DamageEntity" value="18"/>
 			<property name="DamageBlock" value="150"/>
 			<property name="Velocity" value="18"/>
 			<property name="FlyTime" value="2"/>
@@ -2633,7 +2633,7 @@
 		<property name="Extends" value="ammoProjectileZombieVomit"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action1">
-			<property name="DamageEntity" value="25"/>
+			<property name="DamageEntity" value="18"/>
 			<property name="DamageBlock" value="145"/>
 			<property name="Velocity" value="18"/>
 			<property name="FlyTime" value="2"/>
@@ -2656,8 +2656,8 @@
 		<property class="Action0">
 			<property name="Delay" value="0.7"/>
 			<!-- obsolete if rounds per minute exists -->
-			<property name="DamageEntity" value="16"/>
-			<property name="DamageBlock" value="16"/>
+			<property name="DamageEntity" value="12"/>
+			<property name="DamageBlock" value="12"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2676,8 +2676,8 @@
 		<property name="Extends" value="meleeHandAnimalZombieDog"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="18"/>
-			<property name="DamageBlock" value="28"/>
+			<property name="DamageEntity" value="14"/>
+			<property name="DamageBlock" value="18"/>
 		</property>
 		<effect_group name="Base Effects">
 			<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="85"/>  A16 .7 -->
@@ -2690,7 +2690,7 @@
 		<property name="Extends" value="meleeHandMaster"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="35"/>
+			<property name="DamageEntity" value="25"/>
 			<property name="DamageBlock" value="60"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
@@ -2707,7 +2707,7 @@
 		<property name="Extends" value="meleeHandZombieStrong"/>
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="40"/>
+			<property name="DamageEntity" value="35"/>
 			<property name="DamageBlock" value="80"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2839,8 +2839,8 @@
 		<property name="CreativeMode" value="None"/>
 		<property name="HoldType" value="9"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="32"/>
-			<property name="DamageBlock" value="45"/>
+			<property name="DamageEntity" value="16"/>
+			<property name="DamageBlock" value="20"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2856,8 +2856,8 @@
 		<property name="CreativeMode" value="None"/>
 		<property name="HoldType" value="9"/>
 		<property class="Action0">
-			<property name="DamageEntity" value="36"/>
-			<property name="DamageBlock" value="56"/>
+			<property name="DamageEntity" value="20"/>
+			<property name="DamageBlock" value="26"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2887,7 +2887,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="16"/>
-			<property name="DamageBlock" value="32"/>
+			<property name="DamageBlock" value="16"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2922,8 +2922,8 @@
 		<property class="Action0">
 			<property name="Delay" value="0.7"/>
 			<!-- obsolete if rounds per minute exists -->
-			<property name="DamageEntity" value="16"/>
-			<property name="DamageBlock" value="16"/>
+			<property name="DamageEntity" value="12"/>
+			<property name="DamageBlock" value="12"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0"/>
 		</property>
 		<property class="Action1">

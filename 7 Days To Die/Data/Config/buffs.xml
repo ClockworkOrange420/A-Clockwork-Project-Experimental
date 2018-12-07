@@ -4008,6 +4008,18 @@ icon="ui_game_symbol_pack_mule"
 	</buff>
 	<!--Modded-->
 	
+	<buff name="buffSleeping" hidden="true" name_key="You Are Resting" description_key="You are resting and will recover from fatigue slowly." tooltip_key="You are resting" icon="ui_game_symbol_map_bed">
+		<stack_type value="replace"/>
+		<duration value="3"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Sleeping" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="Sleeping" operation="set" value="0"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".15"/>
+		</effect_group>
+	</buff>
+	
+	
+	
 	<buff name="buffBurningVomit" hidden="true">
 		<damage_type value="heat"/>
 		<stack_type value="replace"/>
