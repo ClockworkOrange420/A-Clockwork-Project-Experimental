@@ -631,11 +631,11 @@ If you do not declare them, the decorations of the main biome are used.
 		<decorations>
 			<!--decoration type="terrain" name="bluff1" prob=".0001" scale="0.1"/>
 			<decoration type="terrain" name="bluff2" prob=".0001" scale="0.06,0.1" /-->     <!-- min max scale -->
-			<decoration type="block" blockname="treeCactus01" prob ="0.00004" rotatemax="3"/>
-			<decoration type="block" blockname="treeCactus02" prob ="0.00004" rotatemax="3"/>
-			<decoration type="block" blockname="treeCactus03" prob ="0.00004" rotatemax="3"/>
-			<decoration type="block" blockname="treeCactus04" prob ="0.00004" rotatemax="3"/>
-			<decoration type="block" blockname="treeCactus05" prob ="0.00004" rotatemax="3"/>
+			<decoration type="block" blockname="treeCactus01" prob ="0.0002" rotatemax="3"/>
+			<decoration type="block" blockname="treeCactus02" prob ="0.0002" rotatemax="3"/>
+			<decoration type="block" blockname="treeCactus03" prob ="0.0002" rotatemax="3"/>
+			<decoration type="block" blockname="treeCactus04" prob ="0.0002" rotatemax="3"/>
+			<decoration type="block" blockname="treeCactus05" prob ="0.0002" rotatemax="3"/>
 			<decoration type="block" blockname="rock01" prob=".001" rotatemax="3"/>
 			<decoration type="block" blockname="rock02" prob=".001" rotatemax="3"/>
 			<decoration type="block" blockname="rock04" prob=".001" rotatemax="3"/>
@@ -651,8 +651,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntBirdnest" prob ="0.0007"/>
 			<decoration type="block" blockname="treeCactus06" prob ="0.0009" rotatemax="3"/>
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".00025"/>
-			<decoration type="block" blockname="treeOakMed01" prob ="0.0003" rotatemax="7"/>
-			<decoration type="block" blockname="treeOakSml01" prob ="0.002" rotatemax="7"/>
 		</decorations>
 		<terrain class="Desert"/>
 		<spectrum name="desert"/>
