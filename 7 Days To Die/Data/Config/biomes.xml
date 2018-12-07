@@ -472,7 +472,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeMountainPine48m" prob ="0.0005" rotatemax="7"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
-		<terrain class="Mountains"/>
+		<spectrum name="pine_forest"/>
 	</biome>
 
 
@@ -957,13 +957,16 @@ If you do not declare them, the decorations of the main biome are used.
 	<biome name="burnt_forest" biomemapcolor="#ba00ff">
 		<weather>
 			<Temperature min="0" max="20" prob="1"/>
-			<Fog min="0" max="0" prob="1"/>
-			<CloudThickness min="81" max="100" prob="1"/>
-			<Wind min="10" max="20" prob="0.9"/>
-			<Wind min="20" max="100" prob="0.1"/>
+			<Fog min="0" max="0" prob=".9"/>
+			<Fog min="100" max="100" prob=".1"/>
+			<CloudThickness min="0" max="0" prob=".3"/>
+			<CloudThickness min="10" max="70" prob=".6"/>
+			<CloudThickness min="100" max="100" prob=".1"/>
 			<Precipitation min="0" max="0" prob=".0"/>
 			<Precipitation min="50" max="100" prob=".75"/>
-      <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
+			<Wind min="10" max="20" prob="0.9"/>
+			<Wind min="20" max="100" prob="0.1"/>
+      <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="14"/>
     </weather>
 
 		<subbiome prob="0.02"> <!-- Burnt Forest Sub Biome -->
@@ -1115,7 +1118,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".02"/>
 			<decoration type="block" blockname="treeStump" prob =".0002" rotatemax="7"/>
 		</decorations>
-		<terrain class="Mountains"/>
+		<spectrum name="pine_forest"/>
 	</biome>
 
 
