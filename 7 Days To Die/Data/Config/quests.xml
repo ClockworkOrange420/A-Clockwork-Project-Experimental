@@ -84,7 +84,7 @@
 		<reward type="Quest" id="quest_BasicSurvival8" />
 		<reward type="Quest" id="qt_zombie" />
 		
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
 		<reward type="Quest" id="quest_whiteRiverCitizen1" />
     </quest>
 
@@ -109,7 +109,7 @@
 			<property name="count" value="1" />
 		</objective>
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
 		<reward type="Quest" id="quest_BasicSurvival2A" />
     </quest>
 	
@@ -128,7 +128,7 @@
 		<objective type="Craft" id="choppingBlock" value="1" phase="2" />
 		<objective type="BlockPlace" id="choppingBlock" value="1" phase="3" />
 		
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 		<!-- Craft a Workbench /> -->
@@ -158,7 +158,7 @@
 		<reward type="Quest" id="quest_BasicSurvival2J" />
 		<reward type="Quest" id="quest_BasicSurvival7" />
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Chemistry Station /> -->
@@ -181,7 +181,7 @@
 		<objective type="BlockPlace" id="chemistryStation" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Cement Mixer /> -->
@@ -203,7 +203,7 @@
 		<objective type="BlockPlace" id="cementMixer" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Table Saw /> -->
@@ -225,7 +225,7 @@
 		<objective type="BlockPlace" id="workstationTableSaw" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Ammo Table /> -->
@@ -246,7 +246,7 @@
 		<objective type="BlockPlace" id="workstationAmmunitionTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Research Table /> -->
@@ -267,7 +267,7 @@
 		<objective type="BlockPlace" id="workstationResearchTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Smithing Table /> -->
@@ -288,7 +288,7 @@
 		<objective type="BlockPlace" id="workstationSmithingTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Tailoring Table /> -->
@@ -310,7 +310,7 @@
 		
 		<reward type="Quest" id="quest_BasicSurvival2B1" />
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 	
 	<!-- Craft a Bedroll /> -->
@@ -331,7 +331,7 @@
 		<objective type="BlockPlace" id="bedroll" value="1" phase="3" />
 		
 		<reward type="Quest" id="quest_Complete" />
-		<reward type="Exp" value="200" />
+		<reward type="Exp" value="1000" />
     </quest>
 	<quest id="quest_Complete">
 		<property name="group_name_key" value="quest_BasicSurvival" />
@@ -370,7 +370,7 @@
 		<objective type="BlockPlace" id="forge" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="500" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- Basic Survival 3 - Craft Plant Fiber Clothing /> -->
@@ -391,7 +391,7 @@
 		<objective type="Craft" id="plantFiberShoes" value="1" phase="2" />
 		<objective type="Craft" id="plantFiberGloves" value="1" phase="2" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
     </quest>
 
@@ -412,7 +412,7 @@
 		<objective type="Wear" id="plantFiberShoes" />
 		<objective type="Wear" id="plantFiberGloves" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
@@ -429,7 +429,7 @@
 		<objective type="FetchKeep" id="resourceWood" value="10" phase="1" />
 		<objective type="Craft" id="meleeClubWood" value="1" phase="2" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- Basic Survival 6 - Craft Bow & Arrows /> -->
@@ -450,7 +450,7 @@
 		<objective type="Craft" id="gunWoodenBow" value="1" phase="2" />
 		<objective type="Craft" id="ammoArrowStone" value="1" phase="2" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- Basic Survival 7 - Start a Base /> -->
@@ -468,7 +468,7 @@
 		<objective type="BlockPlace" id="woodFrameBlock" value="3" phase="2" />
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="3" phase="2" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- Basic Survival 8 - Build a Campfire /> -->
@@ -486,7 +486,7 @@
 		<objective type="Craft" id="campfire" value="1" phase="2" />
 		<objective type="BlockPlace" id="campfire" value="1" phase="3" />
 
-		<reward type="Exp" value="100" />
+		<reward type="Exp" value="1000" />
     </quest>
 
 	<!-- White River Citizen 1 - Journey to Settlement -->
@@ -525,7 +525,7 @@
 		<objective type="ZombieKill" value="10" phase="1" />
 		
 		<reward type="Quest" id="qt_zombie2" />
-		<reward type="Exp" value="200" />
+		<reward type="Exp" value="1000" />
 	</quest>
 	<quest id="qt_zombie2">
 		<property name="group_name" value="Humanity's Last Hope" />
@@ -539,7 +539,7 @@
 		<objective type="ZombieKill" value="50" phase="1" />
 		
 		<reward type="Quest" id="qt_zombie3" />
-		<reward type="Exp" value="200" />
+		<reward type="Exp" value="1000" />
 	</quest>
 	<quest id="qt_zombie3">
 		<property name="group_name" value="Humanity's Last Hope" />
@@ -553,7 +553,7 @@
 		<objective type="ZombieKill" value="100" phase="1" />
 		
 		<reward type="Quest" id="qt_zombie4" />
-		<reward type="Exp" value="200" />
+		<reward type="Exp" value="1000" />
 	</quest>
 	<quest id="qt_zombie4">
 		<property name="group_name" value="Humanity's Last Hope" />
@@ -566,7 +566,7 @@
 
 		<objective type="ZombieKill" value="150" phase="1" />
 		
-		<reward type="Exp" value="200" />
+		<reward type="Exp" value="1000" />
 	</quest>
 	<quest id="qt_zombieRepeat">
 		<property name="name" value="Blood Rights" />
