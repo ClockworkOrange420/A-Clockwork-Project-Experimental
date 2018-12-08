@@ -413,7 +413,7 @@
 		<ingredient name="resourceCropCottonPlant" count="10"/>
 		<ingredient name="resourceCordage" count="5"/>
 	</recipe>
-	<recipe name="toolBellows" count="1" craft_time = "4" craft_exp_gain="20" craft_area="workbench">
+	<recipe name="toolBellows" count="1" craft_time = "4" craft_exp_gain="20">
 		<ingredient name="resourceWood" count="6"/>
 		<ingredient name="resourceLeather" count="20"/>
 		<ingredient name="resourceMetalPipe" count="1"/>

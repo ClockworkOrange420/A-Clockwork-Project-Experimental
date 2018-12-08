@@ -177,7 +177,7 @@
 		<objective type="FetchKeep" id="burningBarrelPlayer" value="1" phase="1" />
 		<objective type="FetchKeep" id="resourceMetalPipe" value="15" phase="1" />
 		<objective type="FetchKeep" id="resourceWood" value="40" phase="1" />
-		<objective type="Craft" id="chemistryStation" value="1" phase="2" />
+		<objective type="FetchKeep" id="chemistryStation" value="1" phase="2" />
 		<objective type="BlockPlace" id="chemistryStation" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -199,7 +199,7 @@
 		<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1" />
 		<objective type="FetchKeep" id="smallEngine" value="1" phase="1" />
 		<objective type="FetchKeep" id="resourceSpring" value="4" phase="1" />
-		<objective type="Craft" id="cementMixer" value="1" phase="2" />
+		<objective type="FetchKeep" id="cementMixer" value="1" phase="2" />
 		<objective type="BlockPlace" id="cementMixer" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -221,7 +221,7 @@
 		<objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1" />
 		<objective type="FetchKeep" id="resourceElectricParts" value="20" phase="1" />
 		<objective type="FetchKeep" id="resourceSpring" value="4" phase="1" />
-		<objective type="Craft" id="workstationTableSaw" value="1" phase="2" />
+		<objective type="FetchKeep" id="workstationTableSaw" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationTableSaw" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -242,7 +242,7 @@
 		<objective type="FetchKeep" id="resourceFormedIron" value="100" phase="1" />
 		<objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1" />
 		<objective type="FetchKeep" id="resourceSpring" value="4" phase="1" />
-		<objective type="Craft" id="workstationAmmunitionTable" value="1" phase="2" />
+		<objective type="FetchKeep" id="workstationAmmunitionTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationAmmunitionTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -263,7 +263,7 @@
 		<objective type="FetchKeep" id="resourceNail" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceGlue" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceWood" value="50" phase="1" />
-		<objective type="Craft" id="workstationResearchTable" value="1" phase="2" />
+		<objective type="FetchKeep" id="workstationResearchTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationResearchTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -284,7 +284,7 @@
 		<objective type="FetchKeep" id="resourceFormedIron" value="100" phase="1" />
 		<objective type="FetchKeep" id="resourceMechanicalParts" value="20" phase="1" />
 		<objective type="FetchKeep" id="resourceSpring" value="50" phase="4" />
-		<objective type="Craft" id="workstationSmithingTable" value="1" phase="2" />
+		<objective type="FetchKeep" id="workstationSmithingTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationSmithingTable" value="1" phase="3" />
 		
 		<reward type="SkillPoints" value="1" />
@@ -305,7 +305,7 @@
 		<objective type="FetchKeep" id="resourceNail" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceGlue" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceWood" value="50" phase="1" />
-		<objective type="Craft" id="workstationTailoringTable" value="1" phase="2" />
+		<objective type="FetchKeep" id="workstationTailoringTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationTailoringTable" value="1" phase="3" />
 		
 		<reward type="Quest" id="quest_BasicSurvival2B1" />
@@ -327,7 +327,7 @@
 		<objective type="FetchKeep" id="resourceCloth" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceCropCottonPlant" value="10" phase="1" />
 		<objective type="FetchKeep" id="resourceCordage" value="5" phase="1" />
-		<objective type="Craft" id="bedroll" value="1" phase="2" />
+		<objective type="FetchKeep" id="bedroll" value="1" phase="2" />
 		<objective type="BlockPlace" id="bedroll" value="1" phase="3" />
 		
 		<reward type="Quest" id="quest_Complete" />
