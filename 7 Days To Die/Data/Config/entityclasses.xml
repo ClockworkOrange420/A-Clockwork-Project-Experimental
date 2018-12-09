@@ -2207,7 +2207,7 @@
 	<drop event="Harvest" name="resourceFemur" tag="butcherHarvest" count="3"/>
 	<drop event="Harvest" name="resourceFemur" tag="allHarvest" count="1"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="50"/>
+		<passive_effect name="HealthMax" operation="base_set" value="250"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2226,7 +2226,7 @@
 	<drop event="Harvest" name="resourceFemur" tag="allHarvest" count="1"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="40"/>
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2256,7 +2256,7 @@
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="base_set" value="50"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2285,7 +2285,7 @@
 	<drop event="Harvest" name="foodRawChicken" tag="butcherHarvest" count="5"/> <!-- animalChicken -->
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="23"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="10"/>
+		<passive_effect name="HealthMax" operation="base_set" value="50"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2548,7 +2548,7 @@
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="100"/>
+		<passive_effect name="HealthMax" operation="base_set" value="350"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 
@@ -2592,7 +2592,7 @@
 	<drop event="Harvest" name="resourceFemur" tag="allHarvest" count="1"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="200"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2645,7 +2645,7 @@
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="30"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="50"/>
+		<passive_effect name="HealthMax" operation="base_set" value="80"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -2786,7 +2786,7 @@
 	<property name="NightWanderSpeed" value="0.4"/>
 	<property name="NightApproachSpeed" value="1.4"/>
 
-	<property name="HandItem" value="meleeHandAnimalZombieSnakeRanged"/>
+	<property name="HandItem" value="meleeHandAnimalSnake"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
 	<property name="AttackTimeoutNight" value="1.1"/>
 
@@ -2796,7 +2796,7 @@
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="60"/>
+		<passive_effect name="HealthMax" operation="base_set" value="80"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
@@ -2857,7 +2857,7 @@
 	<drop event="Harvest" name="resourceFemur" tag="allHarvest" count="1"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="base_set" value="250"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 	</effect_group>
 </entity_class>
