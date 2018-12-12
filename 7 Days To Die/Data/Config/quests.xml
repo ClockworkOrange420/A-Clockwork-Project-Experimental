@@ -52,8 +52,8 @@
 		If value = 11 through 16,  the reward will be item tier 1-6 AND have a higher probability for "better" loot as in steel tools instead of iron.
 -->
 
-<quests>
-	<!-- Basic Survival 1 - Craft Cordage /> -->
+<quests max_quest_tier="5">
+	<!-- Basic Survival 1 - Craft a Bedroll /> -->
 	<quest id="quest_BasicSurvival1">
 		<property name="group_name_key" value="quest_BasicSurvival" />
 		<property name="name" value="Craft Cordage" />
@@ -3249,11 +3249,11 @@
 		<quest id="tier5_hidden_clear" />
 		
 		<!-- Tier 6 -->
-		<quest id="tier6_clear" />
-		<quest id="tier6_fetch" />
-		<quest id="tier6_hidden_cache" />
-		<quest id="tier6_fetch_clear" />
-		<quest id="tier6_hidden_clear" />
+		<!-- <quest id="tier6_clear" /> -->
+		<!-- <quest id="tier6_fetch" /> -->
+		<!-- <quest id="tier6_hidden_cache" /> -->
+		<!-- <quest id="tier6_fetch_clear" /> -->
+		<!-- <quest id="tier6_hidden_clear" /> -->
 
 	</quest_list>
 
@@ -3283,9 +3283,9 @@
 			<reward type="Quest" id="quest_tier5complete" />
 		</quest_tier_reward>
 		
-		<quest_tier_reward tier="7">
-			<reward type="Quest" id="quest_tier6complete" />
-		</quest_tier_reward>
+		<!-- <quest_tier_reward tier="7"> -->
+			<!-- <reward type="Quest" id="quest_tier6complete" /> -->
+		<!-- </quest_tier_reward> -->
 	</quest_tier_rewards>
 
 </quests>
