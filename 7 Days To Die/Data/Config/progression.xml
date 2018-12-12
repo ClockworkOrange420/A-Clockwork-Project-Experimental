@@ -222,7 +222,7 @@
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkGunslinger"/>
-			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.15,0.35" level="1,5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.25" level="1,5"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.1,0.30" level="1,5"/>
 
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="GunslingerCombo" operation="add" value="1">
@@ -258,7 +258,7 @@
 
 			<requirement name="HoldingItemHasTags" tags="perkShotgunMessiah"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.1,0.30" level="1,5"/>
-			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.15,0.35" level="1,5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.25" level="1,5"/>
 
 
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned1">
@@ -304,11 +304,11 @@
 			<effect_description level="5" desc_key="perkAutomaticWeaponsRank5Desc"/>
 
 			<requirement name="HoldingItemHasTags" tags="perkAutomaticWeapons"/>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.13,0.45" level="1,5"/>
-			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.15" level="3,5"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.1,0.3" level="1,5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="0.05,0.25" level="3,5"/>
 
-			<passive_effect name="KickDegreesVertical" operation="perc_add" value="-.05,-.3" level="1,5"/>
-			<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="-.05,-.3" level="1,5"/>
+			<passive_effect name="KickDegreesVertical" operation="perc_add" value="-.05,-.25" level="1,5"/>
+			<passive_effect name="KickDegreesHorizontal" operation="perc_add" value="-.05,-.25" level="1,5"/>
 
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyStat" stat="Stamina" operation="add" value="5">
 				<requirement name="ProgressionLevel" progression_name="perkAutomaticWeapons" operation="Equals" value="3"/>
@@ -458,7 +458,7 @@
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="ranged"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.25,1" level="1,4" tags="head"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2,1" level="1,5" tags="head"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1.5" level="5" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_add" value="0.05,0.15" level="3,5" tags="head"/>
 			<effect_description level="1" desc_key="perkHeadshotRank1Desc"/>
@@ -480,8 +480,7 @@
 			<requirement name="HoldingItemHasTags" tags="ranged"/>
 			<requirement name="HoldingItemHasTags" tags="shotgun" invert="true"/>
 
-			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-0.15,-.3" level="1,4"/>
-			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.4" level="5"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-0.05,-.25" level="1,5"/>
 
 			<effect_description level="1" desc_key="perkRunAndGunRank1Desc"/>
 			<effect_description level="2" desc_key="perkRunAndGunRank2Desc"/>
@@ -634,7 +633,11 @@
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel5"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="reqStrengthLevel7"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
-
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.4,2" level="1,5" tags="secondary"/>
+		</effect_group>
 		<effect_group>
 			<effect_description level="1" desc_key="perkDeepCutsRank1Desc"/>
 			<effect_description level="2" desc_key="perkDeepCutsRank2Desc"/>
@@ -709,7 +712,11 @@
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel5"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="reqStrengthLevel7"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
-
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkStayDown"/>
+			<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.4,2" level="1,5" tags="secondary"/>
+		</effect_group>
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="perkStayDown"/>
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar="StayDownCombo" operation="add" value="1">
@@ -794,7 +801,11 @@
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel5"/></level_requirements>
 		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="8" desc_key="reqStrengthLevel7"/></level_requirements>
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="10" desc_key="reqStrengthLevel10"/></level_requirements>
-
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkHeavyMetal"/>
+			<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.4,2" level="1,5" tags="secondary"/>
+		</effect_group>
 		<effect_group>
 			<effect_description level="1" desc_key="perkHeavyMetalRank1Desc"/>
 			<effect_description level="2" desc_key="perkHeavyMetalRank2Desc"/>
@@ -850,8 +861,7 @@
 
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="melee"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="0.25,1" level="1,4" tags="head"/>
-			<passive_effect name="DamageModifier" operation="perc_add" value="1.5" level="5" tags="head"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.2,1" level="1,5" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_add" value="0.05,0.15" level="3,5" tags="head"/>
 			<effect_description level="1" desc_key="perkSkullCrusherRank1Desc"/>
 			<effect_description level="2" desc_key="perkSkullCrusherRank2Desc"/>
@@ -1134,15 +1144,15 @@
 			<passive_effect name="HealthChangeOT" operation="base_set" value="0.033" level="1"/>
 			<passive_effect name="HealthChangeOT" operation="base_set" value="0.066" level="2"/>
 			<passive_effect name="HealthChangeOT" operation="base_set" value="0.1" level="3"/>
-			<passive_effect name="HealthChangeOT" operation="base_set" value="0.2" level="4"/>
-			<passive_effect name="HealthChangeOT" operation="base_set" value="0.5" level="5"/>
+			<passive_effect name="HealthChangeOT" operation="base_set" value="0.166" level="4"/>
+			<passive_effect name="HealthChangeOT" operation="base_set" value="0.33" level="5"/>
 		</effect_group>
 
 		<effect_group>
 			<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="GTE" value="0.97"/>
 				<passive_effect name="HealthMaxModifierOT" operation="base_set" value="0.025" level="3"/>
-				<passive_effect name="HealthMaxModifierOT" operation="base_set" value="0.05" level="4"/>
-				<passive_effect name="HealthMaxModifierOT" operation="base_set" value="0.1" level="5"/>
+				<passive_effect name="HealthMaxModifierOT" operation="base_set" value="0.0333" level="4"/>
+				<passive_effect name="HealthMaxModifierOT" operation="base_set" value="0.05" level="5"/>
 		</effect_group>
 
 		<effect_group>
@@ -1151,27 +1161,6 @@
 			<effect_description level="3" desc_key="perkHealingFactorRank3Desc"/>
 			<effect_description level="4" desc_key="perkHealingFactorRank4Desc"/>
 			<effect_description level="5" desc_key="perkHealingFactorRank5Desc"/>
-		</effect_group>
-	</perk>
-	<perk name="perkFullyHydrated" parent="skillRecovery" name_key="perkFullyHydrated" desc_key="perkFullyHydratedDesc" icon="ui_game_symbol_thirst">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="2" desc_key="reqFortitudeLevel1"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel3"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel5"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="8" desc_key="reqFortitudeLevel7"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
-
-		<effect_group>
-			<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5"/>
-			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5"/>
-
-			<!-- see <buff name="buffPerkAbilityUpdate"> for cvar based ability changes -->
-			<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-
-			<effect_description level="1" desc_key="perkFullyHydratedRank1Desc"/>
-			<effect_description level="2" desc_key="perkFullyHydratedRank2Desc"/>
-			<effect_description level="3" desc_key="perkFullyHydratedRank3Desc"/>
-			<effect_description level="4" desc_key="perkFullyHydratedRank4Desc"/>
-			<effect_description level="5" desc_key="perkFullyHydratedRank5Desc"/>
 		</effect_group>
 	</perk>
 	<perk name="perkSlowMetabolism" parent="skillRecovery" name_key="perkSlowMetabolism" desc_key="perkSlowMetabolismDesc" icon="ui_game_symbol_stomach">
@@ -1419,9 +1408,14 @@
 				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="Equals" value="2"/>
 				<requirement name="CVarCompare" cvar="CharismaticNature" target="other" operation="LT" value="2"/>
 			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNature" operation="set" value="3" target="selfAOE" target_tags="ally,party" range="15">
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="Equals" value="3"/>
+				<requirement name="CVarCompare" cvar="CharismaticNature" target="other" operation="LT" value="3"/>
+			</triggered_effect>
 
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNature" operation="set" value="4" target="selfAOE" target_tags="ally,party" range="15">
-				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="GTE" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="GTE" value="4"/>
 				<requirement name="CVarCompare" cvar="CharismaticNature" target="other" operation="LT" value="4"/>
 			</triggered_effect>
 
@@ -1445,16 +1439,16 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel9"/></level_requirements>
 		
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" 
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" 
 				tags="toolForgeCrucible,forge"/>
 			
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" 
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" 
 				tags="meleeClubIron,meleeToolFireaxeIron,meleeToolPickaxeIron,meleeToolHoeIron,meleeToolShovelIron,meleeToolClawHammer,meleeToolHuntingKnife,armorLeatherBoots,armorLeatherGloves,armorLeatherHood,armorLeatherChest,armorLeatherPants"/>
 			
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" 
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" 
 				tags="resourceFormedIron,meleeToolSledgehammer,armorScrapBoots,armorScrapChest,armorScrapGloves,armorScrapHelmet,armorScrapLegs,armorMiningHelmet"/>
 			
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,4" 
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" 
 				tags="resourceFormedSteel,meleeToolPickaxeSteel,meleeToolShovelSteel,meleeToolFireaxeSteel,meleeToolMachete,armorIronBoots,armorIronChest,armorIronGloves,armorIronHelmet,armorIronLegs"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" 

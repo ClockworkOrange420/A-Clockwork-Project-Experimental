@@ -43,7 +43,7 @@
 			<passive_effect name="BlockDamage" operation="base_set" value="6,12" tier="1,6"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
-			<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
 			<!-- A16 1.2 -->
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
@@ -104,7 +104,7 @@
 			<passive_effect name="EntityDamage" operation="base_set" value="12,24" tier="1,6"/>
 			<!-- meleeToolHuntingKnife -->
 			<passive_effect name="BlockDamage" operation="base_set" value="12,24" tier="1,6"/>
-			<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
 			<!-- A16 1.2 -->
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
@@ -209,7 +209,7 @@
 			<passive_effect name="EntityDamage" operation="base_set" value="4,8" tier="1,6"/>
 			<!-- meleeToolClawHammer -->
 			<passive_effect name="BlockDamage" operation="base_set" value="8,16" tier="1,6"/>
-			<passive_effect name="AttacksPerMinute" operation="base_set" value="75"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
 			<!-- A16 .8 -->
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
@@ -219,7 +219,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.75" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
-			<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="12.8" tags="primary"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="4,1" tier="1,6"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -443,9 +443,9 @@
 		<property name="DisplayType" value="melee"/>
 		<property name="Class" value="ItemClassTorch"/>
 		<property name="HoldType" value="12"/>
-		<property name="Meshfile" value="Items/Tools/torchPrefab"/>
-		<property name="DropMeshfile" value="Items/Misc/torch_droppedPrefab"/>
-		<property name="DropScale" value=".4"/>
+		<property name="Meshfile" value="Items/Tools/torch02Prefab"/>
+		<property name="DropMeshfile" value="Items/Misc/torch02_droppedPrefab"/>
+		<!--<property name="DropScale" value=".4"/>-->
 		<property name="Material" value="Morganic"/>
 		<property name="Stacknumber" value="50"/>
 		<!-- STK torch -->
@@ -596,7 +596,7 @@
 			<passive_effect name="BlockDamage" operation="base_set" value="9,18" tier="1,6"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="oreHarvest"/>
 			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
-			<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
 			<!-- A16 1 -->
 			<passive_effect name="DamageModifier" operation="perc_add" value="21" tags="metal"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="5" tags="organic"/>
@@ -864,7 +864,7 @@
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.45" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.625" tags="head"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
-			<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="22" tags="primary"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1600,1600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="8,2" tier="1,6"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
@@ -1320,7 +1320,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="1650"/>
+		<property name="EconomicValue" value="380"/>
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
 			<property name="Magazine_items" value="ammo9mmBullet,ammo9mmBulletSteel"/>
@@ -1398,7 +1398,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="4500"/>
+		<property name="EconomicValue" value="2500"/>
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
 			<property name="Delay" value="0.34"/>
@@ -1474,7 +1474,7 @@
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 		<property name="RepairExpMultiplier" value="10.8"/>
 		<property name="LightValue" value="0.45"/>
-		<property name="EconomicValue" value="4500"/>
+		<property name="EconomicValue" value="1500"/>
 		<property class="Action0">
 			<property name="Class" value="Ranged"/>
 			<property name="Delay" value="0.150"/>
@@ -1501,10 +1501,10 @@
 			<!-- MP5 -->
 			<passive_effect name="MaxRange" operation="base_set" value="65"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="30"/>
-			<passive_effect name="EntityDamage" operation="perc_add" value="-.2"/>
+			<passive_effect name="EntityDamage" operation="base_subtract" value="6"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.08" tags="head"/>
-			<passive_effect name="RoundsPerMinute" operation="base_set" value="600"/>
+			<passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
 			<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
 			<passive_effect name="MagazineSize" operation="base_set" value="30"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
@@ -1576,8 +1576,8 @@
 		</property>
 		<effect_group name="Base Effects">
 			<!-- gunBlunderbuss -->
-			<passive_effect name="MaxRange" operation="base_set" value="20"/>
-			<passive_effect name="DamageFalloffRange" operation="base_set" value="4"/>
+			<passive_effect name="MaxRange" operation="base_set" value="15"/>
+			<passive_effect name="DamageFalloffRange" operation="base_set" value="2"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.2" tags="head"/>
@@ -1733,7 +1733,7 @@
 			<!-- Rifle, Hunting -->
 			<passive_effect name="MaxRange" operation="base_set" value="150"/>
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="60"/>
-			<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="5"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
 			<passive_effect name="DismemberChance" operation="base_set" value="0.35" tags="head"/>
 			<passive_effect name="RoundsPerMinute" operation="base_set" value="120"/>
@@ -3485,7 +3485,7 @@
 			<passive_effect name="EntityDamage" operation="base_set" value="88"/>
 			<passive_effect name="BlockDamage" operation="base_set" value="6"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
-			<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="82"/>
 			<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 		</effect_group>
 	</item>
@@ -3524,7 +3524,7 @@
 			<passive_effect name="BlockDamage" operation="base_set" value="6"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="0.5" tags="head"/>
 			<!-- do we have damage modifiers for explosions? -->
-			<passive_effect name="ProjectileVelocity" operation="base_set" value="30"/>
+			<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
 			<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
 			<display_value name="ExRadius" value="4" />
 		</effect_group>
@@ -3807,13 +3807,16 @@
 	<item name="vehicleBicycleChassis">
 		<property name="Extends" value="vehicleWheels"/>
 		<property name="Weight" value="50"/>
+		<property name="DescriptionKey" value="vehiclePartsBicycleDesc"/>
 	</item>
 	<item name="vehicleBicycleHandlebars">
 		<property name="Extends" value="vehicleWheels"/>
 		<property name="Weight" value="50"/>
+		<property name="DescriptionKey" value="vehiclePartsBicycleDesc"/>
 	</item>
 	<item name="vehicleBicyclePlaceable">
 		<property name="Extends" value="vehicleMinibikePlaceable"/>
+		<property name="DescriptionKey" value="vehiclePlaceableBicycleDesc"/>
 		<property name="Meshfile" value="Entities/Vehicles/bicycle_Prefab"/>
 		<property name="EconomicValue" value="4000"/>
 		<property name="Weight" value="90"/>
@@ -3918,7 +3921,7 @@
 		<property name="EquipSlot" value="Head"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -3944,7 +3947,7 @@
 		<property name="EquipSlot" value="Chest"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -3968,7 +3971,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -3992,7 +3995,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4016,7 +4019,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="2"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4058,7 +4061,7 @@
 		<property name="Weight" value="40"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4084,7 +4087,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4108,7 +4111,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4132,7 +4135,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4156,7 +4159,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="8"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4198,7 +4201,7 @@
 		<property name="Weight" value="40"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="8,4" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4223,7 +4226,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4247,7 +4250,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4271,7 +4274,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="10,5" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4295,7 +4298,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="6,3" tier="1,6"/>
 			<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
@@ -4337,7 +4340,7 @@
 		<property name="Weight" value="40"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="head,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
@@ -4366,7 +4369,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4392,7 +4395,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -4418,7 +4421,7 @@
 		<property name="Weight" value="50"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4444,7 +4447,7 @@
 		<property name="Weight" value="30"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="6"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -4489,7 +4492,7 @@
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="toxic"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="head,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
@@ -4519,7 +4522,7 @@
 		<property name="Weight" value="100"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4545,7 +4548,7 @@
 		<property name="Weight" value="60"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -4571,7 +4574,7 @@
 		<property name="Weight" value="100"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4597,7 +4600,7 @@
 		<property name="Weight" value="60"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -4641,7 +4644,7 @@
 		<property name="Weight" value="160"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="head,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="800,800" tier="1,6"/>
@@ -4674,7 +4677,7 @@
 		<property name="Weight" value="200"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4700,7 +4703,7 @@
 		<property name="Weight" value="120"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="upperbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -4726,7 +4729,7 @@
 		<property name="Weight" value="200"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="1000,1000" tier="1,6"/>
@@ -4752,7 +4755,7 @@
 		<property name="Weight" value="120"/>
 		<effect_group>
 			<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="12"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="9"/>
 			<passive_effect name="ElementalDamageResist" operation="base_subtract" value="1" tags="lowerbody,heat,electrical"/>
 			<passive_effect name="HyperthermalResist" operation="base_subtract" value="1"/>
 			<passive_effect name="DegradationMax" operation="base_set" value="600,600" tier="1,6"/>
@@ -6543,15 +6546,13 @@
 			<property name="Sound_start" value="player_blooddraw"/>
 			<property name="Consume" value="false"/>
 			<property name="Create_item" value="medicalBloodBag"/>
+			<requirement name="NotHasBuff" buff="buffBloodDrawKitBlocker"/>
 		</property>
 		<property name="ActionSkillGroup" value="Medicine"/>
 		<property name="CraftingSkillGroup" value="craftSkillScience"/>
 		<property name="Group" value="Resources"/>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyStat" target="self" stat="Water" operation="subtract" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyStat" target="self" stat="Food" operation="subtract" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyStat" target="self" stat="HealthMaxModifier" operation="subtract" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyStat" target="self" stat="StaminaMaxModifier" operation="subtract" value="20"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffBloodDrawKitMaster"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		</effect_group>
 	</item>
@@ -7196,7 +7197,7 @@
 	</item>
 	<item name="foodCharredMeat">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -7213,9 +7214,11 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="8"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="4"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-4" />
 		</effect_group>
 	</item>
 	<item name="foodGrilledMeat">
@@ -10102,7 +10105,7 @@
 		<property name="Stacknumber" value="1000"/>
 		<!-- STK resource -->
 		<property name="EconomicValue" value="10"/>
-		<property name="EconomicBundleSize" value="70"/>
+		<property name="EconomicBundleSize" value="100"/>
 		<property name="Group" value="Resources"/>
 	</item>
 	<item name="resourceCement">
@@ -10112,8 +10115,8 @@
 		<property name="Material" value="Mstone"/>
 		<property name="Stacknumber" value="1000"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="10"/>
-		<property name="EconomicBundleSize" value="70"/>
+		<property name="EconomicValue" value="30"/>
+		<property name="EconomicBundleSize" value="100"/>
 		<property name="Group" value="Building,Resources"/>
 	</item>
 	<item name="resourceConcreteMix">
@@ -10124,7 +10127,7 @@
 		<property name="Weight" value="20"/>
 		<property name="Stacknumber" value="1000"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="9"/>
+		<property name="EconomicValue" value="50"/>
 		<property name="EconomicBundleSize" value="20"/>
 		<property name="Group" value="Resources"/>
 	</item>
@@ -10141,6 +10144,7 @@
 		<property name="FuelValue" value="1"/>
 		<property name="Weight" value="5"/>
 		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Clothing"/>
 		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 	</item>
@@ -10273,7 +10277,7 @@
 		<property name="FuelValue" value="1"/>
 		<!-- <property name="CraftingIngredientExp" value="0"/> -->
 		<property name="EconomicValue" value="10"/>
-		<property name="EconomicBundleSize" value="5"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources"/>
 	</item>
 	<item name="resourceArrowHeadIron">
@@ -10332,7 +10336,7 @@
 		<property name="Material" value="Mdirt"/>
 		<property name="Stacknumber" value="1000"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="22"/>
+		<property name="EconomicValue" value="10"/>
 		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -10345,8 +10349,8 @@
 		<property name="Weight" value="3"/>
 		<property name="Stacknumber" value="250"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="36"/>
-		<property name="EconomicBundleSize" value="5"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10358,7 +10362,7 @@
 		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
 		<property name="EconomicValue" value="25"/>
-		<property name="EconomicBundleSize" value="5"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10369,8 +10373,8 @@
 		<property name="Material" value="Msteel"/>
 		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="12"/>
-		<property name="EconomicBundleSize" value="5"/>
+		<property name="EconomicValue" value="35"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10382,7 +10386,7 @@
 		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
 		<property name="EconomicValue" value="25"/>
-		<property name="EconomicBundleSize" value="5"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10418,9 +10422,9 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mlead"/>
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="50"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="151"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10429,9 +10433,9 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mmetal"/>
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="50"/>
 		<!-- STK resource -->
-		<property name="EconomicValue" value="77"/>
+		<property name="EconomicValue" value="150"/>
 		<property name="Group" value="Resources,Ammo/Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	</item>
@@ -10453,7 +10457,7 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Morganic"/>
-		<property name="Stacknumber" value="50"/>
+		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
 		<property name="EconomicValue" value="100"/>
 		<property name="Group" value="Chemicals"/>
@@ -10773,7 +10777,7 @@
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcloth"/>
 		<property name="Weight" value="20"/>
-		<property name="EconomicValue" value="49"/>
+		<property name="EconomicValue" value="25"/>
 		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
 		<property name="Group" value="Resources"/>
@@ -11922,7 +11926,7 @@
 	</item>
 	<item name="foodCharredChicken">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -11941,15 +11945,17 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="2"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-2" />
 		</effect_group>
 		<property name="DescriptionKey" value="foodCharredChickenDesc"/>
 	</item>
 	<item name="foodCharredRabbit">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -11968,15 +11974,17 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="4"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="2"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-2" />
 		</effect_group>
 		<property name="DescriptionKey" value="foodCharredRabbitDesc"/>
 	</item>
 	<item name="foodCharredPork">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -11995,15 +12003,17 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="6"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="3"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-3" />
 		</effect_group>
 		<property name="DescriptionKey" value="foodCharredPorkDesc"/>
 	</item>
 	<item name="foodCharredWolf">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -12022,15 +12032,17 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="5"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-5" />
 		</effect_group>
 		<property name="DescriptionKey" value="foodRawWolfDesc"/>
 	</item>
 	<item name="foodCharredBear">
 		<property name="HoldType" value="31"/>
-		<property name="DisplayType" value="food"/>
+		<property name="DisplayType" value="foodWater"/>
 		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Mcompost"/>
@@ -12049,9 +12061,11 @@
 		<property name="Group" value="Food/Cooking"/>
 		<effect_group tiered="false">
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="12"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStat" stat="water" operation="subtract" value="6"/>
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			<display_value name="waterAmount" value="-6" />
 		</effect_group>
 		<property name="DescriptionKey" value="foodCharredBearDesc"/>
 	</item>

@@ -1430,6 +1430,13 @@
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceSpring" count="10"/>
 	</recipe>
+	<recipe name="modGunBowArrowRest" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
+		<ingredient name="modGunBowArrowRestSchematic" count="1"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceSpring" count="10"/>
+	</recipe>
 	<recipe name="modGunMeleeTheHunter" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="modGunMeleeTheHunterSchematic" count="1"/>
 		<ingredient name="resourceForgedSteel" count="5"/>
