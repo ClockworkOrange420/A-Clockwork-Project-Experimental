@@ -8493,6 +8493,12 @@
 		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="500"/>
 	</item>
+	<item name="modGunBowArrowRestSchematic">
+		<property name="Extends" value="schematicMaster"/>
+		<property name="DescriptionKey" value="schematicMaster2Desc"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="CustomIcon" value="schematicMaster"/>
+	</item>
 	<item name="modGunMeleeTheHunterSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="EconomicValue" value="500"/>

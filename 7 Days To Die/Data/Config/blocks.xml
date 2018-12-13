@@ -2550,6 +2550,13 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPillar50"/> </property>
 </block>
 
+<block name="rWoodPillar50">
+	<property name="Extends" value="woodPillar50"/>
+	<property name="Texture" value="379"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="concretePillar50"/> </property>
+	<property name="DowngradeBlock" value="woodPillar50"/>
+</block>
+
 <block name="woodPillar50CNR">
 	<property name="Extends" value="woodPillar50"/>
 	<property name="Model" value="Pole0.5m_corner"/>
@@ -19804,11 +19811,11 @@ NOT the TextureNumber.
 	<property name="MaxDamage" value="1"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="Shape" value="ModelTorch"/>
+	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Lighting/torch_wallPrefab"/>
 	<!--property name="ParticleName" value="torch_wall"/-->
-	<property name="Place" value="Torch"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="CanPickup" value="true" param1="meleeToolTorch"/>
