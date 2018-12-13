@@ -361,7 +361,7 @@
 		<effect_group name="Base Effects">
 			<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 			<passive_effect name="BlockRange" operation="base_set" value="3"/>
-			<passive_effect name="EntityDamage" operation="base_set" value="6,15" tier="1,6"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/>
 			<!-- meleeClubWood -->
 			<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="organic"/>
@@ -415,7 +415,7 @@
 		<effect_group name="Base Effects">
 			<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 			<passive_effect name="BlockRange" operation="base_set" value="3"/>
-			<passive_effect name="EntityDamage" operation="base_set" value="8,20"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="12,24"/>
 			<!-- meleeClubIron -->
 			<passive_effect name="BlockDamage" operation="base_set" value="7,14"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="organic"/>
