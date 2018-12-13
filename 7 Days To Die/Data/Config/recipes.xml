@@ -4584,12 +4584,6 @@
 		<ingredient name="resourceFeather" count="1"/>
 		<ingredient name="resourceSchematicPage" count="2"/>
 	</recipe>
-	<recipe name="magazinePerkFullyHydrated" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workstationResearchTable" craft_tool="toolGeometrySet">
-		<ingredient name="resourcePaper" count="1"/>
-		<ingredient name="resourceInk" count="1"/>
-		<ingredient name="resourceFeather" count="1"/>
-		<ingredient name="resourceSchematicPage" count="2"/>
-	</recipe>
 	<recipe name="magazinePerkSlowMetabolism" count="1" craft_time = "30" craft_exp_gain="150" craft_area="workstationResearchTable" craft_tool="toolGeometrySet">
 		<ingredient name="resourcePaper" count="1"/>
 		<ingredient name="resourceInk" count="1"/>

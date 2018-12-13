@@ -9263,16 +9263,6 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffMagazinePerkHealingFactor"/>
 		</effect_group>
 	</item>
-	<item name="magazinePerkFullyHydrated">
-		<property name="Extends" value="magazinePerkHeavyArmor"/>
-		<property name="CreativeMode" value="Player"/>
-		<property class="Action0">
-			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkFullyHydrated"/>
-		</property>
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffMagazinePerkFullyHydrated"/>
-		</effect_group>
-	</item>
 	<item name="magazinePerkSlowMetabolism">
 		<property name="Extends" value="magazinePerkHeavyArmor"/>
 		<property name="CreativeMode" value="Player"/>
