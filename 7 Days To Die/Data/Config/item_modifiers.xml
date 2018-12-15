@@ -546,8 +546,9 @@ Example of using the seed (creation time) on a weapon to activate an effect
 
 	<item_modifier name="modGunRetractingStock" installable_tags="stock" modifier_tags="stocks" type="attachment">
 		<property name="Stacknumber" value="1"/>
-
+		
 		<effect_group tiered="false">
+		<passive_effect name="WeaponHandling" operation="perc_add" value=".15"/>
 		</effect_group>
 		<property name="PickupJournalEntry" value="augmentGunsTip"/>
 	</item_modifier>
