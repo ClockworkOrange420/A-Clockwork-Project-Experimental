@@ -2312,7 +2312,7 @@
 			<property name="Sphere" value="0.1"/>
 			<property name="Block_range" value="2.5"/>
 			<property name="DamageEntity" value="12"/>
-			<property name="DamageBlock" value="16"/>
+			<property name="DamageBlock" value="12"/>
 			<property name="Sound_start" value="swoosh"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2415,7 +2415,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="26"/>
-			<property name="DamageBlock" value="32"/>
+			<property name="DamageBlock" value="20"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2447,7 +2447,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="20"/>
-			<property name="DamageBlock" value="32"/>
+			<property name="DamageBlock" value="20"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2515,7 +2515,7 @@
 		<property class="Action0">
 			<property name="Range" value="1.75"/>
 			<property name="DamageEntity" value="26"/>
-			<property name="DamageBlock" value="120"/>
+			<property name="DamageBlock" value="40"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
 		<property class="Action1">
@@ -2575,7 +2575,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="35"/>
-			<property name="DamageBlock" value="160"/>
+			<property name="DamageBlock" value="60"/>
 		</property>
 		<property class="Action1">
 			<!-- Fire action -->
@@ -2691,7 +2691,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="25"/>
-			<property name="DamageBlock" value="60"/>
+			<property name="DamageBlock" value="30"/>
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2708,7 +2708,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="35"/>
-			<property name="DamageBlock" value="80"/>
+			<property name="DamageBlock" value="40"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2728,7 +2728,7 @@
 			<property name="Range" value="3.75"/>
 			<property name="Sphere" value="0.4"/>
 			<property name="DamageEntity" value="60"/>
-			<property name="DamageBlock" value="100"/>
+			<property name="DamageBlock" value="80"/>
 			<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2744,7 +2744,7 @@
 		<property class="Action0">
 			<property name="Range" value="2.75"/>
 			<property name="DamageEntity" value="70"/>
-			<property name="DamageBlock" value="120"/>
+			<property name="DamageBlock" value="100"/>
 			<property name="Buff" value="buffInjuryBleeding,buffInjuryStunned1,buffIllInfection0"/>
 		</property>
 		<effect_group name="Base Effects">
@@ -2760,7 +2760,7 @@
 		<property name="CreativeMode" value="None"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="80"/>
-			<property name="DamageBlock" value="140"/>
+			<property name="DamageBlock" value="120"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2791,7 +2791,7 @@
 		<property name="HoldType" value="9"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="26"/>
-			<property name="DamageBlock" value="38"/>
+			<property name="DamageBlock" value="12"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2808,7 +2808,7 @@
 		<property class="Action0">
 			<property name="Buff" value="buffInjuryBleeding,buffIllInfection0,buffInjuryStunned1"/>
 			<property name="DamageEntity" value="30"/>
-			<property name="DamageBlock" value="90"/>
+			<property name="DamageBlock" value="35"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
@@ -2824,7 +2824,7 @@
 		<property name="HoldType" value="9"/>
 		<property class="Action0">
 			<property name="DamageEntity" value="38"/>
-			<property name="DamageBlock" value="110"/>
+			<property name="DamageBlock" value="45"/>
 		</property>
 		<effect_group name="Base Effects">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
