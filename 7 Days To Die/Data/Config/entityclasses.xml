@@ -687,7 +687,7 @@
 	<property name="ExperienceGain" value="1200"/> <!-- XP grunt radiated -->
 	<property name="LootDropProb" value="1"/> <!-- Radiated -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="600"/>
+		<passive_effect name="HealthMax" operation="base_set" value="525"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8"/>
@@ -807,7 +807,7 @@
 	<property name="HandItem" value="meleeHandZombieFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="800"/>
+		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
@@ -836,7 +836,7 @@
 	<property name="HandItem" value="meleeHandZombie01"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="75"/>
+		<passive_effect name="HealthMax" operation="base_set" value="110"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -898,7 +898,7 @@
 	<property name="HandItem" value="meleeHandZombie01"/>
 	<property name="TintMaterial2" value="32,24,20"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="125"/>
+		<passive_effect name="HealthMax" operation="base_set" value="115"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -929,7 +929,7 @@
 	<property name="ExperienceGain" value="900"/> <!-- XP grunt radiated -->
 	<property name="LootDropProb" value="1"/> <!-- Radiated -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="451"/>
+		<passive_effect name="HealthMax" operation="base_set" value="325"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
@@ -956,7 +956,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombie01"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="125"/>
+		<passive_effect name="HealthMax" operation="base_set" value="105"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -987,7 +987,7 @@
 	<property name="ExperienceGain" value="1200"/> <!-- XP grunt radiated -->
 	<property name="LootDropProb" value="1"/> <!-- Radiated -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="451"/>
+		<passive_effect name="HealthMax" operation="base_set" value="260"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
@@ -1024,7 +1024,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="285"/>
+		<passive_effect name="HealthMax" operation="base_set" value="230"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1039,7 +1039,7 @@
 	<property name="LootDropProb" value="1"/> <!-- Radiated -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="541"/>
+		<passive_effect name="HealthMax" operation="base_set" value="360"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
@@ -1059,7 +1059,7 @@
 
 	<!-- Gameplay -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="base_set" value="115"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -1077,7 +1077,7 @@
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="285"/>
+		<passive_effect name="HealthMax" operation="base_set" value="215"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1093,7 +1093,7 @@
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="541"/>
+		<passive_effect name="HealthMax" operation="base_set" value="315"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
@@ -1284,7 +1284,7 @@
 	<property name="JumpMaxDistance" value="8"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="250"/>
+		<passive_effect name="HealthMax" operation="base_set" value="180"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -1302,7 +1302,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="325"/>
+		<passive_effect name="HealthMax" operation="base_set" value="210"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1348,7 +1348,7 @@
 	<property name="HandItem" value="meleeHandZombieBurning"/>
 	<property name="HandItemCrawler" value="meleeHandZombieBurningCrawler"/> <!-- override the default replacement of meleeHandZombie02 with a specific hand item -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="225"/>
+		<passive_effect name="HealthMax" operation="base_set" value="100"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" buff="buffBurningWeapon">
@@ -1381,7 +1381,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombie01"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="225"/>
+		<passive_effect name="HealthMax" operation="base_set" value="165"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -1398,7 +1398,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="285"/>
+		<passive_effect name="HealthMax" operation="base_set" value="265"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1551,7 +1551,7 @@
 	<property name="ExperienceGain" value="2000"/> <!-- XP strong radiated -->
 	<property name="LootDropProb" value="1"/> <!-- Radiated -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="902"/>
+		<passive_effect name="HealthMax" operation="base_set" value="600"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
@@ -1595,7 +1595,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieWorker"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="250"/>
+		<passive_effect name="HealthMax" operation="base_set" value="187"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 	</effect_group>
@@ -1620,7 +1620,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombieElectricWorker"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="250"/>
+		<passive_effect name="HealthMax" operation="base_set" value="175"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 	</effect_group>
@@ -1638,7 +1638,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="325"/>
+		<passive_effect name="HealthMax" operation="base_set" value="205"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
@@ -1653,7 +1653,7 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="600"/>
+		<passive_effect name="HealthMax" operation="base_set" value="320"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
 		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
@@ -1744,7 +1744,7 @@
 	<!-- Gameplay -->
 	<property name="ExperienceGain" value="500"/> <!-- XP grunt -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="260"/>
+		<passive_effect name="HealthMax" operation="base_set" value="230"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -1761,7 +1761,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="350"/>
+		<passive_effect name="HealthMax" operation="base_set" value="330"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1803,7 +1803,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandZombie01"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="220"/>
+		<passive_effect name="HealthMax" operation="base_set" value="100"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 	</effect_group>
 </entity_class>
@@ -1820,7 +1820,7 @@
 	<property name="ExperienceGain" value="700"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="280"/>
+		<passive_effect name="HealthMax" operation="base_set" value="200"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 	</effect_group>
@@ -1921,7 +1921,7 @@
 	<property name="LootDropProb" value="0.9"/> <!-- Feral -->
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="460"/>
+		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 	</effect_group>
