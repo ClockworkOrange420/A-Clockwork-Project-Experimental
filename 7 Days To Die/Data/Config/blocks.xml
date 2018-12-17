@@ -26795,6 +26795,7 @@ ore block visualisation end -->
 	<property name="PlantGrowing.GrowOnTop" value="autoMinerCompartment"/>
 	<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.GrowIfAnythinOnTop" value="false"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="autoMinerOn" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
