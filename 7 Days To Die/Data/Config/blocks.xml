@@ -26789,7 +26789,7 @@ ore block visualisation end -->
 	<property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="PlantGrowing.Next" value="autoMinerOff"/>
-	<property name="PlantGrowing.GrowthRate" value="0.1"/>
+	<property name="PlantGrowing.GrowthRate" value="180"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.GrowOnTop" value="autoMinerCompartment"/>
