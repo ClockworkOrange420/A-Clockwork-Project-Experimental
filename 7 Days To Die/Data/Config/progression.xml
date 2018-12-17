@@ -1509,7 +1509,7 @@
 				tags="gunToolNailgun,batterybank,solarbank,solarCell,workstationResearchTable,electricwirerelay,woodBlockRelay,bladeTrap,dartTrap,ammoDartSteel,spotlightPlayer,electrictimerrelay,toolAndDieSet,toolCalipers,gunPumpShotgun,gunHuntingRifle,gunSMG5,gunCompoundBow"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" 
-				tags="smallEngine,meleeToolAuger,meleeToolChainsaw,motionsensor,gun44Magnum,gunAK47,gunMR10"/>
+				tags="autoMinerOff,smallEngine,meleeToolAuger,meleeToolChainsaw,motionsensor,gun44Magnum,gunAK47,gunMR10"/>
 			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" 
 				tags="gunRocketLauncher,autoTurret,shotgunTurret"/>
