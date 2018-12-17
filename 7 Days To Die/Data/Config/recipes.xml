@@ -3378,7 +3378,7 @@
 		<ingredient name="resourceMechanicalParts" count="20"/>
 		<ingredient name="resourceElectricParts" count="20"/>
 		<ingredient name="carBattery" count="1"/>
-		<ingredient name="smallEngine" count="1"/>
+		<ingredient name="meleeToolAuger" count="1"/>
 	</recipe>
 	<!-- Food -->
 	<recipe name="resourceChickenFeed" count="1" craft_time = "4" craft_exp_gain="20">
