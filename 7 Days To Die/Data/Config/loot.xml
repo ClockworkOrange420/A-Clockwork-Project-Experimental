@@ -2976,7 +2976,7 @@ treasureTemplate
 		<item group="autoMinerA" prob="10"/>
 		<item group="autoMinerB" prob="0.01"/>
 	</lootgroup>
-	<lootcontainer id="125" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="125" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="autoMiner" prob="1" />
 	</lootcontainer>
 
