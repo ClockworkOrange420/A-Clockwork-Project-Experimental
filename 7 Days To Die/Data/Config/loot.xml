@@ -2965,6 +2965,7 @@ treasureTemplate
 		<item name="resourceCoal" count="50,200" />
 		<item name="resourceOilShale" count="50,200" />
 		<item name="resourceClayLump" count="50,200" />
+		<item name="resourceRockSmall" count="50,200" />
 	</lootgroup>
 	<lootgroup name="autoMinerB" count="1,3" >
 		<item name="resourceRawDiamond"/>
