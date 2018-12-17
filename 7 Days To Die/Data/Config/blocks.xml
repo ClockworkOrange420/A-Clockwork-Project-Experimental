@@ -26760,7 +26760,7 @@ ore block visualisation end -->
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
 	<property name="CustomIcon" value="controlPanelBase04"/>
 	<property class="RepairItems">
-		<property name="resourceScrapIron" value="20"/>
+		<property name="resourceFormedIron" value="20"/>
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="autoMinerOn"/>
@@ -26784,7 +26784,7 @@ ore block visualisation end -->
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
 	<property name="CustomIcon" value="controlPanelBase04"/>
 	<property class="RepairItems">
-		<property name="resourceScrapIron" value="20"/>
+		<property name="resourceFormedIron" value="20"/>
 	</property>
 	<property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
