@@ -3288,6 +3288,20 @@
 		<property name="FuelValue" value="2"/>
 		<property name="EconomicValue" value="83"/>
 		<!-- oil barrel 500 -->
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property class="Action1">
+			<!-- AttackAction -->
+			<property name="Class" value="Repair"/>
+			<property name="Delay" value="0.4"/>
+			<property name="Repair_amount" value="1"/>
+			<property name="Upgrade_hit_offset" value="0"/>
+			<property name="Sound_start" value="repair_block"/>
+			<property name="Allowed_upgrade_items" value="ammoGasCan"/>
+			<property name="UsePowerAttackAnimation" value="false"/>
+		</property>
+		<effect_group name="Base Effects" tiered="false">
+			<passive_effect name="DegradationMax" operation="base_set" value="100" />
+		</effect_group>
 		<property name="EconomicBundleSize" value="100"/>
 		<property name="CraftingSkillGroup" value="craftSkillScience"/>
 		<property name="Group" value="Resources,Chemicals"/>

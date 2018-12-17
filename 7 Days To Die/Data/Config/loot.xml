@@ -2956,5 +2956,27 @@ treasureTemplate
 	<lootcontainer id="123" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="trapChest" prob="1" />
 	</lootcontainer>
+	<!-- Auto miner -->
+	<lootgroup name="autoMinerA" count="all" >
+		<item name="resourceScrapIron" count="50,200" />
+		<item name="resourceScrapLead" count="50,200" />
+		<item name="resourceClayLump" count="50,200" />
+		<item name="resourcePotassiumNitratePowder" count="50,200" />
+		<item name="resourceCoal" count="50,200" />
+		<item name="resourceOilShale" count="50,200" />
+		<item name="resourceClayLump" count="50,200" />
+	</lootgroup>
+	<lootgroup name="autoMinerB" count="1,3" >
+		<item name="resourceRawDiamond"/>
+		<item name="resourceGoldNugget"/>
+		<item name="resourceSilverNugget"/>
+	</lootgroup>
+	<lootgroup name="autoMiner">
+		<item group="autoMinerA" prob="10"/>
+		<item group="autoMinerB" prob="0.01"/>
+	</lootgroup>
+	<lootcontainer id="125" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+		<item group="autoMiner" prob="1" />
+	</lootcontainer>
 
 </lootcontainers>
