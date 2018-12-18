@@ -48,6 +48,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="modGunMeleeT3" count="1">
 			<item group="modMeleeT3"/>
+			<item name="modGunMeleeRadRemover" prob=".25"/>
 		</trader_item_group>
 
 		<trader_item_group name="modGunT1" count="1">
@@ -294,8 +295,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="pressboyCapAll"/>
 			<item group="suitAll" prob="0.2"/>
 			<item name="wornBoots"/>
-			<item name="shades"/>
-			<item name="aviatorGoggles"/>
+			<item name="shades" prob=".7"/>
+			<item name="nerdGlasses" prob=".7"/>
+			<item name="goggles" prob=".7"/>
+			<item name="aviatorGoggles" prob=".7"/>
 			<item name="armorFootballHelmet"/>
 			<item name="leatherDuster" prob="0.2"/>
 			<item name="leatherDusterBlack" prob="0.1"/>
@@ -310,7 +313,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="pantsAll"/>
 			<item group="sweatshirtAll"/>
 			<item group="hoodedSweatshirtAll"/>
-			<item name="shades"/>
+			<item name="goggles"/>
 			<item name="leatherDuster" prob="0.6"/>
 			<item name="leatherDusterBlack" prob="0.2"/>
 		</trader_item_group>
@@ -496,7 +499,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="magazinePerkRunAndGun"/>
 			<item name="magazinePerkLuckyLooter"/>
 			<item name="magazinePerkSalvageOperations"/>
-			<item name="magazinePerkWreckingCrew"/>
 			<item name="magazinePerkSexualTrex"/>
 			<item name="magazinePerkFlurryOfBlows"/>
 			<item name="magazinePerkDeepCuts"/>
