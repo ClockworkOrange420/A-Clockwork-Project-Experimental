@@ -75,7 +75,6 @@
 			<property name="count" value="1" />
 		</objective>
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="quest_BasicSurvival2" />
 		<reward type="Quest" id="quest_BasicSurvival2B" />
 		<reward type="Quest" id="quest_BasicSurvival2C" />
@@ -109,7 +108,6 @@
 			<property name="item" value="meleeToolStoneAxe" />
 			<property name="count" value="1" />
 		</objective>
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Quest" id="quest_BasicSurvival2A" />
     </quest>
@@ -129,7 +127,6 @@
 		<objective type="Craft" id="choppingBlock" value="1" phase="2" />
 		<objective type="BlockPlace" id="choppingBlock" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
     </quest>
 	
@@ -159,7 +156,7 @@
 		<reward type="Quest" id="quest_BasicSurvival2I" />
 		<reward type="Quest" id="quest_BasicSurvival2J" />
 		<reward type="Quest" id="quest_BasicSurvival7" />
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -182,7 +179,7 @@
 		<objective type="FetchKeep" id="chemistryStation" value="1" phase="2" />
 		<objective type="BlockPlace" id="chemistryStation" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -204,7 +201,7 @@
 		<objective type="FetchKeep" id="cementMixer" value="1" phase="2" />
 		<objective type="BlockPlace" id="cementMixer" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -226,7 +223,7 @@
 		<objective type="FetchKeep" id="workstationTableSaw" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationTableSaw" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -247,7 +244,7 @@
 		<objective type="FetchKeep" id="workstationAmmunitionTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationAmmunitionTable" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -268,7 +265,7 @@
 		<objective type="FetchKeep" id="workstationResearchTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationResearchTable" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -289,7 +286,7 @@
 		<objective type="FetchKeep" id="workstationSmithingTable" value="1" phase="2" />
 		<objective type="BlockPlace" id="workstationSmithingTable" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -311,7 +308,7 @@
 		<objective type="BlockPlace" id="workstationTailoringTable" value="1" phase="3" />
 		
 		<reward type="Quest" id="quest_BasicSurvival2B1" />
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="2000" />
     </quest>
 	
@@ -334,7 +331,7 @@
 		
 		<reward type="Quest" id="quest_Complete" />
 		<reward type="Exp" value="2000" />
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
     </quest>
 	<quest id="quest_Complete">
 		<property name="group_name_key" value="quest_BasicSurvival" />
@@ -372,7 +369,7 @@
 		<objective type="Craft" id="forge" value="1" phase="2" />
 		<objective type="BlockPlace" id="forge" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="3" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -394,7 +391,6 @@
 		<objective type="Craft" id="plantFiberShoes" value="1" phase="2" />
 		<objective type="Craft" id="plantFiberGloves" value="1" phase="2" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
     </quest>
@@ -416,7 +412,6 @@
 		<objective type="Wear" id="plantFiberShoes" />
 		<objective type="Wear" id="plantFiberGloves" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -434,7 +429,6 @@
 		<objective type="FetchKeep" id="resourceWood" value="10" phase="1" />
 		<objective type="Craft" id="meleeClubWood" value="1" phase="2" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -456,7 +450,6 @@
 		<objective type="Craft" id="gunWoodenBow" value="1" phase="2" />
 		<objective type="Craft" id="ammoArrowStone" value="1" phase="2" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -475,7 +468,7 @@
 		<objective type="BlockPlace" id="woodFrameBlock" value="10" phase="2" />
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="10" phase="2" />
 		
-		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="2" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -494,7 +487,6 @@
 		<objective type="Craft" id="campfire" value="1" phase="2" />
 		<objective type="BlockPlace" id="campfire" value="1" phase="3" />
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
     </quest>
 
@@ -516,7 +508,6 @@
 			<property name="phase" value="2" />
 		</objective>
 		
-		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="SkillPoints" value="1" chainreward="true" />
     </quest>
