@@ -23618,7 +23618,7 @@ NOT the TextureNumber.
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0500"/> <!-- SortDoors -->
 </block>
-<!--
+
 <block name="woodHatch1_v2">
 	<property name="Extends" value="woodHatch1_v1"/>
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -23632,7 +23632,7 @@ NOT the TextureNumber.
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="woodHatch1_v1"/>
 	<property name="SortOrder2" value="0505"/>
-</block>-->
+</block>
 
 <block name="woodHatch1_v3">
 	<property name="Extends" value="woodHatch1_v1"/>
