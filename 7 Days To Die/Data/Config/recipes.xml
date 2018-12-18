@@ -1437,6 +1437,13 @@
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceSpring" count="10"/>
 	</recipe>
+	<recipe name="modGunMeleeRadRemover" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
+		<ingredient name="modGunMeleeRadRemoverSchematic" count="1"/>
+		<ingredient name="resourceForgedSteel" count="5"/>
+		<ingredient name="resourceGlue" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+		<ingredient name="resourceSpring" count="10"/>
+	</recipe>
 	<recipe name="modGunMeleeTheHunter" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="modGunMeleeTheHunterSchematic" count="1"/>
 		<ingredient name="resourceForgedSteel" count="5"/>
@@ -1444,8 +1451,6 @@
 		<ingredient name="resourceMechanicalParts" count="5"/>
 		<ingredient name="resourceSpring" count="10"/>
 	</recipe>
-	<!--<recipe name="modGunMeleeRadRemover" count="1" craft_area="workbench" tags="learnable"><ingredient name="modGunMeleeRadRemoverSchematic" count="1"/><ingredient name="resourceForgedSteel" count="5"/><ingredient name="resourceGlue" count="5"/><ingredient name="resourceMechanicalParts" count="5"/><ingredient name="resourceSpring" count="10"/></recipe>-->
-	<!--<recipe name="modGunMeleeBlessedMetal" count="1" craft_area="workbench" tags="learnable"><ingredient name="modGunMeleeBlessedMetalSchematic" count="1"/><ingredient name="resourceForgedSteel" count="5"/><ingredient name="resourceGlue" count="5"/><ingredient name="resourceMechanicalParts" count="5"/><ingredient name="resourceSpring" count="10"/></recipe>-->
 	<recipe name="modMeleeTemperedBlade" count="1" craft_time = "16" craft_exp_gain="80" craft_area="workstationSmithingTable" craft_tool="meleeToolWrench" tags="learnable">
 		<ingredient name="modMeleeTemperedBladeSchematic" count="1"/>
 		<ingredient name="resourceForgedSteel" count="5"/>
@@ -2705,6 +2710,14 @@
 		<ingredient name="resourceNail" count="5"/>
 	</recipe>
 	<recipe name="woodWedgeTip" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolClawHammer">
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceNail" count="5"/>
+	</recipe>
+	<recipe name="woodRampIncline" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolClawHammer">
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceNail" count="5"/>
+	</recipe>
+	<recipe name="woodRampInclineFiller" count="1" craft_time="4" craft_exp_gain="20" craft_area="workbench" craft_tool="meleeToolClawHammer">
 		<ingredient name="resourceWood" count="10"/>
 		<ingredient name="resourceNail" count="5"/>
 	</recipe>
