@@ -2308,6 +2308,7 @@ group desc for stuff like metal siding
 
 <block name="woodLogPillar100">
 	<property name="Extends" value="woodMaster"/>
+	<property name="FuelValue" value="400"/>
 	<property name="Class" value="Trunk"/>
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>

@@ -3012,7 +3012,7 @@
 		<property class="Action0">
 			<property name="Delay" value="0.7"/>
 			<!-- obsolete if rounds per minute exists -->
-			<property name="Range" value="2"/>
+			<property name="Range" value="2.5"/>
 			<property name="DamageEntity" value="22"/>
 			<property name="DamageBlock" value="17"/>
 			<property name="Buff" value="buffInjuryBleeding"/>
