@@ -111,7 +111,7 @@ If you do not declare them, the decorations of the main biome are used.
 	<biomemap id="06" name="water"/>
 	<biomemap id="07" name="radiated"/>
 	<biomemap id="08" name="wasteland"/>
-	<biomemap id="09" name="burnt_forest"/>
+	<biomemap id="09" name="forest"/>
 	<biomemap id="10" name="city"/>
 	<biomemap id="11" name="city_wasteland"/>
 	<biomemap id="12" name="wasteland_hub"/>
@@ -950,7 +950,7 @@ If you do not declare them, the decorations of the main biome are used.
 
 
 	<!-- Burnt Forest Main Biome -->
-	<biome name="burnt_forest" biomemapcolor="#ba00ff">
+	<biome name="forest" biomemapcolor="#ba00ff">
 		<weather>
 			<Temperature min="0" max="20" prob="1"/>
 			<Fog min="0" max="0" prob=".9"/>
