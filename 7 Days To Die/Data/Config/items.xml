@@ -392,6 +392,10 @@
 			<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 		</effect_group>
 	</item>
+	<item name="meleeCandyCaneClub">
+		<property name="Extends" value="meleeClubWood"/>
+		<property name="Meshfile" value="Items/Weapons/Melee/Candycane/candycanePrefab"/>
+	</item>
 	<item name="meleeClubIron">
 		<property name="Tags" value="shock,blunt,club,clubIron,melee,light,weapon,meleeWeapon,perkStayDown"/>
 		<property name="DisplayType" value="melee"/>

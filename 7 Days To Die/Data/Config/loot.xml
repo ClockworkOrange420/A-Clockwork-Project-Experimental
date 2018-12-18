@@ -667,6 +667,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 
 <lootgroup name="skullCapAll">
 	<item name="skullCap" mods="dye" mod_chance="0.00"/>
+	<item name="santaHat" mods="dye" mod_chance="0.00"/>
 </lootgroup>
 
 <lootgroup name="ballCapAll">
@@ -780,6 +781,8 @@ A single player on default diff can have a GS of up to 480 without perks.
 <lootgroup name="weaponsMelee">
 	<item name="meleeClubWood"/>
 	<item name="meleeClubIron"/>
+	<item name="meleeCandyCaneClub" prob="0.4"/>
+	<item name="meleeCandyCaneShiv" prob="0.4"/>
 	<item name="meleeToolHuntingKnife" prob="0.4"/>
 	<item name="meleeToolMachete" prob="0.2"/>
 </lootgroup>
@@ -824,7 +827,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 <lootgroup name="modGunMeleeT3" count="1">
 	<item group="modMeleeT3"/>
 	<!--<item name="modGunMeleeBlessedMetal"/>-->
-	<!--<item name="modGunMeleeRadRemover"/>-->
+	<item name="modGunMeleeRadRemover" prob=".25"/>
 </lootgroup>
 
 <lootgroup name="modGunT1" count="1">
@@ -1061,7 +1064,6 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="magazinePerkRunAndGun"/>
 	<item name="magazinePerkLuckyLooter"/>
 	<item name="magazinePerkSalvageOperations"/>
-	<item name="magazinePerkWreckingCrew"/>
 	<item name="magazinePerkSexualTrex"/>
 	<item name="magazinePerkFlurryOfBlows"/>
 	<item name="magazinePerkDeepCuts"/>
@@ -1353,9 +1355,10 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="runningShoes" prob=".2"/>
 	<item name="hpRunningShoes" prob=".1"/>
 	<item name="cowboyBoots"/>
-	<item name="shades"/>
-	<item name="nerdGlasses"/>
-	<item name="aviatorGoggles"/>
+	<item name="shades" prob=".7"/>
+	<item name="nerdGlasses" prob=".7"/>
+	<item name="goggles" prob=".7"/>
+	<item name="aviatorGoggles" prob=".7"/>
 	<item name="armorFootballHelmet"/>
 	<item name="leatherDuster"/>
 	<item name="leatherDusterBlack" prob="0.2"/>
@@ -1371,9 +1374,9 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item group="hoodedSweatshirtAll"/>
 	<item group="flannelShirtAll"/>
 	<item group="overallsAll"/>
-	<item name="shades"/>
 	<item name="leatherDuster"/>
 	<item name="leatherDusterBlack" prob="0.2"/>
+	<item name="goggles" prob=".4"/>
 </lootgroup>
 
 <lootgroup name="lightArmor">
@@ -1554,7 +1557,10 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item group="bandanaAll"/>
 	<item group="tshirtAll"/>
 	<item name="goggles"/>
-	<item name="shades"/>
+	<item name="shades" prob=".7"/>
+	<item name="nerdGlasses" prob=".7"/>
+	<item name="goggles" prob=".7"/>
+	<item name="aviatorGoggles" prob=".7"/>
 	<item name="nightvisionGoggles"/>
 	<item group="ballCapAll"/>
 	<item name="wornBoots"/>
