@@ -3064,17 +3064,13 @@ icon="ui_game_symbol_pack_mule"
 		<stack_type value="duration"/>
 		<duration value="120"/>
 		<effect_group>
-		<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1" />
-		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-		<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
-			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
-		</passive_effect>
-		<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
-			<requirement name="HasBuff" buff="buffHealWaterMax"/>
-		</passive_effect>
-
-		<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+			</passive_effect>
+			<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
 		</effect_group>
 	</buff>
 

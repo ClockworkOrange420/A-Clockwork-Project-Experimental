@@ -63,7 +63,14 @@
 		<property name="Group" value="Ammo/Weapons"/>
 		<property name="ActionSkillGroup" value="Blade Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+		<property name="RepairExpMultiplier" value="5.5"/>
 	</item>
+	
+<item name="meleeCandyCaneShiv">
+	<property name="Extends" value="meleeBoneShiv"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Candycane/candycaneShivPrefab"/>
+</item>
+
 	<item name="meleeToolHuntingKnife">
 		<property name="Tags" value="shock,huntingKnife,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
 		<property name="DisplayType" value="melee"/>
@@ -459,7 +466,6 @@
 			<property name="Sphere" value="0.1"/>
 			<property name="Sound_start" value="torch_swoosh"/>
 			<property name="DamageType" value="Heat"/>
-			<property name="Buff" value="buffBurningElement"/>
 		</property>
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock"/>
@@ -485,9 +491,14 @@
 			<passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
 			<passive_effect name="HypothermalResist" operation="base_add" value="4"/>
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
-			<passive_effect name="BuffProcChance" operation="base_set" value="0.3" tags="buffBurningElement"/>
-			<!--<triggered_effect name="onSelfDamagedOther" action="AddBuff" buff="buffBurningElement"><requirement name="RandomRoll" seed_type="Random" min_max="0,100" seed_type="Random" operation="LTE" value="20"/></triggered_effect><passive_effect name="DegradationPerUse" operation="base_set" value="1"/>-->
 		</effect_group>
+		<effect_group name="Fire Proc" tiered="false">
+		<requirements compare_type="or">
+			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+			<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+		</requirements>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+	</effect_group>
 	</item>
 	<item name="meleeToolMachete">
 		<property name="Tags" value="machete,shock,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
@@ -3557,7 +3568,7 @@
 		<property name="EconomicValue" value="41"/>
 		<property name="Weight" value="5"/>
 		<property name="Explosion.BlockDamage" value="10"/>
-		<property name="Explosion.EntityDamage" value="90"/>
+		<property name="Explosion.EntityDamage" value="110"/>
 		<property name="Explosion.ParticleIndex" value="1"/>
 		<property name="Explosion.RadiusBlocks" value="3"/>
 		<property name="Explosion.RadiusEntities" value="5"/>
@@ -3954,6 +3965,37 @@
 			<property name="Mask1" value="Head" param1="outer"/>
 		</property>
 	</item>
+<item name="santaHat">
+	<property name="Extends" value="armorClothMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Tags" value="head,armor,armorHead,lightarmor"/>
+	<property name="EquipSlot" value="Head"/>
+	<property name="DisplayType" value="armor"/>
+
+	<effect_group>
+		<passive_effect name="HypothermalResist" operation="base_add" value="24"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="225,450" tier="1,6"/>
+
+		<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
+
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.562"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.10" />
+		<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+	</effect_group>
+	<property class="UMA">
+		<property name="Mesh" value="gear_santa_hat"/>
+		<property name="Overlay0" value="gear_santa_hat"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask0" value="Head" param1="outer"/>
+		<property name="ShowAltHair" value="true"/>
+	</property>
+</item>
 	<item name="armorClothJacket">
 		<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
 		<property name="Tags" value="upperbody,chest,armor,armorChest,lightarmor"/>
@@ -5346,7 +5388,7 @@
 		<effect_group tiered="false">
 			<passive_effect name="ModSlots" operation="base_set" value="1"/>
 			<!--<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"><requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="88"/></passive_effect><passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2"><requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="GT" value="88"/><requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="LTE" value="99"/></passive_effect><passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="3"><requirement name="RandomRoll" seed_type="Item" min_max="1,100" operation="GT" value="99"/></passive_effect>-->
-			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
 		</effect_group>
 	</item>
 	<!--<item name="shadesBlack"><property name="CustomIconTint" value="80,80,80"/><property class="UMA"><property name="Overlay0Tint" value="80,80,80"/>-->
@@ -5361,11 +5403,11 @@
 		<effect_group tiered="false">
 			<passive_effect name="ModSlots" operation="base_set" value="1"/>
 			<passive_effect name="LootGamestage" operation="base_add" value="50"/>
-			<passive_effect name="CraftingTime" operation="perc_add" value="-.1"/>
-			<display_value name="dCraftingTime" value="-.1"/>
+			<passive_effect name="TreasureRadius" operation="base_subtract" value="1"/>
+			<display_value name="dTreasureRadius" value="-1"/>
 		</effect_group>
 	</item>
-	<item name="goggles">
+	<item name="goggles"> <!-- ski goggles -->
 		<property name="Extends" value="shades"/>
 		<property name="DisplayType" value="clothingSkiGoggles"/>
 		<property name="Tags" value="head,clothing"/>
@@ -5375,7 +5417,7 @@
 		</property>
 		<effect_group tiered="false">
 			<passive_effect name="ModSlots" operation="base_set" value="1"/>
-			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="2"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
 		</effect_group>
 	</item>
 	<item name="nerdGlasses">
@@ -5387,10 +5429,14 @@
 			<property name="Overlay0" value="specs"/>
 		</property>
 		<property name="DescriptionKey" value="nerdGlassesDesc"/>
+		<property name="EconomicValue" value="1000"/>
 		<effect_group tiered="false">
 			<passive_effect name="ModSlots" operation="base_set" value="1"/>
-			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="2"/>
+			<passive_effect name="CraftingTier" operation="base_add" value="1"/>
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.1"/>
 			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.1" />
+			<display_value name="dCraftingTier" value="1"/>
+			<display_value name="dCraftingTime" value="-.1"/>
 			<display_value name="dPlayerExpGain" value=".1"/>
 		</effect_group>
 	</item>
@@ -5399,9 +5445,9 @@
 		<!-- <property name="DisplayType" value="clothing"/> -->
 		<property name="Stacknumber" value="1"/>
 		<property name="Class" value="ItemClassToggle"/>
-		<property name="Material" value="MelectricParts"/>
-		<property name="Weight" value="8"/>
+		<property name="Material" value="MelectricParts"/> <property name="Weight" value="8"/>
 		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="Weight" value="10"/>
 		<property name="EconomicValue" value="2000"/>
 		<property name="ActivateObject" value="NightVision"/>
 		<property name="ImageEffectOnActive" value="NightVision"/>
@@ -5427,6 +5473,17 @@
 			<triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0"/>
 			<triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
 			<triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+
+
+			<triggered_effect trigger="onSelfItemActivate" action="AttachPrefabToEntity" prefab="ScreenEffects/DeferredNV/NVGLight" parent_transform="CameraNode">
+				<requirement name="IsFPV"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfItemDeactivate" action="RemovePrefabFromEntity" parent_transform="CameraNode" prefab="ScreenEffects/DeferredNV/NVGLight">
+				<requirement name="IsFPV"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" parent_transform="CameraNode" prefab="ScreenEffects/DeferredNV/NVGLight">
+				<requirement name="IsFPV"/>
+			</triggered_effect>
 		</effect_group>
 	</item>
 	<item name="cigar">
@@ -5450,7 +5507,7 @@
 		<property name="Group" value="Clothing"/>
 		<effect_group tiered="false">
 			<passive_effect name="ModSlots" operation="base_set" value="0"/>
-			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="2"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
 			<passive_effect name="Bartering" operation="base_add" value="0.1"/>
 		</effect_group>
 	</item>
@@ -5644,6 +5701,7 @@
 	<item name="runningShoes">
 		<property name="Extends" value="armorLeatherBoots"/>
 		<property name="Tags" value="lowerbody,feet,clothing"/>
+		<property name="DescriptionKey" value="clothingGroupDesc"/>
 		<property name="DisplayType" value="clothing"/>
 		<property name="Stacknumber" value="1"/>
 		<property name="Weight" value="25"/>
@@ -8229,7 +8287,6 @@
 			<display_value name="staminaAmount" value=".25" />
 			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="waterPerkDisplay" operation="add" value="@waterHydrationPSec"/> -->
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,buffCoffee"/>
-			<display_value name="dIntellect" value="1"/>
 			<display_value name="dHypothermalResist" value="5"/>
 		</effect_group>
 		<effect_group tiered="false">
@@ -8519,6 +8576,7 @@
 	</item>
 	<item name="modGunMeleeRadRemoverSchematic">
 		<property name="Extends" value="schematicMaster"/>
+		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="500"/>
 	</item>
 	<item name="modGunMeleeBlessedMetalSchematic">
@@ -9101,21 +9159,8 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffMagazinePerkSalvageOperations"/>
 		</effect_group>
 	</item>
-	<item name="magazinePerkWreckingCrew">
-		<property name="Extends" value="unlockBookMaster"/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CustomIcon" value="questMaster"/>
-		<property name="EconomicValue" value="500"/>
-		<property name="DescriptionKey" value="magazinePerkStrengthGroupDesc"/>
-		<property class="Action0">
-			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkWreckingCrew"/>
-		</property>
-		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffMagazinePerkWreckingCrew"/>
-		</effect_group>
-	</item>
 	<item name="magazinePerkSexualTrex">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="unlockBookMaster"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkSexualTrex"/>
@@ -9125,7 +9170,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkFlurryOfBlows">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkFlurryOfBlows"/>
@@ -9135,7 +9180,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkDeepCuts">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkDeepCuts"/>
@@ -9145,7 +9190,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkStayDown">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkStayDown"/>
@@ -9155,7 +9200,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkHeavyMetal">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkHeavyMetal"/>
@@ -9165,7 +9210,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkSkullCrusher">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkSkullCrusher"/>
@@ -9175,7 +9220,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkMiner69r">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkMiner69r"/>
@@ -9185,7 +9230,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkPackMule">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkPackMule"/>
@@ -9195,7 +9240,7 @@
 		</effect_group>
 	</item>
 	<item name="magazinePerkMotherLode">
-		<property name="Extends" value="magazinePerkWreckingCrew"/>
+		<property name="Extends" value="magazinePerkSexualTrex"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
 			<requirement name="NotHasBuff" target="self" buff="buffMagazinePerkMotherLode"/>
@@ -9950,13 +9995,24 @@
 		<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 	</item>
 	<item name="resourceAnimalFat">
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Morganic"/>
 		<property name="FuelValue" value="20"/>
 		<property name="Stacknumber" value="500"/>
 		<!-- STK resource -->
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1"/>
+			<property name="Use_time" value="..."/>
+			<property name="Sound_start" value="player_eating"/>
+		</property>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="3"/>
+			<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+		</effect_group>
 		<property name="EconomicValue" value="20"/>
 		<property name="CraftingIngredientTime" value="15"/>
 		<property name="Group" value="Food/Cooking"/>
@@ -10045,6 +10101,18 @@
 		<property name="EconomicBundleSize" value="5"/>
 		<property name="CraftingIngredientTime" value="5"/>
 		<property name="Group" value="Resources"/>
+	</item>
+	<item name="resourceCropCoffeeBeans">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Mplants"/>
+		<property name="Stacknumber" value="50"/>
+		<!-- STK resource -->
+		<property name="EconomicValue" value="12"/>
+		<property name="EconomicBundleSize" value="5"/>
+		<property name="CraftingIngredientTime" value="5"/>
+		<property name="Group" value="Food/Cooking"/>
 	</item>
 	<item name="resourceCropSnowberryPlant">
 		<property name="Extends" value="foodCropBlueberries"/>
@@ -10628,18 +10696,6 @@
 		<property name="EconomicValue" value="1500"/>
 		<property name="CraftingIngredientTime" value="60"/>
 		<property name="DescriptionKey" value="rareOresGroupDesc"/>
-	</item>
-	<item name="resourceCropCoffeeBeans">
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-		<property name="Material" value="Mplants"/>
-		<property name="Stacknumber" value="50"/>
-		<!-- STK resource -->
-		<property name="EconomicValue" value="12"/>
-		<property name="EconomicBundleSize" value="5"/>
-		<property name="CraftingIngredientTime" value="5"/>
-		<property name="Group" value="Food/Cooking"/>
 	</item>
 	<item name="candle">
 		<property name="Class" value="ItemClassTorch"/>
