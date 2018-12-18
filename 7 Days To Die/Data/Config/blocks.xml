@@ -26770,6 +26770,8 @@ ore block visualisation end -->
 		<property name="ItemCount" value="100"/>
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="4"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Destroy" name="autoMinerOff" count="1" tag="salvageHarvest"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -26785,6 +26787,7 @@ ore block visualisation end -->
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
 	<property name="CustomIcon" value="controlPanelBase04"/>
+	<property name="ParticleName" value="campfire"/>
 	<property class="RepairItems">
 		<property name="resourceFormedIron" value="100"/>
 		<property name="resourceElectricParts" value="20"/>
