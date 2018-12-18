@@ -233,7 +233,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.321" rwgGenerationType="all"/> </layer>
 				<layer depth="3" blockname="terrClay"> <resource blockname="terrOreGravelPlusIron" prob="0.321" rwgGenerationType="all"/> </layer>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrOreGravelPlusIron" prob="0.4130" rwgGenerationType="all"/> </layer>
-				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreIron" prob="0.3100" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusLead" prob="0.4130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
+				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreIron" prob="0.3100" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusIron" prob="0.4130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
 		</subbiome>
 		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre -->
@@ -371,13 +371,13 @@ If you do not declare them, the decorations of the main biome are used.
 			</decorations>
 		</subbiome>
 		
-		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre -->
+		<subbiome prob="0.1551"> <!-- Ore Sub Biome: ironOre -->
 			<layers>
 				<layer depth="1" blockname="terrForestGround"> <resource blockname="terrOreGravelPlusIron" prob="0.071" rwgGenerationType="all"/> </layer>
 				<layer depth="3" blockname="terrDirt"> <resource blockname="terrOreGravelPlusIron" prob="0.321" rwgGenerationType="all"/> </layer>
 				<layer depth="3" blockname="terrClay"> <resource blockname="terrOreGravelPlusIron" prob="0.321" rwgGenerationType="all"/> </layer>
 				<layer depth="1" blockname="terrStone"> <resource blockname="terrOreGravelPlusIron" prob="0.4130" rwgGenerationType="all"/> </layer>
-				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreIron" prob="0.3100" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusLead" prob="0.4130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
+				<layer depth="*" blockname="terrStone"> <resource blockname="terrOreIron" prob="0.3100" rwgGenerationType="all"/> <resource blockname="terrOreGravelPlusIron" prob="0.4130" rwgGenerationType="all"/> </layer> <layer depth="1" blockname="terrStone"/> <layer depth="3" blockname="terrBedrock"/>
 			</layers>
 		</subbiome>
 		<subbiome prob="0.1551"> <!-- Ore Sub Biome: leadOre -->
