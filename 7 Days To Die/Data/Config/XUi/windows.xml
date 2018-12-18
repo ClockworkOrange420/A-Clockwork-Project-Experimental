@@ -1,6 +1,6 @@
 <windows>
 
-	<window name="HUDTempWaterFood" style="tempwaterfood.window" controller="InGameHUD" >
+	<window name="HUDTempWaterFood" controller="InGameHUD" >
 					<rect width="97" height="70" pos="-480,-455" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 						<sprite depth="1" name="waterEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst" justify="center" pivot="center" foregroundlayer="true"/>
 						<sprite depth="2" name="waterEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_thirst" justify="center" pivot="center" foregroundlayer="true"/>
@@ -51,7 +51,7 @@
 				
 				<sprite depth="1" pos="534,65" name="PlayerLevel" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_level" justify="center" pivot="center" foregroundlayer="true"/>
 				<sprite depth="2" pos="534,65" name="PlayerLevel" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_level" justify="center" pivot="center" foregroundlayer="true"/>
-				<sprite depth="3" pos="534,65" size="97,70" controller="PlayerStatsWindow" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_level_full" justify="center" pivot="center" type="filled" fill="{playerlevelfill}" foregroundlayer="true" filldirection="radial360"/>
+				<sprite depth="3" pos="534,65" size="97,70" controller="ToolbeltWindow" visible="{statvisible}" name="BarContent" atlas="ItemIconAtlas" sprite="ui_game_symbol_level_full" justify="center" pivot="center" type="filled" fill="{xp}" foregroundlayer="true" xp_fill_speed="2.5" filldirection="radial360"/>
 				<label depth="4" pos="534,20" size="97,70" name="TextContent" controller="PlayerStatsWindow" font_size="20" color="[white]" justify="center" pivot="center" text="{playerlevel}"/>
 				
 			</panel>
@@ -190,11 +190,11 @@
 		<sprite depth="4" pos="60,-50" name="windowIcon" size="20,20" sprite="ui_game_symbol_clock" color="255,255,255,255" globalopacitymod="1.8"/>-->
 		<label depth="4" pos="150,-60" name="TextContent" size="300,30" text="{daytitle}: {day|always}  {timetitle}: {time|always}" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
 		
-		<sprite depth="4" pos="247,-50" name="tempIcon" size="20,20" sprite="ui_game_symbol_temperature" color="255,255,255,255" globalopacitymod="1.8"/>
-		<label depth="4" pos="307,-60" name="TextContent" size="300,30" controller="PlayerStatsWindow" text="{playercoretemp}" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
+		<sprite depth="4" pos="297,-50" name="tempIcon" size="20,20" sprite="ui_game_symbol_temperature" color="255,255,255,255" globalopacitymod="1.8"/>
+		<label depth="4" pos="357,-60" name="TextContent" size="300,30" controller="PlayerStatsWindow" text="{playercoretemp}" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
 		
-		<sprite depth="4" pos="360,-15" name="elevIcon" size="20,20" sprite="ui_game_symbol_climb" color="255,255,255,255" globalopacitymod="1.8"/>
-		<label depth="4" pos="420,-25" size="300,30" name="elevLabel" controller="MapStats" text="{mapelevation} M[-]" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
+		<sprite depth="4" pos="440,-15" name="elevIcon" size="20,20" sprite="ui_game_symbol_climb" color="255,255,255,255" globalopacitymod="1.8"/>
+		<label depth="4" pos="500,-25" size="300,30" name="elevLabel" controller="MapStats" text="{mapelevation} M[-]" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
 		
 		<sprite depth="4" pos="22,-15" name="windIcon" size="20,20" sprite="ui_game_symbol_wind" color="255,255,255,255" globalopacitymod="1.8"/>
 		<label depth="4" pos="-18,-25" name="windLabel" size="300,30" controller="MapStats" text="{mapwind} MPH[-]" font_size="28" color="[white]" pivot="center" effect="outline" justify="center" upper_case="true"/>
@@ -1065,10 +1065,10 @@
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
 				<item_stack name="0"/>
 			</grid>
-
+			<!--
 			<sprite depth="2" pos="0,5" height="12" type="sliced" color="[black]" />
 			<sprite depth="3" pos="3,3" height="8" width="598" color="[lightGrey]" foregroundlayer="true" type="sliced" />
-			<sprite depth="4" pos="3,3" height="8" width="598" color="49,91,203" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />
+			<sprite depth="4" pos="3,3" height="8" width="598" color="49,91,203" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />-->
 		</rect>
 	</window>
 

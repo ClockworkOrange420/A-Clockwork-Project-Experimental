@@ -13,13 +13,7 @@
 			<style_entry name="size" value="300,80"/>
 			<style_entry name="anchor" value="LeftTop"/>
 		</style>
-		<!-- tempwaterfood.window : Style for player temperature, water and food window -->
-
-		<style name="tempwaterfood.window" type="window">
-			<style_entry name="pos" value="9,196"/>
-			<style_entry name="anchor" value="LeftBottom"/>
-		</style>
-
+		
 		<!-- xpbar.window : Style for experience bar, player level indicator and toolbelt numbers window -->
 
 		<style name="xpbar.window" type="window">

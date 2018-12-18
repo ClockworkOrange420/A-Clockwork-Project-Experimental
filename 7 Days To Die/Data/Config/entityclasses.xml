@@ -2689,7 +2689,6 @@
 <entity_class name="animalSnake" extends="animalTemplateHostile">
 	<property name="Tags" value="animal,hostile,snake"/>
 	<property name="EntityType" value="Zombie"/>
-	<property name="Radiated" value=""/>
 	<property name="Class" value="EntityAnimalSnake"/>
 	<!--property name="Mesh" value="Animals/Snake/snakeRagdoll"/-->
 	<property name="Prefab" value="/Entities/Animals/Snake/snake_Prefab"/>
@@ -2705,7 +2704,7 @@
 
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="Territorial"/>
-	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityPlayer,15,EntityNPC,15"/>
+	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
 	<property name="AITask-4" value="ApproachSpot"/>
 	<property name="AITask-5" value="Look"/>
 	<property name="AITask-6" value="Wander"/>
@@ -2713,7 +2712,7 @@
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC,EntityPlayer"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 	<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
-	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer,0,EntityNPC,0"/>
+	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
 	<property name="AITarget-5" value=""/>
 
 	<property name="WalkType" value="7"/>
@@ -2738,9 +2737,9 @@
 
 	<!-- Gameplay -->
 	<property name="MaxTurnSpeed" value="100"/>
-	<property name="MoveSpeed" value="0.08"/>
-	<property name="MoveSpeedAggro" value=".2, .2"/>
-	<property name="MoveSpeedPanic" value="0.2"/>
+	<property name="MoveSpeed" value="3"/>
+	<property name="MoveSpeedAggro" value="3, 3"/>
+	<property name="MoveSpeedPanic" value="3"/>
 
 	<property name="HandItem" value="meleeHandAnimalSnake"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
