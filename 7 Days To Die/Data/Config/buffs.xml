@@ -28,11 +28,10 @@ List of hacks to be removed:
 			<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock" />
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyStat" stat="staminamaxmodifier" operation="subtract" value="2"/>
 			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="3.3"/>
-			<triggered_effect trigger="onSelfSecondaryActionStart" action="LogMessage" message="onSelfSecondaryActionEnd"/>
 			-->
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="20"/>
 		</effect_group>
-<!--
+			<!--
 			<passive_effect name="HealthChangeOT" operation="base_add" value="-.3" />
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="not player">
@@ -44,7 +43,14 @@ List of hacks to be removed:
 				<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="not Animal">
 					<requirement name="EntityTagCompare" tags="animal" invert="true"/>
 				</triggered_effect>
--->
+			-->
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="LogMessage" message="fired: onSelfPrimaryActionStart"/>
+			<triggered_effect trigger="onSelfSecondaryActionStart" action="LogMessage" message="fired: onSelfSecondaryActionStart"/>
+
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="LogMessage" message="fired: onSelfPrimaryActionEnd"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="LogMessage" message="fired: onSelfSecondaryActionEnd"/>
+
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="20"/>
 
 	</buff>
 
@@ -118,6 +124,8 @@ List of hacks to be removed:
 		<effect_group>
 			<passive_effect name="StaminaMaxModifierOT" operation="base_subtract" value="10" />
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="10" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodAmount" operation="set" value="-2"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
 			<!--
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
 			-->
@@ -207,6 +215,15 @@ List of hacks to be removed:
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusWounded">
 				<requirement name="StatComparePercModMaxToMax" stat="Health" operation="LTE" value="0.5"/>
+			</triggered_effect>
+			
+			<!-- Remove particle effect if not on fire, this is a backup removal for remote clients -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="p_onFire">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_onFire">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
 			</triggered_effect>
 
 			<!-- why? <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusDying">
@@ -824,8 +841,6 @@ List of hacks to be removed:
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="CharismaticNature" operation="set" value="0"/>
-
-			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="CharismaticNature"/>
 		</effect_group>
 	</buff>
 
@@ -889,8 +904,8 @@ List of hacks to be removed:
 			<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
 			<triggered_effect trigger="onSelfEnteredGame" action="PlaySound" sound="buff_bleeding" play_in_head="true"/>
 
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Infected" intensity=".6" fade="0.5"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Infected" intensity="0" fade="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Blur" intensity=".6" fade="0.5"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="1"/>
 			<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Infected" intensity="0" fade="0"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInjuryBleeding"/>
 <!--
@@ -1593,8 +1608,8 @@ List of hacks to be removed:
 		</effect_group>
 
 		<effect_group> <!-- run particles -->
-			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire"/>
-			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0.75,0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0.75,0"/>
 
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire" />
@@ -2177,11 +2192,16 @@ List of hacks to be removed:
 
 	<buff name="buffStatusHungry2" name_key="buffStatusHungry2Name" description_key="buffStatusHungry2Desc" tooltip_key="buffStatusHungry2Tooltip" icon="ui_game_symbol_hunger" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Starvation"/>
+		<damage_source value="Internal"/>
 		<stack_type value="ignore"/>
+		<update_rate value="5"/>
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffHealStaminaMax"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".1"/>
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="0.1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStat" stat="Health" operation="subtract" value=".3">
+				<requirement name="StatCompareModMax" stat="health" operation="LT" value="26"/>
+			</triggered_effect>
 		</effect_group>
 		<effect_group>
 			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attStrength,attFortitude"/>
@@ -2218,13 +2238,29 @@ List of hacks to be removed:
 
 	<buff name="buffStatusThirsty2" name_key="buffStatusThirsty2Name" description_key="buffStatusThirsty2Desc" tooltip_key="buffStatusThirsty2Tooltip" icon="ui_game_symbol_water" icon_color="255,0,0" icon_blink="true">
 		<damage_type value="Dehydration"/>
-		<damage_type value="bloodloss"/>
+		<damage_source value="Internal"/>
 		<stack_type value="ignore"/>
+		<update_rate value="5"/>
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".2"/>
 			<!--passive_effect name="HealthChangeOT" operation="base_subtract" value="1"/-->
 			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".00555" /> <!-- 20 p h -->
+			<!--
+			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty A">
+				<requirement name="StatCompareCurrent" stat="Water" operation="LT" value="26"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty B">
+				<requirement name="StatCompareMax" stat="Water" operation="LT" value="26"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty C">
+				<requirement name="StatCompareModMax" stat="Water" operation="LT" value="26"/>
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStat" stat="Health" operation="subtract" value=".3">
+				<requirement name="StatCompareCurrent" stat="Water" operation="LT" value="26"/>
+			</triggered_effect>
+-->
 		</effect_group>
 		<effect_group>
 			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attStrength,attFortitude,attAgility,attPerception"/>
@@ -2340,7 +2376,7 @@ List of hacks to be removed:
 		<effect_group>
 			<requirement name="CVarCompare" target="self" cvar="foodSuspend" operation="Equals" value="0"/>
 
-			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="@foodSatiationPSec"/>
+			<passive_effect name="StaminaMaxModifierOT" operation="base_add" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="foodAmount" operation="subtract" value="1"/>
 
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBloodDrawKitRecover">
@@ -2376,6 +2412,13 @@ List of hacks to be removed:
 				<requirement name="StatComparePercModMaxToMax" stat="stamina" operation="GTE" value=".99"/>
 			</triggered_effect>
 		</effect_group>
+		<!--
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="- - - - Digesting food - - - -"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="foodSuspend"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="foodAmount"/>
+		</effect_group>
+		-->
 	</buff>
 
 	<!-- digesting food, displayed status -->
@@ -2426,7 +2469,7 @@ List of hacks to be removed:
 		<update_rate value="2"/>
 		<effect_group>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".15"/>
-			<passive_effect name="WaterChangeOT" operation="base_add" value="@waterHydrationPSec"/>
+			<passive_effect name="WaterChangeOT" operation="base_add" value=".565"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="waterAmount" operation="subtract" value="1"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="waterAmount" operation="set" value="160">
 				<requirement name="CVarCompare" target="self" cvar="waterAmount" operation="GT" value="160"/>
@@ -2435,6 +2478,9 @@ List of hacks to be removed:
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffHealWaterMax">
 				<requirement name="CVarCompare" target="self" cvar="waterAmount" operation="LTE" value="0"/>
 			</triggered_effect>
+			<!--
+			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" target="self" cvar="waterAmount"/>
+			-->
 		</effect_group>
 	</buff>
 
@@ -3289,7 +3335,6 @@ icon="ui_game_symbol_pack_mule"
 			<triggered_effect trigger="onSelfBuffStack" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
 		<effect_group>
-			<requirement name="NotHasBuff" buff="buffMagazinePerkWreckingCrew"/>
 			<requirement name="NotHasBuff" buff="buffMagazinePerkSexualTrex"/>
 			<requirement name="NotHasBuff" buff="buffMagazinePerkFlurryOfBlows"/>
 			<requirement name="NotHasBuff" buff="buffMagazinePerkDeepCuts"/>
@@ -3461,16 +3506,6 @@ icon="ui_game_symbol_pack_mule"
 		<effect_group>
 			<passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkSalvageOperations"/>
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffMagazineAttPerception"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-		</effect_group>
-	</buff>
-
-	<buff name="buffMagazinePerkWreckingCrew" tooltip_key="buffMagazinePerkWreckingCrewTooltip" hidden="true" remove_on_death="false">
-		<stack_type value="replace"/>
-		<duration value="1800"/>
-		<effect_group>
-			<passive_effect name="PerkLevel" operation="base_add" value="1" tags="perkWreckingCrew"/>
-			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffMagazineAttStrength"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
 	</buff>
@@ -4013,8 +4048,10 @@ icon="ui_game_symbol_pack_mule"
 		<update_rate value="2.5"/>
 
 		<effect_group>
-			<passive_effect name="HealthChangeOT" operation="base_add" value="@RadiatedRegenAmount"/>
-
+			<requirement name="NotHasBuff" buff="buffRadiatedRegenBlock"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="@RadiatedRegenAmount"/>
+			</effect_group>
+			<effect_group>
 			<!--
 			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="RadiatedParticlesOnMesh" local_offset="0,0.75,0"/>
 
@@ -4038,7 +4075,11 @@ icon="ui_game_symbol_pack_mule"
 			-->
 		</effect_group>
 	</buff>
-
+	
+	<buff name="buffRadiatedRegenBlock" name_key="buffRadiatedRegenBlockName"  icon="ui_game_symbol_radiation" icon_color="255,255,0" hidden="true">
+		<stack_type value="replace"/>
+		<duration value="90"/>
+	</buff>
 
 	<buff name="buffCampfireAOE" hidden="true">
 		<stack_type value="ignore"/>
@@ -4448,6 +4489,7 @@ REQUIREMENTS / CONDITIONS:
 		Armed with that knowledge the stat comparisons are slightly less confusing:
 
 		StatCompareCurrent  	target, stat(health,stamina, water), operation, value
+		StatCompareMax
 		StatCompareModMax
 		StatComparePercCurrentToMax
 		StatComparePercCurrentToModMax
