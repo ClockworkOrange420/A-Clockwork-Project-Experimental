@@ -6,19 +6,19 @@
 <!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 </level>
 
-<attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1"> <!--values here are simply base values for any attribute that doesn't override it. -->
+<attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.2"> <!--values here are simply base values for any attribute that doesn't override it. -->
 
 	<attribute name="attPerception" name_key="attPerceptionName" desc_key="attPerceptionDesc" icon="ui_game_symbol_stealth">
-		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqGenericLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqGenericLevel02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="25" desc_key="reqGenericLevel03"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="35" desc_key="reqGenericLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="45" desc_key="reqGenericLevel05"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="55" desc_key="reqGenericLevel06"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="65" desc_key="reqGenericLevel07"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="75" desc_key="reqGenericLevel08"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="85" desc_key="reqGenericLevel09"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="95" desc_key="reqGenericLevel10"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints06"/></level_requirements>
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="ranged"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.1,0.70" level="1,10"/>
@@ -58,16 +58,16 @@
 	</attribute>
 
 	<attribute name="attStrength" name_key="attStrengthName" desc_key="attStrengthDesc" icon="ui_game_symbol_muscle">
-		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericLevel02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericLevel03"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqGenericLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="45" desc_key="reqGenericLevel05"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqGenericLevel06"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="65" desc_key="reqGenericLevel07"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqGenericLevel08"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="85" desc_key="reqGenericLevel09"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqGenericLevel10"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints06"/></level_requirements>
 		<effect_group>
 			<requirement name="HoldingItemHasTags" tags="melee"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.1,0.70" level="1,10"/>
@@ -90,16 +90,16 @@
 	</attribute>
 
 	<attribute name="attFortitude" name_key="attFortitudeName" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
-		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericLevel02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericLevel03"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqGenericLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="45" desc_key="reqGenericLevel05"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqGenericLevel06"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="65" desc_key="reqGenericLevel07"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqGenericLevel08"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="85" desc_key="reqGenericLevel09"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqGenericLevel10"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints06"/></level_requirements>
 		<effect_group>
 			<passive_effect name="HealthMax" operation="base_set" value="100,200" level="1,10"/>
 			<passive_effect name="HealthLossMaxMult" operation="perc_add" value="0.0,0.3" level="1,10"/>
@@ -118,16 +118,16 @@
 	</attribute>
 
 	<attribute name="attAgility" name_key="attAgilityName" desc_key="attAgilityDesc" icon="ui_game_symbol_agility">
-		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericLevel02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericLevel03"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqGenericLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="45" desc_key="reqGenericLevel05"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqGenericLevel06"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="65" desc_key="reqGenericLevel07"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqGenericLevel08"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="85" desc_key="reqGenericLevel09"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqGenericLevel10"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints06"/></level_requirements>
 		<effect_group>
 			<passive_effect name="StaminaMax" operation="base_set" value="100,200" level="1,10"/>
 			<!-- "swimming" works now so stamina needs another complete pass so that all the tags and multipliers line up -->
@@ -146,16 +146,16 @@
 	</attribute>
 
 	<attribute name="attIntellect" name_key="attIntellectName" desc_key="attIntellectDesc" icon="ui_game_symbol_intellect">
-		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="5" desc_key="reqGenericLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqGenericLevel02"/></level_requirements>
-		<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="25" desc_key="reqGenericLevel03"/></level_requirements>
-		<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqGenericLevel04"/></level_requirements>
-		<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="45" desc_key="reqGenericLevel05"/></level_requirements>
-		<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqGenericLevel06"/></level_requirements>
-		<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="65" desc_key="reqGenericLevel07"/></level_requirements>
-		<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqGenericLevel08"/></level_requirements>
-		<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="85" desc_key="reqGenericLevel09"/></level_requirements>
-		<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqGenericLevel10"/></level_requirements>
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints02"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints03"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqGenericPoints06"/></level_requirements>
 		<effect_group>
 			<!-- <passive_effect name="PlayerExpGain" operation="perc_add" value="0.0,0.40" level="1,9"/>
 			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" level="10"/>
