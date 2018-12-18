@@ -937,7 +937,7 @@
 			<biome_generator range="0.3,0.6"/>
 		</biome_spawn_rule>
 
-		<biome_spawn_rule name="forest">
+		<biome_spawn_rule name="burnt_forest">
 			<biome_generator range="0.6,0.8"/>
 		</biome_spawn_rule>
 
