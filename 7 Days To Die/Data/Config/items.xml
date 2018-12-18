@@ -60,7 +60,7 @@
 			<!-- using perc_add here increases StaminaOT for no obvious reason -->
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
-		<property name="Group" value="Ammo/Weapons"/>
+		<property name="Group" value="Basics,Ammo/Weapons"/>
 		<property name="ActionSkillGroup" value="Blade Weapons"/>
 		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 		<property name="RepairExpMultiplier" value="5.5"/>
@@ -387,7 +387,7 @@
 			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.4" tags="secondary"/>
-			<passive_effect name="StaminaLoss" operation="base_add" value="22" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 			<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 		</effect_group>
@@ -445,7 +445,7 @@
 			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.4" tags="secondary"/>
-			<passive_effect name="StaminaLoss" operation="base_add" value="22.5" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
 			<!--<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self"/></triggered_effect><triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg"><requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/><requirement name="IsMale" target="self" invert="true"/></triggered_effect>-->
 		</effect_group>
 	</item>
