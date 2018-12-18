@@ -20,7 +20,7 @@
 	
 	<window name="HUDLeftStatBars">
 
-			<panel name="ClockworkSymbols" backgroundcolor="[black]" controller="HUDStatBar">
+			<panel name="ClockworkSymbols" backgroundcolor="[black]" controller="InGameHUD">
 				
 				<sprite depth="1" pos="186,65" name="healthEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_health2" justify="center" pivot="center" foregroundlayer="true"/>
 				<sprite depth="2" pos="186,65" name="healthEmpty" size="97,70" atlas="ItemIconAtlas" sprite="ui_game_symbol_health2" justify="center" pivot="center" foregroundlayer="true"/>
