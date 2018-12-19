@@ -53,7 +53,7 @@
 			<prefab rule="downtownGroup"/>
 			<prefab rule="industrialGroup"/>
 			<prefab rule="ruralGroup"/>
-			<prefab rule="detailFillerGroup"/>
+			<prefab rule="detailFillerGroup" prob="0.1"/>
 		</prefab_rule>
 
 		<prefab_rule name="residentialOldGroup">
