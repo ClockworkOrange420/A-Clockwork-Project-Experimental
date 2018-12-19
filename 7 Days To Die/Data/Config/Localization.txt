@@ -7444,4 +7444,5 @@ zombieShotgunChallenge,items,Zombie Challenge Note,KgNone,Zombie Soup,,,,
 zombieAutomaticChallenge,items,Zombie Challenge Note,KgNone,Spray N' Pray",,,,
 zombieSniperChallenge,items,Zombie Challenge Note,KgNone,Wesley Snipes,,,,
 zombieRocketChallenge,items,Zombie Challenge Note,KgNone,Rocket Man,,,,
+cntVendingMachineQuestSchematic,items,mod,New,Quest Vending Machine Schematic,,,,,
 
