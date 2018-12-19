@@ -360,7 +360,7 @@
 		<ingredient name="resourceTestosteroneExtract" count="1"/>
 	</recipe>
 	<recipe name="toolAnvil" count="1" craft_time = "60" craft_exp_gain="300" craft_area="forge" material_based="true">
-		<ingredient name="unit_iron" count="1000"/>
+		<ingredient name="unit_iron" count="400"/>
 		<ingredient name="unit_clay" count="100"/>
 	</recipe>
 	<recipe name="foodBaconAndEggs" count="1" craft_time = "20" craft_exp_gain="100" craft_area="campfire" craft_tool="toolFryingPan" tags="learnable">

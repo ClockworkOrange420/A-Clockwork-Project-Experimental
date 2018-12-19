@@ -11007,7 +11007,7 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="Msteel"/>
-		<property name="Weight" value="200"/>
+		<property name="Weight" value="400"/>
 		<property name="Stacknumber" value="1"/>
 		<!-- STK loot -->
 		<property name="EconomicValue" value="240"/>
