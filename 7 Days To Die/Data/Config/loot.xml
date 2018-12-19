@@ -984,6 +984,7 @@ A single player on default diff can have a GS of up to 480 without perks.
 	<item name="modMeleeClubBurningShaftSchematic"/>
 	<item name="modMeleeGraveDiggerSchematic"/>
 	<item name="modMeleeWoodSplitterSchematic"/>
+	<item name="cntVendingMachineQuestSchematic"/>
 	<!-- <item name="gunCrossbowSchematic"/>
 	<item name="meleeToolHuntingKnifeSchematic"/>
 	<item name="gunHuntingRifleSchematic"/>
