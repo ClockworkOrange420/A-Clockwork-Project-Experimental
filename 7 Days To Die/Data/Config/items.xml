@@ -11341,77 +11341,77 @@
 		<!-- temp icon -->
 	</item>
 	<item name="zombieMissionImpossible">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="2000"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="challenge_MissionImpossible"/>
 		</property>
 	</item>
 	<item name="zombieRepeat">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="350"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieRepeat"/>
 		</property>
 	</item>
 	<item name="zombieClubChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieClubChallenge"/>
 		</property>
 	</item>
 	<item name="zombieBladeChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieBladeChallenge"/>
 		</property>
 	</item>
 	<item name="zombieHammerChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieHammerChallenge"/>
 		</property>
 	</item>
 	<item name="zombieBowChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieBowChallenge"/>
 		</property>
 	</item>
 	<item name="zombiePistolChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombiePistolChallenge"/>
 		</property>
 	</item>
 	<item name="zombieShotgunChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieShotgunChallenge"/>
 		</property>
 	</item>
 	<item name="zombieAutomaticChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieAutomaticChallenge"/>
 		</property>
 	</item>
 	<item name="zombieSniperChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieSniperChallenge"/>
 		</property>
 	</item>
 	<item name="zombieRocketChallenge">
-		<property name="Extends" value="questMaster"/>
+		<property name="Extends" value="challengeQuestMaster"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
 			<property name="QuestGiven" value="qt_zombieRocketChallenge"/>
