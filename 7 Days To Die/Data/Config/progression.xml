@@ -1135,9 +1135,6 @@
 			<passive_effect name="WaterLossPerHealthPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5"/>
 			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_subtract" value="0.1,0.5" level="1,5"/>
 
-			<!-- see <buff name="buffPerkAbilityUpdate"> for cvar based ability changes -->
-			<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
-
 			<effect_description level="1" desc_key="perkSlowMetabolismRank1Desc"/>
 			<effect_description level="2" desc_key="perkSlowMetabolismRank2Desc"/>
 			<effect_description level="3" desc_key="perkSlowMetabolismRank3Desc"/>
@@ -1353,7 +1350,7 @@
 			<effect_description level="5" desc_key="perkDaringAdventurerRank5Desc"/>
 		</effect_group>
 	</perk>
-	<perk name="perkCharismaticNature" max_level="4" parent="skillInfluence" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
+	<perk name="perkCharismaticNature" parent="skillInfluence" name_key="perkCharismaticNatureName" desc_key="perkCharismaticNatureDesc" icon="ui_game_symbol_talk">
 		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="2" desc_key="reqIntellectLevel2"/></level_requirements>
 		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel4"/></level_requirements>
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel6"/></level_requirements>
@@ -1379,6 +1376,11 @@
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNature" operation="set" value="4" target="selfAOE" target_tags="ally,party" range="15">
 				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="GTE" value="4"/>
 				<requirement name="CVarCompare" cvar="CharismaticNature" target="other" operation="LT" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNature" operation="set" value="5" target="selfAOE" target_tags="ally,party" range="15">
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" target="self" operation="GTE" value="5"/>
+				<requirement name="CVarCompare" cvar="CharismaticNature" target="other" operation="LT" value="5"/>
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" buff="buffPerkCharismaticNature" target="selfAOE" target_tags="ally,party" range="15">

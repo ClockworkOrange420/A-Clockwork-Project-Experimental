@@ -88,10 +88,10 @@
 
 
 		<passive_effect name="WaterLossPerHealthPointGained" operation="base_set" value="0.06"/> <!-- healing damage costs you water -->
-		<passive_effect name="WaterLossPerStaminaPointGained" operation="base_set" value="0.012"/> <!-- regening stamina costs you water -->
+		<passive_effect name="WaterLossPerStaminaPointGained" operation="base_set" value="0.009"/> <!-- regening stamina costs you water -->
 
 		<passive_effect name="HealthLossMaxMult" operation="base_set" value="0.144"/> <!-- taking damage blacks out part of the HP bar -->
-		<passive_effect name="StaminaLossMaxMult" operation="base_set" value="0.0054"/> <!-- regening stamina costs food, blacks out the stamina bar -->
+		<passive_effect name="StaminaLossMaxMult" operation="base_set" value="0.006"/> <!-- regening stamina costs food, blacks out the stamina bar -->
 
 		<passive_effect name="WalkSpeed" operation="base_set" value="1.53"/>
 		<passive_effect name="RunSpeed" operation="base_set" value="1.10"/>

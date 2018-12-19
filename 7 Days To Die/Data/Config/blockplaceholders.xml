@@ -301,8 +301,6 @@
 		<block name="cntCabinetBottom"/>
 		<block name="cntCupboardCabinetRedTopClosed"/>
 		<block name="cntWallOven"/>
-		<block name="cntFridgeTop"/>
-		<block name="cntFridgeBottom"/>
 		<block name="cntWashingMachine" prob="0.5"/>
 		<block name="cntTrashCompactor"/>
 	</placeholder>

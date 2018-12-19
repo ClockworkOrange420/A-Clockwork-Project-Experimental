@@ -497,11 +497,7 @@ Textures we might want for (terrain) imposters
 	<property name="PaintCost" value="1" />
 </paint>
 
-<paint id="76" name="txName_Fridge_stainless_bottom">
-	<property name="TextureId" value="266"/>
-	<property name="Group" value="txGroupDecoration"/>
-	<property name="PaintCost" value="1" />
-</paint>
+<!-- Free -->
 
 <paint id="77" name="txName_Fridge_stainless_side">
 	<property name="TextureId" value="267"/>
