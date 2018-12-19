@@ -778,7 +778,7 @@
 			</module>
 			<module name="cliffPlnsTerra_Cl" type="ClampOutput">
 				<property name="sourceModule" value="cliffPlnsTerra_Lo"/>
-				<property name="bounds" value="-1,1"/>
+				<property name="bounds" value="-1,1.5"/>
 			</module>
 			<module name="cliffPlnsTerra_Se" type="Select">
 				<property name="controlModule" value="cliffEdges_Te"/> 
