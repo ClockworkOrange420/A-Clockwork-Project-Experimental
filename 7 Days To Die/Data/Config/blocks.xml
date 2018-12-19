@@ -26875,6 +26875,32 @@ ore block visualisation end -->
 	<property name="DisplayInfo" value="Description"/>
 </block>
 
+<block name="cntMerryXmasA">
+	<property name="Extends" value="cntLuggageMediumClosed"/>
+	<property name="Model" value="Entities/LootContainers/luggagePileClosedBPrefab"/>
+	<property name="CustomIcon" value="cntLuggagePileBClosed"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="cntMerryXmasB"/>
+	<property name="PlantGrowing.GrowthRate" value="0.03"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DescriptionKey" value="cntMerryXmasADesc"/>
+	<property name="DisplayInfo" value="Name"/>
+</block>
+
+<block name="cntMerryXmasB">
+	<property name="Extends" value="cntLuggageMediumClosed"/>
+	<property name="CustomIcon" value="cntLuggagePileBClosed"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/LootContainers/luggagePileClosedBPrefab"/>
+	<property name="LootList" value="124"/>
+	<property name="DescriptionKey" value="cntMerryXmasADesc"/>
+	<property name="DisplayInfo" value="Name"/>
+</block>
+
 <!--
 Block replacements
 Search -> Replace

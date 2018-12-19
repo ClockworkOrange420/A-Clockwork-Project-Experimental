@@ -7431,6 +7431,11 @@ cntTrapChestUpgrade,blocks,Container,KgNone,Unarmed Trap Storage Chest,,,,
 cntTrapChestUpgradeDesc,blocks,Container,KgNone,Use a remote to arm the trap chest.\n [ Crafted in Workbench with a Wrench. ],,,,
 choppingBlock,blocks,Block,New,Chopping Block,,,,
 choppingBlockDesc,blocks,Block,New,Chop wood logs into more managable sizes.,,,,
+
+cntMerryXmasA,blocks,Block,New,Merry Christmas!,,,,
+cntMerryXmasADesc,blocks,Block,New,"Here is a present just for you, merry Christmas!",,,,
+cntMerryXmasB,blocks,Block,New,Merry Christmas!,,,,
+
 qt_zombie,items,Zombie Challenge Note,KgNone,News Report,,,,
 qt_zombieDesc,items,Zombie Challenge Note,KgNone,Todays news report!,,,,
 qt_zombieRepeat,items,Zombie Challenge Note,KgNone,Blood Rights,,,,

@@ -66,10 +66,62 @@
 		<property name="RepairExpMultiplier" value="5.5"/>
 	</item>
 	
-<item name="meleeCandyCaneShiv">
-	<property name="Extends" value="meleeBoneShiv"/>
-	<property name="Meshfile" value="Items/Weapons/Melee/Candycane/candycaneShivPrefab"/>
-</item>
+	<item name="meleeCandyCaneShiv">
+		<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
+		<property name="DisplayType" value="melee"/>
+		<property name="HoldType" value="36"/>
+		<property name="Meshfile" value="Items/Weapons/Melee/Candycane/candycaneShivPrefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="34"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="SoundDestroy" value="wooddestroy1"/>
+		<property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Damage_type" value="Slashing"/>
+			<property name="Sphere" value="0.1"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="ToolCategory.Butcher" value="1" param1="1.9"/>
+			<property name="ToolCategory.harvestingTools" value="0.25" param1="1"/>
+			<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Damage_type" value="Slashing"/>
+			<property name="Sphere" value="0.1"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="ToolCategory.Butcher" value="1" param1="1.9"/>
+			<property name="ToolCategory.harvestingTools" value="0.5" param1="1"/>
+			<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+		</property>
+		<effect_group name="Base Effects">
+			<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+			<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/>
+			<!-- meleeBoneShiv -->
+			<passive_effect name="BlockDamage" operation="base_set" value="6,12" tier="1,6"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+			<passive_effect name="DismemberChance" operation="base_set" value="0.1" tags="head"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+			<!-- A16 1.2 -->
+			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="butcherHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_set" value="0.51" tags="allHarvest"/>
+			<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="100,100" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="2,1" tier="1,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.8" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.2" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
+		</effect_group>
+		<property name="Group" value="Basics,Ammo/Weapons"/>
+		<property name="ActionSkillGroup" value="Blade Weapons"/>
+		<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+		<property name="RepairExpMultiplier" value="5.5"/>
+	</item>
 
 	<item name="meleeToolHuntingKnife">
 		<property name="Tags" value="shock,huntingKnife,knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
@@ -393,8 +445,56 @@
 		</effect_group>
 	</item>
 	<item name="meleeCandyCaneClub">
-		<property name="Extends" value="meleeClubWood"/>
+		<property name="Tags" value="shock,blunt,club,melee,light,weapon,meleeWeapon,perkStayDown"/>
+		<property name="DisplayType" value="melee"/>
+		<property name="Group" value="Ammo/Weapons,Basics"/>
 		<property name="Meshfile" value="Items/Weapons/Melee/Candycane/candycanePrefab"/>
+		<property name="HoldType" value="2"/>
+		<property name="Material" value="Mwood"/>
+		<property name="SoundDestroy" value="wooddestroy1"/>
+		<property name="RepairExpMultiplier" value="1"/>
+		<property name="ActionSkillGroup" value="Destruction"/>
+		<property name="CraftingSkillGroup" value="attIntellect"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="EconomicValue" value="5"/>
+		<property name="FuelValue" value="100"/>
+		<property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="Sphere" value="0.1"/>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="Sphere" value="0.15"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+		</property>
+		<effect_group name="Base Effects">
+			<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+			<passive_effect name="BlockRange" operation="base_set" value="3"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="6,12" tier="1,6"/>
+			<!-- meleeClubWood -->
+			<passive_effect name="BlockDamage" operation="base_set" value="5,10" tier="1,6"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="3" tags="organic"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+			<passive_effect name="DismemberChance" operation="base_set" value="0.05" tags="head"/>
+			<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
+			<!-- A16 1.33 -->
+			<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500,500" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="5,2" tier="1,6"/>
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		</effect_group>
+		<effect_group name="Power Attack">
+			<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0.4" tags="secondary"/>
+			<passive_effect name="StaminaLoss" operation="base_add" value="18" tags="secondary"/>
+			<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+		</effect_group>
 	</item>
 	<item name="meleeClubIron">
 		<property name="Tags" value="shock,blunt,club,clubIron,melee,light,weapon,meleeWeapon,perkStayDown"/>

@@ -577,6 +577,14 @@ A single player on default diff can have a GS of up to 480 without perks.
 
 <lootgroup name="empty"/>
 
+<lootgroup name="merryXMas" count="all">
+	<item name="santaHat" mods="dye" mod_chance="0.00"/>
+	<item name="meleeCandyCaneShiv"/>
+	<item name="meleeCandyCaneClub"/>
+	<item name="gunPistol"/>
+	<item name="ammo9mmBullet" count="50"/>
+</lootgroup>
+
 <lootgroup name="questChallenge" count="1">
 	<item name="qc_silenceofthelambs" count="1"/>
 	<item name="qc_drunkanddisorderly" count="1"/>
@@ -2962,6 +2970,9 @@ treasureTemplate
 	</lootgroup>
 	<lootcontainer id="123" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="trapChest" prob="1" />
+	</lootcontainer>
+	<lootcontainer id="124" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase">
+		<item group="merryXMas" prob="1" />
 	</lootcontainer>
 	<!-- Auto miner -->
 	<lootgroup name="autoMinerA" count="all" >
