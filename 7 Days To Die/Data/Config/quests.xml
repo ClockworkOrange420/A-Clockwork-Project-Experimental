@@ -527,7 +527,7 @@
 		
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="qt_zombie2" />
-		<reward type="Exp" value="1000" />
+		<reward type="Exp" value="100" />
 	</quest>
 	<quest id="qt_zombie2">
 		<property name="group_name" value="Humanity's Last Hope" />
@@ -542,7 +542,7 @@
 		
 		<reward type="SkillPoints" value="1" />
 		<reward type="Quest" id="qt_zombie3" />
-		<reward type="Exp" value="1000" />
+		<reward type="Exp" value="500" />
 	</quest>
 	<quest id="qt_zombie3">
 		<property name="group_name" value="Humanity's Last Hope" />
@@ -567,11 +567,19 @@
 		<property name="icon" value="ui_game_symbol_zombie" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="hard" />
-
+		<property name="completiontype" value="TurnIn" />
+		
+		
 		<objective type="ZombieKill" value="150" phase="1" />
 		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="Item" id="cntVendingMachineQuestSchematic" value="1" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
 		<reward type="SkillPoints" value="1" />
-		<reward type="Exp" value="1000" />
+		<reward type="Exp" value="1500" />
 	</quest>
 	<quest id="qt_zombieRepeat">
 		<property name="name" value="Blood Rights" />
@@ -580,7 +588,7 @@
 		<property name="icon" value="ui_game_symbol_zombie" />
 		<property name="category_key" value="challenge" />
 		<property name="repeatable" value="true" />
-		<property name="offer" value="We earn our keep round here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
 		<property name="difficulty" value="insane" />
 		<property name="completiontype" value="TurnIn" />
 		
@@ -591,9 +599,326 @@
 		</objective>
 		
 		<reward type="SkillPoints" value="2" />
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieClubChallenge">
+		<property name="name" value="Out Clubbing" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="meleeClubWood" />
+			<requirement type="Holding" id="meleeClubIron" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
-		<reward type="Item" id="foodCookie" value="6" />
+	</quest>
+	
+	<quest id="qt_zombieBladeChallenge">
+		<property name="name" value="Slice N' Dice" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="meleeBoneShiv" />
+			<requirement type="Holding" id="meleeToolHuntingKnife" />
+			<requirement type="Holding" id="meleeToolMachete" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieHammerChallenge">
+		<property name="name" value="Hammer Time" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="meleeToolSledgehammer" />
+			<requirement type="Holding" id="meleeToolClawHammer" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieBowChallenge">
+		<property name="name" value="Sticks N' Stones" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="gunWoodenBow" />
+			<requirement type="Holding" id="gunCompoundBow" />
+			<requirement type="Holding" id="gunCrossbow" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombiePistolChallenge">
+		<property name="name" value="Duelist" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="gunPistol" />
+			<requirement type="Holding" id="gun44Magnum" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieShotgunChallenge">
+		<property name="name" value="Zombie Soup" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="gunBlunderbuss" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieAutomaticChallenge">
+		<property name="name" value="Spray N' Pray" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="gunSMG5" />
+			<requirement type="Holding" id="gunAK47" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieSniperChallenge">
+		<property name="name" value="Wesley Snipes" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		
+		<requirement type="Group" value="OR" phase="1" >
+			<requirement type="Holding" id="gunMR10" />
+			<requirement type="Holding" id="gunHuntingRifle" />
+		</requirement>
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="qt_zombieRocketChallenge">
+		<property name="name" value="Rocket Man" />
+		<property name="subtitle" value="Kill 100 Zombies" />
+		<property name="description" value="Earn your keep." />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="category_key" value="challenge" />
+		<property name="repeatable" value="true" />
+		<property name="offer" value="We earn our keep around here, and we pay in blood, you want to show your worth something... you best get to killing." />
+		<property name="difficulty" value="medium" />
+		<property name="completiontype" value="TurnIn" />
+		
+		<objective type="ZombieKill" value="100" phase="1" />
+		<requirement type="Holding" id="gunRocketLauncher" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
+	</quest>
+	
+	<quest id="challenge_MissionImpossible">
+		<property name="name_key" value="challenge_yournothingspecial" />
+		<property name="subtitle_key" value="challenge_yournothingspecial_subtitle" />
+		<property name="description_key" value="challenge_yournothingspecial_offer" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_yournothingspecial_offer" />
+		<property name="difficulty" value="insane" />
+		<property name="completiontype" value="TurnIn" />
+
+		<objective type="RandomGoto" value="500-800" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="zombieBurnt" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieBoe" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieJoe" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieSteve" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieMoe" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieYo" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieBusinessMan" value="2" phase="3" />
+		<action type="SpawnEnemy" id="zombieArlene" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieDarlene" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieMarlene" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieSkateboarder" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieCheerleader" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieOldTimer" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieFemaleFat" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieNurse" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieBiker" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieStripper" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieSoldier" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieUtilityWorker" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieElectricUtilityWorker" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieMaleHazmat" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieFatHawaiian" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieScreamer" value="1" phase="3" />
+
+		<objective type="ZombieKill" id="zombieFatHawaiian" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieScreamer" value="1" phase="3" />
+		<objective type="ZombieKill" id="zombieBurnt" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieBoe" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieJoe" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieSteve" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieMoe" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieYo" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieBusinessMan" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieArlene" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieDarlene" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieMarlene" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieSkateboarder" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieCheerleader" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieOldTimer" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieFemaleFat" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieNurse" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieBiker" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieStripper" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieSoldier" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieUtilityWorker" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieElectricUtilityWorker" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieMaleHazmat" value="4" phase="3" />
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
 
 	<!-- CHALLENGES -->
@@ -623,7 +948,8 @@
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -639,7 +965,7 @@
 		<property name="difficulty" value="medium" />
 		<property name="completiontype" value="TurnIn" />
 
-		<objective type="ZombieKill" value="2" phase="1" />
+		<objective type="ZombieKill" value="10" phase="1" />
 		<requirement type="Holding" id="" phase="1" />
 
 		<requirement type="Group" value="OR" phase="1" >
@@ -650,7 +976,8 @@
 		<objective type="InteractWithNPC">
 			<property name="phase" value="2" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -675,13 +1002,14 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieNurse" value="5" phase="3" />
-		<objective type="ZombieKill" id="zombieNurse" value="3" phase="3" />
+		<action type="SpawnEnemy" id="zombieNurse" value="10" phase="3" />
+		<objective type="ZombieKill" id="zombieNurse" value="10" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -706,13 +1034,14 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieFatHawaiian" value="5" phase="3" />
-		<objective type="ZombieKill" id="zombieFatHawaiian" value="3" phase="3" />
+		<action type="SpawnEnemy" id="zombieFatHawaiian" value="10" phase="3" />
+		<objective type="ZombieKill" id="zombieFatHawaiian" value="10" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -737,14 +1066,15 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="animalZombieDog" value="5" phase="3" />
+		<action type="SpawnEnemy" id="animalZombieDog" value="6" phase="3" />
 
-		<objective type="ZombieKill" id="animalZombieDog" value="3" phase="3" />
+		<objective type="ZombieKill" id="animalZombieDog" value="6" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -769,14 +1099,15 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieSpider" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieSpider" value="6" phase="3" />
 
-		<objective type="ZombieKill" id="zombieSpider" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieSpider" value="6" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -800,21 +1131,24 @@
 			<property name="start_mode" value="Create" />
 			<property name="phase" value="2" />
 		</objective>
-
+		
+		<action type="SpawnEnemy" id="zombieStripper" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieArlene" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieDarlene" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieMarlene" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieNurse" value="2" phase="3" />
-
-		<objective type="ZombieKill" id="zombieArlene" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieDarlene" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieMarlene" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieNurse" value="1" phase="3" />
+		
+		<objective type="ZombieKill" id="zombieStripper" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieArlene" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieDarlene" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieMarlene" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieNurse" value="2" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -846,16 +1180,17 @@
 		<action type="SpawnEnemy" id="zombieYo" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieSteve" value="2" phase="3" />
 
-		<objective type="ZombieKill" id="zombieBoe" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieJoe" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieMoe" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieYo" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieSteve" value="1" phase="3" />
+		<objective type="ZombieKill" id="zombieBoe" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieJoe" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieMoe" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieYo" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieSteve" value="2" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -886,16 +1221,17 @@
 		<action type="SpawnEnemy" id="zombieScreamer" value="2" phase="3" />
 		<action type="SpawnEnemy" id="zombieBurnt" value="2" phase="3" />
 
-		<objective type="ZombieKill" id="zombieSpider" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieFatHawaiian" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieWightFeral" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieScreamer" value="1" phase="3" />
-		<objective type="ZombieKill" id="zombieBurnt" value="1" phase="3" />
+		<objective type="ZombieKill" id="zombieSpider" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieFatHawaiian" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieWightFeral" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieScreamer" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieBurnt" value="2" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -920,9 +1256,9 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieSnow" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieSnow" value="10" phase="3" />
 
-		<objective type="ZombieKill" id="zombieSnow" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieSnow" value="10" phase="3" />
 
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR" phase="3">
 			<requirement type="Holding" id="meleeToolFireaxeIron" />
@@ -932,7 +1268,8 @@
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -957,14 +1294,15 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieFootballPlayer" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieFootballPlayer" value="6" phase="3" />
 
-		<objective type="ZombieKill" id="zombieFootballPlayer" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieFootballPlayer" value="6" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -989,14 +1327,15 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieCheerleader" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieCheerleader" value="10" phase="3" />
 
-		<objective type="ZombieKill" id="zombieCheerleader" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieCheerleader" value="10" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -1021,14 +1360,15 @@
 			<property name="phase" value="2" />
 		</objective>
 
-		<action type="SpawnEnemy" id="zombieSoldier" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieSoldier" value="10" phase="3" />
 
-		<objective type="ZombieKill" id="zombieSoldier" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieSoldier" value="10" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -1054,13 +1394,16 @@
 		</objective>
 
 		<action type="SpawnEnemy" id="zombieUtilityWorker" value="5" phase="3" />
+		<action type="SpawnEnemy" id="zombieElectricUtilityWorker" value="5" phase="3" />
 
-		<objective type="ZombieKill" id="zombieUtilityWorker" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieUtilityWorker" value="5" phase="3" />
+		<objective type="ZombieKill" id="zombieElectricUtilityWorker" value="5" phase="3" />
 
 		<objective type="InteractWithNPC">
 			<property name="phase" value="4" />
 		</objective>
-
+		
+		<reward type="SkillPoints" value="1" />
 		<reward type="Exp" value="1000" />
 		<reward type="Item" id="casinoCoin" value="200-500" />
 	</quest>
@@ -1078,8 +1421,9 @@
 		<objective type="AnimalKill" id="animalRabbit" value="5"  />
 
 		<requirement type="Holding" id="gunPumpShotgun" />
-
-		<reward type="SkillPoints" value="2" />
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="challenge_nailsomechicks">
@@ -1096,7 +1440,8 @@
 
 		<requirement type="Holding" id="gunToolNailgun" />
 
-		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="challenge_thatlldopig">
@@ -1110,8 +1455,9 @@
 		<property name="difficulty" value="easy" />
 
 		<objective type="AnimalKill" id="animalBoar" value="5"  />
-
-		<reward type="Exp" value="1000" />
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="challenge_stagparty">
@@ -1125,8 +1471,9 @@
 		<property name="difficulty" value="easy" />
 
 		<objective type="AnimalKill" id="animalStag" value="5"  />
-
-		<reward type="Exp" value="1000" />
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="challenge_dontfeedthebears">
@@ -1141,7 +1488,8 @@
 
 		<objective type="AnimalKill" id="animalBear" value="3"  />
 
-		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="challenge_buythefarm">
@@ -1161,7 +1509,8 @@
 		<objective type="AnimalKill" id="animalBear" value="1"  />
 
 
-		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Exp" value="500" />
 	</quest>
 
 	<quest id="treasure_taylor">

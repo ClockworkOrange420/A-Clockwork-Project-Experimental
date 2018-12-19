@@ -26208,6 +26208,32 @@ ore block visualisation end -->
 
 <!-- Lootables -->
 
+<block name="cntVendingMachineQuest">
+	<property name="Group" value="Science"/>
+	<property name="CustomIcon" value="cntVendingMachine"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Crafting/vending_machine_playerPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceFormedIron" value="5"/> </property>
+	<property name="TraderID" value="6"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Buff" value="buffShocked"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+
 <block name="composterEmpty">
 	<property name="Extends" value="woodFrameMaster"/>
 	<property name="CustomIcon" value="woodPillar100"/>
