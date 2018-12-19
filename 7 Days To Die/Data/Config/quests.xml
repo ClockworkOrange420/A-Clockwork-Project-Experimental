@@ -317,7 +317,7 @@
 		<property name="group_name_key" value="quest_BasicSurvival" />
 		<property name="name" value="Operation Snuggle Up" />
 		<property name="subtitle" value="Craft a bedroll" />
-		<property name="description" value="Did we just win...? Holy shit I think we just won the game... hey lucy!... lUCY!... god damn it woman listen to me when Im hollerin at you, I think I jsut won the fucking game!" />
+		<property name="description" value="Did we just win...? Holy shit I think we just won the game... hey lucy!... LUCY!... god damn it woman listen to me when Im hollerin at you, I think I jsut won the fucking game!" />
 		<property name="icon" value="ui_game_symbol_map_bed" />
 		<property name="category_key" value="quest" />
 		<property name="difficulty" value="easy" />
