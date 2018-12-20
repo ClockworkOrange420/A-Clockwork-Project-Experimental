@@ -9041,7 +9041,7 @@
 		<property name="Extends" value="paintMagazineDecorations"/>
 		<property name="CreativeMode" value="Player"/>
 		<property class="Action0">
-			<property name="Skills_to_gain" value="paintFaux"/>
+			<!-- <property name="Skills_to_gain" value="paintFaux"/> -->
 		</property>
 	</item>
 	<item name="paintMagazineMasonry">
@@ -9049,7 +9049,7 @@
 		<property name="CreativeMode" value="Player"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
-			<property name="Skills_to_gain" value="paintMasonry"/>
+			<!-- <property name="Skills_to_gain" value="paintMasonry"/> -->
 		</property>
 	</item>
 	<item name="paintMagazineMetal">
@@ -9057,7 +9057,7 @@
 		<property name="CreativeMode" value="Player"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
-			<property name="Skills_to_gain" value="paintMetal"/>
+			<!-- <property name="Skills_to_gain" value="paintMetal"/> -->
 		</property>
 	</item>
 	<item name="paintMagazineWallCoverings">
@@ -9065,7 +9065,7 @@
 		<property name="CreativeMode" value="Player"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
-			<property name="Skills_to_gain" value="paintWallCoverings"/>
+			<!-- <property name="Skills_to_gain" value="paintWallCoverings"/> -->
 		</property>
 	</item>
 	<item name="paintMagazineWoodAndRoofing">
@@ -9073,7 +9073,7 @@
 		<property name="CreativeMode" value="Player"/>
 		<property name="EconomicValue" value="200"/>
 		<property class="Action0">
-			<property name="Skills_to_gain" value="paintWoodAndRoofing"/>
+			<!-- <property name="Skills_to_gain" value="paintWoodAndRoofing"/> -->
 		</property>
 	</item>
 	<item name="ammoArrowFlamingSchematic">

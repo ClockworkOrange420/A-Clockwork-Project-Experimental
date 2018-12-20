@@ -903,8 +903,6 @@
 
 		<effect_group>
 			<passive_effect name="PhysicalDamageResist" operation="perc_add" value="0.1,0.5" level="1,5" tags="heavyarmor"/>
-			<passive_effect name="DegradationMax" operation="perc_add" value="0.2,0.5" level="3,5" tags="heavyarmor"/>
-
 			<effect_description level="1" desc_key="perkHeavyArmorRank1Desc"/>
 			<effect_description level="2" desc_key="perkHeavyArmorRank2Desc"/>
 			<effect_description level="3" desc_key="perkHeavyArmorRank3Desc"/>
@@ -1185,7 +1183,6 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="10" desc_key="reqAgilityLevel10"/></level_requirements>
 		<effect_group>
 			<passive_effect name="PhysicalDamageResist" operation="perc_add" value="0.10,0.50" level="1,5" tags="lightarmor"/>
-			<passive_effect name="DegradationMax" operation="perc_add" value="0.20,1" level="1,5" tags="lightarmor"/>
 			<effect_description level="1" desc_key="perkLightArmorRank1Desc"/>
 			<effect_description level="2" desc_key="perkLightArmorRank2Desc"/>
 			<effect_description level="3" desc_key="perkLightArmorRank3Desc"/>
