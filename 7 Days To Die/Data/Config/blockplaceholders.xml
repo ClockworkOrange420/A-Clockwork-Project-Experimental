@@ -215,11 +215,12 @@
 	<placeholder name="cntQuestRandomLootHelper">
 		<block name="cntFetchQuestSatchel" prob="1" questtag="fetch"/>
 		<block name="cntFetchQuestSatchel" prob="1" questtag="hidden_cache"/>
-		<block name="cntChest01"/>
-		<block name="cntBin"/>
+		<block name="cntPurse01"/>
 		<block name="cntSuitcase"/>
 		<block name="cntBackpack01"/>
 		<block name="cntBackpack03"/>
+		<block name="medicalPileSmall" prob="1"/>
+		<block name="cntAmmoPileSmall" prob="1"/>
 	</placeholder>
 
 		<!-- <block name="cntChest01" prob="1"/> -->

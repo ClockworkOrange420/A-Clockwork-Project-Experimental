@@ -53,7 +53,7 @@
 			<prefab rule="downtownGroup"/>
 			<prefab rule="industrialGroup"/>
 			<prefab rule="ruralGroup"/>
-			<prefab rule="detailFillerGroup" prob="0.1"/>
+			<prefab rule="detailFillerGroup" prob="0.05"/>
 		</prefab_rule>
 
 		<prefab_rule name="residentialOldGroup">
@@ -122,10 +122,10 @@
 
 		<prefab_rule name="industrialGroup">
 			<prefab rule="skyscrapers" min_count="1" max_count="2"/>
-			<prefab rule="industrial_Bldgs" max_count="4"/>
-			<prefab rule="industrial_JunkyardsLots" max_count="4"/>
+			<prefab rule="industrial_Bldgs"/>
+			<prefab rule="industrial_JunkyardsLots" />
 			<prefab rule="industrial_MpWasteBldgs" max_count="4"/>
-			<prefab rule="industrial_RubbleBldgs" />
+			<prefab rule="industrial_RubbleBldgs" max_count="4"/>
 		</prefab_rule>
 
 		<prefab_rule name="ruralGroup">
@@ -463,7 +463,7 @@
 			<prefab name="utility_celltower_01" prob="0.2"/>
 			<prefab name="army_barracks_01" prob="0.25"/>
 			<prefab name="junkyard_lg_01" prob="0.3"/>
-			<prefab name="junkyard_med_01" />
+			<prefab name="junkyard_med_01" count="1"/>
 		</prefab_rule>
 		
 		
@@ -778,7 +778,7 @@
 			</module>
 			<module name="cliffPlnsTerra_Cl" type="ClampOutput">
 				<property name="sourceModule" value="cliffPlnsTerra_Lo"/>
-				<property name="bounds" value="-1,1.5"/>
+				<property name="bounds" value="-1,1"/>
 			</module>
 			<module name="cliffPlnsTerra_Se" type="Select">
 				<property name="controlModule" value="cliffEdges_Te"/> 

@@ -120,13 +120,14 @@ List of hacks to be removed:
 		</effect_group>
 	</buff>
 	<buff name="messmeup" icon="ui_game_symbol_perk" icon_color="255,0,0">
-		<duration value="4"/>
+		<duration value="5"/>
 		<effect_group>
 			<passive_effect name="StaminaMaxModifierOT" operation="base_subtract" value="10" />
+			<!--
 			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="10" />
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="foodAmount" operation="set" value="-2"/>
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
-			<!--
+			
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="10"/>
 			-->
 		</effect_group>
@@ -204,14 +205,14 @@ List of hacks to be removed:
 				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="GT" value="0.3"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusHungry2">
-				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="LTE" value="0.25"/>
+				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="LTE" value="0.3"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusThirsty1">
 				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.5"/>
 				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.3"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusThirsty2">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.25"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value="0.3"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffStatusWounded">
 				<requirement name="StatComparePercModMaxToMax" stat="Health" operation="LTE" value="0.5"/>
@@ -2186,7 +2187,7 @@ List of hacks to be removed:
 		<duration value="180"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusHungry1">
-				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="GT" value="0.65"/>
+				<requirement name="StatComparePercModMaxToMax" stat="Stamina" operation="GT" value="0.6"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" target="self" sound="PlayerMaleHungry" play_in_head="true">
 				<requirement name="IsMale"/>
@@ -2205,7 +2206,7 @@ List of hacks to be removed:
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffHealStaminaMax"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".1"/>
-			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="0.1"/>
+			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="0.05"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStat" stat="Health" operation="subtract" value=".3">
 				<requirement name="StatCompareModMax" stat="health" operation="LT" value="26"/>
 			</triggered_effect>
@@ -2238,7 +2239,7 @@ List of hacks to be removed:
 		<duration value="180"/>
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffStatusThirsty1">
-				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.65"/>
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="GT" value="0.6"/>
 			</triggered_effect>
 		</effect_group>
 	</buff>
@@ -2250,24 +2251,11 @@ List of hacks to be removed:
 		<update_rate value="5"/>
 		<effect_group>
 			<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
-			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".2"/>
-			<!--passive_effect name="HealthChangeOT" operation="base_subtract" value="1"/-->
-			<passive_effect name="HealthChangeOT" operation="base_subtract" value=".00555" /> <!-- 20 p h -->
-			<!--
-			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty A">
-				<requirement name="StatCompareCurrent" stat="Water" operation="LT" value="26"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty B">
-				<requirement name="StatCompareMax" stat="Water" operation="LT" value="26"/>
-			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="26 thirsty C">
-				<requirement name="StatCompareModMax" stat="Water" operation="LT" value="26"/>
-			</triggered_effect>
+			<passive_effect name="HealthMaxModifierOT" operation="base_subtract" value=".1"/>
 
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStat" stat="Health" operation="subtract" value=".3">
-				<requirement name="StatCompareCurrent" stat="Water" operation="LT" value="26"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStat" stat="Health" operation="subtract" value=".5">
+				<requirement name="StatComparePercCurrentToMax" stat="Water" operation="LTE" value=".26"/>
 			</triggered_effect>
--->
 		</effect_group>
 		<effect_group>
 			<passive_effect name="AttributeLevel" operation="base_subtract" value="2" tags="attStrength,attFortitude,attAgility,attPerception"/>
@@ -3166,12 +3154,11 @@ icon="ui_game_symbol_pack_mule"
 		</effect_group>
 	</buff>
 
-	<buff name="buffShamChowder" name_key="buffShamChowderName" description_key="buffShamChowderDesc" tooltip_key="buffShamChowderTooltip" icon="ui_game_symbol_assemble" tags="food">
+	<buff name="buffShamChowder" name_key="buffShamChowderName" description_key="buffShamChowderDesc" icon="ui_game_symbol_assemble" tags="food">
 		<stack_type value="replace"/>
 		<duration value="600"/>
 		<effect_group>
-			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="2" />
-			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" duration="0,480" value="1,1" />
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1" />
 			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 			<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
@@ -3870,7 +3857,7 @@ icon="ui_game_symbol_pack_mule"
 
 	<buff name="buffPowerAttackStaminaStunt" icon="ui_game_symbol_run" icon_color="255,128,0" hidden="true">
 		<stack_type value="replace"/>
-		<duration value="3"/>
+		<duration value="2"/>
 		<effect_group>
 			<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="1"/>
 			<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>

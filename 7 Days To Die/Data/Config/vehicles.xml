@@ -463,6 +463,7 @@ Forces:
 			<property name="class" value="Headlight"/>
 			<property name="parent_part" value="handlebars"/>
 			<property name="transform" value="Origin/handlebar_joint/headlight"/>
+			<property name="bright" value=".65"/>
 		</property>
 
 		<property class="fuelTank">
@@ -587,6 +588,12 @@ Forces:
 			<property name="torqueScale_motor_brake" value="1, 1"/>
 		</property>
 
+		<property class="headlight">
+			<property name="class" value="Headlight"/>
+			<property name="parent_part" value="handlebars"/>
+			<property name="transform" value="Origin/handlebar_joint/headlight"/>
+			<property name="bright" value=".9"/>
+		</property>
 
 		<property class="storage">
 			<property name="class" value="Storage"/>
@@ -735,6 +742,13 @@ Forces:
 			<property name="tireTransform" value="Origin/backRightWheelJoint"/>
 			<property name="tireSuspensionPercent" value="1"/>
 			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="headlight">
+			<property name="class" value="Headlight"/>
+			<property name="parent_part" value="chassis"/>
+			<property name="transform" value="Origin/headlight"/>
+			<property name="bright" value=".75"/>
 		</property>
 
 		<property class="storage">

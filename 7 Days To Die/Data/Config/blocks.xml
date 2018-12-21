@@ -15689,6 +15689,7 @@ NOT the TextureNumber.
 
 <block name="officeChair01">
 	<property name="Material" value="Mfurniture"/>
+	<property name="Weight" value="40"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="Shape" value="Ext3dModel"/>
 	<property name="Texture" value="282"/>
@@ -15756,7 +15757,8 @@ NOT the TextureNumber.
 </block>
 
 <block name="barracksChair">
-	<property name="Material" value="Mmetal_thin"/>
+	<property name="Material" value="MmetalNoGlue"/>
+	<property name="Weight" value="20"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
@@ -24211,7 +24213,6 @@ NOT the TextureNumber.
 <block name="windowStoreThreeSided">
 	<property name="Extends" value="windowStoreOneSided"/>
 	<property name="Model" value="Entities/Buildings/window_store_three_sidedPrefab"/>
-	<property name="Collide" value="movement,melee"/>
 </block>
 
 <block name="windowStoreFourSided">
@@ -24238,7 +24239,6 @@ NOT the TextureNumber.
 <block name="windowStoreThreeSidedEmpty">
 	<property name="Extends" value="windowStoreOneSided"/>
 	<property name="Model" value="Entities/Buildings/window_store_three_sided_emptyPrefab"/>
-	<property name="Collide" value="movement,melee"/>
 </block>
 
 <block name="windowStoreFourSidedEmpty">
