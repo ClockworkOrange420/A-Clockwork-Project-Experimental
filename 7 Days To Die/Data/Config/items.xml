@@ -8733,28 +8733,20 @@
 	<item name="modMeleeGraveDiggerSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="CustomIcon" value="schematicMaster"/>
-		<!-- temp icon -->
 	</item>
 	<item name="modMeleeBunkerBusterSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="DescriptionKey" value="schematicMaster2Desc"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="CustomIcon" value="schematicMaster"/>
-		<!-- temp icon -->
 	</item>
 	<item name="modMeleeIronBreakerSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="DescriptionKey" value="schematicMaster3Desc"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="CustomIcon" value="schematicMaster"/>
-		<!-- temp icon -->
 	</item>
 	<item name="modMeleeWoodSplitterSchematic">
 		<property name="Extends" value="schematicMaster"/>
 		<property name="EconomicValue" value="500"/>
-		<property name="CustomIcon" value="schematicMaster"/>
-		<!-- temp icon -->
 	</item>
 	<!-- 	add these schematics when these are functional<item name="modYoureFiredSchematic"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item><item name="modRadiationReady"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item><item name="modGunFlashSuppressor"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item><item name="modGunMeleeNiCdBattery"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item><item name="modGunMeleeFlammableOil"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item><item name="modGunMeleeLiquidNitrogen"><property name="Extends" value="schematicMaster"/><property name="EconomicValue" value="500"/></item>-->
 	<item name="modGunMeleeNiCdBatterySchematic">
