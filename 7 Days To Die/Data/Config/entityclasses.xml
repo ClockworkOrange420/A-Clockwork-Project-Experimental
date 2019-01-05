@@ -50,9 +50,9 @@
 	<property name="MapIcon" value="ui_game_symbol_map_player_arrow"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/> <!-- deprecated. It's an entity now "Backpack" -->
-	<property name="ItemsOnEnterGame.GameModeSurvival" value="cntMerryXmasA,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="cntMerryXmasA,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="cntMerryXmasA,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvival" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,keystoneBlock"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
